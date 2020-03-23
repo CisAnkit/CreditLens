@@ -1,0 +1,1 @@
+# CreditLens extension - messagetemplates. 

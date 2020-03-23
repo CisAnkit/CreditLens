@@ -1,0 +1,1 @@
+# CreditLens extension - resource files go here. 

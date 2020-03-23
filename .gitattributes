@@ -1,0 +1,6 @@
+*.tpl                   -text -merge
+*.sdata                 -text -merge
+ratingsconfig.xml       -text -merge
+ratingsconfig_temp.xml  -text -merge
+sysratingsconfig.xml    -text -merge
+financialconfig.xml     -text -merge

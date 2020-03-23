@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyTitle>FinancialAnalysis.Addin.CHB</AssemblyTitle>
+    <Company>Moody's Analytics</Company>
+    <Product>CreditLens</Product>
+    <Copyright>Copyright © Moody's Analytics Inc 2016-2019</Copyright>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\FT\SAMPLEIFT\SAMPLEIFT.tpl" Link="CHBIFT.tpl" />
+    <None Include="..\..\SystemData.sdata" Link="SystemData.sdata" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Moodys.ERS.CreditLens.Compiler" Version="[2.7.0,)" />
+    <PackageReference Include="Moodys.ERS.RO.Core" Version="4.0.0-prerelease">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Moodys.ERS.RO.RiskGrading" Version="[2.7.0,)">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Moodys.ERS.RO.FinancialAnalysis.Reports" Version="[2.6.0,)">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

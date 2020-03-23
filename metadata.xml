@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="1">
+    <loadAfter moduleRefId="*" />
+    <probePath path="Config\metadata\Tenant\ra" />
+  </module>
+  <models>
+    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" standardConfig="true" modelCategory="system" resourceModuleId="Core" notesEnabled="false">
+      <audit time="2016-09-14T19:07:51.630172Z" />
+    </model>
+    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" standardConfig="true" modelCategory="system" resourceModuleId="Core" notesEnabled="false">
+      <audit time="2016-09-14T19:07:52.9692616Z" />
+    </model>
+    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" standardConfig="true" modelCategory="system" resourceModuleId="Core" notesEnabled="false">
+      <audit time="2017-11-24T19:07:51.630172Z" />
+    </model>
+  </models>
+</metadata>
