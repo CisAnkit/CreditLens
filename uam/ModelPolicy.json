@@ -1,0 +1,745 @@
+[
+  {
+    "PolicyId": "7f02cdf5-2d92-4eef-9384-fd0002ffbda2",
+    "PolicyDescription": null,
+    "DataModel": "Entity",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": null,
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "5b669f3a-1ae5-40f0-8cc3-668cdb987740",
+    "PolicyDescription": null,
+    "DataModel": "Document",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": null,
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "DocumentCategory",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "8b669f3a-1ae5-41f0-8cc3-668cdb987000",
+    "PolicyDescription": null,
+    "DataModel": "Proposal",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "Associations_": [
+      "UserDimension",
+      "ModelDimension",
+      "ChildModelPolicy"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": null,
+        "Operator": "EQ",
+        "Inapplicable_": []
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "ProposalTypeMapping",
+        "DimensionValue": null,
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "280fb3a3-da88-49fe-81f2-faad36207991",
+    "PolicyDescription": null,
+    "DataModel": "Report",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": null,
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "ReportTemplateCategory",
+        "DimensionValue": null,
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "11111111-1111-1111-1111-111111111111",
+    "PolicyDescription": null,
+    "DataModel": "Entity",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 2,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "BatchFaRole",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": null,
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "3781782c-780a-4111-b357-469fec567afb",
+    "PolicyDescription": null,
+    "DataModel": "Entity",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 3,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "BR",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": null,
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "492d7598-4a0c-4fce-8456-4e572dceec84",
+    "PolicyDescription": null,
+    "DataModel": "RatingScenario",
+    "Action": "View",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "RatingModel",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "beaf381d-dd2c-462e-a067-48c78253fabc",
+    "PolicyDescription": null,
+    "DataModel": "Product",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "Category",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "ded85ec0-e58d-43b5-b360-417cfe1f75de",
+    "PolicyDescription": null,
+    "DataModel": "Asset",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "Category",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "9d69ea53-5720-4b69-be36-addc78b179ea",
+    "PolicyDescription": null,
+    "DataModel": "Entity",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 4,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "CalcEngineUser",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": null,
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "47cc70cd-f131-4b4c-b2ef-23aebdad8fcd",
+    "PolicyDescription": null,
+    "DataModel": "CmmGroup",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "Category",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  },
+  {
+    "PolicyId": "92867695-f65c-4645-bac3-d8a91b3815e0",
+    "PolicyDescription": null,
+    "DataModel": "CreRatingScenario",
+    "Action": "Delete",
+    "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
+    "Priority": 1,
+    "Hidden": null,
+    "Inapplicable_": [
+      "Hidden"
+    ],
+    "UserDimension": [
+      {
+        "DimensionId": "UserRole",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "BusinessPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      },
+      {
+        "DimensionId": "CreditPortfolio",
+        "DimensionValue": "ANY",
+        "Operator": null,
+        "Inapplicable_": [
+          "Operator"
+        ]
+      }
+    ],
+    "ModelDimension": [
+      {
+        "DimensionId": "CreRatingModel",
+        "DimensionValue": "ANY",
+        "Operator": "EQ",
+        "Inapplicable_": []
+      }
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "ModelPolicy",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]

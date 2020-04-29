@@ -1,0 +1,38 @@
+[
+  {
+    "DsProfileSettingId": "75630727-c00c-526f-85cf-6ccad2f4d471",
+    "ApproveCollateral": null,
+    "ApproveGuarantee": null,
+    "ApproveProduct": true,
+    "EnableAsset": true,
+    "EnableCre": true,
+    "EnableDsAdvanced": true,
+    "EnableDsLite": true,
+    "EnableLgd": true,
+    "EnableLgdAdvanced": true,
+    "EnableRiskReturn": true,
+    "FunctionalProfileSettingId": "70d20584-3252-4b5b-a6ed-26756db666b7",
+    "OverrideCreRating": null,
+    "OverrideRegulatoryCapital": true,
+    "TriggerRiskReturnCalculation": true,
+    "Inapplicable_": [
+      "ApproveCollateral",
+      "ApproveGuarantee",
+      "OverrideCreRating"
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "DealStructuringProfileSetting",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]

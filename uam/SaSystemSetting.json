@@ -1,0 +1,32 @@
+[
+  {
+    "SaSystemSettingId": "a0941b2c-be27-497b-a056-97f678544c68",
+    "AutoSpreadApiUrl": "https://moodysanalytics-nonprod-qa.apigee.net/spreading-api-dev-cl/",
+    "AutoSpreadAuthUrl": "https://moodysanalytics-nonprod-qa.apigee.net/spreading-auth-dev-cl/",
+    "AutoSpreadClientId": "nbMo9DGEPgS1KSt9lGl7ppeLRlegdDJs",
+    "AutoSpreadClientSecret": "tuVrmB6tdIRPQUz4",
+    "IncludeNotesOnTaxFormImport": true,
+    "SystemSettingId": "14700269-cb8b-462e-ae1d-16816ffa19f7",
+    "TaxFormMaxReceivedMessageSize": 2147483647,
+    "TaxFormSendTimeOut": 5.0,
+    "TaxFormToken": "77e10efc-9696-45ab-b285-ce8ff49be198",
+    "TaxFormUrl": "https://cl-taxforms.maregroot.com/TaxformService",
+    "Inapplicable_": [],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 2,
+    "BaseVersionId_": 1,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-04-24T03:05:43.475546Z",
+    "t_": "SaSystemSetting",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]

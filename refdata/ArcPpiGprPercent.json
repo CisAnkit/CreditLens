@@ -1,0 +1,32 @@
+[
+  {
+    "Type": "ARCPPIGPRPERCENT",
+    "KeyInt": 2,
+    "Key": 2,
+    "Value": "Greter than or less than eqauls to 2",
+    "Pecent": 110.0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-28T15:05:05.595988Z",
+    "t_": "ArcPpiGprPercent",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ARCPPIGPRPERCENT",
+    "KeyInt": 1,
+    "Key": 1,
+    "Value": "Greater than  or equals to 1",
+    "Pecent": 110.0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-28T15:05:05.606722Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-04-28T16:36:47.064536Z",
+    "t_": "ArcPpiGprPercent",
+    "ContextUserId_": "admin"
+  }
+]
