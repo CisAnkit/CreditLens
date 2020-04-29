@@ -1,0 +1,15 @@
+[
+  {
+    "Type": "ARCPPIEDF",
+    "KeyInt": 1,
+    "Key": 1,
+    "Value": 0.0167,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-28T15:09:12.922421Z",
+    "t_": "ArcPpiEdf",
+    "ContextUserId_": "admin"
+  }
+]

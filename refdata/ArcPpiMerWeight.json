@@ -1,0 +1,15 @@
+[
+  {
+    "Type": "ARCPPIMERWEIGHT",
+    "KeyInt": 1,
+    "Key": 1,
+    "Value": 0.86,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-28T15:13:44.253751Z",
+    "t_": "ArcPpiMerWeight",
+    "ContextUserId_": "admin"
+  }
+]

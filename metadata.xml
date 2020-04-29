@@ -1,18 +1,232 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="1">
-    <loadAfter moduleRefId="*" />
+    <loadAfter moduleRefId="Core" major="3" minor="10" patch="0" />
+    <loadAfter moduleRefId="RiskOrigins" major="1" minor="11" patch="0" />
+    <loadAfter moduleRefId="Entity" major="2" minor="6" patch="0" />
+    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="Bvd" major="2" minor="0" patch="0" />
+    <loadAfter moduleRefId="DataMovement" major="3" minor="10" patch="0" />
+    <loadAfter moduleRefId="Map" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="RiskGrading" major="2" minor="6" patch="0" />
+    <loadAfter moduleRefId="MapPdModels" major="2" minor="3" patch="0" />
+    <loadAfter moduleRefId="DealStructuring" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="Covenant" major="2" minor="1" patch="1" />
+    <loadAfter moduleRefId="CreditPresentation" major="2" minor="0" patch="0" />
+    <loadAfter moduleRefId="Workflow" major="2" minor="0" patch="0" />
+    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="0" patch="0" />
+    <loadAfter moduleRefId="BiStarSchema" major="1" minor="10" patch="0" />
+    <loadAfter moduleRefId="MapLgdModels" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="Marq" major="2" minor="1" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="10" patch="0" />
+    <loadAfter moduleRefId="Salesforce" major="1" minor="4" patch="0" />
+    <loadAfter moduleRefId="RiskReturn" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="Raroc" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="BusinessInsights" major="2" minor="1" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="10" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="10" patch="0" />
+    <loadAfter moduleRefId="Benchmark" major="1" minor="1" patch="0" />
+    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="MoodysFinal" major="1" minor="0" patch="0" />
     <probePath path="Config\metadata\Tenant\ra" />
   </module>
   <models>
-    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" standardConfig="true" modelCategory="system" resourceModuleId="Core" notesEnabled="false">
+    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
       <audit time="2016-09-14T19:07:51.630172Z" />
     </model>
-    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" standardConfig="true" modelCategory="system" resourceModuleId="Core" notesEnabled="false">
+    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
       <audit time="2016-09-14T19:07:52.9692616Z" />
     </model>
-    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" standardConfig="true" modelCategory="system" resourceModuleId="Core" notesEnabled="false">
+    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
       <audit time="2017-11-24T19:07:51.630172Z" />
     </model>
+    <model id="ArcPpiDomainModel" source="arcppidomainmodel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" root="true" referenceModule="Entity" excludeFromReportData="true">
+      <attribute id="PpiId" dataType="long" primaryField="true" attributeExpression="Regenerate domain to show code editor" />
+      <attribute id="EntityId" dataType="long" />
+      <attribute id="GprPercent" dataType="long" refId="ArcPpiGprPercent" />
+      <attribute id="GprWeight" dataType="long" refId="ArcPpiGprWeight" />
+      <attribute id="MerPercent" dataType="long" refId="ArcPpiMerPercent" />
+      <attribute id="MerWeight" dataType="long" refId="ArcPpiMerWeight" />
+      <attribute id="Profile" dataType="long" refId="ArcPpiProfile" />
+      <attribute id="TotalPpi" dataType="double" decimals="2" />
+      <modelRef id="Entity" relation="oneToOne" srcModelId="ArcPpiDomainModel" modelId="Entity" oneToOneRelationType="child">
+        <refAttribute id="EntityId" sourceId="EntityId" />
+      </modelRef>
+      <audit userId="admin" time="20200428T154026" />
+    </model>
+    <model id="ArcPpiEdf" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="double" />
+      <audit userId="admin" time="20200428T161852" />
+    </model>
+    <model id="ArcPpiProfile" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20200428T161917" />
+    </model>
+    <model id="ArcPpiMerWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="double" />
+      <audit userId="admin" time="20200428T162027" />
+    </model>
+    <model id="ArcPpiGprWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="double" />
+      <audit userId="admin" time="20200428T162308" />
+    </model>
+    <model id="ArcPpiGprPercent" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <attribute id="Pecent" dataType="double" />
+      <audit userId="admin" time="20200428T162405" />
+    </model>
+    <model id="ArcPpiMerPercent" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <attribute id="Percent" dataType="double" />
+      <audit userId="admin" time="20200428T162452" />
+    </model>
   </models>
+  <viewModels>
+    <viewModel id="EntityEdit" primaryModel="Entity" description="" resourceModuleId="Entity" allowDraft="true">
+      <group id="BasicDetails" type="accordion" order="1">
+        <group id="Officer" order="3">
+          <viewModelRef id="EntityOfficers" order="5" type="inlineGrid" cellEdit="true" />
+        </group>
+        <group id="EntityGroupsHeader" order="6">
+          <viewModelRef id="EntityGroupGrid" order="2" hidden="true" />
+        </group>
+      </group>
+      <group id="Business" type="accordion" order="2">
+        <group id="IndustryInformation" order="2">
+          <viewModelRef id="IndustrySelection" order="3" type="inlineGrid" cellEdit="true" action="enable" actionRule="EnabledIndustryGridWhenClassificationIsSelected" />
+        </group>
+        <group id="ConnectedParties" order="3">
+          <viewModelRef id="DirectorAndCompanyOfficer" order="1" type="inlineGrid" cellEdit="true" />
+          <viewModelRef id="EntityHierarchy" order="2" />
+          <viewModelRef id="EntityReOrgHistory" order="3" />
+        </group>
+      </group>
+      <group id="ArcPpi" order="3">
+        <viewModelRef id="ArcPpiViewModel" order="1" />
+      </group>
+      <group id="Marq" action="show" actionRule="IsMarqEntity" order="4" />
+      <group id="Documents" order="5">
+        <viewModelRef id="EntityDocumentLinkVm" order="1" type="documents" />
+      </group>
+      <group id="BvdBankFocus" action="show" actionRule="IsBvdEntity" order="6" />
+      <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="7" />
+      <audit userId="admin" time="20200428T161223" />
+    </viewModel>
+    <viewModel id="ArcPpiViewModel" primaryModel="ArcPpiDomainModel" colSpan="1" description="ARC PPI View Model" resourceModuleId="Tenant">
+      <group id="Default" order="1">
+        <attribute id="Profile" modelId="ArcPpiDomainModel" modelFieldId="Profile" controlType="singleselect" order="1">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="PpiId" hidden="true" modelId="ArcPpiDomainModel" modelFieldId="PpiId" controlType="text" order="2" />
+        <attribute id="EntityId" hidden="true" modelId="ArcPpiDomainModel" modelFieldId="EntityId" controlType="text" order="3" />
+        <attribute id="GprPercent" modelId="ArcPpiDomainModel" modelFieldId="GprPercent" controlType="singleselect" order="4">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="MerPercent" modelId="ArcPpiDomainModel" modelFieldId="MerPercent" controlType="singleselect" order="5">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="MerWeight" modelId="ArcPpiDomainModel" modelFieldId="MerWeight" controlType="singleselect" order="6">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="GprWeight" modelId="ArcPpiDomainModel" modelFieldId="GprWeight" controlType="singleselect" order="7">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="TotalPpi" readonly="true" modelId="ArcPpiDomainModel" modelFieldId="TotalPpi" controlType="text" decimals="2" order="8" />
+      </group>
+      <audit userId="admin" time="20200429T063919" />
+    </viewModel>
+  </viewModels>
+  <references>
+    <ref id="ArcPpiEdf" displayFormat="" modelRefId="ArcPpiEdf" type="ARCPPIEDF" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" format="" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200428T161855" />
+    </ref>
+    <ref id="ArcPpiProfile" displayFormat="" modelRefId="ArcPpiProfile" type="ARCPPIPROFILE" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" format="" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200428T161920" />
+    </ref>
+    <ref id="ArcPpiMerWeight" displayFormat="" modelRefId="ArcPpiMerWeight" type="ARCPPIMERWEIGHT" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" format="" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200428T162029" />
+    </ref>
+    <ref id="ArcPpiGprWeight" displayFormat="" modelRefId="ArcPpiGprWeight" type="ARCPPIGPRWEIGHT" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" format="" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200428T162311" />
+    </ref>
+    <ref id="ArcPpiGprPercent" displayFormat="" modelRefId="ArcPpiGprPercent" type="ARCPPIGPRPERCENT" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" format="" />
+        </projection>
+        <sortOrders>
+          <sortOrder modelFieldId="Pecent" direction="asc" />
+        </sortOrders>
+      </query>
+      <audit userId="admin" time="20200428T162407" />
+    </ref>
+    <ref id="ArcPpiMerPercent" displayFormat="" modelRefId="ArcPpiMerPercent" type="ARCPPIMERPERCENT" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" format="" />
+        </projection>
+        <sortOrders>
+          <sortOrder modelFieldId="Percent" direction="asc" />
+        </sortOrders>
+      </query>
+      <audit userId="admin" time="20200428T162454" />
+    </ref>
+  </references>
 </metadata>

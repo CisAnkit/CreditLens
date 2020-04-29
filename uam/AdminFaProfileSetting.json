@@ -1,0 +1,30 @@
+[
+  {
+    "AdminFaProfileSettingId": "9b0ff841-f052-4658-9715-5e3e4ca21f80",
+    "AdminProfileSettingId": "dd4e4bf1-067f-4c05-a570-e84ba4e9030e",
+    "BatchFinancialAnalysis": true,
+    "ManageGlobalDivisions": true,
+    "ManageModelAddins": true,
+    "ManageRequiredFields": true,
+    "ManageRollingStmtCreateSetting": true,
+    "ModifyCurrencySettings": true,
+    "ModifyHiddenStmtBehavior": true,
+    "ModifyOrganizationMacros": true,
+    "OrganizationInfo": true,
+    "Inapplicable_": [],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "AdminFaProfileSetting",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]

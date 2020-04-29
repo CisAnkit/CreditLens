@@ -1,0 +1,26 @@
+[
+  {
+    "EntitySystemSettingId": "ed00b101-2a1b-4b13-8f38-086c78640381",
+    "MaxIndustryCode": null,
+    "SystemSettingId": "14700269-cb8b-462e-ae1d-16816ffa19f7",
+    "NoUniquenessFailureOverride": null,
+    "Inapplicable_": [
+      "MaxIndustryCode",
+      "NoUniquenessFailureOverride"
+    ],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "t_": "EntitySystemSetting",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]
