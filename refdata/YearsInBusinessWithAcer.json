@@ -1,0 +1,80 @@
+[
+  {
+    "Type": "YEARSINBUSINESSWITHACER",
+    "ValueInt": 1162473285,
+    "Value": "New buyer",
+    "Score": 0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:39:05.468471Z",
+    "t_": "YearsInBusinessWithAcer",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "YEARSINBUSINESSWITHACER",
+    "ValueInt": 1479412746,
+    "Value": "Less than 1 year",
+    "Score": 1,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:39:05.48313Z",
+    "t_": "YearsInBusinessWithAcer",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "YEARSINBUSINESSWITHACER",
+    "ValueInt": 610451451,
+    "Value": "Over 1 year but less than 2 years",
+    "Score": 2,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:39:05.49093Z",
+    "t_": "YearsInBusinessWithAcer",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "YEARSINBUSINESSWITHACER",
+    "ValueInt": 1615091169,
+    "Value": "Over 2 year but less than 3 years",
+    "Score": 3,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:39:05.498739Z",
+    "t_": "YearsInBusinessWithAcer",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "YEARSINBUSINESSWITHACER",
+    "ValueInt": 2103980960,
+    "Value": "Over 3 year but less than 5 years",
+    "Score": 4,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:39:05.506552Z",
+    "t_": "YearsInBusinessWithAcer",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "YEARSINBUSINESSWITHACER",
+    "ValueInt": 668668019,
+    "Value": "Over 5 years",
+    "Score": 5,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:39:05.514362Z",
+    "t_": "YearsInBusinessWithAcer",
+    "ContextUserId_": "admin"
+  }
+]

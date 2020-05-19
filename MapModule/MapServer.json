@@ -102,5 +102,19 @@
     "CreatedDate_": "2020-04-24T03:05:43.475546Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
+  },
+  {
+    "Id": "fc7c3977-c47d-46e0-90b3-a9fde0b00d24",
+    "Engine": "RLang",
+    "Name": "ArcRiskGrading",
+    "ConnectionString": "https://localhost:8060/Calculate",
+    "Active": true,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-18T07:26:10.248196Z",
+    "t_": "MapServer",
+    "ContextUserId_": "admin"
   }
 ]

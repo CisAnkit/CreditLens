@@ -1,0 +1,47 @@
+[
+  {
+    "ModelId": "ArcRiskGrading",
+    "Trigger": "OnWillCreate",
+    "ModuleId": "Tenant",
+    "Rules": [
+      "ArcRiskGradingBusinessRule"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-12T15:35:39.740255Z",
+    "t_": "RuleExecution",
+    "ContextUserId_": "admin"
+  },
+  {
+    "ModelId": "ArcRiskGradingDomainModel",
+    "Trigger": "OnWillCreate",
+    "ModuleId": "Tenant",
+    "Rules": [
+      "ArcRiskGrading"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-18T06:37:29.36883Z",
+    "t_": "RuleExecution",
+    "ContextUserId_": "admin"
+  },
+  {
+    "ModelId": "ArcRiskGradingDomainModel",
+    "Trigger": "OnWillUpdate",
+    "ModuleId": "Tenant",
+    "Rules": [
+      "ArcRiskGrading"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-18T06:37:43.331731Z",
+    "t_": "RuleExecution",
+    "ContextUserId_": "admin"
+  }
+]
