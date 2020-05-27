@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="2">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="4">
     <loadAfter moduleRefId="Core" major="3" minor="10" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="1" minor="11" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="6" patch="0" />
@@ -129,6 +129,32 @@
       <attribute id="Value" dataType="decimal" />
       <audit userId="admin" time="20200518T140519" />
     </model>
+    <model id="ArcRiskCaps" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Country" dataType="string" refId="Country" />
+      <attribute id="MerCap" dataType="decimal" />
+      <attribute id="GprCap" dataType="decimal" />
+      <audit userId="admin" time="20200520T115139" />
+    </model>
+    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Country" dataType="string" refId="Country" />
+      <attribute id="RegionOrSubRegion" dataType="string" />
+      <audit userId="admin" time="20200521T032308" />
+    </model>
+    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="RegionSubRegion" dataType="string" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="PeerIndustry" dataType="string" />
+      <audit userId="admin" time="20200521T124357" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
       <attribute id="CashConversionCycle" dataType="integer" />
@@ -145,18 +171,21 @@
       <attribute id="Financials" dataType="string" refId="SoftFactorFinancials" />
       <attribute id="GeopoliticalRiskCap" dataType="decimal" decimals="2" />
       <attribute id="GeopoliticalRiskCapAdjPct" dataType="integer" refId="GeopoliticalRiskCapAdjustmentPercentage" />
+      <attribute id="GeopoliticalRiskCapWeight" dataType="long" refId="GeopoliticalRiskCapWeight" />
       <attribute id="HardFactorsScore" dataType="integer" />
       <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
       <attribute id="InterestCover" dataType="decimal" decimals="2" />
       <attribute id="InventoryToWc" dataType="integer" />
       <attribute id="MacroeconomicRiskCap" dataType="decimal" decimals="2" />
       <attribute id="MacroeconomicRiskCapAdjPct" dataType="integer" refId="MacroeconomicRiskCapAdjustmentPercentage" />
+      <attribute id="MacroeconomicRiskCapWeight" dataType="long" refId="MacroeconomicRiskCapWeight" />
       <attribute id="NetDebtToEbit" dataType="decimal" decimals="2" />
       <attribute id="NetOperatingProfitPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="NetProfitPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="PeerComparisonScore" dataType="integer" />
       <attribute id="PpiPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="PpiScore" dataType="integer" />
+      <attribute id="PpiScoringMap" dataType="string" refId="PpiScoringMap" />
       <attribute id="QuickRatio" dataType="decimal" decimals="2" />
       <attribute id="ReturnOnAssetsPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="RiskCalcEdf" dataType="decimal" format="percent" decimals="2" />
@@ -166,10 +195,10 @@
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <attribute id="MacroeconomicRiskCapWeight" dataType="long" refId="MacroeconomicRiskCapWeight" />
-      <attribute id="GeopoliticalRiskCapWeight" dataType="long" refId="GeopoliticalRiskCapWeight" />
-      <attribute id="PpiScoringMap" dataType="string" refId="PpiScoringMap" />
-      <audit userId="admin" time="20200518T144434" />
+      <attribute id="ArcRiskCaps" dataType="string" refId="ArcRiskCaps" />
+      <attribute id="ArcRegions" dataType="string" refId="ArcRegions" attributeExpression="Regenerate domain to show code editor" />
+      <attribute id="ArcPeerIndustry" dataType="long" refId="ArcPeerIndustry" />
+      <audit userId="admin" time="20200522T063256" />
     </model>
   </models>
   <viewModels>
@@ -381,6 +410,33 @@
         </projection>
       </query>
       <audit userId="admin" time="20200518T140522" />
+    </ref>
+    <ref id="ArcRiskCaps" modelRefId="ArcRiskCaps" type="ARCRISKCAPS">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Country,MerCap,GprCap" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200520T115142" />
+    </ref>
+    <ref id="ArcRegions" modelRefId="ArcRegions" type="ARCREGIONS">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Country,RegionOrSubRegion" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200521T032311" />
+    </ref>
+    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,IndustryChannel,PeerIndustry" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200521T124400" />
     </ref>
   </references>
 </metadata>

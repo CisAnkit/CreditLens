@@ -119,6 +119,16 @@ Tenant.attr.model.ArcRiskGrading.viewModel.ArcRiskOutputViewModel.PpiPercentage=
 Tenant.attr.model.ArcRiskGrading.viewModel.ArcRiskOutputViewModel.PpiScore=PPI Score
 Tenant.attr.model.ArcRiskGrading.viewModel.ArcRiskOutputViewModel.SoftFactorsScore=Soft Factors Score
 Tenant.attr.model.ArcRiskGrading.YearsInBusinessWithAcer.description=<div>
+Tenant.attr.model.ArcRiskGradingDomainModel.ArcPeerIndustry.description=<div>
+<p><span style="font-size:12pt"><span style="font-family:Arial"><span style="font-size:12.0000pt"><span style="font-family:Arial">&lsquo;Peer Industry&rsquo; mapping </span></span></span></span></p>
+</div>
+
+Tenant.attr.model.ArcRiskGradingDomainModel.ArcRegions.description=<div>
+<div style="list-style-type:none"><span style="font-size:10.0pt"><span style="font-family:Arial"><span style="font-family:Arial">&lsquo;Region / Sub region&rsquo; mapping </span></span></span></div>
+</div>
+
+Tenant.attr.model.ArcRiskGradingDomainModel.ArcRiskCaps.description=<div><span style="font-size:12pt"><span style="font-family:Arial"><span style="font-size:12.0000pt"><span style="font-family:Arial">&lsquo;Macroeconomic risk cap&rsquo; and &lsquo;Geopolitical risk cap&rsquo; mappings</span></span></span></span></div>
+
 Tenant.attr.model.ArcRiskGradingDomainModel.BorrowedFundsToEffectiveTnw.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.CashConversionCycle.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.CashRatio.description=<div>
@@ -135,7 +145,6 @@ Tenant.attr.model.ArcRiskGradingDomainModel.Financials.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.GeopoliticalRiskCap.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.GeopoliticalRiskCapAdjPct.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.GeopoliticalRiskCapWeight.description=<div>Geopolitical Risk Cap Weight</div>
-
 Tenant.attr.model.ArcRiskGradingDomainModel.HardFactorsScore.description=<div><span><span contenteditable="false" style="border-top:1px dashed #ff0000; color:#ffffff; display:block; font-size:0px; height:0px; left:0px; line-height:0px; margin:0px; padding:0px; position:absolute; right:0px; top:39.9922px; user-select:none; z-index:9999"><span style="border-color:transparent; border-right-color:#ff0000; border-style:solid; border-width:8px 8px 8px 0; color:#ffffff; display:block; font-size:0px; height:0px; line-height:0px; margin:0px; padding:0px; position:absolute; right:0px; top:-8px; width:0px; z-index:9999">&nbsp;</span><span style="border-color:transparent; border-left-color:#ff0000; border-style:solid; border-width:8px 0 8px 8px; color:#ffffff; display:block; font-size:0px; height:0px; left:0px; line-height:0px; margin:0px; padding:0px; position:absolute; top:-8px; width:0px; z-index:9999">&nbsp;</span><span contenteditable="false" style="background:url(https://acer-euro-cfg.creditlens.moodysanalytics.com/app/lib/ckeditor/plugins/magicline/images/icon.png?t=HBDD) center no-repeat #ff0000; border-radius:2px; color:#ffffff; cursor:pointer; display:block; font-size:0px; height:17px; line-height:0px; margin:0px; padding:0px; position:absolute; right:17px; top:-8px; width:17px; z-index:9999" title="Insert paragraph here">&crarr;</span></span></span>
 Tenant.attr.model.ArcRiskGradingDomainModel.IndustryChannel.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.InterestCover.description=<div>
@@ -143,7 +152,6 @@ Tenant.attr.model.ArcRiskGradingDomainModel.InventoryToWc.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.MacroeconomicRiskCap.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.MacroeconomicRiskCapAdjPct.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.MacroeconomicRiskCapWeight.description=<div>Macroeconomic Risk Cap Weight</div>
-
 Tenant.attr.model.ArcRiskGradingDomainModel.NetDebtToEbit.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.NetOperatingProfitPercentage.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.NetProfitPercentage.description=<div>
@@ -151,7 +159,6 @@ Tenant.attr.model.ArcRiskGradingDomainModel.PeerComparisonScore.description=<div
 Tenant.attr.model.ArcRiskGradingDomainModel.PpiPercentage.description=<div>PPI %</div>
 Tenant.attr.model.ArcRiskGradingDomainModel.PpiScore.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.PpiScoringMap.description=<div>PPI Scoring Map</div>
-
 Tenant.attr.model.ArcRiskGradingDomainModel.QuickRatio.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.ReturnOnAssetsPercentage.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.RiskCalcEdf.description=<div>
@@ -222,6 +229,10 @@ Tenant.attr.refData.ArcFinancials.Score.description=Score
 Tenant.attr.refData.ArcFinancials.Value.description=Value
 Tenant.attr.refData.ArcIndustryChannel.Key.description=Key
 Tenant.attr.refData.ArcIndustryChannel.Value.description=Value
+Tenant.attr.refData.ArcPeerIndustry.IndustryChannel.description=Industry Channel
+Tenant.attr.refData.ArcPeerIndustry.Key.description=Key
+Tenant.attr.refData.ArcPeerIndustry.PeerIndustry.description=Peer Industry
+Tenant.attr.refData.ArcPeerIndustry.RegionSubRegion.description=Region/SubRegion
 Tenant.attr.refData.ArcPpiEdf.InPercentage.description=EDF in percentage
 Tenant.attr.refData.ArcPpiEdf.Key.description=Key
 Tenant.attr.refData.ArcPpiEdf.Value.description=EDF Value
@@ -240,6 +251,13 @@ Tenant.attr.refData.ArcPpiMerWeight.Key.description=Key
 Tenant.attr.refData.ArcPpiMerWeight.Value.description=Value
 Tenant.attr.refData.ArcPpiProfile.Key.description=Key
 Tenant.attr.refData.ArcPpiProfile.Value.description=Value
+Tenant.attr.refData.ArcRegions.Country.description=Country
+Tenant.attr.refData.ArcRegions.Key.description=Key
+Tenant.attr.refData.ArcRegions.RegionOrSubRegion.description=Region/Sub-Region
+Tenant.attr.refData.ArcRiskCaps.Country.description=Country
+Tenant.attr.refData.ArcRiskCaps.GprCap.description=Geopolitical risk cap
+Tenant.attr.refData.ArcRiskCaps.Key.description=Key
+Tenant.attr.refData.ArcRiskCaps.MerCap.description=Macroeconomic risk cap
 Tenant.attr.refData.ArcStrategicSalesImportance.Key.description=Key
 Tenant.attr.refData.ArcStrategicSalesImportance.Score.description=Score
 Tenant.attr.refData.ArcStrategicSalesImportance.Value.description=Value
@@ -294,12 +312,15 @@ Tenant.refData.ArcCorporateStructure.description=ARC RISK Grading - Soft Factor 
 Tenant.refData.ArcDaysBeyondDueDate.description=Days beyond due date
 Tenant.refData.ArcFinancials.description=ARC Risk Grading - softFactor - Financials
 Tenant.refData.ArcIndustryChannel.description=Industry Channel
+Tenant.refData.ArcPeerIndustry.description=Peer Industry  mapping
 Tenant.refData.ArcPpiEdf.description=ARC PPI EDF
 Tenant.refData.ArcPpiGprPercent.description=ARC PPI GPR Percent
 Tenant.refData.ArcPpiGprWeight.description=ARC PPI GPR Weight
 Tenant.refData.ArcPpiMerPercent.description=ARC PPI MER Percent
 Tenant.refData.ArcPpiMerWeight.description=ARC PPI MER Weight
 Tenant.refData.ArcPpiProfile.description=cal
+Tenant.refData.ArcRegions.description=‘Region / Sub region’ mapping
+Tenant.refData.ArcRiskCaps.description=‘Macroeconomic risk cap’ and ‘Geopolitical risk cap’ mappings
 Tenant.refData.ArcStrategicSalesImportance.description=ARC Risk Grading Strategic Sales Importance
 Tenant.refData.ArcYearsInBusinessWithAcer.description=ARC Risk Grading -SoftFactor -Years in business with Acer
 Tenant.refData.CorporateStructure.description=Corporate structure
