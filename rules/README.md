@@ -1,1 +1,0 @@
-# CreditLens extension - rule definitions go here. 

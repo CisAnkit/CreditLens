@@ -1,1 +1,0 @@
-# CreditLens behaviour extension, VS solution and project. 

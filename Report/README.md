@@ -1,1 +1,0 @@
-# CreditLens extension - json and rept files for each report. 

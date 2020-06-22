@@ -1,1 +1,0 @@
-# CreditLens extension - rule trigger definitions go here. 

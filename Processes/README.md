@@ -1,1 +1,0 @@
-# CreditLens extension - bpmn/cmmn and svg files for each workflow. 
