@@ -1,0 +1,41 @@
+[
+  {
+    "Type": "SOFTFACTORFINANCIALS",
+    "ValueInt": 105195568,
+    "Value": "Interim / unaudited accounts",
+    "Score": 1,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:50:10.645146Z",
+    "t_": "SoftFactorFinancials",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "SOFTFACTORFINANCIALS",
+    "ValueInt": 794464300,
+    "Value": "Audited financials",
+    "Score": 2,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:50:10.652952Z",
+    "t_": "SoftFactorFinancials",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "SOFTFACTORFINANCIALS",
+    "ValueInt": 986296531,
+    "Value": "No financials provided by the buyer",
+    "Score": 0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-16T11:50:10.636347Z",
+    "t_": "SoftFactorFinancials",
+    "ContextUserId_": "admin"
+  }
+]
