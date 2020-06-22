@@ -1,0 +1,23 @@
+[
+  {
+    "Type": "MAPMODEL",
+    "IdInt": 1029880147,
+    "Id": "ArcRiskGrading",
+    "Name": "ARC Risk Grading",
+    "Active": true,
+    "Engine": "RLang",
+    "InputViewModel": "ArcRiskGradingInputViewModel",
+    "OutputViewModel": "ArcRiskOutputViewModel",
+    "PreferredServer": null,
+    "MapModelType": "PD",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-05-12T15:45:46.155857Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-05-18T07:28:14.596937Z",
+    "t_": "MapModel",
+    "ContextUserId_": "admin"
+  }
+]

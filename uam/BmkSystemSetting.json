@@ -1,0 +1,37 @@
+[
+  {
+    "BmkSystemSettingId": "1dce74f5-a08d-49ba-8ac0-73e7614a5b85",
+    "BmkCalcBatchModeOnlyEnabled": null,
+    "BmkEventBasedCalcDisabled": null,
+    "RefreshPeerDatabaseOnCalc": null,
+    "RefreshPeerDatabaseOnQueryChange": null,
+    "QueryBuilderDebugEnabled": null,
+    "QueryBuilderMaxNestDepth": null,
+    "PeerDataDecimalPosition": null,
+    "SystemSettingId": "14700269-cb8b-462e-ae1d-16816ffa19f7",
+    "Inapplicable_": [
+      "BmkCalcBatchModeOnlyEnabled",
+      "BmkEventBasedCalcDisabled",
+      "RefreshPeerDatabaseOnCalc",
+      "RefreshPeerDatabaseOnQueryChange",
+      "QueryBuilderDebugEnabled",
+      "QueryBuilderMaxNestDepth",
+      "PeerDataDecimalPosition"
+    ],
+    "Associations_": [],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2019-05-01T12:00:00Z",
+    "t_": "BmkSystemSetting",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]

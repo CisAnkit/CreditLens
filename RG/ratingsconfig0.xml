@@ -1,0 +1,79 @@
+<RatingsConfig>
+  <xs:schema id="RatingsConfig" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="RatingsConfig" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="RatingModel">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" type="xs:string" />
+                <xs:element name="Active" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Module">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" type="xs:string" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Assembly" type="xs:string" minOccurs="0" />
+                <xs:element name="Class" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="NumTables" type="xs:string" minOccurs="0" />
+                <xs:element name="Modules" type="xs:string" minOccurs="0" />
+                <xs:element name="UsesModules" type="xs:string" minOccurs="0" />
+                <xs:element name="ListenModelEvents" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RatingsSetting">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="VersionInfo">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Val" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="AuditTrail">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="LastEditedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="LastEditedDate" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <RatingsSetting>
+    <Name>RunAllValidityConditions</Name>
+    <Value>true</Value>
+  </RatingsSetting>
+  <RatingsSetting>
+    <Name>RunAllCommitConditions</Name>
+    <Value>true</Value>
+  </RatingsSetting>
+  <RatingsSetting>
+    <Name>NumRatingsStatements</Name>
+    <Value>5</Value>
+  </RatingsSetting>
+  <RatingsSetting>
+    <Name>AllowProjInRatings</Name>
+    <Value>true</Value>
+  </RatingsSetting>
+  <VersionInfo>
+    <Val>5.0.3.0</Val>
+  </VersionInfo>
+  <AuditTrail>
+    <LastEditedBy>admin</LastEditedBy>
+    <LastEditedDate>04/28/2020 13:55:56</LastEditedDate>
+  </AuditTrail>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>vri7AcBQXNoJcbBCm8zBAKNQb07uMW9wltJy822g92Y=</DigestValue></Reference></SignedInfo><SignatureValue>vbJj/ho2pOFrID8N+obiAUEpYbnQx30xs3F2RHKrjWpKu6MiV13xzVG97YynMzcDa9TmccX71W/wT2/ytLo6xMURj09hIL9Q1/Xv46NSeKzsZa62mkPmw6C4m4b+MVwuCHgh+wl6kTnsELcpn2PjfZrwH27deVNhxt4gGzU2QnM=</SignatureValue></Signature></RatingsConfig>
