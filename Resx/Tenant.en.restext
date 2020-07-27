@@ -1,6 +1,7 @@
 <div style="list-style-type:none"><span style="font-size:10.0pt"><span style="font-family:Arial"><span style="font-family:Arial">&lsquo;Region / Sub region&rsquo; mapping </span></span></span></div>
 <div><span style="font-size:11.0000pt"><span style="font-family:Arial"><span style="color:#000000">Geopolitical risk cap Weight</span></span></span></div>
 <p class="MsoNormal"><span style="font-family:Arial; font-size:10.0000pt; mso-fareast-font-family:'Times New Roman'; mso-spacerun:'yes'">Peer Comparison score</span></p>
+<p style="text-align:justify"><span style="font-size:10.5pt"><span style="font-family:&quot;Times New Roman&quot;"><strong><span style="font-size:10.0000pt"><span style="background-color:#ffffff"><span style="font-family:SimSun"><span style="color:#333333"><strong>Arc Peer Quartiles</strong></span></span></span></span></strong></span></span></p>
 <p><span style="font-size:12pt"><span style="font-family:Arial"><span style="font-size:12.0000pt"><span style="font-family:Arial">&lsquo;Peer Industry&rsquo; mapping </span></span></span></span></p>
 Entity.group.viewModel.EntityEdit.Ppi=ARC Risk Grading
 Tenant.association.model.ArcPpiDomainModel.Entity.description=ARC PPI -Entity Association
@@ -121,10 +122,7 @@ Tenant.attr.model.ArcRiskGrading.viewModel.ArcRiskOutputViewModel.PpiScore=PPI S
 Tenant.attr.model.ArcRiskGrading.viewModel.ArcRiskOutputViewModel.SoftFactorsScore=Soft Factors Score
 Tenant.attr.model.ArcRiskGrading.YearsInBusinessWithAcer.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.ArcPeerIndustry.description=<div>
-Tenant.attr.model.ArcRiskGradingDomainModel.ArcPeerQuartiles.description=<div>
-<p style="text-align:justify"><span style="font-size:10.5pt"><span style="font-family:&quot;Times New Roman&quot;"><strong><span style="font-size:10.0000pt"><span style="background-color:#ffffff"><span style="font-family:SimSun"><span style="color:#333333"><strong>Arc Peer Quartiles</strong></span></span></span></span></strong></span></span></p>
-</div>
-
+Tenant.attr.model.ArcRiskGradingDomainModel.ArcPeerQuartiles.description=<div><span style="font-size:11pt"><span style="font-family:Arial"><span style="font-size:11.0000pt"><span style="font-family:Arial">ARC Peer Quartiles</span></span></span></span></div>
 Tenant.attr.model.ArcRiskGradingDomainModel.ArcRegions.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.ArcRiskCaps.description=<div><span style="font-size:12pt"><span style="font-family:Arial"><span style="font-size:12.0000pt"><span style="font-family:Arial">&lsquo;Macroeconomic risk cap&rsquo; and &lsquo;Geopolitical risk cap&rsquo; mappings</span></span></span></span></div>
 Tenant.attr.model.ArcRiskGradingDomainModel.BorrowedFundsToEffectiveTnw.description=<div>
@@ -165,15 +163,18 @@ Tenant.attr.model.ArcRiskGradingDomainModel.ShortTermDebtToTotalDebt.description
 Tenant.attr.model.ArcRiskGradingDomainModel.SoftFactorsScore.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.StrategicSalesImportance.description=<div>
 Tenant.attr.model.ArcRiskGradingDomainModel.Token.description=<div>Token</div>
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.ArcPeerIndustry=Peer Industry
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.ArcRegions=Peer region
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.BorrowedFundsToEffectiveTnw=Borrowed funds / Effective TNW
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.CashConversionCycle=Cash Conversion Cycle
-Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.CashRatio=Cash Ratio
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.CashRatio=Cash ratio
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.CorporateStructure=Corporate structure
-Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.CurrentRatio=Current Ratio
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.CurrentRatio=Current ratio
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.DaysBeyondDueDate=Days beyond due date
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.DaysInventoryOutstanding=Days Inventory Outstanding
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.DaysPayableOutstanding=Days Payable Outstanding
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.DaysSalesOutstanding=Days Sales Outstanding
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.DebtToAssetsRatio=Debt / Assets ratio
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.DebtToEquityRatio=Debt / Equity ratio
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.DebtToTnw=Debt / TWN
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.Financials=Financials
@@ -183,15 +184,16 @@ Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewMod
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.InventoryToWc=Inventory / WC
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.MacroeconomicRiskCap=Macroeconomic risk cap
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.NetDebtToEbit=Net Debt / OI (EBIT)
-Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.NetOperatingProfitPercentage=Net Operating Profit %
-Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.NetProfitPercentage=Ne tProfit %
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.NetOperatingProfitPercentage=Net operating profit %
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.NetProfitPercentage=Net profit %
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.PeerComparisonScore=Peer Comparison score
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.PpiPercentage=PPI %
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.PpiScore=PPI score
-Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.QuickRatio=Quick Ratio
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.QuickRatio=Quick ratio
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.ReturnOnAssetsPercentage=Return on assets %
-Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.RiskCalcEdf=RiskCalc Edf
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.RiskCalcEdf=RiskCalc EDF
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.SalesGrowth=Sales growth
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.ShortTermDebtToTotalDebt=Short term debt / Total debt
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.SoftFactorsScore=Soft Factors Score
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.StrategicSalesImportance=Strategic sales importance
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.YearsInBusinessWithAcer=Years in business with Acer
@@ -231,10 +233,11 @@ Tenant.attr.refData.ArcPeerIndustry.IndustryChannel.description=Industry Channel
 Tenant.attr.refData.ArcPeerIndustry.Key.description=Key
 Tenant.attr.refData.ArcPeerIndustry.PeerIndustry.description=Peer Industry
 Tenant.attr.refData.ArcPeerIndustry.RegionSubRegion.description=Region/Sub Region
-Tenant.attr.refData.ArcPeerQuartiles.Industry.description=Indusrty
+Tenant.attr.refData.ArcPeerQuartiles.Industry.description=Industry
 Tenant.attr.refData.ArcPeerQuartiles.Key.description=Key
-Tenant.attr.refData.ArcPeerQuartiles.Quartile1.description=1st quartile
+Tenant.attr.refData.ArcPeerQuartiles.Quartile1.description=1st Quartile
 Tenant.attr.refData.ArcPeerQuartiles.Quartile2.description=2nd Quartile
+Tenant.attr.refData.ArcPeerQuartiles.Quartile3.description=3rd Quartile
 Tenant.attr.refData.ArcPeerQuartiles.Quartiles1.description=Quartiles1
 Tenant.attr.refData.ArcPeerQuartiles.Quartiles2.description=Quartiles2
 Tenant.attr.refData.ArcPeerQuartiles.Quartiles3.description=Quartiles3
@@ -242,7 +245,7 @@ Tenant.attr.refData.ArcPeerQuartiles.Quratile3.description=Quratile3
 Tenant.attr.refData.ArcPeerQuartiles.Ratio.description=Ratio
 Tenant.attr.refData.ArcPeerQuartiles.Ratios.description=Ratio
 Tenant.attr.refData.ArcPeerQuartiles.Region.description=region
-Tenant.attr.refData.ArcPeerQuartiles.RegionSubRegion.description=Region /Sub Region
+Tenant.attr.refData.ArcPeerQuartiles.RegionSubRegion.description=Region/SubRegion
 Tenant.attr.refData.ArcPeerQuartiles.Year.description=Year
 Tenant.attr.refData.ArcPpiEdf.InPercentage.description=EDF in percentage
 Tenant.attr.refData.ArcPpiEdf.Key.description=Key
