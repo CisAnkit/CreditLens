@@ -1,99 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.21022</ProductVersion>
-    <ApplicationIcon />
-    <AssemblyKeyContainerName />
-    <AssemblyOriginatorKeyFile />
-    <DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <StartupObject />
-    <FileUpgradeFlags />
-    <UpgradeBackupLocation />
     <TargetFramework>net48</TargetFramework>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <AssemblyTitle>IFT</AssemblyTitle>
     <Company>Moody's Analytics</Company>
     <Product>RiskOrigins</Product>
     <Copyright>Copyright © Moody's Analytics 2016</Copyright>
-    <Version>6.5.8.0</Version>
     <AssemblyVersion>6.5.8.0</AssemblyVersion>
     <FileVersion>6.5.8.0</FileVersion>
-    <FileAlignment>4096</FileAlignment>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <ConfigurationOverrideFile />
-    <BaseAddress>285212672</BaseAddress>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <NoWarn />
-    <NoStdLib>false</NoStdLib>
-    <DocumentationFile />
-    <PreBuildEvent />
-    <PostBuildEvent />
-    <PreBuildEvent />
-    <PostBuildEvent />
-    <PreBuildEvent />
-    <PostBuildEvent />
+	<GenerateFinancialTemplateSource>True</GenerateFinancialTemplateSource>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<TenantDir>$(SolutionDir)..\</TenantDir>    
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
-  </PropertyGroup>
-  <PropertyGroup>
-    <PreBuildEvent />
-    <PostBuildEvent />
-  </PropertyGroup>
+  </PropertyGroup>  
   <ItemGroup>
-    <PackageReference Include="Moodys.ERS.CreditLens.Compiler" Version="3.1.0" />
-    <PackageReference Include="Moodys.ERS.RO.Core" Version="4.0.0-prerelease" />
-    <PackageReference Include="Moodys.ERS.RO.FinancialAnalysis.Reports" Version="2.6.0" />
+    <PackageReference Include="Moodys.ERS.CreditLens.Compiler" Version="[2.7.0,)" />
+    <PackageReference Include="Moodys.ERS.RO.Core" Version="4.0.0-prerelease">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Moodys.ERS.RO.FinancialAnalysis.Reports" Version="[2.6.0,)">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Strings.es-419.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.es.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.fr-ca.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.fr-fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.pt-BR.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.ru-RU.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.th.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Strings.zh-Hans.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
+    <None Include="ACERIFT.tpl" />
+  </ItemGroup>  
 </Project>
