@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LskYNEY1NcX4p8x0e5M0APXFelqxysHpuOqldAitv9l2RncWWQmqD6n+UfPGdG0LFHqmHdycWqa8s1VFYJgdXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZechiuM\\Documents\\GitHub\\cao-cl-ext-acerInc\\FA\\Addins\\FinancialAnalysis.Addin.Sample\\FinancialAnalysis.Addin.Sample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZechiuM\\.nuget\\packages\\moodys.ers.creditlens.compiler\\2.7.0\\moodys.ers.creditlens.compiler.2.7.0.nupkg.sha512",
+    "C:\\Users\\ZechiuM\\.nuget\\packages\\moodys.ers.ro.core\\4.0.0-prerelease\\moodys.ers.ro.core.4.0.0-prerelease.nupkg.sha512",
+    "C:\\Users\\ZechiuM\\.nuget\\packages\\moodys.ers.ro.financialanalysis.reports\\2.6.0\\moodys.ers.ro.financialanalysis.reports.2.6.0.nupkg.sha512",
+    "C:\\Users\\ZechiuM\\.nuget\\packages\\moodys.ers.ro.riskgrading\\2.7.0\\moodys.ers.ro.riskgrading.2.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UHWm4zaha2D5xVUJLkOtH7Yard4ooqs/yr1MWHTR3GtiuI3BWXSsUsetZ988DJgSJg2RJPJOlgbvpJ8pSMkq2w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZechiuM\\Documents\\GitHub\\cao-cl-ext-acerInc\\FA\\FT\\ACERIFT\\ACERIFT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZechiuM\\.nuget\\packages\\moodys.ers.creditlens.compiler\\3.1.0\\moodys.ers.creditlens.compiler.3.1.0.nupkg.sha512",
+    "C:\\Users\\ZechiuM\\.nuget\\packages\\moodys.ers.ro.core\\4.0.0-prerelease\\moodys.ers.ro.core.4.0.0-prerelease.nupkg.sha512",
+    "C:\\Users\\ZechiuM\\.nuget\\packages\\moodys.ers.ro.financialanalysis.reports\\2.6.0\\moodys.ers.ro.financialanalysis.reports.2.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
