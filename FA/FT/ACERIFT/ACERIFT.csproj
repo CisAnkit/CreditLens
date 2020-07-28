@@ -63,24 +63,9 @@
     <PostBuildEvent />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="constants2152">
-      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\Tenant\Model\constants2152.dll</HintPath>
-    </Reference>
-    <Reference Include="Engine">
-      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\FinancialAnalysis\ra\Engine.dll</HintPath>
-    </Reference>
-    <Reference Include="macros2152">
-      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\Tenant\Model\macros2152.dll</HintPath>
-    </Reference>
-    <Reference Include="MKMV.DocumentGenerator">
-      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\FinancialAnalysis\ra\MKMV.DocumentGenerator.dll</HintPath>
-    </Reference>
-    <Reference Include="MKMV.RiskAnalyst.ReportAuthoring.PrintUtility">
-      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\FinancialAnalysis\ra\MKMV.RiskAnalyst.ReportAuthoring.PrintUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="proxyMappings2152">
-      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\Tenant\Model\proxyMappings2152.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Moodys.ERS.CreditLens.Compiler" Version="3.1.0" />
+    <PackageReference Include="Moodys.ERS.RO.Core" Version="4.0.0-prerelease" />
+    <PackageReference Include="Moodys.ERS.RO.FinancialAnalysis.Reports" Version="2.6.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Strings.es-419.resx">
