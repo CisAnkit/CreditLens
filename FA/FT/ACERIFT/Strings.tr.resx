@@ -1,0 +1,1151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="curAstHdr" xml:space="preserve">
+    <value>DÖNEN VARLIKLAR</value>
+  </data>
+  <data name="nonCurAstHdr" xml:space="preserve">
+    <value>CARİ OLMAYAN VARLIKLAR</value>
+  </data>
+  <data name="netFixAssets" xml:space="preserve">
+    <value>Net Duran Varlıklar</value>
+  </data>
+  <data name="grsFixAssets" xml:space="preserve">
+    <value>Brüt Duran Varlıklar</value>
+  </data>
+  <data name="netItangibles" xml:space="preserve">
+    <value>Net Maddi Olmayan Varlıklar</value>
+  </data>
+  <data name="totNCAssts" xml:space="preserve">
+    <value>TOPLAM CARİ OLMAYAN VARLIKLAR</value>
+  </data>
+  <data name="netTrdRecv" xml:space="preserve">
+    <value>Net Ticari Alacaklar</value>
+  </data>
+  <data name="totCurrAssts" xml:space="preserve">
+    <value>TOPLAM DÖNEN VARLIKLAR</value>
+  </data>
+  <data name="totAssts" xml:space="preserve">
+    <value>TOPLAM VARLIKLAR</value>
+  </data>
+  <data name="eqtyResrvs" xml:space="preserve">
+    <value>Özkaynak ve Yedekler</value>
+  </data>
+  <data name="prmntEqty" xml:space="preserve">
+    <value>Kalıcı Özkaynak</value>
+  </data>
+  <data name="totEqtyRsrvs" xml:space="preserve">
+    <value>TOPLAM ÖZKAYNAK VE YEDEKLER</value>
+  </data>
+  <data name="ncLiabs" xml:space="preserve">
+    <value>CARİ OLMAYAN BORÇLAR</value>
+  </data>
+  <data name="totNCLiabs" xml:space="preserve">
+    <value>TOPLAM CARİ OLMAYAN BORÇLAR</value>
+  </data>
+  <data name="currLiabs" xml:space="preserve">
+    <value>KISA VADELİ BORÇLAR</value>
+  </data>
+  <data name="totCurrLiabs" xml:space="preserve">
+    <value>TOPLAM KISA VADELİ BORÇLAR</value>
+  </data>
+  <data name="totLiabs" xml:space="preserve">
+    <value>TOPLAM BORÇLAR</value>
+  </data>
+  <data name="totEqtyRsrvLiabs" xml:space="preserve">
+    <value>TOPLAM ÖZKAYNAK, YEDEKLER VE BORÇLAR</value>
+  </data>
+  <data name="msgAstToLiab" xml:space="preserve">
+    <value>VARLIKLAR; ÖZKAYNAK, YEDEKLER VE BORÇLARA EŞİT DEĞİL</value>
+  </data>
+  <data name="msgExchEnd" xml:space="preserve">
+    <value>Döviz Kuru(Dönem Sonu) girildi, ancak Döviz Kuru(Dönem Ortalaması) girilmedi</value>
+  </data>
+  <data name="msgExchAvg" xml:space="preserve">
+    <value>Döviz Kuru(Dönem Ortalaması) girildi, ancak Döviz Kuru(Dönem Sonu) girilmedi</value>
+  </data>
+  <data name="msgIncorrect" xml:space="preserve">
+    <value>RAPORLAR HATALI OLABİLİR</value>
+  </data>
+  <data name="salesRevs" xml:space="preserve">
+    <value>Satış(Gelirler)</value>
+  </data>
+  <data name="totCostSales" xml:space="preserve">
+    <value>Toplam Satış Maliyeti</value>
+  </data>
+  <data name="grssPrft" xml:space="preserve">
+    <value>Brüt Kar</value>
+  </data>
+  <data name="oprExpExclDepAmrt" xml:space="preserve">
+    <value>FAAL GİDERLERİ(AMORT VE İTFA HARİÇ)</value>
+  </data>
+  <data name="ebitda" xml:space="preserve">
+    <value>FVAİÖK</value>
+  </data>
+  <data name="ebit" xml:space="preserve">
+    <value>FVÖK</value>
+  </data>
+  <data name="netIntIncExp" xml:space="preserve">
+    <value>NET FAİZ GELİRİ(GİDERİ)</value>
+  </data>
+  <data name="netOthFinIncExp" xml:space="preserve">
+    <value>NET DİĞER FİN GELİR(GİDER)</value>
+  </data>
+  <data name="othIncExp" xml:space="preserve">
+    <value>DİĞER GELİR(GİDER)</value>
+  </data>
+  <data name="prftLossB4tax" xml:space="preserve">
+    <value>VERGİ ÖNCESİ KAR(ZARAR)</value>
+  </data>
+  <data name="totIncTax" xml:space="preserve">
+    <value>TOPLAM GELİR VERGİSİ</value>
+  </data>
+  <data name="prftLsB4ExOrdItem" xml:space="preserve">
+    <value>OLAĞANDIŞI KALEMLER ÖNCESİ KAR(ZARAR)</value>
+  </data>
+  <data name="netPrftLoss" xml:space="preserve">
+    <value>NET KAR(ZARAR)</value>
+  </data>
+  <data name="othEqRsrvIncExp" xml:space="preserve">
+    <value>DİĞER ÖZKAYNAK YEDEKLERİ GEL(GİD)</value>
+  </data>
+  <data name="totOthEqRsrv" xml:space="preserve">
+    <value>TOPLAM DİĞER ÖZKAYNAK VE YEDEKLER GEL(GİD)</value>
+  </data>
+  <data name="adjToRetPrft" xml:space="preserve">
+    <value>DAĞITILMAMIŞ KARLARDA DÜZELT</value>
+  </data>
+  <data name="totAdjRetPrftLoss" xml:space="preserve">
+    <value>TOPLAM DÜZELT DAĞITILMAMIŞ KAR(ZARAR)</value>
+  </data>
+  <data name="operAct" xml:space="preserve">
+    <value>İŞLETME FAALİYETLERİ</value>
+  </data>
+  <data name="cshFrmOperAct" xml:space="preserve">
+    <value>İŞLETME FAALİYETLERİNDEN NAKİT AKIŞLARI</value>
+  </data>
+  <data name="invstAct" xml:space="preserve">
+    <value>YATIRIM FAALİYETLERİ</value>
+  </data>
+  <data name="cfFrmInvstAct" xml:space="preserve">
+    <value>YATIRIM FAALİYETLERİNDEN NAKİT AKIŞLARI</value>
+  </data>
+  <data name="finAct" xml:space="preserve">
+    <value>FİNANSMAN FAALİYETLERİ</value>
+  </data>
+  <data name="cfFrmFinAct" xml:space="preserve">
+    <value>FİNANSAL FAALİYETLERDEN NAKİT AKIŞLARI</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>DİĞER</value>
+  </data>
+  <data name="totMoveInCash" xml:space="preserve">
+    <value>TOPLAM NAKİT HAREKETİ</value>
+  </data>
+  <data name="begPerCshEquiv" xml:space="preserve">
+    <value>DÖNEM BAŞL-NAKİT VE NAKİT BENZERİ</value>
+  </data>
+  <data name="unexpAdjCash" xml:space="preserve">
+    <value>Nakitte Açıklanmamış Düzeltme</value>
+  </data>
+  <data name="endOfPerCshEquiv" xml:space="preserve">
+    <value>DÖNEM SONU-NAKİT VE NAKİT BENZERİ</value>
+  </data>
+  <data name="reconItems" xml:space="preserve">
+    <value>Mutabakat Kalemleri:</value>
+  </data>
+  <data name="chgInNetRecv" xml:space="preserve">
+    <value>Net Ticari Alacaklarda Dğş</value>
+  </data>
+  <data name="chgIn" xml:space="preserve">
+    <value>Dğş </value>
+  </data>
+  <data name="chgOthCurOpAssts" xml:space="preserve">
+    <value>Diğer Dönen Varlıklarda Dğş</value>
+  </data>
+  <data name="chgOthNCOpAssts" xml:space="preserve">
+    <value>Diğer Cari Olm Varlıklarda Dğş</value>
+  </data>
+  <data name="chgOthCurOpLiab" xml:space="preserve">
+    <value>Diğer Cari Borçl Dğş</value>
+  </data>
+  <data name="chgOthNCOpLiab" xml:space="preserve">
+    <value>Diğer Cari Olm Borçlarında Dğş</value>
+  </data>
+  <data name="incTaxPaid" xml:space="preserve">
+    <value>Ödenen Gelir Vergileri</value>
+  </data>
+  <data name="totAdjs" xml:space="preserve">
+    <value>Toplam Düzeltmeler</value>
+  </data>
+  <data name="chgNetFixAssts" xml:space="preserve">
+    <value>Net Duran Varlıklarda Dğş</value>
+  </data>
+  <data name="chgNetIntg" xml:space="preserve">
+    <value>Net Maddi Olm Varlıklarda Dğş</value>
+  </data>
+  <data name="intPaid" xml:space="preserve">
+    <value>Ödenen Faiz</value>
+  </data>
+  <data name="divPaid" xml:space="preserve">
+    <value>Ödenen Temettüler</value>
+  </data>
+  <data name="adjDueExchRate" xml:space="preserve">
+    <value>Döviz Kuru Değişimine Bağlı Düzeltme</value>
+  </data>
+  <data name="conAdjNetPrft" xml:space="preserve">
+    <value>Net Karda Dönüştürme Düzeltmesi</value>
+  </data>
+  <data name="unexpAdjRetPrfts" xml:space="preserve">
+    <value>Dağıtılmamış Karlarda Açıklanmamış Düzelt</value>
+  </data>
+  <data name="exchRateAvg" xml:space="preserve">
+    <value>Döviz Kuru(Dönem Ortalaması)</value>
+  </data>
+  <data name="workingCap" xml:space="preserve">
+    <value>İşletme Sermayesi</value>
+  </data>
+  <data name="liquidity" xml:space="preserve">
+    <value>LİKİDİTE</value>
+  </data>
+  <data name="currRatio" xml:space="preserve">
+    <value>Cari Oran</value>
+  </data>
+  <data name="quickRatio" xml:space="preserve">
+    <value>Asit Test Oranı</value>
+  </data>
+  <data name="slsRevToWC" xml:space="preserve">
+    <value>Satış(Gelirler) / İşletme Sermayesi</value>
+  </data>
+  <data name="TNW" xml:space="preserve">
+    <value>Maddi Net Değer</value>
+  </data>
+  <data name="effTNW" xml:space="preserve">
+    <value>Efekt Maddi Net Değer</value>
+  </data>
+  <data name="dbtToNW" xml:space="preserve">
+    <value>Borç / Net Değer</value>
+  </data>
+  <data name="dbtToTNW" xml:space="preserve">
+    <value>Borç / Maddi Net Değer</value>
+  </data>
+  <data name="dbttLessSubDbtEffTNW" xml:space="preserve">
+    <value>Borç Eksi İkinci Der Borç / Efekt MND</value>
+  </data>
+  <data name="brwFundToTotLiab" xml:space="preserve">
+    <value>Ödünç Alınan Fonlar / Toplam Borç</value>
+  </data>
+  <data name="brwFundtoEffTNW" xml:space="preserve">
+    <value>Ödünç Alınan Fonlar / Efekt MND</value>
+  </data>
+  <data name="brwFundToEBITDA" xml:space="preserve">
+    <value>Ödünç Alınan Fonlar / FVAİÖK</value>
+  </data>
+  <data name="TotLiabToTotAssts" xml:space="preserve">
+    <value>Toplam Borçlar / Toplam Varlıklar</value>
+  </data>
+  <data name="offBSLevrg" xml:space="preserve">
+    <value>Bilanço Dışı Kaldıraç</value>
+  </data>
+  <data name="coverage" xml:space="preserve">
+    <value>KARŞILAMA ORANI</value>
+  </data>
+  <data name="intCovrg" xml:space="preserve">
+    <value>Faiz Karşılama Oranı</value>
+  </data>
+  <data name="earnCovrg" xml:space="preserve">
+    <value>Kazanç Karşılama Oranı</value>
+  </data>
+  <data name="cfCovrg" xml:space="preserve">
+    <value>Nakit Akışı Karşılama Oranı</value>
+  </data>
+  <data name="grssPrftMargin" xml:space="preserve">
+    <value>Brüt Kar Marjı(%)</value>
+  </data>
+  <data name="EBTIDAMargin" xml:space="preserve">
+    <value>FVAİÖK Marjı(%)</value>
+  </data>
+  <data name="PrftB4TaxMargin" xml:space="preserve">
+    <value>Vergi Öncesi Kar Marjı(%)</value>
+  </data>
+  <data name="NetPrftMarginPer" xml:space="preserve">
+    <value>Net Kar Marjı(%)</value>
+  </data>
+  <data name="netOpEBITMrg" xml:space="preserve">
+    <value>Net Faaliyet(FVÖK) Marjı(%)</value>
+  </data>
+  <data name="divdPayRate" xml:space="preserve">
+    <value>Temettü Ödeme Oranı(%)</value>
+  </data>
+  <data name="effTaxRate" xml:space="preserve">
+    <value>Efektif Vergi Oranı(%)</value>
+  </data>
+  <data name="PBTToTotAssts" xml:space="preserve">
+    <value>VÖK / Toplam Varlıklar(%)</value>
+  </data>
+  <data name="PBTToTNW" xml:space="preserve">
+    <value>VÖK / Maddi Net Değer(%)</value>
+  </data>
+  <data name="PBTToTotEqtyResrvs" xml:space="preserve">
+    <value>VÖK / Toplam Özkaynak ve Yedekler(%)</value>
+  </data>
+  <data name="ROA" xml:space="preserve">
+    <value>Varlık Getirisi(%)</value>
+  </data>
+  <data name="ROTNW" xml:space="preserve">
+    <value>Maddi Net Değer Getirisi(%)</value>
+  </data>
+  <data name="ROTotEqtyResrvs" xml:space="preserve">
+    <value>Toplam Özkaynak ve Yedekler Getirisi(%)</value>
+  </data>
+  <data name="activity" xml:space="preserve">
+    <value>FAALİYET</value>
+  </data>
+  <data name="netTrdRecvDays" xml:space="preserve">
+    <value>Net Alacak Tahsil Süresi</value>
+  </data>
+  <data name="invDays" xml:space="preserve">
+    <value>Stok Devir Süresi</value>
+  </data>
+  <data name="trdPayDays" xml:space="preserve">
+    <value>Borç Devir Süresi</value>
+  </data>
+  <data name="salesToTotAssts" xml:space="preserve">
+    <value>Satış(Gelirler) / Toplam Varlıklar</value>
+  </data>
+  <data name="salesToTNW" xml:space="preserve">
+    <value>Satış(Gelirler) / Maddi Net Değer</value>
+  </data>
+  <data name="salesToNFA" xml:space="preserve">
+    <value>Satış(Gelirler) / Net Duran Varlıklar</value>
+  </data>
+  <data name="growth" xml:space="preserve">
+    <value>BÜYÜME(%)</value>
+  </data>
+  <data name="totAsstsGrwth" xml:space="preserve">
+    <value>Toplam Varlık Büyümesi</value>
+  </data>
+  <data name="salesRevGrwth" xml:space="preserve">
+    <value>Satış(Gelirler) Büyümesi</value>
+  </data>
+  <data name="EBITDAGrwth" xml:space="preserve">
+    <value>FVAİÖK Büyümesi</value>
+  </data>
+  <data name="netOpPrftGrw" xml:space="preserve">
+    <value>Net Faaliyet Karı(FVÖK) Büyümesi</value>
+  </data>
+  <data name="netPrftGrwth" xml:space="preserve">
+    <value>Net Kar Büyümesi</value>
+  </data>
+  <data name="sustainGrowth" xml:space="preserve">
+    <value>Sürdürülebilir Büyüme</value>
+  </data>
+  <data name="exchRatePE" xml:space="preserve">
+    <value>Döviz Kuru(Dönem Sonu)</value>
+  </data>
+  <data name="ccActual" xml:space="preserve">
+    <value>Mevcut</value>
+  </data>
+  <data name="ccCovMax" xml:space="preserve">
+    <value>Taahhütname(En çok)</value>
+  </data>
+  <data name="ccCovMin" xml:space="preserve">
+    <value>Taahhütname(En az)</value>
+  </data>
+  <data name="ccdbtToTNW" xml:space="preserve">
+    <value>Borç / Maddi Değer</value>
+  </data>
+  <data name="ccResult" xml:space="preserve">
+    <value>Sonuç</value>
+  </data>
+  <data name="ccDefault" xml:space="preserve">
+    <value>TEMERRÜT</value>
+  </data>
+  <data name="ccVariance" xml:space="preserve">
+    <value>Sapma</value>
+  </data>
+  <data name="levCovrg" xml:space="preserve">
+    <value>KALDIRAÇ / KARŞILAMA</value>
+  </data>
+  <data name="capExpnd" xml:space="preserve">
+    <value>Sermaye Harcamaları</value>
+  </data>
+  <data name="profitability" xml:space="preserve">
+    <value>KARLILIK</value>
+  </data>
+  <data name="ROE" xml:space="preserve">
+    <value>Özkaynak Getirisi</value>
+  </data>
+  <data name="othRelns" xml:space="preserve">
+    <value>DİĞER İLİŞKİLER</value>
+  </data>
+  <data name="salesGrwthper" xml:space="preserve">
+    <value>Satış Büyümesi(%)</value>
+  </data>
+  <data name="subOrdDebt" xml:space="preserve">
+    <value>İkinci Derece Borç</value>
+  </data>
+  <data name="cashDivd" xml:space="preserve">
+    <value>Nakit Temettüler</value>
+  </data>
+  <data name="cashBal" xml:space="preserve">
+    <value>Nakit Bakiyesi</value>
+  </data>
+  <data name="bsTrend" xml:space="preserve">
+    <value>Trend</value>
+  </data>
+  <data name="percent" xml:space="preserve">
+    <value>% </value>
+  </data>
+  <data name="udaMsg" xml:space="preserve">
+    <value>Kullanıcı tanımlı hesaplamalar yok</value>
+  </data>
+  <data name="udaComMsg" xml:space="preserve">
+    <value>Kullanıcı tanımlı uyumluluk hesaplamaları yok</value>
+  </data>
+  <data name="begRetPrftPrevRep" xml:space="preserve">
+    <value>DÖNEM BAŞI DAĞITILMAMIŞ KARLAR, </value>
+  </data>
+  <data name="begRetPrftRest" xml:space="preserve">
+    <value>DÖN BAŞ DAĞITILMAMIŞ KARLAR, BEYAN EDİLEN</value>
+  </data>
+  <data name="begRetEarn" xml:space="preserve">
+    <value>DÖNEM BAŞI DAĞITILMAMIŞ KARLAR</value>
+  </data>
+  <data name="endRetPrfts" xml:space="preserve">
+    <value>DÖNEM SONU DAĞITILMAMIŞ KARLAR</value>
+  </data>
+  <data name="reconEqtyRsrvs" xml:space="preserve">
+    <value>Özkaynak ve Yedeklerin Mutabakatı</value>
+  </data>
+  <data name="cshStockDivd" xml:space="preserve">
+    <value>Nakit ve Hisse Senedi Temettüler</value>
+  </data>
+  <data name="adjRetPrftAbove" xml:space="preserve">
+    <value>Dağıtılmamış Karlarda Düzelt(yukarıda)</value>
+  </data>
+  <data name="incDecrIn" xml:space="preserve">
+    <value>Artma(Azalma):</value>
+  </data>
+  <data name="actEndEqtyRsrvs" xml:space="preserve">
+    <value>DÖNEM SONU FİİLİ ÖZSERMAYE VE YEDEKLER </value>
+  </data>
+  <data name="incDecrEqtyRsrvs" xml:space="preserve">
+    <value>ÖZKAYNAK VE YEDEKLER ART(AZAL)</value>
+  </data>
+  <data name="begEqtyRsrvs" xml:space="preserve">
+    <value>DÖNEM BAŞI ÖZKAYNAK VE YEDEKLER</value>
+  </data>
+  <data name="reconRetPrfts" xml:space="preserve">
+    <value>Dağıtılmamış Karlar Mutabakatı</value>
+  </data>
+  <data name="asPrevRprted" xml:space="preserve">
+    <value>ÖNCEDEN RAPORLANDIĞI GİBİ</value>
+  </data>
+  <data name="currency" xml:space="preserve">
+    <value>Para Birimi</value>
+  </data>
+  <data name="original" xml:space="preserve">
+    <value>Orijinal</value>
+  </data>
+  <data name="target" xml:space="preserve">
+    <value>Hedef</value>
+  </data>
+  <data name="chg" xml:space="preserve">
+    <value>Dğş</value>
+  </data>
+  <data name="civRevUC" xml:space="preserve">
+    <value>İNCELENDİ</value>
+  </data>
+  <data name="civRevSC" xml:space="preserve">
+    <value>İncelendi</value>
+  </data>
+  <data name="civQualUC" xml:space="preserve">
+    <value>KOŞULLU</value>
+  </data>
+  <data name="civQualSC" xml:space="preserve">
+    <value>Koşullu</value>
+  </data>
+  <data name="civUnqUC" xml:space="preserve">
+    <value>KOŞULSUZ</value>
+  </data>
+  <data name="civUnqSC" xml:space="preserve">
+    <value>Koşulsuz</value>
+  </data>
+  <data name="civDiscUC" xml:space="preserve">
+    <value>YASAL SORUMLULUK REDDİ</value>
+  </data>
+  <data name="civDiscSC" xml:space="preserve">
+    <value>Yasal Sorumluluk Reddi</value>
+  </data>
+  <data name="civTaxRetUC" xml:space="preserve">
+    <value>VERGİ İADESİ</value>
+  </data>
+  <data name="civTaxRetSC" xml:space="preserve">
+    <value>Vergi İadesi</value>
+  </data>
+  <data name="civCompUC" xml:space="preserve">
+    <value>DERLENDİ</value>
+  </data>
+  <data name="civCompSC" xml:space="preserve">
+    <value>Derlendi</value>
+  </data>
+  <data name="civAdvUC" xml:space="preserve">
+    <value>TERS</value>
+  </data>
+  <data name="civAdvSC" xml:space="preserve">
+    <value>Ters</value>
+  </data>
+  <data name="civBaseOn" xml:space="preserve">
+    <value>{0}finansal verilerine dayalı {1}{2}</value>
+  </data>
+  <data name="civUnqLC" xml:space="preserve">
+    <value>koşulsuz</value>
+  </data>
+  <data name="civCoPrdLC" xml:space="preserve">
+    <value>firma beyanı</value>
+  </data>
+  <data name="civForCompPurp" xml:space="preserve">
+    <value>Karşılaştırma amacıyla, bu şirketin analizi</value>
+  </data>
+  <data name="civDataFor" xml:space="preserve">
+    <value>sanayi kodu {0}{1} verileri</value>
+  </data>
+  <data name="civRange" xml:space="preserve">
+    <value>({0} aralığında) kullanılır.</value>
+  </data>
+  <data name="civConsists" xml:space="preserve">
+    <value>: {0}</value>
+  </data>
+  <data name="civPeer" xml:space="preserve">
+    <value>Emsal grubu</value>
+  </data>
+  <data name="civCompAn" xml:space="preserve">
+    <value>Bu şirketin analizinde</value>
+  </data>
+  <data name="civDoNotHave" xml:space="preserve">
+    <value>sanayi verileri</value>
+  </data>
+  <data name="civIndData" xml:space="preserve">
+    <value>içermiyor.</value>
+  </data>
+  <data name="civBSD" xml:space="preserve">
+    <value>BİLANÇO VERİLERİ</value>
+  </data>
+  <data name="civCustVal" xml:space="preserve">
+    <value>Müşt Değeri</value>
+  </data>
+  <data name="civPeerVal" xml:space="preserve">
+    <value>Emsal Değeri</value>
+  </data>
+  <data name="civVarSC" xml:space="preserve">
+    <value>Sapma</value>
+  </data>
+  <data name="civNetFixAsts" xml:space="preserve">
+    <value>Net Duran Varlıklar</value>
+  </data>
+  <data name="civOtherNonCurAsts" xml:space="preserve">
+    <value>Tüm Diğer Cari Olmayan Varlıklar</value>
+  </data>
+  <data name="civNetTrRec" xml:space="preserve">
+    <value>Net Ticari Alacaklar</value>
+  </data>
+  <data name="civOtherCurAsts" xml:space="preserve">
+    <value>Tüm Diğer Dönen Varlıklar</value>
+  </data>
+  <data name="civTotCurAsts" xml:space="preserve">
+    <value>Toplam Dönen Varlıklar</value>
+  </data>
+  <data name="civAllOtherLiab" xml:space="preserve">
+    <value>Tüm Diğer Borçlar</value>
+  </data>
+  <data name="civTotLiab" xml:space="preserve">
+    <value>Toplam Borçlar</value>
+  </data>
+  <data name="civOtherOperIncExp" xml:space="preserve">
+    <value>Diğer Faal Geliri ve Gideri + Amort ve İtfa(%)</value>
+  </data>
+  <data name="civEBIT" xml:space="preserve">
+    <value>Net Faaliyet Karı(FVÖK)(%) </value>
+  </data>
+  <data name="civOtherExp" xml:space="preserve">
+    <value>Tüm Diğer Masraflar(net)(%)</value>
+  </data>
+  <data name="civRatios" xml:space="preserve">
+    <value>ORANLAR</value>
+  </data>
+  <data name="civCurRatio" xml:space="preserve">
+    <value>Cari Oran</value>
+  </data>
+  <data name="civUpp" xml:space="preserve">
+    <value>Üst</value>
+  </data>
+  <data name="civMed" xml:space="preserve">
+    <value>Medyan</value>
+  </data>
+  <data name="civLow" xml:space="preserve">
+    <value>Alt</value>
+  </data>
+  <data name="civQuickRatio" xml:space="preserve">
+    <value>Asit Test Oranı</value>
+  </data>
+  <data name="civRatioCont" xml:space="preserve">
+    <value>ORANLAR(devamı)</value>
+  </data>
+  <data name="civRecToPay" xml:space="preserve">
+    <value>Alacaklar/Borçlar</value>
+  </data>
+  <data name="civNetTrRecDays" xml:space="preserve">
+    <value>Net Alacak Tahsil Süresi</value>
+  </data>
+  <data name="civTrPayDays" xml:space="preserve">
+    <value>Borç Devir Süresi</value>
+  </data>
+  <data name="civNetPLtoCPLTD" xml:space="preserve">
+    <value>(Net K ve Z + Amt ve İtf - Tmt)/UVBCK</value>
+  </data>
+  <data name="civSalesToNetFAsts" xml:space="preserve">
+    <value>Satış / Net Duran Varlıklar</value>
+  </data>
+  <data name="civSalesToTotAsts" xml:space="preserve">
+    <value>Satış / Toplam Varlıklar</value>
+  </data>
+  <data name="civ1Yr" xml:space="preserve">
+    <value>1 Yıllık EDF Kredi Ölçümü</value>
+  </data>
+  <data name="civ5Yr" xml:space="preserve">
+    <value>5 Yıllık EDF Kredi Ölçümü</value>
+  </data>
+  <data name="civVarUC" xml:space="preserve">
+    <value>SAPMA</value>
+  </data>
+  <data name="civCoPrdUC" xml:space="preserve">
+    <value>FİRMA BEYANI</value>
+  </data>
+  <data name="civProjUC" xml:space="preserve">
+    <value>PROJEKSİYON</value>
+  </data>
+  <data name="civProjLC" xml:space="preserve">
+    <value>projeksiyon</value>
+  </data>
+  <data name="civAnnual" xml:space="preserve">
+    <value>{0} mali yılı için</value>
+  </data>
+  <data name="civInterim" xml:space="preserve">
+    <value>{0} ayı {1} ile biten dönem için</value>
+  </data>
+  <data name="sDot" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="civRCLabelUC" xml:space="preserve">
+    <value>RISKCALC</value>
+  </data>
+  <data name="civRC0" xml:space="preserve">
+    <value>{3} emsal değerleri özel şirketler(Kuzey Amerika) için {3} sürüm {0} kullanılarak hesaplanmıştır.  {3} değerleri için emsal örnek boyutları yukarıdaki bilgiden farklıdir. Bu emsal grubunun {3} örnek boyutu: {1} {2}.</value>
+  </data>
+  <data name="civRC1" xml:space="preserve">
+    <value>{0} için müşteri değerleri bu raporda mevcut değil.  Müşteri {0} değerlerini görüntülemek için lütfen {1} menüsünü seçin.</value>
+  </data>
+  <data name="civSing" xml:space="preserve">
+    <value>şirket</value>
+  </data>
+  <data name="civPlur" xml:space="preserve">
+    <value>şirket</value>
+  </data>
+  <data name="civRCLabelSC" xml:space="preserve">
+    <value>RiskCalc™</value>
+  </data>
+  <data name="civMenuRC" xml:space="preserve">
+    <value>Araçlar|RiskCalc|Rapor</value>
+  </data>
+  <data name="impChgInExchRate" xml:space="preserve">
+    <value>Döviz Kuru Değişiminin Etkisi</value>
+  </data>
+  <data name="civIncData" xml:space="preserve">
+    <value>GELİR VERİLERİ</value>
+  </data>
+  <data name="civNetInt" xml:space="preserve">
+    <value>Net Maddi Olmayan Varlıklar</value>
+  </data>
+  <data name="civAllOtherNonCurAsts" xml:space="preserve">
+    <value>Tüm Diğer Cari Olmayan Varlıklar</value>
+  </data>
+  <data name="civTotNonCurAsts" xml:space="preserve">
+    <value>Toplam Cari Olmayan Varlıklar</value>
+  </data>
+  <data name="civCashEq" xml:space="preserve">
+    <value>Nakit ve Nakit Benzerleri</value>
+  </data>
+  <data name="civInvent" xml:space="preserve">
+    <value>Stoklar</value>
+  </data>
+  <data name="civAllOtherCurAsts" xml:space="preserve">
+    <value>Tüm Diğer Dönen Varlıklar</value>
+  </data>
+  <data name="civTotAsts" xml:space="preserve">
+    <value>Toplam Varlıklar</value>
+  </data>
+  <data name="civTotEqRes" xml:space="preserve">
+    <value>Toplam Özkaynak ve Yedekler</value>
+  </data>
+  <data name="civLTD" xml:space="preserve">
+    <value>Uzun Vadeli Borç</value>
+  </data>
+  <data name="civDefTaxLiab" xml:space="preserve">
+    <value>Ertelenmiş Vergi Borçları</value>
+  </data>
+  <data name="civAllOthNonCurLiab" xml:space="preserve">
+    <value>Tüm Diğer Cari Olmayan Borçlar</value>
+  </data>
+  <data name="civTotNonCurLiab" xml:space="preserve">
+    <value>Toplam Cari Olmayan Borçlar</value>
+  </data>
+  <data name="civOverdrft" xml:space="preserve">
+    <value>Kısa Vadeli Krediler</value>
+  </data>
+  <data name="civCPLTD" xml:space="preserve">
+    <value>UVB Cari Kısmı</value>
+  </data>
+  <data name="civTrade_Pay" xml:space="preserve">
+    <value>Ticari Borçlar(CK)</value>
+  </data>
+  <data name="civCurTaxPay" xml:space="preserve">
+    <value>Dönem Vergi Borcu</value>
+  </data>
+  <data name="civAllOthCurLiab" xml:space="preserve">
+    <value>Tüm Diğer Kısa Vadeli Borçlar</value>
+  </data>
+  <data name="civTotCurLiab" xml:space="preserve">
+    <value>Toplam Kısa Vadeli Borçlar</value>
+  </data>
+  <data name="civGrProf" xml:space="preserve">
+    <value>Brüt Kar(%)</value>
+  </data>
+  <data name="civOthOperIncExp" xml:space="preserve">
+    <value>Diğer Faal Geliri ve Gideri + Amort ve İtfa(%)</value>
+  </data>
+  <data name="civOthExp" xml:space="preserve">
+    <value>Tüm Diğer Masraflar(net)(%)</value>
+  </data>
+  <data name="civProfLossB4Tax" xml:space="preserve">
+    <value>Vergi Öncesi Kar(Zarar)(%)</value>
+  </data>
+  <data name="civInvDays" xml:space="preserve">
+    <value>Stok Devir Süresi</value>
+  </data>
+  <data name="civSalesToWorkCap" xml:space="preserve">
+    <value>Satış / İşletme Sermayesi</value>
+  </data>
+  <data name="civIntCov" xml:space="preserve">
+    <value>Faiz Karşılama Oranı</value>
+  </data>
+  <data name="civNetFixAstsToTNW" xml:space="preserve">
+    <value>Net Duran Varlıklar / MND</value>
+  </data>
+  <data name="civPBTtoTNW" xml:space="preserve">
+    <value>VÖK / MND %</value>
+  </data>
+  <data name="civDeprAmrtToSales" xml:space="preserve">
+    <value>İtfa ve Amort / Satış(%)</value>
+  </data>
+  <data name="civOfCompToSales" xml:space="preserve">
+    <value>Çalışan Ücretl / Satış(%)</value>
+  </data>
+  <data name="civPBTtoTotAsts" xml:space="preserve">
+    <value>VÖK / Toplam Varlıklar %</value>
+  </data>
+  <data name="civAssetsSize" xml:space="preserve">
+    <value>varlık büyüklüğüne göre sıralanmış</value>
+  </data>
+  <data name="civSalesSize" xml:space="preserve">
+    <value>satış büyüklüğüne göre sıralanmış</value>
+  </data>
+  <data name="civDoesntUse" xml:space="preserve">
+    <value>bir karşılaştırma kullanmaz</value>
+  </data>
+  <data name="civUse" xml:space="preserve">
+    <value>sanayi kodu</value>
+  </data>
+  <data name="civAllCompIn" xml:space="preserve">
+    <value>{0} - {1} olan tüm şirketlerin verileri, karşılaştırma amacıyla kullanilir </value>
+  </data>
+  <data name="civAdvLC" xml:space="preserve">
+    <value>karşıt düşünceyle</value>
+  </data>
+  <data name="civTaxRetLC" xml:space="preserve">
+    <value>vergi iadelerinden</value>
+  </data>
+  <data name="civDiscLC" xml:space="preserve">
+    <value>yasal sorumluluk reddiyle</value>
+  </data>
+  <data name="sComma" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="sDash" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="levarage" xml:space="preserve">
+    <value>KALDIRAÇ</value>
+  </data>
+  <data name="periods" xml:space="preserve">
+    <value>Dönemler</value>
+  </data>
+  <data name="ReconTo" xml:space="preserve">
+    <value>Mutabakat Sağla</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>YOK</value>
+  </data>
+  <data name="totCshCostSales" xml:space="preserve">
+    <value>TOPLAM NAKİT SATIŞ MALİYETİ</value>
+  </data>
+  <data name="cshGrssPrft" xml:space="preserve">
+    <value>NAKİT BRÜT KAR</value>
+  </data>
+  <data name="cshGrssPrftMargin" xml:space="preserve">
+    <value>Nakit Brüt Kar Marjı(%)</value>
+  </data>
+  <data name="invDaysExclCOS" xml:space="preserve">
+    <value>Stok Devir Süresi(SM Amort Hariç)</value>
+  </data>
+  <data name="trdPayDaysExclCOS" xml:space="preserve">
+    <value>Borç Devir Süresi(SM Amort hariç)</value>
+  </data>
+  <data name="netOpPrftEBIT" xml:space="preserve">
+    <value>Net Faaliyet Karı(FVÖK)</value>
+  </data>
+  <data name="netPrftMargin" xml:space="preserve">
+    <value>Net Kar Marjı</value>
+  </data>
+  <data name="exchRate" xml:space="preserve">
+    <value>Döviz Kuru</value>
+  </data>
+  <data name="esKeyISMetrics" xml:space="preserve">
+    <value>ÖNEMLİ GELİR TABLOSU ÖLÇÜMLERİ</value>
+  </data>
+  <data name="esDividends" xml:space="preserve">
+    <value>Temettüler</value>
+  </data>
+  <data name="esOthCurrAssts" xml:space="preserve">
+    <value>Diğer Dönen Varlıklar</value>
+  </data>
+  <data name="esOthNCAssts" xml:space="preserve">
+    <value>Diğer Cari Olmayan Varlıklar</value>
+  </data>
+  <data name="esRetProf" xml:space="preserve">
+    <value>Dağıtılmamış Karlar</value>
+  </data>
+  <data name="esOthEquity" xml:space="preserve">
+    <value>Diğer Özkaynak</value>
+  </data>
+  <data name="esCPLTDST" xml:space="preserve">
+    <value>UVBCK ve KV Kredileri</value>
+  </data>
+  <data name="esOthCurrLiabs" xml:space="preserve">
+    <value>Diğer Kısa Vadeli Borçlar</value>
+  </data>
+  <data name="esOthLTLiabs" xml:space="preserve">
+    <value>Diğer Uzun Vadeli Borçlar</value>
+  </data>
+  <data name="sTwoSpaces" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ucaCshCollect" xml:space="preserve">
+    <value>Satışlardan Tahsil Edilen Nakit(Gelirler)</value>
+  </data>
+  <data name="ucaCshPdSupplier" xml:space="preserve">
+    <value>Tedarikçilere Nakit Ödemeler</value>
+  </data>
+  <data name="ucaCshTrdingActiv" xml:space="preserve">
+    <value>TİCARİ FAALİYETLERDEN GELEN NAKİT</value>
+  </data>
+  <data name="ucaCshPdOpCosts" xml:space="preserve">
+    <value>Faaliyet Maliyetleri için Ödenen Nakit</value>
+  </data>
+  <data name="ucaNetCshAftOp" xml:space="preserve">
+    <value>FAALİYET SONRASI NET NAKİT</value>
+  </data>
+  <data name="ucaCashAftOp" xml:space="preserve">
+    <value>FAALİYET SONRASI NAKİT</value>
+  </data>
+  <data name="ucaOthIncExpTxPd" xml:space="preserve">
+    <value>Diğer Gelir(Gider) ve Ödenen Vergiler</value>
+  </data>
+  <data name="ucaCshPdDivsInt" xml:space="preserve">
+    <value>Temettüler ve Faiz için Ödenen Nakit</value>
+  </data>
+  <data name="ucaNetCshInc" xml:space="preserve">
+    <value>NET NAKİT GELİR</value>
+  </data>
+  <data name="ucaCPLTD" xml:space="preserve">
+    <value>Uzun Vadeli Borcun Cari Kısmı</value>
+  </data>
+  <data name="ucaCshAftDbtAmort" xml:space="preserve">
+    <value>BORÇ İTFASI SONRASINDA NAKİT</value>
+  </data>
+  <data name="chgInInvest" xml:space="preserve">
+    <value>Yatırımlardaki Değişiklik</value>
+  </data>
+  <data name="ucaCshPdPlantInvest" xml:space="preserve">
+    <value>Fabrika ve Yatırımlar için Ödenen Nakit</value>
+  </data>
+  <data name="ucaFinSurp" xml:space="preserve">
+    <value>FİNANSMAN FAZLASI(GEREKSİNİMİ)
+</value>
+  </data>
+  <data name="ucaChginLTD" xml:space="preserve">
+    <value>Uzun Vadeli Borçta Değişiklik</value>
+  </data>
+  <data name="ucaExtraNonCash" xml:space="preserve">
+    <value>Olağandışı ve Nakit Dışı Kalemler</value>
+  </data>
+  <data name="ucaTotExtFin" xml:space="preserve">
+    <value>Toplam Dış Finansman</value>
+  </data>
+  <data name="ucaCashAftFin" xml:space="preserve">
+    <value>FİNANSMAN SONRASI NAKİT</value>
+  </data>
+  <data name="ucaAdd" xml:space="preserve">
+    <value>Ekle:</value>
+  </data>
+  <data name="ucaCashAdj" xml:space="preserve">
+    <value>Nakitte Düzeltme
+</value>
+  </data>
+  <data name="ucaEndCash" xml:space="preserve">
+    <value>DÖNEM SONU NAKİT VE NAKİT BENZERİ</value>
+  </data>
+  <data name="cfmCashFlowDrivers" xml:space="preserve">
+    <value>NAKİT AKIŞ ETKENLERİ</value>
+  </data>
+  <data name="cfmNetSalesGwth" xml:space="preserve">
+    <value>Satış(Gelirler) Büyümesi</value>
+  </data>
+  <data name="cfmGrsMgnPlsDepr" xml:space="preserve">
+    <value>Nakit Brüt Kar Marjı(%)</value>
+  </data>
+  <data name="cfmOpExpExclDepr" xml:space="preserve">
+    <value>Faal Giderleri(Amortisman ve İtfa hariç) %</value>
+  </data>
+  <data name="cfmOthFact" xml:space="preserve">
+    <value>DİĞER FAKTÖRLER</value>
+  </data>
+  <data name="cfmOthOpAsts" xml:space="preserve">
+    <value>Diğer Faaliyet Varlıkları</value>
+  </data>
+  <data name="cfmAccruals" xml:space="preserve">
+    <value>Tahakkuklar</value>
+  </data>
+  <data name="cfmCashMgnMgmtSum" xml:space="preserve">
+    <value>NAKİT MARJI YÖNETİM ÖZETİ</value>
+  </data>
+  <data name="cfmCashGrsPft" xml:space="preserve">
+    <value>NAKİT BRÜT KAR:</value>
+  </data>
+  <data name="cfmBegCashGrsPft" xml:space="preserve">
+    <value>DÖNEM BAŞI NAKİT BRÜT KAR</value>
+  </data>
+  <data name="cfmCashGrsPftMgmt" xml:space="preserve">
+    <value>Nakit Brüt Kar Yönetimi</value>
+  </data>
+  <data name="cfmCashGrsPftGrwth" xml:space="preserve">
+    <value>Nakit Brüt Kar Büyümesi</value>
+  </data>
+  <data name="cfmEndCashGrsPft" xml:space="preserve">
+    <value>DÖNEM SONU NAKİT BRÜT KAR</value>
+  </data>
+  <data name="cfmOperatingExpenses" xml:space="preserve">
+    <value>FAALİYET GİDERLERİ:</value>
+  </data>
+  <data name="cfmBegOpExp" xml:space="preserve">
+    <value>DÖNEM BAŞI FAALİYET GİDERİ</value>
+  </data>
+  <data name="cfmOpExpMgmt" xml:space="preserve">
+    <value>Faaliyet Gider Yönetimi</value>
+  </data>
+  <data name="cfmOpExpGwth" xml:space="preserve">
+    <value>Faaliyet Gideri Büyümesi</value>
+  </data>
+  <data name="cfmEndOpExp" xml:space="preserve">
+    <value>DÖNEM SONU FAAL GİDERİ(EKSİ AMORT)</value>
+  </data>
+  <data name="cfmCashOpProfit" xml:space="preserve">
+    <value>NAKİT FAALİYET KARI</value>
+  </data>
+  <data name="cfmTrdAcctMgmtSum" xml:space="preserve">
+    <value>TİCARİ HESAP YÖNETİM ÖZETİ</value>
+  </data>
+  <data name="cfmCashImpMgmt" xml:space="preserve">
+    <value>YÖNETİMİN NAKİT ETKİSİ:</value>
+  </data>
+  <data name="cfmTotMgmtTrdAcct" xml:space="preserve">
+    <value>Toplam Yönetim - Ticari Hesap</value>
+  </data>
+  <data name="cfmTotMgmtOthFact" xml:space="preserve">
+    <value>Toplam Yönetim - Diğer Faktörler</value>
+  </data>
+  <data name="cfmTotCashImpMgmt" xml:space="preserve">
+    <value>YÖNETİMİN TOPLAM NAKİT ETKİSİ</value>
+  </data>
+  <data name="cfmCashImpGwth" xml:space="preserve">
+    <value>BÜYÜMENİN NAKİT ETKİSİ:</value>
+  </data>
+  <data name="cfmTotGwthTrdAcct" xml:space="preserve">
+    <value>Toplam Büyüme - Ticari Hesaplar</value>
+  </data>
+  <data name="cfmTotGwthOthFact" xml:space="preserve">
+    <value>Toplam Büyüme - Diğer Faktörler</value>
+  </data>
+  <data name="cfmTotCashImpSalesGwth" xml:space="preserve">
+    <value>SATIŞ BÜYÜMESİNİN TOPLAM NAKİT ETKİSİ</value>
+  </data>
+  <data name="cfmTotTrdAcct" xml:space="preserve">
+    <value>TOPLAM TİCARİ HESAP VE</value>
+  </data>
+  <data name="cfmOthFactChg" xml:space="preserve">
+    <value>DİĞER FAKTÖR DĞŞ</value>
+  </data>
+  <data name="ucaCFCovCY" xml:space="preserve">
+    <value>UCA Nakit Akışı Karşılama Oranı</value>
+  </data>
+  <data name="ucaCFCovPY" xml:space="preserve">
+    <value>UCA Nakit Akışı Karşılama Oranı(ÖY)</value>
+  </data>
+  <data name="NetProfitLossAftTax" xml:space="preserve">
+    <value>VERGİ SONRASI NET KAR(ZARAR)</value>
+  </data>
+  <data name="bsSupData" xml:space="preserve">
+    <value>EK VERİLER</value>
+  </data>
+  <data name="bsNumOutComShares" xml:space="preserve">
+    <value>Ödenmemiş Adi Hisse Sayısı</value>
+  </data>
+  <data name="bsNumOutPreShares" xml:space="preserve">
+    <value>Ödenmemiş İmtiyazlı Hisse Sayısı</value>
+  </data>
+  <data name="bsNumEmployees" xml:space="preserve">
+    <value>Çalışan Sayısı</value>
+  </data>
+  <data name="ucaCashEquiv" xml:space="preserve">
+    <value>Nakit Benzerleri</value>
+  </data>
+  <data name="ucaCashIBIH" xml:space="preserve">
+    <value>Kasa ve Bankalardaki Nakit</value>
+  </data>
+</root>

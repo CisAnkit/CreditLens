@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC186693-E6FD-4627-B680-D81D391289CE}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ACERIFT</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ACERIFT</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="constants2152">
+      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\Tenant\Model\constants2152.dll</HintPath>
+    </Reference>
+    <Reference Include="Engine">
+      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\FinancialAnalysis\ra\Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="macros2152">
+      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\Tenant\Model\macros2152.dll</HintPath>
+    </Reference>
+    <Reference Include="MKMV.DocumentGenerator">
+      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\FinancialAnalysis\ra\MKMV.DocumentGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="MKMV.RiskAnalyst.ReportAuthoring.PrintUtility">
+      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\FinancialAnalysis\ra\MKMV.RiskAnalyst.ReportAuthoring.PrintUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="proxyMappings2152">
+      <HintPath>..\..\..\..\..\..\..\Inetpub\CreditLens\Config\metadata\Tenant\Model\proxyMappings2152.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BSandIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BS_ACTUAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BS_ACTUAL_AND_PER.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BS_EXCHG_RATE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BS_TREND.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CALCULATIONS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CF_MGMT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="COMP_IND_VALUES.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CREDIT_COMP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DET_DERIVED_CF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DET_INPUT_CF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DET_RATIOS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DET_RATIOS_ENTCOMP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExchRateWarnMsg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EXEC_SUMMARY.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="INPUT_CF_DIR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IS_ACTUAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IS_ACTUAL_AND_PER.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IS_EXCHG_RATE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IS_TREND.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RATIOS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RECON.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCA_CF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="USER_DEF_CALCS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="USER_DEF_CRED_COMP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Strings.es-419.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.fr-ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.fr-fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.he.resx" />
+    <EmbeddedResource Include="Strings.it.resx" />
+    <EmbeddedResource Include="Strings.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.ru-RU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.ru.resx" />
+    <EmbeddedResource Include="Strings.th.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.tr.resx" />
+    <EmbeddedResource Include="Strings.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
