@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="11">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="12">
     <loadAfter moduleRefId="Core" major="3" minor="10" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="1" minor="11" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="6" patch="0" />
