@@ -1,6 +1,51 @@
 [
   {
     "ModelId": "ArcRiskGradingDomainModel",
+    "Trigger": "OnRead",
+    "ModuleId": "Tenant",
+    "Rules": [
+      "MapArcRiskGradingDomainModel"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "ama",
+    "CreatedDate_": "2020-08-06T14:14:34.275981Z",
+    "t_": "RuleExecution",
+    "ContextUserId_": "ama"
+  },
+  {
+    "ModelId": "ArcRiskGradingDomainModel",
+    "Trigger": "OnCreate",
+    "ModuleId": "Tenant",
+    "Rules": [
+      "MapArcRiskGradingDomainModel"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "ama",
+    "CreatedDate_": "2020-08-06T14:14:43.824931Z",
+    "t_": "RuleExecution",
+    "ContextUserId_": "ama"
+  },
+  {
+    "ModelId": "ArcRiskGradingDomainModel",
+    "Trigger": "OnUpdate",
+    "ModuleId": "Tenant",
+    "Rules": [
+      "MapArcRiskGradingDomainModel"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "ama",
+    "CreatedDate_": "2020-08-06T14:14:54.331728Z",
+    "t_": "RuleExecution",
+    "ContextUserId_": "ama"
+  },
+  {
+    "ModelId": "ArcRiskGradingDomainModel",
     "Trigger": "OnWillCreate",
     "ModuleId": "Tenant",
     "Rules": [

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="10">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="11">
     <loadAfter moduleRefId="Core" major="3" minor="10" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="1" minor="11" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="6" patch="0" />
@@ -64,13 +64,6 @@
       <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Score" dataType="integer" />
       <audit userId="admin" time="20200516T113741" />
-    </model>
-    <model id="DaysBeyondDueDate" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="ValueInt" dataType="integer" />
-      <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Score" dataType="integer" />
-      <audit userId="admin" time="20200516T114118" />
     </model>
     <model id="SoftFactorFinancials" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
@@ -445,8 +438,41 @@
       <attribute id="Quartile3" dataType="double" />
       <audit userId="admin" time="20200622T071136" />
     </model>
+    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Country" dataType="string" refId="Country" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <audit userId="admin" time="20200626T100018" />
+    </model>
+    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="PeerIndustry" dataType="string" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <audit userId="admin" time="20200626T100205" />
+    </model>
+    <model id="Acerift" dataProvider="postgres" extends="Financial" referenceModule="FinancialAnalysis">
+      <attribute id="IftTc11" dataType="string" refId="IftIndustrySector" deleted="true" />
+      <attribute id="IftTc6" dataType="string" refId="IftFyeMonth" deleted="true" />
+      <attribute id="AceriftTc11" dataType="string" refId="IftIndustrySector" />
+      <attribute id="AceriftTc6" dataType="string" refId="IftFyeMonth" />
+      <audit userId="admin" time="20200807T085506" />
+    </model>
+    <model id="DaysBeyondDueDate" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <attribute id="Score" dataType="integer" />
+      <audit userId="marian" time="20200807T110255" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
       <attribute id="ArcPeerIndustry" dataType="long" refId="ArcPeerIndustry" />
+      <attribute id="ArcPeerQuartiles" dataType="long" refId="ArcPeerQuartiles" />
       <attribute id="ArcRegions" dataType="string" refId="ArcRegions" attributeExpression="Regenerate domain to show code editor" />
       <attribute id="ArcRiskCaps" dataType="string" refId="ArcRiskCaps" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
@@ -454,13 +480,13 @@
       <attribute id="CashRatio" dataType="decimal" decimals="2" />
       <attribute id="CorporateStructure" dataType="string" refId="CorporateStructure" />
       <attribute id="CurrentRatio" dataType="decimal" decimals="2" />
-      <attribute id="DaysBeyondDueDate" dataType="string" refId="DaysBeyondDueDate" />
       <attribute id="DaysInventoryOutstanding" dataType="integer" />
       <attribute id="DaysPayableOutstanding" dataType="integer" />
       <attribute id="DaysSalesOutstanding" dataType="integer" />
       <attribute id="DebtToAssetsRatio" dataType="decimal" decimals="2" />
       <attribute id="DebtToEquityRatio" dataType="decimal" decimals="2" />
       <attribute id="DebtToTnw" dataType="decimal" decimals="2" />
+      <attribute id="DebugInfo" dataType="string" maxLength="50" />
       <attribute id="Financials" dataType="string" refId="SoftFactorFinancials" />
       <attribute id="GeopoliticalRiskCap" dataType="decimal" decimals="2" />
       <attribute id="GeopoliticalRiskCapAdjPct" dataType="integer" refId="GeopoliticalRiskCapAdjustmentPercentage" />
@@ -486,25 +512,8 @@
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <attribute id="ArcPeerQuartiles" dataType="long" refId="ArcPeerQuartiles" />
-      <audit userId="admin" time="20200622T072315" />
-    </model>
-    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Country" dataType="string" refId="Country" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <audit userId="admin" time="20200626T100018" />
-    </model>
-    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="PeerIndustry" dataType="string" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <audit userId="admin" time="20200626T100205" />
+      <attribute id="DaysBeyondDueDate" dataType="string" refId="DaysBeyondDueDate" />
+      <audit userId="marian" time="20200807T110648" />
     </model>
   </models>
   <viewModels>
@@ -564,33 +573,34 @@
         <attribute id="PpiScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="11" />
       </group>
       <group id="PeerComparison" order="2">
-        <attribute id="ArcPeerIndustry" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ArcPeerIndustry" controlType="singleselect" order="1" />
-        <attribute id="ArcRegions" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ArcRegions" controlType="singleselect" order="2" />
-        <attribute id="Performance" controlType="header" order="3" />
-        <attribute id="SalesGrowth" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SalesGrowth" controlType="text" format="percent" decimals="2" order="4" />
-        <attribute id="NetOperatingProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetOperatingProfitPercentage" controlType="text" format="percent" decimals="2" order="5" />
-        <attribute id="NetProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetProfitPercentage" controlType="text" format="percent" decimals="2" order="6" />
-        <attribute id="InterestCover" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InterestCover" controlType="text" decimals="2" order="7" />
-        <attribute id="ReturnOnAssetsPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ReturnOnAssetsPercentage" controlType="text" format="percent" decimals="2" order="8" />
-        <attribute id="Liquidity" controlType="header" order="9" />
-        <attribute id="CashRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashRatio" controlType="text" decimals="2" order="10" />
-        <attribute id="QuickRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="QuickRatio" controlType="text" decimals="2" order="11" />
-        <attribute id="CurrentRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CurrentRatio" controlType="text" decimals="2" order="12" />
-        <attribute id="Efficiency" controlType="header" order="13" />
-        <attribute id="CashConversionCycle" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashConversionCycle" controlType="text" order="14" />
-        <attribute id="DaysSalesOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysSalesOutstanding" controlType="text" order="15" />
-        <attribute id="DaysInventoryOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysInventoryOutstanding" controlType="text" order="16" />
-        <attribute id="DaysPayableOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysPayableOutstanding" controlType="text" order="17" />
-        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" order="18" />
-        <attribute id="LeverageAndDebtCoverage" controlType="header" order="19" />
-        <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" decimals="2" order="20" />
-        <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" decimals="2" order="21" />
-        <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" decimals="2" order="22" />
-        <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" order="23" />
-        <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" order="24" />
-        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" decimals="2" order="25" />
-        <attribute id="Splitter" controlType="splitter" order="26" />
-        <attribute id="PeerComparisonScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="27" />
+        <attribute id="DebugInfo" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebugInfo" controlType="text" order="1" />
+        <attribute id="ArcPeerIndustry" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ArcPeerIndustry" controlType="singleselect" order="2" />
+        <attribute id="ArcRegions" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ArcRegions" controlType="singleselect" order="3" />
+        <attribute id="Performance" controlType="header" order="4" />
+        <attribute id="SalesGrowth" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SalesGrowth" controlType="text" format="percent" decimals="2" order="5" />
+        <attribute id="NetOperatingProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetOperatingProfitPercentage" controlType="text" format="percent" decimals="2" order="6" />
+        <attribute id="NetProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetProfitPercentage" controlType="text" format="percent" decimals="2" order="7" />
+        <attribute id="InterestCover" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InterestCover" controlType="text" decimals="2" order="8" />
+        <attribute id="ReturnOnAssetsPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ReturnOnAssetsPercentage" controlType="text" format="percent" decimals="2" order="9" />
+        <attribute id="Liquidity" controlType="header" order="10" />
+        <attribute id="CashRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashRatio" controlType="text" decimals="2" order="11" />
+        <attribute id="QuickRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="QuickRatio" controlType="text" decimals="2" order="12" />
+        <attribute id="CurrentRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CurrentRatio" controlType="text" decimals="2" order="13" />
+        <attribute id="Efficiency" controlType="header" order="14" />
+        <attribute id="CashConversionCycle" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashConversionCycle" controlType="text" order="15" />
+        <attribute id="DaysSalesOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysSalesOutstanding" controlType="text" order="16" />
+        <attribute id="DaysInventoryOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysInventoryOutstanding" controlType="text" order="17" />
+        <attribute id="DaysPayableOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysPayableOutstanding" controlType="text" order="18" />
+        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" order="19" />
+        <attribute id="LeverageAndDebtCoverage" controlType="header" order="20" />
+        <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" decimals="2" order="21" />
+        <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" decimals="2" order="22" />
+        <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" decimals="2" order="23" />
+        <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" order="24" />
+        <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" order="25" />
+        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" decimals="2" order="26" />
+        <attribute id="Splitter" controlType="splitter" order="27" />
+        <attribute id="PeerComparisonScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="28" />
       </group>
       <group id="SoftFactors" order="3">
         <attribute id="StrategicSalesImportance" modelId="ArcRiskGradingDomainModel" modelFieldId="StrategicSalesImportance" controlType="singleselect" order="1" />
@@ -601,7 +611,7 @@
         <attribute id="Splitter" controlType="splitter" order="6" />
         <attribute id="SoftFactorsScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="7" />
       </group>
-      <audit userId="admin" time="20200626T103112" />
+      <audit userId="marian" time="20200807T110823" />
     </viewModel>
   </viewModels>
   <references>
@@ -640,18 +650,6 @@
         </sortOrders>
       </query>
       <audit userId="admin" time="20200516T113745" />
-    </ref>
-    <ref id="DaysBeyondDueDate" modelRefId="DaysBeyondDueDate" type="DAYSBEYONDDUEDATE">
-      <query>
-        <projection>
-          <key modelFieldId="Value" />
-          <display modelFieldIds="Value" />
-        </projection>
-        <sortOrders>
-          <sortOrder modelFieldId="Score" direction="desc" />
-        </sortOrders>
-      </query>
-      <audit userId="admin" time="20200516T114121" />
     </ref>
     <ref id="SoftFactorFinancials" modelRefId="SoftFactorFinancials" type="SOFTFACTORFINANCIALS">
       <query>
@@ -962,6 +960,18 @@
         </sortOrders>
       </query>
       <audit userId="admin" time="20200626T100208" />
+    </ref>
+    <ref id="DaysBeyondDueDate" modelRefId="DaysBeyondDueDate" type="DAYSBEYONDDUEDATE">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" />
+        </projection>
+        <sortOrders>
+          <sortOrder modelFieldId="Score" direction="asc" />
+        </sortOrders>
+      </query>
+      <audit userId="marian" time="20200807T110258" />
     </ref>
   </references>
 </metadata>
