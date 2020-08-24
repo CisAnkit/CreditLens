@@ -1,0 +1,15 @@
+[
+  {
+    "Type": "CREDITPORTFOLIO",
+    "KeyInt": 1412908255,
+    "Key": "NA",
+    "Value": "Not Used",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.251726Z",
+    "t_": "CreditPortfolio",
+    "ContextUserId_": "admin"
+  }
+]

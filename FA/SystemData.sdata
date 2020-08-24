@@ -12,16 +12,16 @@
   <INDUSTRY_CLASSIFICATIONS />
   <INDUSTRY_CLASSIFICATIONS_DESCRIPTIONS />
   <ADDINS>
-    <ADDIN ID="0" NAME="Standard" TYPE="4" ORDERING="1" SYSTEM="True" />
-    <ADDIN ID="1" NAME="RiskCalc" TYPE="4" ORDERING="1" SYSTEM="True" />
+    <ADDIN ID="0" NAME="Standard" CLASS="" ASSEMBLY="" TYPE="4" ORDERING="1" SYSTEM="True" />
+    <ADDIN ID="1" NAME="RiskCalc" CLASS="" ASSEMBLY="" TYPE="4" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="2" NAME="Reporting Table" CLASS="UpdatePortfolioManager" ASSEMBLY="MKMV.RiskAnalyst.Financials.UpdatePortfolio" TYPE="1" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="3" NAME="Batch Reporting Table" CLASS="Interface" ASSEMBLY="BatchUtility.Addins.UpdatePortfolio" TYPE="3" ORDERING="1" SYSTEM="True" />
-    <ADDIN ID="4" NAME="Public EDF" TYPE="4" ORDERING="1" SYSTEM="True" />
+    <ADDIN ID="4" NAME="Public EDF" CLASS="" ASSEMBLY="" TYPE="4" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="5" NAME="Batch PFP Export" CLASS="PFPExport" ASSEMBLY="BatchUtility.Addins.PFPExport" TYPE="3" ORDERING="1" SYSTEM="True" />
-    <ADDIN ID="6" NAME="HOSP117 New" TYPE="5" ORDERING="1" SYSTEM="True" />
+    <ADDIN ID="6" NAME="HOSP117 New" CLASS="" ASSEMBLY="" TYPE="5" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="7" NAME="PFAAddIn" CLASS="MKMV.RiskAnalyst.UI.Templates.PFA.AddIns.PFAAddInManager" ASSEMBLY="MKMV.RiskAnalyst.UI.Templates.PFA" TYPE="1" ORDERING="2" SYSTEM="True" />
-    <ADDIN ID="8" NAME="PFAAddIn Loans" TYPE="2" ORDERING="1" SYSTEM="True" />
-    <ADDIN ID="9" NAME="PFAAddIn Schedules" TYPE="2" ORDERING="1" SYSTEM="True" />
+    <ADDIN ID="8" NAME="PFAAddIn Loans" CLASS="" ASSEMBLY="" TYPE="2" ORDERING="1" SYSTEM="True" />
+    <ADDIN ID="9" NAME="PFAAddIn Schedules" CLASS="" ASSEMBLY="" TYPE="2" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="11" NAME="Batch ArchiveRetrieval" CLASS="ArchiveRetrieval" ASSEMBLY="BatchUtility.Addins.ArchiveRetrieval" TYPE="3" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="12" NAME="Batch RMA Submission" CLASS="RMASubmission" ASSEMBLY="BatchUtility.Addins.RMASubmission" TYPE="3" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="13" NAME="BatchRatingsUpdate" CLASS="RatingsUpdate" ASSEMBLY="BatchUtility.Addins.RatingsUpdate" TYPE="3" ORDERING="1" SYSTEM="True" />
@@ -33,7 +33,7 @@
     <ADDIN ID="24" NAME="Batch ETL Mapping" CLASS="EtlMappingPlugin" ASSEMBLY="BatchUtility.Addins.ETLMapping" TYPE="3" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="25" NAME="LGD Archive AddIn" CLASS="LGDArchviePlugin" ASSEMBLY="MKMV.RiskAnalyst.Ratings.Archive.LGD" TYPE="1" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="26" NAME="AG Startup" CLASS="MKMV.RiskAnalyst.UI.Templates.AG.AddIns.AGAddIn" ASSEMBLY="MKMV.RiskAnalyst.UI.Templates.AG" TYPE="1" ORDERING="1" SYSTEM="True" />
-    <ADDIN ID="27" NAME="AG New" TYPE="5" ORDERING="1" SYSTEM="True" />
+    <ADDIN ID="27" NAME="AG New" CLASS="" ASSEMBLY="" TYPE="5" ORDERING="1" SYSTEM="True" />
     <ADDIN ID="28" NAME="Batch Testing" CLASS="BatchTesting" ASSEMBLY="BatchUtility.Addins.BatchTesting" TYPE="3" ORDERING="1" SYSTEM="True" />
     <BATCH_DATA />
     <MENU_DATA />

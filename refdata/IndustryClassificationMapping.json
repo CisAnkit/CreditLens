@@ -1,0 +1,15 @@
+[
+  {
+    "Type": "INDUSTRYCLASSIFICATIONMAPPING",
+    "ArtifactInt": 1079017310,
+    "Artifact": "AnzSic",
+    "IndClassification": "ANZSIC",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "GeorgeS",
+    "CreatedDate_": "2020-07-29T15:33:23.348724Z",
+    "t_": "IndustryClassificationMapping",
+    "ContextUserId_": "GeorgeS"
+  }
+]

@@ -1,0 +1,5234 @@
+[
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 480710072,
+    "Key": "CSA",
+    "Value": "Central & South America",
+    "HierarchyKey": "undefined|PA|CSA",
+    "LevelId": "Region",
+    "Parent": "undefined|PA",
+    "Ancestors": [
+      "undefined|PA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.803627Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1123259978,
+    "Key": "NA",
+    "Value": "North America",
+    "HierarchyKey": "undefined|PA|NA",
+    "LevelId": "Region",
+    "Parent": "undefined|PA",
+    "Ancestors": [
+      "undefined|PA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.814356Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1412254183,
+    "Key": "EEMEA",
+    "Value": "EMEA",
+    "HierarchyKey": "undefined|EEMEA",
+    "LevelId": "BusinessUnit",
+    "Parent": null,
+    "Ancestors": null,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.831948Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 761628675,
+    "Key": "PA",
+    "Value": "PA",
+    "HierarchyKey": "undefined|PA",
+    "LevelId": "BusinessUnit",
+    "Parent": null,
+    "Ancestors": null,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.840728Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1978659027,
+    "Key": "PAP",
+    "Value": "PAP",
+    "HierarchyKey": "undefined|PAP",
+    "LevelId": "BusinessUnit",
+    "Parent": null,
+    "Ancestors": null,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.848538Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1321515799,
+    "Key": "EE",
+    "Value": "Eastern Europe",
+    "HierarchyKey": "undefined|EEMEA|EE",
+    "LevelId": "Region",
+    "Parent": "undefined|EEMEA",
+    "Ancestors": [
+      "undefined|EEMEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.854393Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2112562784,
+    "Key": "MEA",
+    "Value": "Middle East & Africa",
+    "HierarchyKey": "undefined|EEMEA|MEA",
+    "LevelId": "Region",
+    "Parent": "undefined|EEMEA",
+    "Ancestors": [
+      "undefined|EEMEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.861246Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1321515785,
+    "Key": "WE",
+    "Value": "Western Europe",
+    "HierarchyKey": "undefined|EEMEA|WE",
+    "LevelId": "Region",
+    "Parent": "undefined|EEMEA",
+    "Ancestors": [
+      "undefined|EEMEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.869045Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1894754121,
+    "Key": "AS",
+    "Value": "Asia",
+    "HierarchyKey": "undefined|PAP|AS",
+    "LevelId": "Region",
+    "Parent": "undefined|PAP",
+    "Ancestors": [
+      "undefined|PAP"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.875882Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1596190232,
+    "Key": "ALB",
+    "Value": "Albania",
+    "HierarchyKey": "undefined|EEMEA|EE|ALB",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.882718Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1821359601,
+    "Key": "ARM",
+    "Value": "Armenia",
+    "HierarchyKey": "undefined|EEMEA|EE|ARM",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.889565Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 339067183,
+    "Key": "AZER",
+    "Value": "Azerbaijan",
+    "HierarchyKey": "undefined|EEMEA|EE|AZER",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.896403Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 114113146,
+    "Key": "BEL",
+    "Value": "Belarus",
+    "HierarchyKey": "undefined|EEMEA|EE|BEL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.903238Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2083481628,
+    "Key": "BSH",
+    "Value": "Bosnia and Herzegovina",
+    "HierarchyKey": "undefined|EEMEA|EE|BSH",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.909083Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 114113162,
+    "Key": "BUL",
+    "Value": "Bulgaria",
+    "HierarchyKey": "undefined|EEMEA|EE|BUL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.917878Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1294161838,
+    "Key": "CR",
+    "Value": "Croatia",
+    "HierarchyKey": "undefined|EEMEA|EE|CR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.925691Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1294161829,
+    "Key": "CY",
+    "Value": "Cyprus",
+    "HierarchyKey": "undefined|EEMEA|EE|CY",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.932521Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1297115541,
+    "Key": "CZC",
+    "Value": "Czechia",
+    "HierarchyKey": "undefined|EEMEA|EE|CZC",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.93936Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 198119992,
+    "Key": "GEO",
+    "Value": "Georgia",
+    "HierarchyKey": "undefined|EEMEA|EE|GEO",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.946196Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 635162261,
+    "Key": "KZK",
+    "Value": "Kazakhstan",
+    "HierarchyKey": "undefined|EEMEA|EE|KZK",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.953027Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 991392612,
+    "Key": "LAT",
+    "Value": "Latvia",
+    "HierarchyKey": "undefined|EEMEA|EE|LAT",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.959862Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 90715243,
+    "Key": "LTH",
+    "Value": "Lithuania",
+    "HierarchyKey": "undefined|EEMEA|EE|LTH",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.966702Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1579440534,
+    "Key": "MAC",
+    "Value": "Macedonia, the former Yugoslav Republic of",
+    "HierarchyKey": "undefined|EEMEA|EE|MAC",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.974511Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1176156005,
+    "Key": "MOL",
+    "Value": "Moldova, Republic of",
+    "HierarchyKey": "undefined|EEMEA|EE|MOL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.98135Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1250319694,
+    "Key": "POL",
+    "Value": "Poland",
+    "HierarchyKey": "undefined|EEMEA|EE|POL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.990151Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 806629215,
+    "Key": "ROM",
+    "Value": "Romania",
+    "HierarchyKey": "undefined|EEMEA|EE|ROM",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.996982Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 534405723,
+    "Key": "RUS",
+    "Value": "Russian Federation",
+    "HierarchyKey": "undefined|EEMEA|EE|RUS",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.004788Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1989631624,
+    "Key": "SRB",
+    "Value": "Serbia",
+    "HierarchyKey": "undefined|EEMEA|EE|SRB",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.015532Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1052001535,
+    "Key": "SLK",
+    "Value": "Slovakia",
+    "HierarchyKey": "undefined|EEMEA|EE|SLK",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.025308Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 732723854,
+    "Key": "SLV",
+    "Value": "Slovenia",
+    "HierarchyKey": "undefined|EEMEA|EE|SLV",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.034084Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1855117315,
+    "Key": "UKR",
+    "Value": "Ukraine",
+    "HierarchyKey": "undefined|EEMEA|EE|UKR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|EE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|EE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.04385Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 872725070,
+    "Key": "WLF",
+    "Value": "Wallis and Futuna",
+    "HierarchyKey": "undefined|PAP|AS|WLF",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.808534Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1515429358,
+    "Key": "ALG",
+    "Value": "Algeria",
+    "HierarchyKey": "undefined|EEMEA|MEA|ALG",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.050682Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 530745124,
+    "Key": "ANG",
+    "Value": "Angola",
+    "HierarchyKey": "undefined|EEMEA|MEA|ANG",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.057536Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1693544620,
+    "Key": "BHR",
+    "Value": "Bahrain",
+    "HierarchyKey": "undefined|EEMEA|MEA|BHR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.065345Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 530745210,
+    "Key": "BNN",
+    "Value": "Benin",
+    "HierarchyKey": "undefined|EEMEA|MEA|BNN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.073174Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 528426052,
+    "Key": "BTSW",
+    "Value": "Botswana",
+    "HierarchyKey": "undefined|EEMEA|MEA|BTSW",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.080976Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 174514845,
+    "Key": "BFS",
+    "Value": "Burkina Faso",
+    "HierarchyKey": "undefined|EEMEA|MEA|BFS",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.088795Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1845684402,
+    "Key": "BRND",
+    "Value": "Burundi",
+    "HierarchyKey": "undefined|EEMEA|MEA|BRND",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.096603Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 619081209,
+    "Key": "CVRD",
+    "Value": "Cabo Verde",
+    "HierarchyKey": "undefined|EEMEA|MEA|CVRD",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.105394Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 548629124,
+    "Key": "CMRN",
+    "Value": "Cameroon",
+    "HierarchyKey": "undefined|EEMEA|MEA|CMRN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.112232Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1918714062,
+    "Key": "CAR",
+    "Value": "Central African Republic",
+    "HierarchyKey": "undefined|EEMEA|MEA|CAR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.120044Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1693544729,
+    "Key": "CHD",
+    "Value": "Chad",
+    "HierarchyKey": "undefined|EEMEA|MEA|CHD",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.126886Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2096829242,
+    "Key": "CMR",
+    "Value": "Comoros",
+    "HierarchyKey": "undefined|EEMEA|MEA|CMR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.134696Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 530745314,
+    "Key": "CNG",
+    "Value": "Congo",
+    "HierarchyKey": "undefined|EEMEA|MEA|CNG",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.141526Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 814204274,
+    "Key": "DCNG",
+    "Value": "Congo, the Democratic Republic of the",
+    "HierarchyKey": "undefined|EEMEA|MEA|DCNG",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.149345Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1159199186,
+    "Key": "CDI",
+    "Value": "Côte d'Ivoire",
+    "HierarchyKey": "undefined|EEMEA|MEA|CDI",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.156158Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 708860325,
+    "Key": "DJI",
+    "Value": "Djibouti",
+    "HierarchyKey": "undefined|EEMEA|MEA|DJI",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.16299Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 755914317,
+    "Key": "EGY",
+    "Value": "Egypt",
+    "HierarchyKey": "undefined|EEMEA|MEA|EGY",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.169825Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 483690833,
+    "Key": "EQG",
+    "Value": "Equatorial Guinea",
+    "HierarchyKey": "undefined|EEMEA|MEA|EQG",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.176663Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1065090521,
+    "Key": "ERT",
+    "Value": "Eritrea",
+    "HierarchyKey": "undefined|EEMEA|MEA|ERT",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.1835Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1871659579,
+    "Key": "ETH",
+    "Value": "Ethiopia",
+    "HierarchyKey": "undefined|EEMEA|MEA|ETH",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.190334Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 352630001,
+    "Key": "GBN",
+    "Value": "Gabon",
+    "HierarchyKey": "undefined|EEMEA|MEA|GBN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.197172Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2096829126,
+    "Key": "GMB",
+    "Value": "Gambia",
+    "HierarchyKey": "undefined|EEMEA|MEA|GMB",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.204005Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1693544595,
+    "Key": "GHN",
+    "Value": "Ghana",
+    "HierarchyKey": "undefined|EEMEA|MEA|GHN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.210849Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 305575834,
+    "Key": "GUN",
+    "Value": "Guinea",
+    "HierarchyKey": "undefined|EEMEA|MEA|GUN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.21768Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1744927824,
+    "Key": "GUNB",
+    "Value": "Guinea-Bissau",
+    "HierarchyKey": "undefined|EEMEA|MEA|GUNB",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.224513Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1065090407,
+    "Key": "IRN",
+    "Value": "Iran, Islamic Republic of",
+    "HierarchyKey": "undefined|EEMEA|MEA|IRN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.23135Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1065090386,
+    "Key": "IRQ",
+    "Value": "Iraq",
+    "HierarchyKey": "undefined|EEMEA|MEA|IRQ",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.238185Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1039115094,
+    "Key": "JRDN",
+    "Value": "Jordan",
+    "HierarchyKey": "undefined|EEMEA|MEA|JRDN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.245021Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 530745056,
+    "Key": "KNA",
+    "Value": "Kenya",
+    "HierarchyKey": "undefined|EEMEA|MEA|KNA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.251856Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 305575687,
+    "Key": "KUW",
+    "Value": "Kuwait",
+    "HierarchyKey": "undefined|EEMEA|MEA|KUW",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.258693Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 504769648,
+    "Key": "KRGZ",
+    "Value": "Kyrgyzstan",
+    "HierarchyKey": "undefined|EEMEA|MEA|KRGZ",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.265528Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 352629724,
+    "Key": "LBN",
+    "Value": "Lebanon",
+    "HierarchyKey": "undefined|EEMEA|MEA|LBN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.272371Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1092598620,
+    "Key": "JaPN",
+    "Value": "Japan",
+    "HierarchyKey": "undefined|PAP|AS|JaPN",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.893442Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 834148645,
+    "Key": "LSTH",
+    "Value": "Lesotho",
+    "HierarchyKey": "undefined|EEMEA|MEA|LSTH",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.279204Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 352629696,
+    "Key": "LBR",
+    "Value": "Liberia",
+    "HierarchyKey": "undefined|EEMEA|MEA|LBR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.28604Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 352629701,
+    "Key": "LBY",
+    "Value": "Libya",
+    "HierarchyKey": "undefined|EEMEA|MEA|LBY",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.292875Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1304948504,
+    "Key": "MDGR",
+    "Value": "Madagascar",
+    "HierarchyKey": "undefined|EEMEA|MEA|MDGR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.299723Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 673041341,
+    "Key": "MLWI",
+    "Value": "Malawi",
+    "HierarchyKey": "undefined|EEMEA|MEA|MLWI",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.306548Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1515428972,
+    "Key": "MLI",
+    "Value": "Mali",
+    "HierarchyKey": "undefined|EEMEA|MEA|MLI",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.313386Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 728260,
+    "Key": "MUIA",
+    "Value": "Mauritania",
+    "HierarchyKey": "undefined|EEMEA|MEA|MUIA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.320222Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 305575391,
+    "Key": "MUI",
+    "Value": "Mauritius",
+    "HierarchyKey": "undefined|EEMEA|MEA|MUI",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.32706Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 276146695,
+    "Key": "MYTE",
+    "Value": "Mayotte",
+    "HierarchyKey": "undefined|EEMEA|MEA|MYTE",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.333896Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1620514577,
+    "Key": "MRCO",
+    "Value": "Morocco",
+    "HierarchyKey": "undefined|EEMEA|MEA|MRCO",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.340729Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1297783633,
+    "Key": "MZME",
+    "Value": "Mozambique",
+    "HierarchyKey": "undefined|EEMEA|MEA|MZME",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.347562Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1130028356,
+    "Key": "NMBA",
+    "Value": "Namibia",
+    "HierarchyKey": "undefined|EEMEA|MEA|NMBA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.354396Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 755914157,
+    "Key": "NGR",
+    "Value": "Niger",
+    "HierarchyKey": "undefined|EEMEA|MEA|NGR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.361234Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 572284882,
+    "Key": "NGRA",
+    "Value": "Nigeria",
+    "HierarchyKey": "undefined|EEMEA|MEA|NGRA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.368074Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2096828874,
+    "Key": "OMN",
+    "Value": "Oman",
+    "HierarchyKey": "undefined|EEMEA|MEA|OMN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.374906Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2057556884,
+    "Key": "PKSN",
+    "Value": "Pakistan",
+    "HierarchyKey": "undefined|EEMEA|MEA|PKSN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.381739Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1370376276,
+    "Key": "KRB",
+    "Value": "Kiribati",
+    "HierarchyKey": "undefined|PAP|AS|KRB",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.004667Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1338447949,
+    "Key": "PLST",
+    "Value": "Palestine, State of",
+    "HierarchyKey": "undefined|EEMEA|MEA|PLST",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.388578Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1918713370,
+    "Key": "QAT",
+    "Value": "Qatar",
+    "HierarchyKey": "undefined|EEMEA|MEA|QAT",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.395419Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 131789222,
+    "Key": "RUIN",
+    "Value": "Réunion",
+    "HierarchyKey": "undefined|EEMEA|MEA|RUIN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.40225Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1468374749,
+    "Key": "RWN",
+    "Value": "Rwanda",
+    "HierarchyKey": "undefined|EEMEA|MEA|RWN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.409088Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1871659401,
+    "Key": "STP",
+    "Value": "Sao Tome and Principe",
+    "HierarchyKey": "undefined|EEMEA|MEA|STP",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.415924Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1646490303,
+    "Key": "KSA",
+    "Value": "Saudi Arabia",
+    "HierarchyKey": "undefined|EEMEA|MEA|KSA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.422761Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1392150342,
+    "Key": "SNGL",
+    "Value": "Senegal",
+    "HierarchyKey": "undefined|EEMEA|MEA|SNGL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.429591Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 904600635,
+    "Key": "SYHS",
+    "Value": "Seychelles",
+    "HierarchyKey": "undefined|EEMEA|MEA|SYHS",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.43643Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 341356967,
+    "Key": "SIERL",
+    "Value": "Sierra Leone",
+    "HierarchyKey": "undefined|EEMEA|MEA|SIERL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.443266Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1112144487,
+    "Key": "SOM",
+    "Value": "Somalia",
+    "HierarchyKey": "undefined|EEMEA|MEA|SOM",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.4501Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1918713546,
+    "Key": "SAF",
+    "Value": "South Africa",
+    "HierarchyKey": "undefined|EEMEA|MEA|SAF",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.456939Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1640717608,
+    "Key": "SSDN",
+    "Value": "South Sudan",
+    "HierarchyKey": "undefined|EEMEA|MEA|SSDN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.463772Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1159198651,
+    "Key": "SDN",
+    "Value": "Sudan",
+    "HierarchyKey": "undefined|EEMEA|MEA|SDN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.470612Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1918713545,
+    "Key": "SAI",
+    "Value": "Swaziland",
+    "HierarchyKey": "undefined|EEMEA|MEA|SAI",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.47745Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1918713568,
+    "Key": "SAP",
+    "Value": "Syrian Arab Republic",
+    "HierarchyKey": "undefined|EEMEA|MEA|SAP",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.484288Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 530744636,
+    "Key": "TNZ",
+    "Value": "Tanzania, United Republic of",
+    "HierarchyKey": "undefined|EEMEA|MEA|TNZ",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.49112Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 87027494,
+    "Key": "AMER",
+    "Value": "Americas",
+    "HierarchyKey": "CB|AMER",
+    "LevelId": "Region",
+    "Parent": "CB",
+    "Ancestors": [
+      "CB"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.76748Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.849381Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 755913970,
+    "Key": "TGO",
+    "Value": "Togo",
+    "HierarchyKey": "undefined|EEMEA|MEA|TGO",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.497955Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 530744643,
+    "Key": "TNS",
+    "Value": "Tunisia",
+    "HierarchyKey": "undefined|EEMEA|MEA|TNS",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.50479Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1290259520,
+    "Key": "TKY",
+    "Value": "Turkey",
+    "HierarchyKey": "undefined|EEMEA|MEA|TKY",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.511625Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1331799422,
+    "Key": "UGND",
+    "Value": "Uganda",
+    "HierarchyKey": "undefined|EEMEA|MEA|UGND",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.518465Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1918713231,
+    "Key": "UAE",
+    "Value": "United Arab Emirates",
+    "HierarchyKey": "undefined|EEMEA|MEA|UAE",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.526276Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 750141572,
+    "Key": "WSHR",
+    "Value": "Western Sahara",
+    "HierarchyKey": "undefined|EEMEA|MEA|WSHR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.533121Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 548628162,
+    "Key": "YMNN",
+    "Value": "Yemen",
+    "HierarchyKey": "undefined|EEMEA|MEA|YMNN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.540926Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1130027969,
+    "Key": "ZMIA",
+    "Value": "Zambia",
+    "HierarchyKey": "undefined|EEMEA|MEA|ZMIA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.547758Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1308143141,
+    "Key": "ZMAE",
+    "Value": "Zimbabwe",
+    "HierarchyKey": "undefined|EEMEA|MEA|ZMAE",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|MEA",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|MEA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.554599Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1192361347,
+    "Key": "ADRA",
+    "Value": "Andorra",
+    "HierarchyKey": "undefined|EEMEA|WE|ADRA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.561456Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1951876199,
+    "Key": "AGIA",
+    "Value": "Anguilla",
+    "HierarchyKey": "undefined|EEMEA|WE|AGIA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.56828Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1465119239,
+    "Key": "ARU",
+    "Value": "Aruba",
+    "HierarchyKey": "undefined|EEMEA|WE|ARU",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.575098Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 302319832,
+    "Key": "AUS",
+    "Value": "Austria",
+    "HierarchyKey": "undefined|EEMEA|WE|AUS",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.581938Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2036417472,
+    "Key": "BLG",
+    "Value": "Belgium",
+    "HierarchyKey": "undefined|EEMEA|WE|BLG",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.588775Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 564441863,
+    "Key": "BNR",
+    "Value": "Bonaire, Sint Eustatius and Saba",
+    "HierarchyKey": "undefined|EEMEA|WE|BNR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.595636Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1988828409,
+    "Key": "BIOT",
+    "Value": "British Indian Ocean Territory",
+    "HierarchyKey": "undefined|EEMEA|WE|BIOT",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.602445Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 799712698,
+    "Key": "DNM",
+    "Value": "Denmark",
+    "HierarchyKey": "undefined|EEMEA|WE|DNM",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.609281Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1125638583,
+    "Key": "EST",
+    "Value": "Estonia",
+    "HierarchyKey": "undefined|EEMEA|WE|EST",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.616132Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2100221328,
+    "Key": "FRI",
+    "Value": "Faroe Islands",
+    "HierarchyKey": "undefined|EEMEA|WE|FRI",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.622952Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1340706453,
+    "Key": "FNL",
+    "Value": "Finland",
+    "HierarchyKey": "undefined|EEMEA|WE|FNL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.630762Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 890867309,
+    "Key": "FR",
+    "Value": "France",
+    "HierarchyKey": "undefined|EEMEA|WE|FR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.638581Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 610961160,
+    "Key": "AISL",
+    "Value": "Åland Islands",
+    "HierarchyKey": "undefined|EEMEA|WE|AISL",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.646417Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1162591261,
+    "Key": "FRP",
+    "Value": "French Polynesia",
+    "HierarchyKey": "undefined|EEMEA|WE|FRP",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.653254Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 889832534,
+    "Key": "FRST",
+    "Value": "French Southern Territories",
+    "HierarchyKey": "undefined|EEMEA|WE|FRST",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.665935Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 601394553,
+    "Key": "GER",
+    "Value": "Germany",
+    "HierarchyKey": "undefined|EEMEA|WE|GER",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.678644Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1895254973,
+    "Key": "GBA",
+    "Value": "Gibraltar",
+    "HierarchyKey": "undefined|EEMEA|WE|GBA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.692305Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1717139777,
+    "Key": "GRE",
+    "Value": "Greece",
+    "HierarchyKey": "undefined|EEMEA|WE|GRE",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.873961Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1088151404,
+    "Key": "GENY",
+    "Value": "Guernsey",
+    "HierarchyKey": "undefined|EEMEA|WE|GENY",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.891521Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1058639771,
+    "Key": "HSE",
+    "Value": "Holy See",
+    "HierarchyKey": "undefined|EEMEA|WE|HSE",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.908126Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1996269844,
+    "Key": "HUN",
+    "Value": "Hungary",
+    "HierarchyKey": "undefined|EEMEA|WE|HUN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.915936Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1159396336,
+    "Key": "ICE",
+    "Value": "Iceland",
+    "HierarchyKey": "undefined|EEMEA|WE|ICE",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.922759Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1159396319,
+    "Key": "IRE",
+    "Value": "Ireland",
+    "HierarchyKey": "undefined|EEMEA|WE|IRE",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.930589Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1515626692,
+    "Key": "IOM",
+    "Value": "Isle of Man",
+    "HierarchyKey": "undefined|EEMEA|WE|IOM",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.937423Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2013019541,
+    "Key": "ISR",
+    "Value": "Israel",
+    "HierarchyKey": "undefined|EEMEA|WE|ISR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.94523Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 981281145,
+    "Key": "ITA",
+    "Value": "Italy",
+    "HierarchyKey": "undefined|EEMEA|WE|ITA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.952058Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 127657918,
+    "Key": "JRS",
+    "Value": "Jersey",
+    "HierarchyKey": "undefined|EEMEA|WE|JRS",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.958895Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 399346876,
+    "Key": "LCHT",
+    "Value": "Liechtenstein",
+    "HierarchyKey": "undefined|EEMEA|WE|LCHT",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.965726Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1525728174,
+    "Key": "LUX",
+    "Value": "Luxembourg",
+    "HierarchyKey": "undefined|EEMEA|WE|LUX",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.974514Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 107454956,
+    "Key": "MLT",
+    "Value": "Malta",
+    "HierarchyKey": "undefined|EEMEA|WE|MLT",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.981352Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1579430561,
+    "Key": "MNC",
+    "Value": "Monaco",
+    "HierarchyKey": "undefined|EEMEA|WE|MNC",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.989172Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 416096297,
+    "Key": "MNTG",
+    "Value": "Montenegro",
+    "HierarchyKey": "undefined|EEMEA|WE|MNTG",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:22.996006Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 678753184,
+    "Key": "NED",
+    "Value": "Netherlands",
+    "HierarchyKey": "undefined|EEMEA|WE|NED",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.001861Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1343625174,
+    "Key": "NCLD",
+    "Value": "New Caledonia",
+    "HierarchyKey": "undefined|EEMEA|WE|NCLD",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.008706Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1532376382,
+    "Key": "NRW",
+    "Value": "Norway",
+    "HierarchyKey": "undefined|EEMEA|WE|NRW",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.015533Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1025140370,
+    "Key": "PTC",
+    "Value": "Pitcairn",
+    "HierarchyKey": "undefined|EEMEA|WE|PTC",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.022368Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1156201390,
+    "Key": "POR",
+    "Value": "Portugal",
+    "HierarchyKey": "undefined|EEMEA|WE|POR",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.029205Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 581691126,
+    "Key": "SH",
+    "Value": "Saint Helena, Ascension and Tristan da Cunha",
+    "HierarchyKey": "undefined|EEMEA|WE|SH",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.036044Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1135463662,
+    "Key": "SMLA",
+    "Value": "Saint Martin (French part)",
+    "HierarchyKey": "undefined|EEMEA|WE|SMLA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.04288Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 863240151,
+    "Key": "SMRN",
+    "Value": "San Marino",
+    "HierarchyKey": "undefined|EEMEA|WE|SMRN",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.049713Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 732179135,
+    "Key": "SMAA",
+    "Value": "Sint Maarten (Dutch part)",
+    "HierarchyKey": "undefined|EEMEA|WE|SMAA",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.056552Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1303753763,
+    "Key": "ESP",
+    "Value": "Spain",
+    "HierarchyKey": "undefined|EEMEA|WE|ESP",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.06339Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1942032343,
+    "Key": "SVJM",
+    "Value": "Svalbard and Jan Mayen",
+    "HierarchyKey": "undefined|EEMEA|WE|SVJM",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.070221Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1183052573,
+    "Key": "SWD",
+    "Value": "Sweden",
+    "HierarchyKey": "undefined|EEMEA|WE|SWD",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.077059Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 198368339,
+    "Key": "SWZ",
+    "Value": "Switzerland",
+    "HierarchyKey": "undefined|EEMEA|WE|SWZ",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.083893Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1744490539,
+    "Key": "UK",
+    "Value": "United Kingdom",
+    "HierarchyKey": "undefined|EEMEA|WE|UK",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.092682Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 823368946,
+    "Key": "VIB",
+    "Value": "Virgin Islands, British",
+    "HierarchyKey": "undefined|EEMEA|WE|VIB",
+    "LevelId": "Country",
+    "Parent": "undefined|EEMEA|WE",
+    "Ancestors": [
+      "undefined|EEMEA",
+      "undefined|EEMEA|WE"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.102448Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 62581471,
+    "Key": "ABR",
+    "Value": "Antigua and Barbuda",
+    "HierarchyKey": "undefined|PA|CSA|ABR",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.10928Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2031949942,
+    "Key": "AGN",
+    "Value": "Argentina",
+    "HierarchyKey": "undefined|PA|CSA|AGN",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.116122Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 250215258,
+    "Key": "BHMS",
+    "Value": "Bahamas",
+    "HierarchyKey": "undefined|PA|CSA|BHMS",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.122954Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1009730393,
+    "Key": "BARB",
+    "Value": "Barbados",
+    "HierarchyKey": "undefined|PA|CSA|BARB",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.129787Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1365960651,
+    "Key": "BLZE",
+    "Value": "Belize",
+    "HierarchyKey": "undefined|PA|CSA|BLZE",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.136625Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 250214823,
+    "Key": "BRMD",
+    "Value": "Bermuda",
+    "HierarchyKey": "undefined|PA|CSA|BRMD",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.143463Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 66034739,
+    "Key": "BOL",
+    "Value": "Bolivia, Plurinational State of",
+    "HierarchyKey": "undefined|PA|CSA|BOL",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.150298Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1763179682,
+    "Key": "BRZ",
+    "Value": "Brazil",
+    "HierarchyKey": "undefined|PA|CSA|BRZ",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.157133Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2072355885,
+    "Key": "CHL",
+    "Value": "Chile",
+    "HierarchyKey": "undefined|PA|CSA|CHL",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.163972Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2072355886,
+    "Key": "COL",
+    "Value": "Colombia",
+    "HierarchyKey": "undefined|PA|CSA|COL",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.170806Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2119410042,
+    "Key": "CRC",
+    "Value": "Costa Rica",
+    "HierarchyKey": "undefined|PA|CSA|CRC",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.17764Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 956610644,
+    "Key": "CBA",
+    "Value": "Cuba",
+    "HierarchyKey": "undefined|PA|CSA|CBA",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.184474Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 956610643,
+    "Key": "CCA",
+    "Value": "Curaçao",
+    "HierarchyKey": "undefined|PA|CSA|CCA",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.191316Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1075668979,
+    "Key": "DM",
+    "Value": "Dominica",
+    "HierarchyKey": "undefined|PA|CSA|DM",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.198147Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 536318089,
+    "Key": "RDM",
+    "Value": "Dominican Republic",
+    "HierarchyKey": "undefined|PA|CSA|RDM",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.204985Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1917638628,
+    "Key": "ECD",
+    "Value": "Ecuador",
+    "HierarchyKey": "undefined|PA|CSA|ECD",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.211823Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1064015406,
+    "Key": "ELS",
+    "Value": "El Salvador",
+    "HierarchyKey": "undefined|PA|CSA|ELS",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.218658Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1874037728,
+    "Key": "FIM",
+    "Value": "Falkland Islands (Malvinas)",
+    "HierarchyKey": "undefined|PA|CSA|FIM",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.225496Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2060353219,
+    "Key": "FG",
+    "Value": "French Guiana",
+    "HierarchyKey": "undefined|PA|CSA|FG",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.232329Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 166791277,
+    "Key": "GRN",
+    "Value": "Grenada",
+    "HierarchyKey": "undefined|PA|CSA|GRN",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.239178Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 795245156,
+    "Key": "GUD",
+    "Value": "Guadeloupe",
+    "HierarchyKey": "undefined|PA|CSA|GUD",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.246001Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1507705876,
+    "Key": "GUT",
+    "Value": "Guatemala",
+    "HierarchyKey": "undefined|PA|CSA|GUT",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.252834Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2142224563,
+    "Key": "GYAN",
+    "Value": "Guyana",
+    "HierarchyKey": "undefined|PA|CSA|GYAN",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.259674Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 415358559,
+    "Key": "HAT",
+    "Value": "Haiti",
+    "HierarchyKey": "undefined|PA|CSA|HAT",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.266514Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1850381482,
+    "Key": "HND",
+    "Value": "Honduras",
+    "HierarchyKey": "undefined|PA|CSA|HND",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.273344Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 146588314,
+    "Key": "JMC",
+    "Value": "Jamaica",
+    "HierarchyKey": "undefined|PA|CSA|JMC",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.280183Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1500799325,
+    "Key": "MRT",
+    "Value": "Martinique",
+    "HierarchyKey": "undefined|PA|CSA|MRT",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.287018Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1322684166,
+    "Key": "MEX",
+    "Value": "Mexico",
+    "HierarchyKey": "undefined|PA|CSA|MEX",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.293858Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1684979792,
+    "Key": "MNST",
+    "Value": "Montserrat",
+    "HierarchyKey": "undefined|PA|CSA|MNST",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.301666Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1860482973,
+    "Key": "NCR",
+    "Value": "Nicaragua",
+    "HierarchyKey": "undefined|PA|CSA|NCR",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.308502Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1658711541,
+    "Key": "PNM",
+    "Value": "Panama",
+    "HierarchyKey": "undefined|PA|CSA|PNM",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.317297Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1889945806,
+    "Key": "PRGU",
+    "Value": "Paraguay",
+    "HierarchyKey": "undefined|PA|CSA|PRGU",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.324128Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 590020449,
+    "Key": "PRU",
+    "Value": "Peru",
+    "HierarchyKey": "undefined|PA|CSA|PRU",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.33096Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 815189801,
+    "Key": "PUR",
+    "Value": "Puerto Rico",
+    "HierarchyKey": "undefined|PA|CSA|PUR",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.337799Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 894802482,
+    "Key": "SBART",
+    "Value": "Saint Barthélemy",
+    "HierarchyKey": "undefined|PA|CSA|SBART",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.344636Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 976555280,
+    "Key": "SKN",
+    "Value": "Saint Kitts and Nevis",
+    "HierarchyKey": "undefined|PA|CSA|SKN",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.351472Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2008293688,
+    "Key": "SLC",
+    "Value": "Saint Lucia",
+    "HierarchyKey": "undefined|PA|CSA|SLC",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.358307Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 38925210,
+    "Key": "SVG",
+    "Value": "Saint Vincent and the Grenadines",
+    "HierarchyKey": "undefined|PA|CSA|SVG",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.365148Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 898613952,
+    "Key": "SGSS",
+    "Value": "South Georgia and the South Sandwich Islands",
+    "HierarchyKey": "undefined|PA|CSA|SGSS",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.371983Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 579335652,
+    "Key": "SRNM",
+    "Value": "Suriname",
+    "HierarchyKey": "undefined|PA|CSA|SRNM",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.37882Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1235224038,
+    "Key": "TNT",
+    "Value": "Trinidad and Tobago",
+    "HierarchyKey": "undefined|PA|CSA|TNT",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.385654Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 915946360,
+    "Key": "TCI",
+    "Value": "Turks and Caicos Islands",
+    "HierarchyKey": "undefined|PA|CSA|TCI",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.392486Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 62323124,
+    "Key": "URG",
+    "Value": "Uruguay",
+    "HierarchyKey": "undefined|PA|CSA|URG",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.399323Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1809975530,
+    "Key": "VNZ",
+    "Value": "Venezuela, Bolivarian Republic of",
+    "HierarchyKey": "undefined|PA|CSA|VNZ",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|CSA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|CSA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.406163Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 740378600,
+    "Key": "AMSM",
+    "Value": "American Samoa",
+    "HierarchyKey": "undefined|PA|NA|AMSM",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|NA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|NA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.412999Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 598945153,
+    "Key": "CND",
+    "Value": "Canada",
+    "HierarchyKey": "undefined|PA|NA|CND",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|NA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|NA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.419836Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1274453079,
+    "Key": "GUM",
+    "Value": "Guam",
+    "HierarchyKey": "undefined|PA|NA|GUM",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|NA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|NA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.42667Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 801245543,
+    "Key": "SPMQ",
+    "Value": "Saint Pierre and Miquelon",
+    "HierarchyKey": "undefined|PA|NA|SPMQ",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|NA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|NA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.4335Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 21527362,
+    "Key": "USMO",
+    "Value": "United States Minor Outlying Islands",
+    "HierarchyKey": "undefined|PA|NA|USMO",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|NA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|NA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.440342Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 935759517,
+    "Key": "UnSA",
+    "Value": "United States of America",
+    "HierarchyKey": "undefined|PA|NA|UnSA",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|NA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|NA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.447175Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2111597257,
+    "Key": "VIUS",
+    "Value": "Virgin Islands, U.S.",
+    "HierarchyKey": "undefined|PA|NA|VIUS",
+    "LevelId": "Country",
+    "Parent": "undefined|PA|NA",
+    "Ancestors": [
+      "undefined|PA",
+      "undefined|PA|NA"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.454011Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 926685777,
+    "Key": "AFG",
+    "Value": "Afghanistan",
+    "HierarchyKey": "undefined|PAP|AS|AFG",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.460847Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1388221486,
+    "Key": "AUST",
+    "Value": "Australia",
+    "HierarchyKey": "undefined|PAP|AS|AUST",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.467683Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 83164052,
+    "Key": "BNG",
+    "Value": "Bangladesh",
+    "HierarchyKey": "undefined|PAP|AS|BNG",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.474521Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 214225067,
+    "Key": "BHT",
+    "Value": "Bhutan",
+    "HierarchyKey": "undefined|PAP|AS|BHT",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.481352Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1932668545,
+    "Key": "BHTN",
+    "Value": "Bhutan",
+    "HierarchyKey": "undefined|PAP|AS|BHTN",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.48819Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1649248005,
+    "Key": "BRD",
+    "Value": "Brunei Darussalam",
+    "HierarchyKey": "undefined|PAP|AS|BRD",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.495052Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1959519457,
+    "Key": "CMBD",
+    "Value": "Cambodia",
+    "HierarchyKey": "undefined|PAP|AS|CMBD",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.501862Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1734349983,
+    "Key": "CAYI",
+    "Value": "Cayman Islands",
+    "HierarchyKey": "undefined|PAP|AS|CAYI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.508701Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1425174205,
+    "Key": "CHNA",
+    "Value": "China",
+    "HierarchyKey": "undefined|PAP|AS|CHNA",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.515537Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 524496809,
+    "Key": "CHRI",
+    "Value": "Christmas Island",
+    "HierarchyKey": "undefined|PAP|AS|CHRI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.522375Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1450929832,
+    "Key": "CCI",
+    "Value": "Cocos (Keeling) Islands",
+    "HierarchyKey": "undefined|PAP|AS|CCI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.529205Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2006573807,
+    "Key": "COOI",
+    "Value": "Cook Islands",
+    "HierarchyKey": "undefined|PAP|AS|COOI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.536045Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1454383114,
+    "Key": "FJI",
+    "Value": "Fiji",
+    "HierarchyKey": "undefined|PAP|AS|FJI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.542877Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1905817075,
+    "Key": "HMCD",
+    "Value": "Heard Island and McDonald Islands",
+    "HierarchyKey": "undefined|PAP|AS|HMCD",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.549714Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 946888764,
+    "Key": "HKN",
+    "Value": "Hong Kong",
+    "HierarchyKey": "undefined|PAP|AS|HKN",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.556551Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 489901852,
+    "Key": "IND",
+    "Value": "India",
+    "HierarchyKey": "undefined|PAP|AS|IND",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.563388Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 60861494,
+    "Key": "INDN",
+    "Value": "Indonesia",
+    "HierarchyKey": "undefined|PAP|AS|INDN",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP",
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.570224Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1302860794,
+    "Key": "TJK",
+    "Value": "Tajikistan",
+    "HierarchyKey": "undefined|PAP|AS|TJK",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.577056Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 245366749,
+    "Key": "THAI",
+    "Value": "Thailand",
+    "HierarchyKey": "undefined|PAP|AS|THAI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.583892Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 496291737,
+    "Key": "TIM",
+    "Value": "Timor-Leste",
+    "HierarchyKey": "undefined|PAP|AS|TIM",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.590728Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1077691446,
+    "Key": "TKL",
+    "Value": "Tokelau",
+    "HierarchyKey": "undefined|PAP|AS|TKL",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.597563Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1837206330,
+    "Key": "TNG",
+    "Value": "Tonga",
+    "HierarchyKey": "undefined|PAP|AS|TNG",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.604407Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1098989961,
+    "Key": "TURK",
+    "Value": "Turkmenistan",
+    "HierarchyKey": "undefined|PAP|AS|TURK",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.611238Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 648651342,
+    "Key": "TVLU",
+    "Value": "Tuvalu",
+    "HierarchyKey": "undefined|PAP|AS|TVLU",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.618086Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 976934914,
+    "Key": "UZB",
+    "Value": "Uzbekistan",
+    "HierarchyKey": "undefined|PAP|AS|UZB",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.624918Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1746551269,
+    "Key": "VNT",
+    "Value": "Vanuatu",
+    "HierarchyKey": "undefined|PAP|AS|VNT",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.631755Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1118097401,
+    "Key": "VTN",
+    "Value": "Viet Nam",
+    "HierarchyKey": "undefined|PAP|AS|VTN",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:23.718689Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1568384153,
+    "Key": "AGRI",
+    "Value": "Agriculture",
+    "HierarchyKey": "IB|AGRI",
+    "LevelId": "Region",
+    "Parent": "IB",
+    "Ancestors": [
+      "IB"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.77432Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.856218Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1413977168,
+    "Key": "DPK",
+    "Value": "Korea, Democratic People's Republic of",
+    "HierarchyKey": "undefined|PAP|AS|DPK",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.027112Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 19101854,
+    "Key": "RKR",
+    "Value": "Korea, Republic of",
+    "HierarchyKey": "undefined|PAP|AS|RKR",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.043744Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1286369411,
+    "Key": "LAO",
+    "Value": "Lao People's Democratic Republic",
+    "HierarchyKey": "undefined|PAP|AS|LAO",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.062299Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1814066738,
+    "Key": "MCA",
+    "Value": "Macao",
+    "HierarchyKey": "undefined|PAP|AS|MCA",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.078872Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1363728047,
+    "Key": "MLS",
+    "Value": "Malaysia",
+    "HierarchyKey": "undefined|PAP|AS|MLS",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.103296Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1410782214,
+    "Key": "MLD",
+    "Value": "Maldives",
+    "HierarchyKey": "undefined|PAP|AS|MLD",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.112072Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1363728061,
+    "Key": "MRS",
+    "Value": "Marshall Islands",
+    "HierarchyKey": "undefined|PAP|AS|MRS",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.118912Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1632498301,
+    "Key": "FSM",
+    "Value": "Micronesia, Federated States of",
+    "HierarchyKey": "undefined|PAP|AS|FSM",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.127731Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 829382509,
+    "Key": "MNG",
+    "Value": "Mongolia",
+    "HierarchyKey": "undefined|PAP|AS|MNG",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.135524Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 175173360,
+    "Key": "MYNM",
+    "Value": "Myanmar",
+    "HierarchyKey": "undefined|PAP|AS|MYNM",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.142351Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1253965165,
+    "Key": "NAUR",
+    "Value": "Nauru",
+    "HierarchyKey": "undefined|PAP|AS|NAUR",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.149185Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1908175087,
+    "Key": "NPL",
+    "Value": "Nepal",
+    "HierarchyKey": "undefined|PAP|AS|NPL",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.156021Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1457836390,
+    "Key": "NWZ",
+    "Value": "New Zealand",
+    "HierarchyKey": "undefined|PAP|AS|NWZ",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.162859Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1683005731,
+    "Key": "NIU",
+    "Value": "Niue",
+    "HierarchyKey": "undefined|PAP|AS|NIU",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.169708Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 567260495,
+    "Key": "NRF",
+    "Value": "Norfolk Island",
+    "HierarchyKey": "undefined|PAP|AS|NRF",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.175555Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 672565565,
+    "Key": "NMRI",
+    "Value": "Northern Mariana Islands",
+    "HierarchyKey": "undefined|PAP|AS|NMRI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.182389Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1828200289,
+    "Key": "PLAU",
+    "Value": "Palau",
+    "HierarchyKey": "undefined|PAP|AS|PLAU",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.189221Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 712455416,
+    "Key": "PPNG",
+    "Value": "Papua New Guinea",
+    "HierarchyKey": "undefined|PAP|AS|PPNG",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.196059Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2126179549,
+    "Key": "PHP",
+    "Value": "Philippines",
+    "HierarchyKey": "undefined|PAP|AS|PHP",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.202894Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1895457253,
+    "Key": "SMOA",
+    "Value": "Samoa",
+    "HierarchyKey": "undefined|PAP|AS|SMOA",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.209736Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2120626543,
+    "Key": "SGPR",
+    "Value": "Singapore",
+    "HierarchyKey": "undefined|PAP|AS|SGPR",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.216583Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 732657990,
+    "Key": "SLMI",
+    "Value": "Solomon Islands",
+    "HierarchyKey": "undefined|PAP|AS|SLMI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.222427Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 151258628,
+    "Key": "SRLN",
+    "Value": "Sri Lanka",
+    "HierarchyKey": "undefined|PAP|AS|SRLN",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.22926Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 318176549,
+    "Key": "TAI",
+    "Value": "Taiwan, Province of China",
+    "HierarchyKey": "undefined|PAP|AS|TAI",
+    "LevelId": "Country",
+    "Parent": "undefined|PAP|AS",
+    "Ancestors": [
+      "undefined|PAP|AS"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.2361Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 2103712260,
+    "Key": "APAC",
+    "Value": "Asia Pacific",
+    "HierarchyKey": "CB|APAC",
+    "LevelId": "Region",
+    "Parent": "CB",
+    "Ancestors": [
+      "CB"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.752837Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.833788Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1654326087,
+    "Key": "EMEA",
+    "Value": "Europe, Middle East and Africa",
+    "HierarchyKey": "CB|EMEA",
+    "LevelId": "Region",
+    "Parent": "CB",
+    "Ancestors": [
+      "CB"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.760648Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.842545Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1120787003,
+    "Key": "PROP",
+    "Value": "Property",
+    "HierarchyKey": "IB|PROP",
+    "LevelId": "Region",
+    "Parent": "IB",
+    "Ancestors": [
+      "IB"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.781154Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.863055Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 447695223,
+    "Key": "FMCG",
+    "Value": "Consumer Goods",
+    "HierarchyKey": "IB|FMCG",
+    "LevelId": "Region",
+    "Parent": "IB",
+    "Ancestors": [
+      "IB"
+    ],
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.787989Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.86989Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1309194215,
+    "Key": "IB",
+    "Value": "Institutional Banking",
+    "HierarchyKey": "IB",
+    "LevelId": "BusinessUnit",
+    "Parent": null,
+    "Ancestors": null,
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.794826Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.876729Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "BUSINESSPORTFOLIO",
+    "HierarchyKeyInt": 1309194205,
+    "Key": "CB",
+    "Value": "Commercial Banking",
+    "HierarchyKey": "CB",
+    "LevelId": "BusinessUnit",
+    "Parent": null,
+    "Ancestors": null,
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:21.823149Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:24.883565Z",
+    "t_": "BusinessPortfolio",
+    "ContextUserId_": "admin"
+  }
+]

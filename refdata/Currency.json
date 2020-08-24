@@ -1,0 +1,216 @@
+[
+  {
+    "Type": "CURRENCY",
+    "Key": "XOF",
+    "Value": "C.F.A. Francs B.C.E.A.O",
+    "Country": null,
+    "KeyInt": 77678893,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.290785Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "XPD",
+    "Value": "Palladium",
+    "Country": null,
+    "KeyInt": 124733058,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.298601Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "ADP",
+    "Value": "Andorran Peseta",
+    "Country": null,
+    "KeyInt": 1015308025,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.305442Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "ATS",
+    "Value": "Austrian Schillings",
+    "Country": [
+      "AUT"
+    ],
+    "KeyInt": 302847308,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.314255Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "MXP",
+    "Value": "Mexican Pesos",
+    "Country": [
+      "MEX"
+    ],
+    "KeyInt": 1915985545,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.322049Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "NAD",
+    "Value": "Namibian Dollar",
+    "Country": [
+      "NAM"
+    ],
+    "KeyInt": 1418592771,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.328874Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "NIS",
+    "Value": "New Israeli Shekel",
+    "Country": [
+      "ISR"
+    ],
+    "KeyInt": 1062362420,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.335709Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "RO",
+    "Value": "Rial Omani",
+    "Country": [
+      "OMN"
+    ],
+    "KeyInt": 71993673,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.343541Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "RON",
+    "Value": "Romania New Leu",
+    "Country": [
+      "ROU"
+    ],
+    "KeyInt": 77678571,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.350359Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "RUR",
+    "Value": "Rouble",
+    "Country": [
+      "RUS"
+    ],
+    "KeyInt": 884247605,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.357193Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "TRY",
+    "Value": "New Turkish Lira",
+    "Country": [
+      "TUR"
+    ],
+    "KeyInt": 1109416891,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.365008Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "FRF",
+    "Value": "France Franc",
+    "Country": [
+      "FRA"
+    ],
+    "KeyInt": 1109416312,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.37184Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "BGL",
+    "Value": "BGL",
+    "Country": null,
+    "KeyInt": 433908405,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.37868Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "UYU",
+    "Value": "UYU",
+    "Country": null,
+    "KeyInt": 349901841,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-07-24T03:30:24.386492Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  }
+]

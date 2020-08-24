@@ -2,15 +2,20 @@
   {
     "PolicyCategoryId": "1f351210-9c29-49f8-8362-d945d2e0261e",
     "Inapplicable_": [],
+    "Associations_": [
+      "ModelPolicy"
+    ],
     "WFId_": "00000000-0000-0000-0000-000000000000",
     "TaskId_": "00000000-0000-0000-0000-000000000000",
-    "VersionId_": 1,
-    "BaseVersionId_": 0,
+    "VersionId_": 14,
+    "BaseVersionId_": 13,
     "IsLatestVersion_": true,
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "CreatedDate_": "2018-12-13T13:23:06.763576Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-07-24T03:30:25.977327Z",
     "t_": "ModelPolicyMain",
     "ContextUserId_": "admin",
     "IsValid_": true,
