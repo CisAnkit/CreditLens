@@ -9,10 +9,10 @@
     "Inapplicable_": [],
     "IsDeleted_": false,
     "StatusId_": 1,
-    "CreatedBy_": "ama",
-    "CreatedDate_": "2020-08-06T14:14:34.275981Z",
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-09-01T12:22:04.019054Z",
     "t_": "RuleExecution",
-    "ContextUserId_": "ama"
+    "ContextUserId_": "admin"
   },
   {
     "ModelId": "ArcRiskGradingDomainModel",
@@ -24,10 +24,10 @@
     "Inapplicable_": [],
     "IsDeleted_": false,
     "StatusId_": 1,
-    "CreatedBy_": "ama",
-    "CreatedDate_": "2020-08-06T14:14:43.824931Z",
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-09-01T12:22:04.034678Z",
     "t_": "RuleExecution",
-    "ContextUserId_": "ama"
+    "ContextUserId_": "admin"
   },
   {
     "ModelId": "ArcRiskGradingDomainModel",
@@ -39,23 +39,25 @@
     "Inapplicable_": [],
     "IsDeleted_": false,
     "StatusId_": 1,
-    "CreatedBy_": "ama",
-    "CreatedDate_": "2020-08-06T14:14:54.331728Z",
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-09-01T12:22:04.050303Z",
     "t_": "RuleExecution",
-    "ContextUserId_": "ama"
+    "ContextUserId_": "admin"
   },
   {
     "ModelId": "ArcRiskGradingDomainModel",
     "Trigger": "OnWillCreate",
     "ModuleId": "Tenant",
     "Rules": [
-      "ArcRiskGrading"
+      "MapArcRiskGradingDomainModel"
     ],
     "Inapplicable_": [],
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-05-18T06:37:29.36883Z",
+    "CreatedDate_": "2020-09-01T12:22:04.050303Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-09-01T14:53:45.689006Z",
     "t_": "RuleExecution",
     "ContextUserId_": "admin"
   },
@@ -64,13 +66,15 @@
     "Trigger": "OnWillUpdate",
     "ModuleId": "Tenant",
     "Rules": [
-      "ArcRiskGrading"
+      "MapArcRiskGradingDomainModel"
     ],
     "Inapplicable_": [],
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-05-18T06:37:43.331731Z",
+    "CreatedDate_": "2020-09-01T12:22:04.065929Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-09-01T14:53:53.928892Z",
     "t_": "RuleExecution",
     "ContextUserId_": "admin"
   }
