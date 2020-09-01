@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="curAstHdr">
+		<value>ATTIVITA' CORRENTI</value>
+	</data>
+	<data name="nonCurAstHdr">
+		<value>ATTIVITA' NON CORRENTI</value>
+	</data>
+	<data name="netFixAssets">
+		<value>Immobilizzazioni materiali nette</value>
+	</data>
+	<data name="grsFixAssets">
+		<value>Immobilizzazioni materiali lorde</value>
+	</data>
+	<data name="netItangibles">
+		<value>Attività immateriali nette</value>
+	</data>
+	<data name="totNCAssts">
+		<value>TOTALE ATTIVITA' NON CORRENTI</value>
+	</data>
+	<data name="netTrdRecv">
+		<value>Crediti netti</value>
+	</data>
+	<data name="totCurrAssts">
+		<value>TOTALE ATTIVITA' CORRENTI</value>
+	</data>
+	<data name="totAssts">
+		<value>TOTALE ATTIVO</value>
+	</data>
+	<data name="eqtyResrvs">
+		<value>Capitale e riserve</value>
+	</data>
+	<data name="prmntEqty">
+		<value>Capitale permanente</value>
+	</data>
+	<data name="totEqtyRsrvs">
+		<value>TOTALE CAPITALE E RISERVE</value>
+	</data>
+	<data name="ncLiabs">
+		<value>PASSIVITA' NON CORRENTI</value>
+	</data>
+	<data name="totNCLiabs">
+		<value>TOTALE PASSIVITA' NON CORRENTI</value>
+	</data>
+	<data name="currLiabs">
+		<value>PASSIVITA' CORRENTI</value>
+	</data>
+	<data name="totCurrLiabs">
+		<value>TOTALE PASSIVITA' CORRENTI</value>
+	</data>
+	<data name="totLiabs">
+		<value>TOTALE PASSIVITA'</value>
+	</data>
+	<data name="totEqtyRsrvLiabs">
+		<value>TOTALE CAPITALE, RISERVE E PASSIVITA'</value>
+	</data>
+	<data name="msgAstToLiab">
+		<value>L'ATTIVO NON E' UGUALE A TOTALE CAPITALE, RISERVE E PASSIVITA'</value>
+	</data>
+	<data name="msgExchEnd">
+		<value>E' stato indicato il tasso di cambio di &quot;chiusura periodo&quot; ma non quello di &quot;media periodo&quot;</value>
+	</data>
+	<data name="msgExchAvg">
+		<value>E' stato indicato il tasso di cambio di &quot;media periodo&quot; ma non quello di &quot;chiusura periodo&quot;</value>
+	</data>
+	<data name="msgIncorrect">
+		<value>PROBABILI ERRORI NEI RESOCONTI</value>
+	</data>
+	<data name="salesRevs">
+		<value>Fatturato(Ricavi)</value>
+	</data>
+	<data name="totCostSales">
+		<value>Totale costo del venduto</value>
+	</data>
+	<data name="grssPrft">
+		<value>Margine operativo lordo</value>
+	</data>
+	<data name="oprExpExclDepAmrt">
+		<value>ALTRI COSTI OPERATIVI (ESCLUSI AMMORTAMENTI)</value>
+	</data>
+	<data name="ebitda">
+		<value>EBITDA</value>
+	</data>
+	<data name="ebit">
+		<value>EBIT</value>
+	</data>
+	<data name="netIntIncExp">
+		<value>REDDITO DA INTERESSI(ONERI FINANZIARI) NETTO</value>
+	</data>
+	<data name="netOthFinIncExp">
+		<value>ALTRE ENTRATE(SPESE) FINANZIARIE NETTE</value>
+	</data>
+	<data name="othIncExp">
+		<value>ALTRI PROVENTI E ONERI NON OPERATIVI</value>
+	</data>
+	<data name="prftLossB4tax">
+		<value>MARGINI E PERDITE AL LORDO DI IMPOSTE</value>
+	</data>
+	<data name="totIncTax">
+		<value>TOTALE IMPOSTE SUL REDDITO</value>
+	</data>
+	<data name="prftLsB4ExOrdItem">
+		<value>MARGINI E PERDITE AL LORDO DI VOCI STRAORDINARIE</value>
+	</data>
+	<data name="netPrftLoss">
+		<value>MARGINE(PERDITA) NETTO</value>
+	</data>
+	<data name="othEqRsrvIncExp">
+		<value>ALTRE ENTRATE(SPESE) DI RISERVE DI CAPITALE</value>
+	</data>
+	<data name="totOthEqRsrv">
+		<value>ALTRE ENTRATE(SPESE) DI RISERVE DI CAPITALE</value>
+	</data>
+	<data name="adjToRetPrft">
+		<value>RETTIFICA AGLI UTILI NON DISTRIBUITI</value>
+	</data>
+	<data name="totAdjRetPrftLoss">
+		<value>TOTALE UTILI E PERDITE NON DISTRIBUITI RETTIFICATI</value>
+	</data>
+	<data name="operAct">
+		<value>ATTIVITA' DI ESERCIZIO</value>
+	</data>
+	<data name="cshFrmOperAct">
+		<value>FLUSSI DI CASSA DA ATTIVITA' DI ESERCIZIO</value>
+	</data>
+	<data name="invstAct">
+		<value>INVESTIMENTI</value>
+	</data>
+	<data name="cfFrmInvstAct">
+		<value>FLUSSI DI CASSA DA INVESTIMENTI</value>
+	</data>
+	<data name="finAct">
+		<value>ATTIVITA' DI FINANZIAMENTO</value>
+	</data>
+	<data name="cfFrmFinAct">
+		<value>FLUSSI DI CASSA DA ATTIVITA' FINANZIARIE</value>
+	</data>
+	<data name="other">
+		<value>ALTRO</value>
+	</data>
+	<data name="totMoveInCash">
+		<value>TOTALE MOVIMENTI CASSA</value>
+	</data>
+	<data name="begPerCshEquiv">
+		<value>LIQUIDITA' A INIZIO PERIODO</value>
+	</data>
+	<data name="unexpAdjCash">
+		<value>Rettifiche di cassa immotivati</value>
+	</data>
+	<data name="endOfPerCshEquiv">
+		<value>LIQUIDITA' A CHIUSURA PERIODO</value>
+	</data>
+	<data name="reconItems">
+		<value>Voci da riconciliare:</value>
+	</data>
+	<data name="chgInNetRecv">
+		<value>Variazione del crediti netti</value>
+	</data>
+	<data name="chgIn">
+		<value>Variaz in </value>
+	</data>
+	<data name="chgOthCurOpAssts">
+		<value>Variazione delle altre passività di esercizio correnti</value>
+	</data>
+	<data name="chgOthNCOpAssts">
+		<value>Variazione delle altre attività di esercizio non correnti</value>
+	</data>
+	<data name="chgOthCurOpLiab">
+		<value>Variazione delle altre passività di esercizio correnti</value>
+	</data>
+	<data name="chgOthNCOpLiab">
+		<value>Variazione delle altre passività di esercizio non correnti</value>
+	</data>
+	<data name="incTaxPaid">
+		<value>Imposte sul reddito pagate</value>
+	</data>
+	<data name="totAdjs">
+		<value>Totale rettifiche</value>
+	</data>
+	<data name="chgNetFixAssts">
+		<value>Variazione delle immobilizzazioni materiali nette</value>
+	</data>
+	<data name="chgNetIntg">
+		<value>Variazione delle attività immateriali nette</value>
+	</data>
+	<data name="intPaid">
+		<value>Interessi pagati</value>
+	</data>
+	<data name="divPaid">
+		<value>Dividendi pagati</value>
+	</data>
+	<data name="adjDueExchRate">
+		<value>Rettifiche alle variazioni del tasso di cambio</value>
+	</data>
+	<data name="conAdjNetPrft">
+		<value>Rettifiche conversione verso margine netto</value>
+	</data>
+	<data name="unexpAdjRetPrfts">
+		<value>Rettifiche immot utili non dist</value>
+	</data>
+	<data name="exchRateAvg">
+		<value>Tasso di cambio(media periodo)</value>
+	</data>
+	<data name="workingCap">
+		<value>Capitale di esercizio</value>
+	</data>
+	<data name="liquidity">
+		<value>LIQUIDITA'</value>
+	</data>
+	<data name="currRatio">
+		<value>Rapporto corrente</value>
+	</data>
+	<data name="quickRatio">
+		<value>Rapporto secco di liquidità</value>
+	</data>
+	<data name="slsRevToWC">
+		<value>Fatturato(Ricavi) a capitale di esercizio</value>
+	</data>
+	<data name="TNW">
+		<value>Capitale netto tangibile</value>
+	</data>
+	<data name="effTNW">
+		<value>Capitale netto tang eff</value>
+	</data>
+	<data name="dbtToNW">
+		<value>Debito / Capitale netto</value>
+	</data>
+	<data name="dbtToTNW">
+		<value>Debito / Capitale netto tangibile</value>
+	</data>
+	<data name="dbttLessSubDbtEffTNW">
+		<value>Debito meno debito sub/ CNT effettivo</value>
+	</data>
+	<data name="brwFundToTotLiab">
+		<value>Fondi mutuati / Totale passivo</value>
+	</data>
+	<data name="brwFundtoEffTNW">
+		<value>Fondi mutuati / capitale netto tangibile effettivo</value>
+	</data>
+	<data name="brwFundToEBITDA">
+		<value>Fondi mutuati a EBITDA</value>
+	</data>
+	<data name="TotLiabToTotAssts">
+		<value>Totale passività / Totale attivo</value>
+	</data>
+	<data name="offBSLevrg">
+		<value>Fattore fuori bilancio</value>
+	</data>
+	<data name="coverage">
+		<value>COPERTURA</value>
+	</data>
+	<data name="intCovrg">
+		<value>Copertura interessi</value>
+	</data>
+	<data name="earnCovrg">
+		<value>Copertura utili</value>
+	</data>
+	<data name="cfCovrg">
+		<value>Copertura flusso di cassa</value>
+	</data>
+	<data name="grssPrftMargin">
+		<value>Margine operativo lordo(%)</value>
+	</data>
+	<data name="EBTIDAMargin">
+		<value>Margine EBITDA(%)</value>
+	</data>
+	<data name="PrftB4TaxMargin">
+		<value>Margine operativo al lordo di imposte(%)</value>
+	</data>
+	<data name="NetPrftMarginPer">
+		<value>Margine operativo netto(%)</value>
+	</data>
+	<data name="netOpEBITMrg">
+		<value>Margine operativo netto(EBIT)(%)</value>
+	</data>
+	<data name="divdPayRate">
+		<value>Tasso pagamento dividendi(%)</value>
+	</data>
+	<data name="effTaxRate">
+		<value>Aliquota fiscale effettiva(%)</value>
+	</data>
+	<data name="PBTToTotAssts">
+		<value>Profitto al lordo di imposte / Totale attivo</value>
+	</data>
+	<data name="PBTToTNW">
+		<value>Profitto al lordo di imposte / Capitale netto tangibile</value>
+	</data>
+	<data name="PBTToTotEqtyResrvs">
+		<value>Profitto al lordo di imposte / Totale capitale e riserve</value>
+	</data>
+	<data name="ROA">
+		<value>Utile sull’attivo</value>
+	</data>
+	<data name="ROTNW">
+		<value>Utile sul capitale netto tangibile</value>
+	</data>
+	<data name="ROTotEqtyResrvs">
+		<value>Utile sul totale capitale e riserve</value>
+	</data>
+	<data name="activity">
+		<value>ATTIVITA'</value>
+	</data>
+	<data name="netTrdRecvDays">
+		<value>Giorni crediti netti</value>
+	</data>
+	<data name="invDays">
+		<value>Giorni magazzino</value>
+	</data>
+	<data name="trdPayDays">
+		<value>Giorni conto debitore</value>
+	</data>
+	<data name="salesToTotAssts">
+		<value>Fatturato(Ricavi) a totale attivo</value>
+	</data>
+	<data name="salesToTNW">
+		<value>Fatturato(Ricavi) a capitale netto tangibile</value>
+	</data>
+	<data name="salesToNFA">
+		<value>Fatturato(Ricavi) a immobilizzazioni materiali nette</value>
+	</data>
+	<data name="growth">
+		<value>CRESCITA(%)</value>
+	</data>
+	<data name="totAsstsGrwth">
+		<value>Totale crescita dell’attivo</value>
+	</data>
+	<data name="salesRevGrwth">
+		<value>Crescita fatturato(Ricavi)</value>
+	</data>
+	<data name="EBITDAGrwth">
+		<value>Crescita EBITDA</value>
+	</data>
+	<data name="netOpPrftGrw">
+		<value>Crescita margine operativo netto (EBIT)</value>
+	</data>
+	<data name="netPrftGrwth">
+		<value>Crescita margine operativo netto</value>
+	</data>
+	<data name="sustainGrowth">
+		<value>Crescita sostenibile</value>
+	</data>
+	<data name="exchRatePE">
+		<value>Tasso di cambio(chiusura periodo)</value>
+	</data>
+	<data name="ccActual">
+		<value>Reale</value>
+	</data>
+	<data name="ccCovMax">
+		<value>Pattuizione (max)</value>
+	</data>
+	<data name="ccCovMin">
+		<value>Pattuizione (min)</value>
+	</data>
+	<data name="ccdbtToTNW">
+		<value>Debito verso capitale netto tangibile</value>
+	</data>
+	<data name="ccResult">
+		<value>Risultato</value>
+	</data>
+	<data name="ccDefault">
+		<value>INADEMPIENTE</value>
+	</data>
+	<data name="ccVariance">
+		<value>Varianza</value>
+	</data>
+	<data name="levCovrg">
+		<value>LEVERAGE / COPERTURA</value>
+	</data>
+	<data name="capExpnd">
+		<value>Spese in conto capitale</value>
+	</data>
+	<data name="profitability">
+		<value>REDDITIVITA'</value>
+	</data>
+	<data name="ROE">
+		<value>Utile sul capitale</value>
+	</data>
+	<data name="othRelns">
+		<value>ALTRI RAPPORTI</value>
+	</data>
+	<data name="salesGrwthper">
+		<value>Crescita del fatturato(%)</value>
+	</data>
+	<data name="subOrdDebt">
+		<value>Debito subordinato</value>
+	</data>
+	<data name="cashDivd">
+		<value>Dividendi in contanti</value>
+	</data>
+	<data name="cashBal">
+		<value>Saldo di cassa</value>
+	</data>
+	<data name="bsTrend">
+		<value>Trend</value>
+	</data>
+	<data name="percent">
+		<value>% </value>
+	</data>
+	<data name="udaMsg">
+		<value>Calcoli non personalizzati</value>
+	</data>
+	<data name="udaComMsg">
+		<value>Calcoli di osservanza non personalizzati</value>
+	</data>
+	<data name="begRetPrftPrevRep">
+		<value>UTILI NON DISTRIBUITI AD APERTURA, </value>
+	</data>
+	<data name="begRetPrftRest">
+		<value>UTILI NON DISTRIBUITI AD AP, RICALCOLATI</value>
+	</data>
+	<data name="begRetEarn">
+		<value>UTILI NON DISTRIBUITI AD APERTURA</value>
+	</data>
+	<data name="endRetPrfts">
+		<value>UTILI NON DISTRIBUITI A CHIUSURA</value>
+	</data>
+	<data name="reconEqtyRsrvs">
+		<value>Riconciliazione di capitale e riserve</value>
+	</data>
+	<data name="cshStockDivd">
+		<value>Cassa e dividendi in azioni</value>
+	</data>
+	<data name="adjRetPrftAbove">
+		<value>Rettifiche agli utili non distribuiti(calcolati sopra)</value>
+	</data>
+	<data name="incDecrIn">
+		<value>Incremento(Decremento) in: </value>
+	</data>
+	<data name="actEndEqtyRsrvs">
+		<value>RISERVE E CAPITALE REALI A CHIUSURA</value>
+	</data>
+	<data name="incDecrEqtyRsrvs">
+		<value>INCR(DECR) DI CAPITALE E RISERVE</value>
+	</data>
+	<data name="begEqtyRsrvs">
+		<value>CAPITALE E RISERVE AD APERTURA</value>
+	</data>
+	<data name="reconRetPrfts">
+		<value>Riconciliazione di utili non distribuiti</value>
+	</data>
+	<data name="asPrevRprted">
+		<value>COME PRECEDENTEMENTE INDICATO</value>
+	</data>
+	<data name="currency">
+		<value>Valuta</value>
+	</data>
+	<data name="original">
+		<value>Originale</value>
+	</data>
+	<data name="target">
+		<value>Desiderata</value>
+	</data>
+	<data name="chg">
+		<value>Variaz</value>
+	</data>
+	<data name="civRevUC">
+		<value>VERIFICATI</value>
+	</data>
+	<data name="civRevSC">
+		<value>Verificati</value>
+	</data>
+	<data name="civQualUC">
+		<value>CON RISERVA</value>
+	</data>
+	<data name="civQualSC">
+		<value>Con riserva</value>
+	</data>
+	<data name="civUnqUC">
+		<value>NON QUALIF</value>
+	</data>
+	<data name="civUnqSC">
+		<value>Non qualif</value>
+	</data>
+	<data name="civDiscUC">
+		<value>ESONERO RESPONSABILITA'</value>
+	</data>
+	<data name="civDiscSC">
+		<value>ESONERO RESPONSABILITA'</value>
+	</data>
+	<data name="civTaxRetUC">
+		<value>DICHIARAZIONE DEI REDDITI</value>
+	</data>
+	<data name="civTaxRetSC">
+		<value>Dichiarazione dei redditi</value>
+	</data>
+	<data name="civCompUC">
+		<value>REDATTO</value>
+	</data>
+	<data name="civCompSC">
+		<value>Redatto</value>
+	</data>
+	<data name="civAdvUC">
+		<value>CONTRARIO</value>
+	</data>
+	<data name="civAdvSC">
+		<value>Contrario</value>
+	</data>
+	<data name="civBaseOn">
+		<value>basato sui {0}dati finanziari {1}{2}</value>
+	</data>
+	<data name="civUnqLC">
+		<value>non qualificato</value>
+	</data>
+	<data name="civCoPrdLC">
+		<value>Di agenzia</value>
+	</data>
+	<data name="civForCompPurp">
+		<value>Ai fini del confronto, l'analisi di questa società utilizza</value>
+	</data>
+	<data name="civDataFor">
+		<value>dati per il codice settore{0}{1}</value>
+	</data>
+	<data name="civRange">
+		<value>nella scala {0}.</value>
+	</data>
+	<data name="civConsists">
+		<value>consiste di {0}</value>
+	</data>
+	<data name="civPeer">
+		<value>Il gruppo paritario</value>
+	</data>
+	<data name="civCompAn">
+		<value>L'analisi di questa società</value>
+	</data>
+	<data name="civDoNotHave">
+		<value>non dispone di</value>
+	</data>
+	<data name="civIndData">
+		<value>dati del settore.</value>
+	</data>
+	<data name="civBSD">
+		<value>DATI DI BILANCIO</value>
+	</data>
+	<data name="civCustVal">
+		<value>Valore cliente</value>
+	</data>
+	<data name="civPeerVal">
+		<value>Valore paritario</value>
+	</data>
+	<data name="civVarSC">
+		<value>Varianza</value>
+	</data>
+	<data name="civNetFixAsts">
+		<value>Immobilizzazioni materiali nette</value>
+	</data>
+	<data name="civOtherNonCurAsts">
+		<value>Tutte le altre attività non correnti</value>
+	</data>
+	<data name="civNetTrRec">
+		<value>Crediti netti</value>
+	</data>
+	<data name="civOtherCurAsts">
+		<value>Tutte le altre attività correnti</value>
+	</data>
+	<data name="civTotCurAsts">
+		<value>TOTALE ATTIVITA' CORRENTI</value>
+	</data>
+	<data name="civAllOtherLiab">
+		<value>Tutte le altre passività</value>
+	</data>
+	<data name="civTotLiab">
+		<value>Totale passività</value>
+	</data>
+	<data name="civOtherOperIncExp">
+		<value>Altre entrate(spese) di esercizio + ammortamenti(%)</value>
+	</data>
+	<data name="civEBIT">
+		<value>Crescita margine operativo netto (EBIT)(%) </value>
+	</data>
+	<data name="civOtherExp">
+		<value>Tutte le altre spese(al netto, in %)</value>
+	</data>
+	<data name="civRatios">
+		<value>RAPPORTI</value>
+	</data>
+	<data name="civCurRatio">
+		<value>Rapporto corrente</value>
+	</data>
+	<data name="civUpp">
+		<value>Superiore</value>
+	</data>
+	<data name="civMed">
+		<value>Media</value>
+	</data>
+	<data name="civLow">
+		<value>Più basso</value>
+	</data>
+	<data name="civQuickRatio">
+		<value>Rapporto secco di liquidità</value>
+	</data>
+	<data name="civRatioCont">
+		<value>RAPPORTI (continua)</value>
+	</data>
+	<data name="civRecToPay">
+		<value>Crediti/Conto debitore</value>
+	</data>
+	<data name="civNetTrRecDays">
+		<value>Giorni crediti netti</value>
+	</data>
+	<data name="civTrPayDays">
+		<value>Giorni conto debitore</value>
+	</data>
+	<data name="civNetPLtoCPLTD">
+		<value>(Profitti e Perdite al netto + ammortamenti - Dividendi)/Porzione corrente conto debitore a lungo termine</value>
+	</data>
+	<data name="civSalesToNetFAsts">
+		<value>Fatturato a immobilizzazioni materiali nette</value>
+	</data>
+	<data name="civSalesToTotAsts">
+		<value>Fatturato a totale attivo</value>
+	</data>
+	<data name="civ1Yr">
+		<value>Misure di credito EDF a 1 anno</value>
+	</data>
+	<data name="civ5Yr">
+		<value>Misure di credito EDF a 5 anni</value>
+	</data>
+	<data name="civVarUC">
+		<value>Varianza</value>
+	</data>
+	<data name="civCoPrdUC">
+		<value>DI AGENZIA</value>
+	</data>
+	<data name="civProjUC">
+		<value>PROIEZIONE</value>
+	</data>
+	<data name="civProjLC">
+		<value>Proiezione</value>
+	</data>
+	<data name="civAnnual">
+		<value>per l'anno fiscale {0}</value>
+	</data>
+	<data name="civInterim">
+		<value>per il {0}-mese di chiusura periodo {1}</value>
+	</data>
+	<data name="sDot">
+		<value>.</value>
+	</data>
+	<data name="civRCLabelUC">
+		<value>RISKCALC</value>
+	</data>
+	<data name="civRC0">
+		<value>Per il calcolo dei valori paritari {3}  è stato utilizzato {3} per società private (del Nord America) versione {0}.  Le dimensioni dei campioni paritari per i valori {3} differiscono dalle informazioni sopra mentre la dimensione del campione {3} per questo gruppo paritario è composta da {1} {2}.</value>
+	</data>
+	<data name="civRC1">
+		<value>I valori cliente per {0} non sono disponibili per questo resoconto.  Selezionare il menù {1} per visualizzare i valori cliente {0}.</value>
+	</data>
+	<data name="civSing">
+		<value>società</value>
+	</data>
+	<data name="civPlur">
+		<value>società</value>
+	</data>
+	<data name="civRCLabelSC">
+		<value>RiskCalc™</value>
+	</data>
+	<data name="civMenuRC">
+		<value>Strumenti|RiskCalc|Resoconto</value>
+	</data>
+	<data name="impChgInExchRate">
+		<value>Impatto delle variazioni del tasso di cambio</value>
+	</data>
+	<data name="civIncData">
+		<value>DATI ENTRATE</value>
+	</data>
+	<data name="civNetInt">
+		<value>Attività immateriali nette</value>
+	</data>
+	<data name="civAllOtherNonCurAsts">
+		<value>Tutte le altre attività non correnti</value>
+	</data>
+	<data name="civTotNonCurAsts">
+		<value>Totale attività non correnti</value>
+	</data>
+	<data name="civCashEq">
+		<value>Conto cassa e moneta liquida</value>
+	</data>
+	<data name="civInvent">
+		<value>Inventari</value>
+	</data>
+	<data name="civAllOtherCurAsts">
+		<value>Tutte le altre attività correnti</value>
+	</data>
+	<data name="civTotAsts">
+		<value>Totale attivo</value>
+	</data>
+	<data name="civTotEqRes">
+		<value>Totale capitale e riserve</value>
+	</data>
+	<data name="civLTD">
+		<value>Debito a lungo termine</value>
+	</data>
+	<data name="civDefTaxLiab">
+		<value>Soggettività tributaria differita</value>
+	</data>
+	<data name="civAllOthNonCurLiab">
+		<value>Tutte le altre passività non correnti</value>
+	</data>
+	<data name="civTotNonCurLiab">
+		<value>Totale passività non correnti</value>
+	</data>
+	<data name="civOverdrft">
+		<value>Scoperti e prestiti a breve termine</value>
+	</data>
+	<data name="civCPLTD">
+		<value>Porzione corrente del debito a LT</value>
+	</data>
+	<data name="civTrade_Pay">
+		<value>Conto debitore(PC)</value>
+	</data>
+	<data name="civCurTaxPay">
+		<value>Imposte maturate correnti</value>
+	</data>
+	<data name="civAllOthCurLiab">
+		<value>Tutte le altre passività correnti</value>
+	</data>
+	<data name="civTotCurLiab">
+		<value>Totale passività correnti</value>
+	</data>
+	<data name="civGrProf">
+		<value>Margine operativo lordo(%)</value>
+	</data>
+	<data name="civOthOperIncExp">
+		<value>Altre entrate(spese) di esercizio + ammortamenti(%)</value>
+	</data>
+	<data name="civOthExp">
+		<value>Tutte le altre spese(al netto, in %)</value>
+	</data>
+	<data name="civProfLossB4Tax">
+		<value>Margini e perdite al lordo di imposte(%)</value>
+	</data>
+	<data name="civInvDays">
+		<value>Giorni magazzino</value>
+	</data>
+	<data name="civSalesToWorkCap">
+		<value>Fatturato a capitale di esercizio</value>
+	</data>
+	<data name="civIntCov">
+		<value>Copertura interessi</value>
+	</data>
+	<data name="civNetFixAstsToTNW">
+		<value>Immobilizzazioni materiali nette / CNT</value>
+	</data>
+	<data name="civPBTtoTNW">
+		<value>% ricavo al lordo di imposte/CNT</value>
+	</data>
+	<data name="civDeprAmrtToSales">
+		<value>Svalutaz Ammort / Fatturato(%)</value>
+	</data>
+	<data name="civOfCompToSales">
+		<value>Salari ai funzionari / Fatturato(%)</value>
+	</data>
+	<data name="civPBTtoTotAsts">
+		<value>% profitto al lordo di imposte/totale attivo</value>
+	</data>
+	<data name="civAssetsSize">
+		<value>ordinato per dimensione attivo</value>
+	</data>
+	<data name="civSalesSize">
+		<value>ordinato per dimensione fatturato</value>
+	</data>
+	<data name="civDoesntUse">
+		<value>non usare nessun confronto</value>
+	</data>
+	<data name="civUse">
+		<value>usa i</value>
+	</data>
+	<data name="civAllCompIn">
+		<value>dati per tutte le società nel codice settore {0} - {1}, ai fini del confronto. </value>
+	</data>
+	<data name="civAdvLC">
+		<value>con parere contrario</value>
+	</data>
+	<data name="civTaxRetLC">
+		<value>dalla dichiarazione dei redditi</value>
+	</data>
+	<data name="civDiscLC">
+		<value>con esonero responsabilità</value>
+	</data>
+	<data name="sComma">
+		<value>,</value>
+	</data>
+	<data name="sDash">
+		<value>-</value>
+	</data>
+	<data name="levarage">
+		<value>LEVERAGE</value>
+	</data>
+	<data name="periods">
+		<value>Periodi</value>
+	</data>
+	<data name="ReconTo">
+		<value>Riconcilia con</value>
+	</data>
+	<data name="none">
+		<value>NESSUNO</value>
+	</data>
+	<data name="totCshCostSales">
+		<value>TOTALE COSTO DEL VENDUTO DI CASSA</value>
+	</data>
+	<data name="cshGrssPrft">
+		<value>RICAVO LORDO DI CASSA</value>
+	</data>
+	<data name="cshGrssPrftMargin">
+		<value>Margine ricavo lordo di cassa(%)</value>
+	</data>
+	<data name="invDaysExclCOS">
+		<value>Giorni magazzino(escluso Svalutaz costo del Venduto)</value>
+	</data>
+	<data name="trdPayDaysExclCOS">
+		<value>Giorni conto debitore(escluso Svalutaz costo del Venduto)</value>
+	</data>
+	<data name="netOpPrftEBIT">
+		<value>Margine operativo netto (EBIT)</value>
+	</data>
+	<data name="netPrftMargin">
+		<value>Margine operativo netto</value>
+	</data>
+</root>
