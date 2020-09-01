@@ -1,92 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="10">
-    <loadAfter moduleRefId="Core" major="3" minor="10" patch="0" />
-    <loadAfter moduleRefId="RiskOrigins" major="1" minor="11" patch="0" />
-    <loadAfter moduleRefId="Entity" major="2" minor="6" patch="0" />
-    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="Bvd" major="2" minor="0" patch="0" />
-    <loadAfter moduleRefId="DataMovement" major="3" minor="10" patch="0" />
-    <loadAfter moduleRefId="Map" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="RiskGrading" major="2" minor="6" patch="0" />
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="11">
+    <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
+    <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
+    <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
+    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="9" patch="0" />
+    <loadAfter moduleRefId="Bvd" major="2" minor="4" patch="0" />
+    <loadAfter moduleRefId="DataMovement" major="4" minor="3" patch="0" />
+    <loadAfter moduleRefId="Map" major="2" minor="9" patch="0" />
+    <loadAfter moduleRefId="RiskGrading" major="3" minor="0" patch="0" />
     <loadAfter moduleRefId="MapPdModels" major="2" minor="3" patch="0" />
-    <loadAfter moduleRefId="DealStructuring" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="Covenant" major="2" minor="1" patch="1" />
-    <loadAfter moduleRefId="CreditPresentation" major="2" minor="0" patch="0" />
-    <loadAfter moduleRefId="Workflow" major="2" minor="0" patch="0" />
-    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="0" patch="0" />
-    <loadAfter moduleRefId="BiStarSchema" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="MapLgdModels" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="Marq" major="2" minor="1" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="Salesforce" major="1" minor="4" patch="0" />
-    <loadAfter moduleRefId="RiskReturn" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="Raroc" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="BusinessInsights" major="2" minor="1" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="Benchmark" major="1" minor="1" patch="0" />
-    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="0" patch="0" />
+    <loadAfter moduleRefId="DealStructuring" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="Covenant" major="2" minor="6" patch="0" />
+    <loadAfter moduleRefId="CreditPresentation" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="Workflow" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="4" patch="0" />
+    <loadAfter moduleRefId="BiStarSchema" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="MapLgdModels" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="Marq" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="Salesforce" major="1" minor="6" patch="0" />
+    <loadAfter moduleRefId="RiskReturn" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="Raroc" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="BusinessInsights" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="Benchmark" major="1" minor="6" patch="0" />
+    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="5" patch="0" />
     <loadAfter moduleRefId="MoodysFinal" major="1" minor="0" patch="0" />
     <probePath path="Config\metadata\Tenant\ra" />
   </module>
   <models>
-    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2016-09-14T19:07:51.630172Z" />
     </model>
-    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2016-09-14T19:07:52.9692616Z" />
     </model>
-    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2017-11-24T19:07:51.630172Z" />
     </model>
-    <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="string" />
       <audit userId="admin" time="20200511T112020" />
     </model>
-    <model id="MapModel" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Map" notesEnabled="false" />
-    <model id="StrategicSalesImportance" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="MapModel" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Map" />
+    <model id="StrategicSalesImportance" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="ValueInt" dataType="integer" />
       <attribute id="Score" dataType="integer" />
       <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <audit userId="admin" time="20200516T113126" />
     </model>
-    <model id="YearsInBusinessWithAcer" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="YearsInBusinessWithAcer" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="ValueInt" dataType="integer" />
       <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Score" dataType="integer" />
       <audit userId="admin" time="20200516T113741" />
     </model>
-    <model id="DaysBeyondDueDate" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="DaysBeyondDueDate" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="ValueInt" dataType="integer" />
       <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Score" dataType="integer" />
       <audit userId="admin" time="20200516T114118" />
     </model>
-    <model id="SoftFactorFinancials" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="SoftFactorFinancials" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="ValueInt" dataType="integer" />
       <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Score" dataType="integer" />
       <audit userId="admin" time="20200516T114846" />
     </model>
-    <model id="CorporateStructure" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="CorporateStructure" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="ValueInt" dataType="integer" />
       <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Score" dataType="integer" />
       <audit userId="admin" time="20200516T115235" />
     </model>
-    <model id="PpiScoringMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="PpiScoringMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="PpiPctUpperInclusiveBoundaryInt" dataType="integer" />
       <attribute id="PpiPctUpperInclusiveBoundary" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -101,35 +101,35 @@
       <attribute id="Dealer" dataType="integer" />
       <audit userId="admin" time="20200516T124338" />
     </model>
-    <model id="MacroeconomicRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="MacroeconomicRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="MerCapUpperValueInt" dataType="integer" />
       <attribute id="AdjustmentPercentage" dataType="decimal" />
       <attribute id="MerCapUpperValue" dataType="integer" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <audit userId="admin" time="20200516T135323" />
     </model>
-    <model id="GeopoliticalRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="GeopoliticalRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="GprCapUpperValueInt" dataType="integer" />
       <attribute id="GprCapUpperValue" dataType="integer" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="AdjustmentPercentage" dataType="decimal" />
       <audit userId="admin" time="20200516T140819" />
     </model>
-    <model id="MacroeconomicRiskCapWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="MacroeconomicRiskCapWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="decimal" />
       <audit userId="admin" time="20200518T140120" />
     </model>
-    <model id="GeopoliticalRiskCapWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="GeopoliticalRiskCapWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="decimal" />
       <audit userId="admin" time="20200518T140519" />
     </model>
-    <model id="ArcRiskCaps" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ArcRiskCaps" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -138,7 +138,7 @@
       <attribute id="GprCap" dataType="decimal" />
       <audit userId="admin" time="20200520T115139" />
     </model>
-    <model id="PortfolioRatiosScoring" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="PortfolioRatiosScoring" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="EntityNameInt" dataType="integer" />
       <attribute id="EntityName" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -165,14 +165,14 @@
       <attribute id="PeerScore" dataType="decimal" />
       <audit userId="admin" time="20200528T085342" />
     </model>
-    <model id="ArcRiskGradingRegion" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ArcRiskGradingRegion" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="string" />
       <audit userId="admin" time="20200529T065102" />
     </model>
-    <model id="SalesGrowthPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="SalesGrowthPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
@@ -185,7 +185,7 @@
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <audit userId="admin" time="20200530T063622" />
     </model>
-    <model id="NetOperatingProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="NetOperatingProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -198,7 +198,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T064656" />
     </model>
-    <model id="NetProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="NetProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -211,7 +211,7 @@
       <attribute id="Quatiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T065651" />
     </model>
-    <model id="InterestCoverPeerQurtiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="InterestCoverPeerQurtiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -224,7 +224,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T070428" />
     </model>
-    <model id="ReturnOnAssetsPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ReturnOnAssetsPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -237,7 +237,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T071337" />
     </model>
-    <model id="CashRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="CashRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -250,7 +250,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T073218" />
     </model>
-    <model id="QuickRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="QuickRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -263,7 +263,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T073911" />
     </model>
-    <model id="CurrentRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="CurrentRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -276,7 +276,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T074529" />
     </model>
-    <model id="CashConversionCyclePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="CashConversionCyclePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -289,7 +289,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T080716" />
     </model>
-    <model id="DaysSalesOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="DaysSalesOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -302,7 +302,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T081730" />
     </model>
-    <model id="DaysInventoryOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="DaysInventoryOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -315,7 +315,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T082350" />
     </model>
-    <model id="DaysPayableOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="DaysPayableOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -328,7 +328,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T083218" />
     </model>
-    <model id="InventoryWcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="InventoryWcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -341,7 +341,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T083919" />
     </model>
-    <model id="DebtToEquityRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="DebtToEquityRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -354,7 +354,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T084647" />
     </model>
-    <model id="DebtToTnwPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="DebtToTnwPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -367,7 +367,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T085607" />
     </model>
-    <model id="BorrowedFundsToEffectiveTnwPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="BorrowedFundsToEffectiveTnwPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -380,7 +380,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T090055" />
     </model>
-    <model id="DebtToAssetsRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="DebtToAssetsRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -393,7 +393,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T091226" />
     </model>
-    <model id="ShortTermDebtToTotalDebtPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ShortTermDebtToTotalDebtPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -406,7 +406,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T091848" />
     </model>
-    <model id="ShortTermDebtWcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ShortTermDebtWcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -419,7 +419,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T092521" />
     </model>
-    <model id="NetDebtToEbitPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="NetDebtToEbitPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -432,7 +432,7 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T094054" />
     </model>
-    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -489,7 +489,7 @@
       <attribute id="ArcPeerQuartiles" dataType="long" refId="ArcPeerQuartiles" />
       <audit userId="admin" time="20200622T072315" />
     </model>
-    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -497,7 +497,7 @@
       <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
       <audit userId="admin" time="20200626T100018" />
     </model>
-    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -505,6 +505,13 @@
       <attribute id="PeerIndustry" dataType="string" />
       <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
       <audit userId="admin" time="20200626T100205" />
+    </model>
+    <model id="Acerift" dataProvider="postgres" resourceModuleId="Tenant" extends="Financial" referenceModule="FinancialAnalysis">
+      <attribute id="IftTc11" dataType="string" refId="IftIndustrySector" deleted="true" />
+      <attribute id="IftTc6" dataType="string" refId="IftFyeMonth" deleted="true" />
+      <attribute id="AceriftTc11" dataType="string" refId="IftIndustrySector" />
+      <attribute id="AceriftTc6" dataType="string" refId="IftFyeMonth" />
+      <audit userId="admin" time="20200901T104238" />
     </model>
   </models>
   <viewModels>
