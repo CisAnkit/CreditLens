@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string"/>
+							<xsd:attribute name="type" type="xsd:string"/>
+							<xsd:attribute name="mimetype" type="xsd:string"/>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="curAstHdr">
+		<value>נכסים שוטפים</value>
+	</data>
+	<data name="nonCurAstHdr">
+		<value>נכסים לא שוטפים</value>
+	</data>
+	<data name="netFixAssets">
+		<value>נכסים קבועים נטו</value>
+	</data>
+	<data name="grsFixAssets">
+		<value>נכסים קבועים ברוטו</value>
+	</data>
+	<data name="netItangibles">
+		<value>נכסים לא מוחשיים נטו</value>
+	</data>
+	<data name="totNCAssts">
+		<value>סך כל הנכסים הלא שוטפים</value>
+	</data>
+	<data name="netTrdRecv">
+		<value>חייבים מסחריים נטו</value>
+	</data>
+	<data name="totCurrAssts">
+		<value>סך כל הנכסים השוטפים</value>
+	</data>
+	<data name="totAssts">
+		<value>סך כל הנכסים</value>
+	</data>
+	<data name="eqtyResrvs">
+		<value>הון וקרנות הון</value>
+	</data>
+	<data name="prmntEqty">
+		<value>הון עצמי פרמננטי</value>
+	</data>
+	<data name="totEqtyRsrvs">
+		<value>סך כל ההון וקרנות ההון</value>
+	</data>
+	<data name="ncLiabs">
+		<value>התחייבויות לא שוטפות</value>
+	</data>
+	<data name="totNCLiabs">
+		<value>סך כל ההתחייבויות הלא שוטפות</value>
+	</data>
+	<data name="currLiabs">
+		<value>התחייבויות שוטפות</value>
+	</data>
+	<data name="totCurrLiabs">
+		<value>סך כל ההתחייבויות השוטפות</value>
+	</data>
+	<data name="totLiabs">
+		<value>סך כל ההתחייבויות</value>
+	</data>
+	<data name="totEqtyRsrvLiabs">
+		<value>סך כל ההון וקרנות ההון וההתחייבויות</value>
+	</data>
+	<data name="msgAstToLiab">
+		<value>הנכסים אינם שווים לסכום ההון וקרנות ההון וההתחייבויות</value>
+	</data>
+	<data name="msgExchEnd">
+		<value>הוזן שער חליפין-סוף תקופה, אך לא הוזן שער חליפין-ממוצע תקופתי</value>
+	</data>
+	<data name="msgExchAvg">
+		<value>הוזן שער חליפין-ממוצע תקופתי, אך לא הוזן שער חליפין-סוף תקופה</value>
+	</data>
+	<data name="msgIncorrect">
+		<value>ייתכן שהדוחות שגויים</value>
+	</data>
+	<data name="salesRevs">
+		<value>מכירות הכנסות</value>
+	</data>
+	<data name="totCostSales">
+		<value>סך כל עלות המכירות</value>
+	</data>
+	<data name="grssPrft">
+		<value>רווח גולמי</value>
+	</data>
+	<data name="oprExpExclDepAmrt">
+		<value>הוצ' תפעוליות, ללא פחת והפחתות</value>
+	</data>
+	<data name="ebitda">
+		<value>רווח לפני ריבית, מסים, פחת והפחתות</value>
+	</data>
+	<data name="ebit">
+		<value>רווח לפני ריבית ומסים</value>
+	</data>
+	<data name="netIntIncExp">
+		<value>הכנסות הוצאות ריבית נטו</value>
+	</data>
+	<data name="netOthFinIncExp">
+		<value>הכנסות הוצאות מימון אחרות נטו</value>
+	</data>
+	<data name="othIncExp">
+		<value>הכנסות הוצאות אחרות</value>
+	</data>
+	<data name="prftLossB4tax">
+		<value>רווח הפסד לפני מסים</value>
+	</data>
+	<data name="totIncTax">
+		<value>סך כל המסים על ההכנסה</value>
+	</data>
+	<data name="prftLsB4ExOrdItem">
+		<value>רווח הפסד לפני פריטים מיוחדים</value>
+	</data>
+	<data name="netPrftLoss">
+		<value>רווח נקי הפסד</value>
+	</data>
+	<data name="othEqRsrvIncExp">
+		<value>הכנ' הוצ' אחרות שנזקפו להון וקרנות הון</value>
+	</data>
+	<data name="totOthEqRsrv">
+		<value>סך כל ההכנ' הוצ' האחרות שנזקפו להון וקרנות הון</value>
+	</data>
+	<data name="adjToRetPrft">
+		<value>התאמות ליתרת הרווח</value>
+	</data>
+	<data name="totAdjRetPrftLoss">
+		<value>סך כל יתרת הרווח הפסד המותאמת</value>
+	</data>
+	<data name="operAct">
+		<value>פעילות שוטפת</value>
+	</data>
+	<data name="cshFrmOperAct">
+		<value>תזרימי מזומנים מפעי' שוטפת</value>
+	</data>
+	<data name="invstAct">
+		<value>פעילות השקעה</value>
+	</data>
+	<data name="cfFrmInvstAct">
+		<value>תזרימי מזומנים מפעי' השקעה</value>
+	</data>
+	<data name="finAct">
+		<value>פעילות מימון</value>
+	</data>
+	<data name="cfFrmFinAct">
+		<value>תזרימי מזומנים מפעי' מימון</value>
+	</data>
+	<data name="other">
+		<value>אחר</value>
+	</data>
+	<data name="totMoveInCash">
+		<value>סך כל התנועות במזומנים</value>
+	</data>
+	<data name="begPerCshEquiv">
+		<value>מזומנים ושווי מזומנים-לתחילת התקופה</value>
+	</data>
+	<data name="unexpAdjCash">
+		<value>התאמות לא מוסברות למזומנים</value>
+	</data>
+	<data name="endOfPerCshEquiv">
+		<value>מזומנים ושווי מזומנים-לסוף התקופה</value>
+	</data>
+	<data name="reconItems">
+		<value>פריטים להתאמה:</value>
+	</data>
+	<data name="chgInNetRecv">
+		<value>השינוי בחייבים מסחריים נטו</value>
+	</data>
+	<data name="chgIn">
+		<value>השינוי ב </value>
+	</data>
+	<data name="chgOthCurOpAssts">
+		<value>השינוי בנכסים תפעוליים שוטפים אחרים</value>
+	</data>
+	<data name="chgOthNCOpAssts">
+		<value>השינוי בנכסים תפעוליים לא שוטפים אחרים</value>
+	</data>
+	<data name="chgOthCurOpLiab">
+		<value>השינוי בהתחייבויות תפעוליות שוטפות אחרות</value>
+	</data>
+	<data name="chgOthNCOpLiab">
+		<value>השינוי בהתחייבויות תפעוליות לא שוטפות אחרות</value>
+	</data>
+	<data name="incTaxPaid">
+		<value>מסים על ההכנסה ששולמו</value>
+	</data>
+	<data name="totAdjs">
+		<value>סך כל ההתאמות</value>
+	</data>
+	<data name="chgNetFixAssts">
+		<value>השינוי בנכסים קבועים נטו</value>
+	</data>
+	<data name="chgNetIntg">
+		<value>השינוי בנכסים לא מוחשיים נטו</value>
+	</data>
+	<data name="intPaid">
+		<value>ריבית ששולמה</value>
+	</data>
+	<data name="divPaid">
+		<value>דיבידנד ששולם</value>
+	</data>
+	<data name="adjDueExchRate">
+		<value>התאמות בגין שינויים בשער החליפין</value>
+	</data>
+	<data name="conAdjNetPrft">
+		<value>התאמה לרווח הנקי בגין הפרשי תרגום</value>
+	</data>
+	<data name="unexpAdjRetPrfts">
+		<value>התאמות לא מוסברות ליתרת הרווח</value>
+	</data>
+	<data name="exchRateAvg">
+		<value>שער חליפין-ממוצע תקופתי</value>
+	</data>
+	<data name="workingCap">
+		<value>הון חוזר</value>
+	</data>
+	<data name="liquidity">
+		<value>נזילות</value>
+	</data>
+	<data name="currRatio">
+		<value>יחס שוטף</value>
+	</data>
+	<data name="quickRatio">
+		<value>יחס מהיר</value>
+	</data>
+	<data name="slsRevToWC">
+		<value>מכירות הכנסות להון חוזר</value>
+	</data>
+	<data name="TNW">
+		<value>שווי מוחשי נטו</value>
+	</data>
+	<data name="effTNW">
+		<value>שווי מוחשי נטו אפקטיבי</value>
+	</data>
+	<data name="dbtToNW">
+		<value>חוב לשווי נקי</value>
+	</data>
+	<data name="dbtToTNW">
+		<value>חוב לשווי מוחשי נטו</value>
+	</data>
+	<data name="dbttLessSubDbtEffTNW">
+		<value>חוב בניכוי חוב נחות לשווי מוח' נטו אפק'</value>
+	</data>
+	<data name="brwFundToTotLiab">
+		<value>הון זר לסה&quot;כ התחייבויות</value>
+	</data>
+	<data name="brwFundtoEffTNW">
+		<value>הון זר לשווי מוחשי נטו אפקטיבי</value>
+	</data>
+	<data name="brwFundToEBITDA">
+		<value>הון זר לרווח לפני ריבית, מסים, פחת והפחתות</value>
+	</data>
+	<data name="TotLiabToTotAssts">
+		<value>סך כל ההתחייבויות לסך כל הנכסים</value>
+	</data>
+	<data name="offBSLevrg">
+		<value>מינוף חוץ-מאזני</value>
+	</data>
+	<data name="coverage">
+		<value>כיסוי</value>
+	</data>
+	<data name="intCovrg">
+		<value>כיסוי ריבית</value>
+	</data>
+	<data name="earnCovrg">
+		<value>כיסוי רווחים</value>
+	</data>
+	<data name="cfCovrg">
+		<value>יחס כיסוי תזרים מזומנים</value>
+	</data>
+	<data name="grssPrftMargin">
+		<value>רווח גולמי שולי(%)</value>
+	</data>
+	<data name="EBTIDAMargin">
+		<value>רווח שולי לפני ריבית, מסים, פחת והפחתות(%)</value>
+	</data>
+	<data name="PrftB4TaxMargin">
+		<value>רווח שולי לפני מסים(%)</value>
+	</data>
+	<data name="NetPrftMarginPer">
+		<value>רווח נקי שולי(%)</value>
+	</data>
+	<data name="netOpEBITMrg">
+		<value>רווח תפעולי נטו EBIT שולי(%)</value>
+	</data>
+	<data name="divdPayRate">
+		<value>שיעור חלוקת דיבידנד(%)</value>
+	</data>
+	<data name="effTaxRate">
+		<value>שיעור מס אפקטיבי(%)</value>
+	</data>
+	<data name="PBTToTotAssts">
+		<value>רווח לפני מסים לסך כל הנכסים</value>
+	</data>
+	<data name="PBTToTNW">
+		<value>רווח לפני מסים לשווי מוחשי נטו</value>
+	</data>
+	<data name="PBTToTotEqtyResrvs">
+		<value>רווח לפני מסים לסך כל ההון וקרנות הון</value>
+	</data>
+	<data name="ROA">
+		<value>תשואה על נכסים</value>
+	</data>
+	<data name="ROTNW">
+		<value>תשואה על שווי מוחשי נטו</value>
+	</data>
+	<data name="ROTotEqtyResrvs">
+		<value>תשואה על סך כל ההון וקרנות הון</value>
+	</data>
+	<data name="activity">
+		<value>פעילות</value>
+	</data>
+	<data name="netTrdRecvDays">
+		<value>ימי גבייה מחייבים מסחריים נטו</value>
+	</data>
+	<data name="invDays">
+		<value>ימי מלאי</value>
+	</data>
+	<data name="trdPayDays">
+		<value>ימי אשראי מזכאים מסחריים</value>
+	</data>
+	<data name="salesToTotAssts">
+		<value>מכירות הכנסות לסך כל הנכסים</value>
+	</data>
+	<data name="salesToTNW">
+		<value>מכירות הכנסות לשווי מוחשי נטו</value>
+	</data>
+	<data name="salesToNFA">
+		<value>מכירות הכנסות לנכסים קבועים נטו</value>
+	</data>
+	<data name="growth">
+		<value>צמיחה(%)</value>
+	</data>
+	<data name="totAsstsGrwth">
+		<value>סך כל הצמיחה בנכסים</value>
+	</data>
+	<data name="salesRevGrwth">
+		<value>צמיחה במכירות הכנסות</value>
+	</data>
+	<data name="EBITDAGrwth">
+		<value>צמיחה ברווח לפני ריבית, מסים, פחת והפחתות</value>
+	</data>
+	<data name="netOpPrftGrw">
+		<value>צמיחה ברווח התפעולי נטו EBIT </value>
+	</data>
+	<data name="netPrftGrwth">
+		<value>צמיחה ברווח הנקי</value>
+	</data>
+	<data name="sustainGrowth">
+		<value>צמיחה בת-קיימא</value>
+	</data>
+	<data name="exchRatePE">
+		<value>שער חליפין-סוף תקופה</value>
+	</data>
+	<data name="ccActual">
+		<value>בפועל</value>
+	</data>
+	<data name="ccCovMax">
+		<value>התניות - Covenant</value>
+	</data>
+	<data name="ccCovMin">
+		<value>התניות - Covenant</value>
+	</data>
+	<data name="ccdbtToTNW">
+		<value>חוב לשווי מוחשי</value>
+	</data>
+	<data name="ccResult">
+		<value>תוצאה</value>
+	</data>
+	<data name="ccDefault">
+		<value>חדלות פירעון</value>
+	</data>
+	<data name="ccVariance">
+		<value>שונות</value>
+	</data>
+	<data name="levCovrg">
+		<value>מינוף/כיסוי</value>
+	</data>
+	<data name="capExpnd">
+		<value>הוצאות הוניות</value>
+	</data>
+	<data name="profitability">
+		<value>רווחיות</value>
+	</data>
+	<data name="ROE">
+		<value>תשואה על הון עצמי</value>
+	</data>
+	<data name="othRelns">
+		<value>קשרים אחרים</value>
+	</data>
+	<data name="salesGrwthper">
+		<value>צמיחה במכירות(%)</value>
+	</data>
+	<data name="subOrdDebt">
+		<value>חוב נחות</value>
+	</data>
+	<data name="cashDivd">
+		<value>דיבידנד במזומן</value>
+	</data>
+	<data name="cashBal">
+		<value>יתרת מזומנים</value>
+	</data>
+	<data name="bsTrend">
+		<value>מגמה</value>
+	</data>
+	<data name="percent">
+		<value>% </value>
+	</data>
+	<data name="udaMsg">
+		<value>אין חישובים מוגדרי-משתמש</value>
+	</data>
+	<data name="udaComMsg">
+		<value>אין חישובי עמידה בתנאים מוגדרי-משתמש</value>
+	</data>
+	<data name="begRetPrftPrevRep">
+		<value>יתרת רווח לתחילת התקופה, </value>
+	</data>
+	<data name="begRetPrftRest">
+		<value>יתרת רווח לתחילת התקופה, מוצגת מחדש</value>
+	</data>
+	<data name="begRetEarn">
+		<value>יתרת רווח לתחילת התקופה</value>
+	</data>
+	<data name="endRetPrfts">
+		<value>יתרת רווח לסוף התקופה</value>
+	</data>
+	<data name="reconEqtyRsrvs">
+		<value>התאמת הון וקרנות הון</value>
+	</data>
+	<data name="cshStockDivd">
+		<value>דיבידנד במזומן ובמניות</value>
+	</data>
+	<data name="adjRetPrftAbove">
+		<value>התאמות ליתרת הרווח לעיל</value>
+	</data>
+	<data name="incDecrIn">
+		<value>עליה ירידה ב-:</value>
+	</data>
+	<data name="actEndEqtyRsrvs">
+		<value>הון וקרנות הון בפועל לסוף התקופה</value>
+	</data>
+	<data name="incDecrEqtyRsrvs">
+		<value>עליה ירידה בהון וקרנות הון</value>
+	</data>
+	<data name="begEqtyRsrvs">
+		<value>הון וקרנות הון לתחילת התקופה</value>
+	</data>
+	<data name="reconRetPrfts">
+		<value>התאמה של יתרת הרווח</value>
+	</data>
+	<data name="asPrevRprted">
+		<value>כפי שדווח בעבר</value>
+	</data>
+	<data name="currency">
+		<value>מטבע</value>
+	</data>
+	<data name="original">
+		<value>מקור</value>
+	</data>
+	<data name="target">
+		<value>יעד</value>
+	</data>
+	<data name="chg">
+		<value>שינוי</value>
+	</data>
+	<data name="civRevUC">
+		<value>סקורים</value>
+	</data>
+	<data name="civRevSC">
+		<value>סקורים</value>
+	</data>
+	<data name="civQualUC">
+		<value>מסויגים</value>
+	</data>
+	<data name="civQualSC">
+		<value>מסויגים</value>
+	</data>
+	<data name="civUnqUC">
+		<value>בלתי מסויגים</value>
+	</data>
+	<data name="civUnqSC">
+		<value>בלתי מסויגים</value>
+	</data>
+	<data name="civDiscUC">
+		<value>ויתור</value>
+	</data>
+	<data name="civDiscSC">
+		<value>ויתור</value>
+	</data>
+	<data name="civTaxRetUC">
+		<value>החזר מס</value>
+	</data>
+	<data name="civTaxRetSC">
+		<value>החזר מס</value>
+	</data>
+	<data name="civCompUC">
+		<value>אסופים</value>
+	</data>
+	<data name="civCompSC">
+		<value>אסופים</value>
+	</data>
+	<data name="civAdvUC">
+		<value>שלילית</value>
+	</data>
+	<data name="civAdvSC">
+		<value>שלילית</value>
+	</data>
+	<data name="civBaseOn">
+		<value>מבוסס על נתונים פיננסיים{0} {1}{2}</value>
+	</data>
+	<data name="civUnqLC">
+		<value>בלתי מסויגת</value>
+	</data>
+	<data name="civCoPrdLC">
+		<value>שהוכנו על-ידי החברה</value>
+	</data>
+	<data name="civForCompPurp">
+		<value>לצרכי השוואה, הניתוח של חברה זו משתמש</value>
+	</data>
+	<data name="civDataFor">
+		<value>בנתונים לקוד הענף{0}{1}</value>
+	</data>
+	<data name="civRange">
+		<value>בטווח ה-{0}.</value>
+	</data>
+	<data name="civConsists">
+		<value>מורכבת מ-{0}</value>
+	</data>
+	<data name="civPeer">
+		<value>הקבוצה הדומה</value>
+	</data>
+	<data name="civCompAn">
+		<value>הניתוח של חברה זו</value>
+	</data>
+	<data name="civDoNotHave">
+		<value>אינו כולל</value>
+	</data>
+	<data name="civIndData">
+		<value>נתונים ענפיים.</value>
+	</data>
+	<data name="civBSD">
+		<value>נתוני מאזן</value>
+	</data>
+	<data name="civCustVal">
+		<value>ערך לקוח</value>
+	</data>
+	<data name="civPeerVal">
+		<value>ערך קבוצה דומה</value>
+	</data>
+	<data name="civVarSC">
+		<value>שונות</value>
+	</data>
+	<data name="civNetFixAsts">
+		<value>נכסים קבועים נטו</value>
+	</data>
+	<data name="civOtherNonCurAsts">
+		<value>כל שאר הנכסים הלא שוטפים</value>
+	</data>
+	<data name="civNetTrRec">
+		<value>חייבים מסחריים נטו</value>
+	</data>
+	<data name="civOtherCurAsts">
+		<value>כל שאר הנכסים השוטפים</value>
+	</data>
+	<data name="civTotCurAsts">
+		<value>סך כל הנכסים השוטפים</value>
+	</data>
+	<data name="civAllOtherLiab">
+		<value>כל שאר ההתחייבויות</value>
+	</data>
+	<data name="civTotLiab">
+		<value>סך כל ההתחייבויות</value>
+	</data>
+	<data name="civOtherOperIncExp">
+		<value>הכנ' והוצ' תפעוליות אחרות + פחת והפחתות(%)</value>
+	</data>
+	<data name="civEBIT">
+		<value>רווח תפעולי נטו EBIT(%) </value>
+	</data>
+	<data name="civOtherExp">
+		<value>כל שאר ההוצאות, נטו(%)</value>
+	</data>
+	<data name="civRatios">
+		<value>יחסים</value>
+	</data>
+	<data name="civCurRatio">
+		<value>יחס שוטף</value>
+	</data>
+	<data name="civUpp">
+		<value>עליון</value>
+	</data>
+	<data name="civMed">
+		<value>אמצעי</value>
+	</data>
+	<data name="civLow">
+		<value>תחתון</value>
+	</data>
+	<data name="civQuickRatio">
+		<value>יחס מהיר</value>
+	</data>
+	<data name="civRatioCont">
+		<value>יחסים, המשך</value>
+	</data>
+	<data name="civRecToPay">
+		<value>חייבים/זכאים</value>
+	</data>
+	<data name="civNetTrRecDays">
+		<value>ימי גבייה מחייבים מסחריים נטו</value>
+	</data>
+	<data name="civTrPayDays">
+		<value>ימי אשראי מזכאים מסחריים</value>
+	</data>
+	<data name="civNetPLtoCPLTD">
+		<value>רווח נקי הפסד פלוס פחת והפחתות מינוס דיבידנד, מחולק בחלו' שוט' של חוב לז&quot;א</value>
+	</data>
+	<data name="civSalesToNetFAsts">
+		<value>מכירות לנכסים קבועים נטו</value>
+	</data>
+	<data name="civSalesToTotAsts">
+		<value>מכירות לסך כל הנכסים</value>
+	</data>
+	<data name="civ1Yr">
+		<value>מדידת אשראי EDF לשנה אחת</value>
+	</data>
+	<data name="civ5Yr">
+		<value>מדידת אשראי EDF לחמש שנים</value>
+	</data>
+	<data name="civVarUC">
+		<value>שונות</value>
+	</data>
+	<data name="civCoPrdUC">
+		<value>שהוכנו ע&quot;י החברה</value>
+	</data>
+	<data name="civProjUC">
+		<value>תחזית</value>
+	</data>
+	<data name="civProjLC">
+		<value>תחזית</value>
+	</data>
+	<data name="civAnnual">
+		<value>לשנת הכספים {0}</value>
+	</data>
+	<data name="civInterim">
+		<value>לתקופה של {0} חודשים המסתיימת ב-{1}</value>
+	</data>
+	<data name="sDot">
+		<value>.</value>
+	</data>
+	<data name="civRCLabelUC">
+		<value>RISKCALC</value>
+	</data>
+	<data name="civRC0">
+		<value>הערכים של הקבוצה הדומה ב-{3} חושבו באמצעות {3} לחברות פרטיות, צפון אמריקה, גרסה {0}.  גדלי המדגם של הקבוצה הדומה עבור ערכי {3} שונים מהמידע הנ&quot;ל וגודל המדגם של {3} עבור קבוצה דומה זו מורכב מ-{1} {2}.</value>
+	</data>
+	<data name="civRC1">
+		<value>ערכי לקוח עבור {0} אינם זמינים בדוח זה.  בחר את התפריט {1} כדי להציג ערכי {0} של לקוח.</value>
+	</data>
+	<data name="civSing">
+		<value>חברה</value>
+	</data>
+	<data name="civPlur">
+		<value>חברות</value>
+	</data>
+	<data name="civRCLabelSC">
+		<value>RiskCalc™</value>
+	</data>
+	<data name="civMenuRC">
+		<value>כלים|RiskCalc|דוח</value>
+	</data>
+	<data name="impChgInExchRate">
+		<value>השפעת השינוי בשערי החליפין</value>
+	</data>
+	<data name="civIncData">
+		<value>נתוני הכנסות</value>
+	</data>
+	<data name="civNetInt">
+		<value>נכסים לא מוחשיים נטו</value>
+	</data>
+	<data name="civAllOtherNonCurAsts">
+		<value>כל שאר הנכסים הלא שוטפים</value>
+	</data>
+	<data name="civTotNonCurAsts">
+		<value>סך כל הנכסים הלא שוטפים</value>
+	</data>
+	<data name="civCashEq">
+		<value>מזומנים ושווי מזומנים</value>
+	</data>
+	<data name="civInvent">
+		<value>מלאי</value>
+	</data>
+	<data name="civAllOtherCurAsts">
+		<value>כל שאר הנכסים השוטפים</value>
+	</data>
+	<data name="civTotAsts">
+		<value>סך כל הנכסים</value>
+	</data>
+	<data name="civTotEqRes">
+		<value>סך כל ההון וקרנות הון</value>
+	</data>
+	<data name="civLTD">
+		<value>חוב לזמן ארוך</value>
+	</data>
+	<data name="civDefTaxLiab">
+		<value>התחייבות מסים נדחים</value>
+	</data>
+	<data name="civAllOthNonCurLiab">
+		<value>כל שאר ההתחייבויות הלא שוטפות</value>
+	</data>
+	<data name="civTotNonCurLiab">
+		<value>סך כל ההתחייבויות הלא שוטפות</value>
+	</data>
+	<data name="civOverdrft">
+		<value>משיכות יתר והלוואות לזמן קצר</value>
+	</data>
+	<data name="civCPLTD">
+		<value>חלויות שוטפות של חוב לז&quot;א</value>
+	</data>
+	<data name="civTrade_Pay">
+		<value>זכאים מסחריים לז&quot;ק</value>
+	</data>
+	<data name="civCurTaxPay">
+		<value>מסים שוטפים לשלם</value>
+	</data>
+	<data name="civAllOthCurLiab">
+		<value>כל שאר ההתחייבויות השוטפות</value>
+	</data>
+	<data name="civTotCurLiab">
+		<value>סך כל ההתחייבויות השוטפות</value>
+	</data>
+	<data name="civGrProf">
+		<value>רווח גולמי(%)</value>
+	</data>
+	<data name="civOthOperIncExp">
+		<value>הכנ' והוצ' תפעוליות אחרות + פחת והפחתות(%)</value>
+	</data>
+	<data name="civOthExp">
+		<value>כל שאר ההוצאות, נטו(%)</value>
+	</data>
+	<data name="civProfLossB4Tax">
+		<value>רווח הפסד לפני מסים(%)</value>
+	</data>
+	<data name="civInvDays">
+		<value>ימי מלאי</value>
+	</data>
+	<data name="civSalesToWorkCap">
+		<value>מכירות להון חוזר</value>
+	</data>
+	<data name="civIntCov">
+		<value>כיסוי ריבית</value>
+	</data>
+	<data name="civNetFixAstsToTNW">
+		<value>נכסים קבועים נטו לשווי מוחשי נטו</value>
+	</data>
+	<data name="civPBTtoTNW">
+		<value>% רווח לפני מסים לשווי מוחשי נטו</value>
+	</data>
+	<data name="civDeprAmrtToSales">
+		<value>פחת והפחתות למכירות(%)</value>
+	</data>
+	<data name="civOfCompToSales">
+		<value>עלות מנהלים למכירות(%)</value>
+	</data>
+	<data name="civPBTtoTotAsts">
+		<value>% רווח לפני מסים לסך כל הנכסים</value>
+	</data>
+	<data name="civAssetsSize">
+		<value>מוין לפי גודל נכסים</value>
+	</data>
+	<data name="civSalesSize">
+		<value>מוין לפי היקף מכירות</value>
+	</data>
+	<data name="civDoesntUse">
+		<value>לא משתמש בכל אמצעי השוואתי</value>
+	</data>
+	<data name="civUse">
+		<value>משתמש</value>
+	</data>
+	<data name="civAllCompIn">
+		<value>בנתונים לכל החברות בקוד הענף {0} - {1}, לצורכי השוואה. </value>
+	</data>
+	<data name="civAdvLC">
+		<value>עם חוות דעת שלילית</value>
+	</data>
+	<data name="civTaxRetLC">
+		<value>מהחזרי מס</value>
+	</data>
+	<data name="civDiscLC">
+		<value>עם ויתור</value>
+	</data>
+	<data name="sComma">
+		<value>,</value>
+	</data>
+	<data name="sDash">
+		<value>-</value>
+	</data>
+	<data name="levarage">
+		<value>מינוף</value>
+	</data>
+	<data name="periods">
+		<value>תקופות</value>
+	</data>
+	<data name="ReconTo">
+		<value>התאמה ל-</value>
+	</data>
+	<data name="none">
+		<value>ללא</value>
+	</data>
+	<data name="totCshCostSales">
+		<value>סך כל עלות המכירות במזומן</value>
+	</data>
+	<data name="cshGrssPrft">
+		<value>רווח גולמי במזומן</value>
+	</data>
+	<data name="cshGrssPrftMargin">
+		<value>רווח גולמי שולי(%) במזומן</value>
+	</data>
+	<data name="invDaysExclCOS">
+		<value>ימי מלאי, ללא פחת עלות מכירות</value>
+	</data>
+	<data name="trdPayDaysExclCOS">
+		<value>ימי אשראי מזכאים מסחריים, ללא פחות עלות מכירות</value>
+	</data>
+	<data name="netOpPrftEBIT">
+		<value>רווח תפעולי נטו EBIT</value>
+	</data>
+	<data name="netPrftMargin">
+		<value>רווח נקי שולי</value>
+	</data>
+</root>

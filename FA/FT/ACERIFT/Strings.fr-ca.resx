@@ -1,0 +1,969 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="curAstHdr" xml:space="preserve">
+    <value>ACTIFS COURANTS</value>
+  </data>
+  <data name="nonCurAstHdr" xml:space="preserve">
+    <value>ACTIFS NON COURANTS</value>
+  </data>
+  <data name="netFixAssets" xml:space="preserve">
+    <value>Immobilisations corporelles nettes</value>
+  </data>
+  <data name="grsFixAssets" xml:space="preserve">
+    <value>Immobilisations corporelles brutes</value>
+  </data>
+  <data name="netItangibles" xml:space="preserve">
+    <value>Actifs incorporels nets</value>
+  </data>
+  <data name="totNCAssts" xml:space="preserve">
+    <value>TOTAL DES ACTIFS NON COURANTS</value>
+  </data>
+  <data name="netTrdRecv" xml:space="preserve">
+    <value>Créances clients nettes</value>
+  </data>
+  <data name="totCurrAssts" xml:space="preserve">
+    <value>TOTAL DES ACTIFS COURANTS</value>
+  </data>
+  <data name="totAssts" xml:space="preserve">
+    <value>TOTAL DES ACTIFS</value>
+  </data>
+  <data name="eqtyResrvs" xml:space="preserve">
+    <value>Fonds propres et réserves </value>
+  </data>
+  <data name="prmntEqty" xml:space="preserve">
+    <value>Capitaux permanents</value>
+  </data>
+  <data name="totEqtyRsrvs" xml:space="preserve">
+    <value>TOTAL DES FONDS PROPRES ET RESERVES</value>
+  </data>
+  <data name="ncLiabs" xml:space="preserve">
+    <value>PASSIFS NON COURANTS</value>
+  </data>
+  <data name="totNCLiabs" xml:space="preserve">
+    <value>TOTAL DES PASSIFS NON COURANTS</value>
+  </data>
+  <data name="currLiabs" xml:space="preserve">
+    <value>PASSIFS COURANTS</value>
+  </data>
+  <data name="totCurrLiabs" xml:space="preserve">
+    <value>TOTAL DES PASSIFS COURANTS</value>
+  </data>
+  <data name="totLiabs" xml:space="preserve">
+    <value>TOTAL DES PASSIFS</value>
+  </data>
+  <data name="totEqtyRsrvLiabs" xml:space="preserve">
+    <value>TOTAL DES FONDS PROPRES, RESERVES ET PASSIFS</value>
+  </data>
+  <data name="msgAstToLiab" xml:space="preserve">
+    <value>LE TOTAL DES ACTIFS DOIT EGALER LES FONDS PROPRES, RESERVES ET PASSIFS</value>
+  </data>
+  <data name="msgExchEnd" xml:space="preserve">
+    <value>Une valeur de Taux de change(Clôture) a été entrée, mais pas celle du Taux de change(Moyenne de la période)</value>
+  </data>
+  <data name="msgExchAvg" xml:space="preserve">
+    <value>Une valeur de Taux de change(Clôture) a été entrée, mais pas celle du Taux de change(Moyenne de la période)</value>
+  </data>
+  <data name="msgIncorrect" xml:space="preserve">
+    <value>LES RAPPORTS SERONT PEUT-ETRE INCORRECTS</value>
+  </data>
+  <data name="salesRevs" xml:space="preserve">
+    <value>Chiffre d'affaires(Produits)</value>
+  </data>
+  <data name="totCostSales" xml:space="preserve">
+    <value>Total du coût des marchandises vendues</value>
+  </data>
+  <data name="grssPrft" xml:space="preserve">
+    <value>Marge brut</value>
+  </data>
+  <data name="oprExpExclDepAmrt" xml:space="preserve">
+    <value>CHARGES D'EXPLOITATION(EXCL AMORT ET AMORT INCORP)</value>
+  </data>
+  <data name="ebitda" xml:space="preserve">
+    <value>RAIIA</value>
+  </data>
+  <data name="ebit" xml:space="preserve">
+    <value>RAII</value>
+  </data>
+  <data name="netIntIncExp" xml:space="preserve">
+    <value>INTERETS CREDITEURS(DEBITEURS) NETS</value>
+  </data>
+  <data name="netOthFinIncExp" xml:space="preserve">
+    <value>AUTRES PRODUITS FINANCIERS(CHARGES) NETS</value>
+  </data>
+  <data name="othIncExp" xml:space="preserve">
+    <value>AUTRES PRODUITS(CHARGES)</value>
+  </data>
+  <data name="prftLossB4tax" xml:space="preserve">
+    <value>RESULTAT(PERTE) AVANT IMPOTS</value>
+  </data>
+  <data name="totIncTax" xml:space="preserve">
+    <value>TOTAL DE LA CHARGE D'IMPOTS</value>
+  </data>
+  <data name="prftLsB4ExOrdItem" xml:space="preserve">
+    <value>RESULTAT (PERTE) AVANT ELEMENTS EXCEPTIONNELS</value>
+  </data>
+  <data name="netPrftLoss" xml:space="preserve">
+    <value>RESULTAT NET(PERTE NETTE)</value>
+  </data>
+  <data name="othEqRsrvIncExp" xml:space="preserve">
+    <value>AUTRES PRODUITS(CHARGES) DES FONDS PROPRES ET RESERVES</value>
+  </data>
+  <data name="totOthEqRsrv" xml:space="preserve">
+    <value>TOTAL DES AUTRES PRODUITS(CHARGES) DES FONDS PROPRES ET RESERVES</value>
+  </data>
+  <data name="adjToRetPrft" xml:space="preserve">
+    <value>AJUSTEMENT DES BENEFICES NON DISTRIBUES</value>
+  </data>
+  <data name="totAdjRetPrftLoss" xml:space="preserve">
+    <value>TOTAL DU RESULTAT NET(PERTE NETTE) AJUSTE</value>
+  </data>
+  <data name="operAct" xml:space="preserve">
+    <value>OPERATIONS D'EXPLOITATION</value>
+  </data>
+  <data name="cshFrmOperAct" xml:space="preserve">
+    <value>FLUX DE TRESORERIE PROVENANT DES OPERATIONS D'EXPLOITATION</value>
+  </data>
+  <data name="invstAct" xml:space="preserve">
+    <value>OPERATIONS D'INVESTISSEMENT</value>
+  </data>
+  <data name="cfFrmInvstAct" xml:space="preserve">
+    <value>FLUX DE TRESORERIE PROVENANT DES OPERATIONS D'INVESTISSEMENT</value>
+  </data>
+  <data name="finAct" xml:space="preserve">
+    <value>OPERATIONS DE FINANCEMENT</value>
+  </data>
+  <data name="cfFrmFinAct" xml:space="preserve">
+    <value>FLUX DE TRESORERIE PROVENANT DES OPERATIONS DE FINANCEMENT</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>AUTRE</value>
+  </data>
+  <data name="totMoveInCash" xml:space="preserve">
+    <value>TOTAL DES MOUVEMENTS EN ESPECES</value>
+  </data>
+  <data name="begPerCshEquiv" xml:space="preserve">
+    <value>TRESORERIE ET EQUIVALENTS D'OUVERTURE</value>
+  </data>
+  <data name="unexpAdjCash" xml:space="preserve">
+    <value>Ajustement inexpliqué de la trésorerie</value>
+  </data>
+  <data name="endOfPerCshEquiv" xml:space="preserve">
+    <value>TRESORERIE ET EQUIVALENTS DE CLOTURE</value>
+  </data>
+  <data name="reconItems" xml:space="preserve">
+    <value>Eléments de rapprochement :</value>
+  </data>
+  <data name="chgInNetRecv" xml:space="preserve">
+    <value>Variation des créances clients nettes</value>
+  </data>
+  <data name="chgIn" xml:space="preserve">
+    <value>Variation- </value>
+  </data>
+  <data name="chgOthCurOpAssts" xml:space="preserve">
+    <value>Variation des autres actifs d'exploitation courants</value>
+  </data>
+  <data name="chgOthNCOpAssts" xml:space="preserve">
+    <value>Variation des autres actifs d'exploitation non courants</value>
+  </data>
+  <data name="chgOthCurOpLiab" xml:space="preserve">
+    <value>Variation des autres passifs d'exploitation courants</value>
+  </data>
+  <data name="chgOthNCOpLiab" xml:space="preserve">
+    <value>Variation des autres passifs d'exploitation non courants</value>
+  </data>
+  <data name="incTaxPaid" xml:space="preserve">
+    <value>Impôts sur le revenu payés</value>
+  </data>
+  <data name="totAdjs" xml:space="preserve">
+    <value>Total des ajustements</value>
+  </data>
+  <data name="chgNetFixAssts" xml:space="preserve">
+    <value>Variation des immobilisations corporelles nettes</value>
+  </data>
+  <data name="chgNetIntg" xml:space="preserve">
+    <value>Variation des actifs incorporels nets</value>
+  </data>
+  <data name="intPaid" xml:space="preserve">
+    <value>Intérêts payés</value>
+  </data>
+  <data name="divPaid" xml:space="preserve">
+    <value>Dividendes versés</value>
+  </data>
+  <data name="adjDueExchRate" xml:space="preserve">
+    <value>Ajustement pour variation du taux de change</value>
+  </data>
+  <data name="conAdjNetPrft" xml:space="preserve">
+    <value>Ajustement du résultat net dû à la conversion</value>
+  </data>
+  <data name="unexpAdjRetPrfts" xml:space="preserve">
+    <value>Aj inexpliq bénéf non distrib</value>
+  </data>
+  <data name="exchRateAvg" xml:space="preserve">
+    <value>Taux de change(Moyenne de la période)</value>
+  </data>
+  <data name="workingCap" xml:space="preserve">
+    <value>Fonds de roulement</value>
+  </data>
+  <data name="liquidity" xml:space="preserve">
+    <value>LIQUIDITE</value>
+  </data>
+  <data name="currRatio" xml:space="preserve">
+    <value>Ratio de liquidité générale</value>
+  </data>
+  <data name="quickRatio" xml:space="preserve">
+    <value>Ratio de trésorerie</value>
+  </data>
+  <data name="slsRevToWC" xml:space="preserve">
+    <value>Chiffre d'affaires(Produits) sur fonds de roulement</value>
+  </data>
+  <data name="TNW" xml:space="preserve">
+    <value>Valeur nette comptable</value>
+  </data>
+  <data name="effTNW" xml:space="preserve">
+    <value>Valeur nette comptable eff</value>
+  </data>
+  <data name="dbtToNW" xml:space="preserve">
+    <value>Dette/Valeur nette</value>
+  </data>
+  <data name="dbtToTNW" xml:space="preserve">
+    <value>Dette/Valeur nette comptable </value>
+  </data>
+  <data name="dbttLessSubDbtEffTNW" xml:space="preserve">
+    <value>Dette moins dette subord/VNC eff</value>
+  </data>
+  <data name="brwFundToTotLiab" xml:space="preserve">
+    <value>Fonds empruntés/Total passifs</value>
+  </data>
+  <data name="brwFundtoEffTNW" xml:space="preserve">
+    <value>Fonds empruntés/VNC eff</value>
+  </data>
+  <data name="brwFundToEBITDA" xml:space="preserve">
+    <value>Fonds empruntés/RAIIA</value>
+  </data>
+  <data name="TotLiabToTotAssts" xml:space="preserve">
+    <value>Total des passifs/Total des actifs</value>
+  </data>
+  <data name="offBSLevrg" xml:space="preserve">
+    <value>Effet de levier hors bilan</value>
+  </data>
+  <data name="coverage" xml:space="preserve">
+    <value>COUVERTURE</value>
+  </data>
+  <data name="intCovrg" xml:space="preserve">
+    <value>Couverture des intérêts</value>
+  </data>
+  <data name="earnCovrg" xml:space="preserve">
+    <value>Couverture par le résultat</value>
+  </data>
+  <data name="cfCovrg" xml:space="preserve">
+    <value>Couverture des flux de trésorerie</value>
+  </data>
+  <data name="grssPrftMargin" xml:space="preserve">
+    <value>Marge bénéficaire brute(%)</value>
+  </data>
+  <data name="EBTIDAMargin" xml:space="preserve">
+    <value>Marge du RAIIA(%)</value>
+  </data>
+  <data name="PrftB4TaxMargin" xml:space="preserve">
+    <value>Marge bénéficiaire avant impôts(%)</value>
+  </data>
+  <data name="NetPrftMarginPer" xml:space="preserve">
+    <value>Marge opérationnelle(%)</value>
+  </data>
+  <data name="netOpEBITMrg" xml:space="preserve">
+    <value>Croissance de la marge opérationnelle nette(RAII)</value>
+  </data>
+  <data name="divdPayRate" xml:space="preserve">
+    <value>Taux de distribution de dividende(%)</value>
+  </data>
+  <data name="effTaxRate" xml:space="preserve">
+    <value>Taux d'imposition réel(%)</value>
+  </data>
+  <data name="PBTToTotAssts" xml:space="preserve">
+    <value>Résultat avant impôts/Total des actifs</value>
+  </data>
+  <data name="PBTToTNW" xml:space="preserve">
+    <value>Résultat avant impôts/Valeur nette comptable</value>
+  </data>
+  <data name="PBTToTotEqtyResrvs" xml:space="preserve">
+    <value>Résultat hors taxes/Total des fonds propres et réserves</value>
+  </data>
+  <data name="ROA" xml:space="preserve">
+    <value>Rendement des actifs</value>
+  </data>
+  <data name="ROTNW" xml:space="preserve">
+    <value>Rendement de la valeur nette comptable</value>
+  </data>
+  <data name="ROTotEqtyResrvs" xml:space="preserve">
+    <value>Rendement du total des fonds propres et réserves</value>
+  </data>
+  <data name="activity" xml:space="preserve">
+    <value>ACTIVITE</value>
+  </data>
+  <data name="netTrdRecvDays" xml:space="preserve">
+    <value>Rotation des créances clients nettes</value>
+  </data>
+  <data name="invDays" xml:space="preserve">
+    <value>Rotation des stocks</value>
+  </data>
+  <data name="trdPayDays" xml:space="preserve">
+    <value>Rotation du crédit fournisseurs</value>
+  </data>
+  <data name="salesToTotAssts" xml:space="preserve">
+    <value>Chiffre d'affaires(Produits) sur total des actifs</value>
+  </data>
+  <data name="salesToTNW" xml:space="preserve">
+    <value>Chiffre d'affaires(Produits) sur valeur nette comptable</value>
+  </data>
+  <data name="salesToNFA" xml:space="preserve">
+    <value>Chiffre d'affaires(Produits) sur immobilisations corporelles nettes</value>
+  </data>
+  <data name="growth" xml:space="preserve">
+    <value>CROISSANCE(%)</value>
+  </data>
+  <data name="totAsstsGrwth" xml:space="preserve">
+    <value>Total de la croissance des actifs</value>
+  </data>
+  <data name="salesRevGrwth" xml:space="preserve">
+    <value>Croissance du chiffre d'affaires(des produits)</value>
+  </data>
+  <data name="EBITDAGrwth" xml:space="preserve">
+    <value>Croissance du RAIIA</value>
+  </data>
+  <data name="netOpPrftGrw" xml:space="preserve">
+    <value>Croissance du résultat net d'exploitation(RAII)</value>
+  </data>
+  <data name="netPrftGrwth" xml:space="preserve">
+    <value>Croissance du résultat net</value>
+  </data>
+  <data name="sustainGrowth" xml:space="preserve">
+    <value>Croissance durable</value>
+  </data>
+  <data name="exchRatePE" xml:space="preserve">
+    <value>Taux de change(Clôture)</value>
+  </data>
+  <data name="ccActual" xml:space="preserve">
+    <value>Valeur réelle</value>
+  </data>
+  <data name="ccCovMax" xml:space="preserve">
+    <value>Convention(Max)</value>
+  </data>
+  <data name="ccCovMin" xml:space="preserve">
+    <value>Convention(Min)</value>
+  </data>
+  <data name="ccdbtToTNW" xml:space="preserve">
+    <value>Dette sur valeur nette comptable</value>
+  </data>
+  <data name="ccResult" xml:space="preserve">
+    <value>Résultat</value>
+  </data>
+  <data name="ccDefault" xml:space="preserve">
+    <value>DEFAUT</value>
+  </data>
+  <data name="ccVariance" xml:space="preserve">
+    <value>Variance</value>
+  </data>
+  <data name="levCovrg" xml:space="preserve">
+    <value>EFFET DE LEVIER/COUVERTURE</value>
+  </data>
+  <data name="capExpnd" xml:space="preserve">
+    <value>Dépenses en capital</value>
+  </data>
+  <data name="profitability" xml:space="preserve">
+    <value>RENTABILITE</value>
+  </data>
+  <data name="ROE" xml:space="preserve">
+    <value>Rendement des fonds propres</value>
+  </data>
+  <data name="othRelns" xml:space="preserve">
+    <value>AUTRES LIENS</value>
+  </data>
+  <data name="salesGrwthper" xml:space="preserve">
+    <value>Croissance du chiffre d'affaires(%)</value>
+  </data>
+  <data name="subOrdDebt" xml:space="preserve">
+    <value>Dette subordonnée</value>
+  </data>
+  <data name="cashDivd" xml:space="preserve">
+    <value>Dividendes en numéraire </value>
+  </data>
+  <data name="cashBal" xml:space="preserve">
+    <value>Solde de trésorerie</value>
+  </data>
+  <data name="bsTrend" xml:space="preserve">
+    <value>Tendance</value>
+  </data>
+  <data name="percent" xml:space="preserve">
+    <value>% </value>
+  </data>
+  <data name="udaMsg" xml:space="preserve">
+    <value>Aucun calcul défini par l'utilisateur</value>
+  </data>
+  <data name="udaComMsg" xml:space="preserve">
+    <value>Aucun calcul de conformité de défini par l'utilisateur</value>
+  </data>
+  <data name="begRetPrftPrevRep" xml:space="preserve">
+    <value>BENEFICES NON DISTRIBUES D'OUVERTURE, </value>
+  </data>
+  <data name="begRetPrftRest" xml:space="preserve">
+    <value>BENEFICES NON DISTRIBUES D'OUVERTURE, REDRESSES</value>
+  </data>
+  <data name="begRetEarn" xml:space="preserve">
+    <value>BENEFICES NON DISTRIBUES D'OUVERTURE</value>
+  </data>
+  <data name="endRetPrfts" xml:space="preserve">
+    <value>BENEFICES NON DISTRIBUES DE CLOTURE</value>
+  </data>
+  <data name="reconEqtyRsrvs" xml:space="preserve">
+    <value>Rapprochement des fonds propres et réserves</value>
+  </data>
+  <data name="cshStockDivd" xml:space="preserve">
+    <value>Liquidités et dividendes en actions</value>
+  </data>
+  <data name="adjRetPrftAbove" xml:space="preserve">
+    <value>Ajustement des bénéfices non distribués(calculé ci-haut)</value>
+  </data>
+  <data name="incDecrIn" xml:space="preserve">
+    <value>Aug(dim) :</value>
+  </data>
+  <data name="actEndEqtyRsrvs" xml:space="preserve">
+    <value>MONTANT REEL DES FONDS PROPRES ET RESERVES DE CLOTURE</value>
+  </data>
+  <data name="incDecrEqtyRsrvs" xml:space="preserve">
+    <value>AUG(DIM) DES FONDS PROPRES ET RESERVES </value>
+  </data>
+  <data name="begEqtyRsrvs" xml:space="preserve">
+    <value>FONDS PROPRES ET RESERVES D'OUVERTURE</value>
+  </data>
+  <data name="reconRetPrfts" xml:space="preserve">
+    <value>Rapprochement des bénéfices non distribués</value>
+  </data>
+  <data name="asPrevRprted" xml:space="preserve">
+    <value>TEL QUE REPORTE ANTERIEUREMENT</value>
+  </data>
+  <data name="currency" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="original" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="target" xml:space="preserve">
+    <value>Cible</value>
+  </data>
+  <data name="chg" xml:space="preserve">
+    <value>Variation</value>
+  </data>
+  <data name="civRevUC" xml:space="preserve">
+    <value>EXAMINEES</value>
+  </data>
+  <data name="civRevSC" xml:space="preserve">
+    <value>examinées</value>
+  </data>
+  <data name="civQualUC" xml:space="preserve">
+    <value>SOUS RESERVE</value>
+  </data>
+  <data name="civQualSC" xml:space="preserve">
+    <value>sous réserve</value>
+  </data>
+  <data name="civUnqUC" xml:space="preserve">
+    <value>SANS RESERVE</value>
+  </data>
+  <data name="civUnqSC" xml:space="preserve">
+    <value>sans réserve</value>
+  </data>
+  <data name="civDiscUC" xml:space="preserve">
+    <value>MISE EN GARDE</value>
+  </data>
+  <data name="civDiscSC" xml:space="preserve">
+    <value>Mise en garde</value>
+  </data>
+  <data name="civTaxRetUC" xml:space="preserve">
+    <value>DECLARATION FISCALE</value>
+  </data>
+  <data name="civTaxRetSC" xml:space="preserve">
+    <value>Déclaration fiscale</value>
+  </data>
+  <data name="civCompUC" xml:space="preserve">
+    <value>COMPILEES</value>
+  </data>
+  <data name="civCompSC" xml:space="preserve">
+    <value>compilées</value>
+  </data>
+  <data name="civAdvUC" xml:space="preserve">
+    <value>DEFAVORABLE</value>
+  </data>
+  <data name="civAdvSC" xml:space="preserve">
+    <value>Défavorable</value>
+  </data>
+  <data name="civBaseOn" xml:space="preserve">
+    <value>Basé sur des données financières{0} {1} {2}</value>
+  </data>
+  <data name="civUnqLC" xml:space="preserve">
+    <value>sans réserve</value>
+  </data>
+  <data name="civCoPrdLC" xml:space="preserve">
+    <value>préparées par la société</value>
+  </data>
+  <data name="civForCompPurp" xml:space="preserve">
+    <value>A des fins de comparaison, l'analyse de cette société fait référence aux données</value>
+  </data>
+  <data name="civDataFor" xml:space="preserve">
+    <value>pour le code du secteur d'activité {0}, {1},</value>
+  </data>
+  <data name="civRange" xml:space="preserve">
+    <value>dans la tranche {0}.</value>
+  </data>
+  <data name="civConsists" xml:space="preserve">
+    <value>est composé de {0}</value>
+  </data>
+  <data name="civPeer" xml:space="preserve">
+    <value>Le groupe de référence</value>
+  </data>
+  <data name="civCompAn" xml:space="preserve">
+    <value>L'analyse de cette société</value>
+  </data>
+  <data name="civDoNotHave" xml:space="preserve">
+    <value>n'utilise pas de</value>
+  </data>
+  <data name="civIndData" xml:space="preserve">
+    <value>données du secteur d'activité.</value>
+  </data>
+  <data name="civBSD" xml:space="preserve">
+    <value>DONNEES DU BILAN</value>
+  </data>
+  <data name="civCustVal" xml:space="preserve">
+    <value>Valeur du client</value>
+  </data>
+  <data name="civPeerVal" xml:space="preserve">
+    <value>Valeur du groupe de référence</value>
+  </data>
+  <data name="civVarSC" xml:space="preserve">
+    <value>Variance</value>
+  </data>
+  <data name="civNetFixAsts" xml:space="preserve">
+    <value>Immobilisations corporelles nettes</value>
+  </data>
+  <data name="civOtherNonCurAsts" xml:space="preserve">
+    <value>Tous autres actifs non courants</value>
+  </data>
+  <data name="civNetTrRec" xml:space="preserve">
+    <value>Créances clients nettes</value>
+  </data>
+  <data name="civOtherCurAsts" xml:space="preserve">
+    <value>Tous autres actifs courants</value>
+  </data>
+  <data name="civTotCurAsts" xml:space="preserve">
+    <value>Total des actifs courants</value>
+  </data>
+  <data name="civAllOtherLiab" xml:space="preserve">
+    <value>Tous autres passifs</value>
+  </data>
+  <data name="civTotLiab" xml:space="preserve">
+    <value>Total des passifs</value>
+  </data>
+  <data name="civOtherOperIncExp" xml:space="preserve">
+    <value>Autr bénéf(charges) d'exploit + amort et amort incorp(%)</value>
+  </data>
+  <data name="civEBIT" xml:space="preserve">
+    <value>Marge opérationnelle nette(RAII)(%) </value>
+  </data>
+  <data name="civOtherExp" xml:space="preserve">
+    <value>Toutes autres charges(nettes)(%)</value>
+  </data>
+  <data name="civRatios" xml:space="preserve">
+    <value>RATIOS</value>
+  </data>
+  <data name="civCurRatio" xml:space="preserve">
+    <value>Ratio de liquidité générale</value>
+  </data>
+  <data name="civUpp" xml:space="preserve">
+    <value>Supérieur</value>
+  </data>
+  <data name="civMed" xml:space="preserve">
+    <value>Moyen</value>
+  </data>
+  <data name="civLow" xml:space="preserve">
+    <value>Inférieur</value>
+  </data>
+  <data name="civQuickRatio" xml:space="preserve">
+    <value>Ratio de trésorerie</value>
+  </data>
+  <data name="civRatioCont" xml:space="preserve">
+    <value>RATIOS (suite)</value>
+  </data>
+  <data name="civRecToPay" xml:space="preserve">
+    <value>Créances clients/Crédit fournisseurs</value>
+  </data>
+  <data name="civNetTrRecDays" xml:space="preserve">
+    <value>Rotation des créances clients nettes</value>
+  </data>
+  <data name="civTrPayDays" xml:space="preserve">
+    <value>Rotation du crédit fournisseurs</value>
+  </data>
+  <data name="civNetPLtoCPLTD" xml:space="preserve">
+    <value>(Résultat ou perte nette + Amortissement + Amortissement incorporel – Div)/PCDLT</value>
+  </data>
+  <data name="civSalesToNetFAsts" xml:space="preserve">
+    <value>Chiffre d'affaires sur immobilisations corporelles nettes</value>
+  </data>
+  <data name="civSalesToTotAsts" xml:space="preserve">
+    <value>Chiffre d'affaires sur total des actifs</value>
+  </data>
+  <data name="civ1Yr" xml:space="preserve">
+    <value>Mesure de crédit EDF 1 an</value>
+  </data>
+  <data name="civ5Yr" xml:space="preserve">
+    <value>Mesure de crédit EDF 5 ans</value>
+  </data>
+  <data name="civVarUC" xml:space="preserve">
+    <value>VARIANCE</value>
+  </data>
+  <data name="civCoPrdUC" xml:space="preserve">
+    <value>PREPAREES PAR LA SOCIETE</value>
+  </data>
+  <data name="civProjUC" xml:space="preserve">
+    <value>PREVISION</value>
+  </data>
+  <data name="civProjLC" xml:space="preserve">
+    <value>prévision</value>
+  </data>
+  <data name="civAnnual" xml:space="preserve">
+    <value>pour l'exercice {0}</value>
+  </data>
+  <data name="civInterim" xml:space="preserve">
+    <value>pour la période de {0} mois se terminant {1}</value>
+  </data>
+  <data name="sDot" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="civRCLabelUC" xml:space="preserve">
+    <value>RiskCalc</value>
+  </data>
+  <data name="civRC0" xml:space="preserve">
+    <value>Les valeurs du groupe de référence {3} ont été calculées en utilisant {3} pour sociétés non-cotées en bourse (Amérique du Nord), version {0}.  Les tailles des échantillons des groupes de référence {3} diffèrent de celles des données ci-dessus ; l'échantillon {3} pour ce groupe comprend {1} {2}.</value>
+  </data>
+  <data name="civRC1" xml:space="preserve">
+    <value>Les valeurs {0} du client ne sont pas disponibles sur ce rapport.  Veuillez sélectionner {1} pour consulter les valeurs {0} du client.</value>
+  </data>
+  <data name="civSing" xml:space="preserve">
+    <value>société</value>
+  </data>
+  <data name="civPlur" xml:space="preserve">
+    <value>sociétés</value>
+  </data>
+  <data name="civRCLabelSC" xml:space="preserve">
+    <value>RiskCalc™</value>
+  </data>
+  <data name="civMenuRC" xml:space="preserve">
+    <value>Outils|RiskCalc|Rapport</value>
+  </data>
+  <data name="impChgInExchRate" xml:space="preserve">
+    <value>Incidence des fluctuations des taux de change</value>
+  </data>
+  <data name="civIncData" xml:space="preserve">
+    <value>DONNEES DE PRODUITS</value>
+  </data>
+  <data name="civNetInt" xml:space="preserve">
+    <value>Actifs incorporels nets</value>
+  </data>
+  <data name="civAllOtherNonCurAsts" xml:space="preserve">
+    <value>Tous autres actifs non courants</value>
+  </data>
+  <data name="civTotNonCurAsts" xml:space="preserve">
+    <value>Total des actifs non courants</value>
+  </data>
+  <data name="civCashEq" xml:space="preserve">
+    <value>Trésorerie et équivalents</value>
+  </data>
+  <data name="civInvent" xml:space="preserve">
+    <value>Stocks</value>
+  </data>
+  <data name="civAllOtherCurAsts" xml:space="preserve">
+    <value>Tous autres actifs courants</value>
+  </data>
+  <data name="civTotAsts" xml:space="preserve">
+    <value>Total des actifs</value>
+  </data>
+  <data name="civTotEqRes" xml:space="preserve">
+    <value>Total des fonds propres et réserves</value>
+  </data>
+  <data name="civLTD" xml:space="preserve">
+    <value>Dette à long terme</value>
+  </data>
+  <data name="civDefTaxLiab" xml:space="preserve">
+    <value>Passif d'impôts différés</value>
+  </data>
+  <data name="civAllOthNonCurLiab" xml:space="preserve">
+    <value>Tous autres passifs non courants</value>
+  </data>
+  <data name="civTotNonCurLiab" xml:space="preserve">
+    <value>Total des passifs non courants</value>
+  </data>
+  <data name="civOverdrft" xml:space="preserve">
+    <value>Découverts et prêts à court terme</value>
+  </data>
+  <data name="civCPLTD" xml:space="preserve">
+    <value>Portion courante de la DLT</value>
+  </data>
+  <data name="civTrade_Pay" xml:space="preserve">
+    <value>Crédit fournisseurs(PC)</value>
+  </data>
+  <data name="civCurTaxPay" xml:space="preserve">
+    <value>Impôts exigibles</value>
+  </data>
+  <data name="civAllOthCurLiab" xml:space="preserve">
+    <value>Tous autres passifs courants</value>
+  </data>
+  <data name="civTotCurLiab" xml:space="preserve">
+    <value>Total des passifs courants</value>
+  </data>
+  <data name="civGrProf" xml:space="preserve">
+    <value>Marge brute(%)</value>
+  </data>
+  <data name="civOthOperIncExp" xml:space="preserve">
+    <value>Autr bénéf(charges) d'exploit + amort et amort incorp(%)</value>
+  </data>
+  <data name="civOthExp" xml:space="preserve">
+    <value>Toutes autres charges(nettes)(%)</value>
+  </data>
+  <data name="civProfLossB4Tax" xml:space="preserve">
+    <value>Résultat(perte) avant impôts(%)</value>
+  </data>
+  <data name="civInvDays" xml:space="preserve">
+    <value>Rotation des stocks</value>
+  </data>
+  <data name="civSalesToWorkCap" xml:space="preserve">
+    <value>Chiffre d'affaires sur fonds de roulement</value>
+  </data>
+  <data name="civIntCov" xml:space="preserve">
+    <value>Couverture des intérêts</value>
+  </data>
+  <data name="civNetFixAstsToTNW" xml:space="preserve">
+    <value>Immobilisations corporelles nettes/VNC</value>
+  </data>
+  <data name="civPBTtoTNW" xml:space="preserve">
+    <value>% RAI/VNC</value>
+  </data>
+  <data name="civDeprAmrtToSales" xml:space="preserve">
+    <value>Amort et Amort incorp/Chiffre d'affaires(%)</value>
+  </data>
+  <data name="civOfCompToSales" xml:space="preserve">
+    <value>Rémun cadres/Chiffre d'affaires(%)</value>
+  </data>
+  <data name="civPBTtoTotAsts" xml:space="preserve">
+    <value>% du résultat avant impôts/Total des actifs</value>
+  </data>
+  <data name="civAssetsSize" xml:space="preserve">
+    <value>triées par les actifs</value>
+  </data>
+  <data name="civSalesSize" xml:space="preserve">
+    <value>triées par le chiffre d'affaires</value>
+  </data>
+  <data name="civDoesntUse" xml:space="preserve">
+    <value>n'utilise pas de données comparatives</value>
+  </data>
+  <data name="civUse" xml:space="preserve">
+    <value>fait référence aux données</value>
+  </data>
+  <data name="civAllCompIn" xml:space="preserve">
+    <value>pour toutes les sociétés ayant le code du secteur d'activité {0}, {1}, à des fins de comparaison. </value>
+  </data>
+  <data name="civAdvLC" xml:space="preserve">
+    <value>avec opinion défavorable</value>
+  </data>
+  <data name="civTaxRetLC" xml:space="preserve">
+    <value>en provenance des déclarations fiscales</value>
+  </data>
+  <data name="civDiscLC" xml:space="preserve">
+    <value>avec mise en garde</value>
+  </data>
+  <data name="sComma" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="sDash" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="levarage" xml:space="preserve">
+    <value>EFFET DE LEVIER</value>
+  </data>
+  <data name="periods" xml:space="preserve">
+    <value>Périodes</value>
+  </data>
+  <data name="ReconTo" xml:space="preserve">
+    <value>Rapprocher à l'état financier du</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>AUCUN</value>
+  </data>
+  <data name="totCshCostSales" xml:space="preserve">
+    <value>TOTAL DU COUT DES MARCHANDISES VENDUES</value>
+  </data>
+  <data name="cshGrssPrft" xml:space="preserve">
+    <value>MARGE BRUTE EN LIQUIDITES</value>
+  </data>
+  <data name="cshGrssPrftMargin" xml:space="preserve">
+    <value>Marge bénéficiaire brute en liquidités(%)</value>
+  </data>
+  <data name="invDaysExclCOS" xml:space="preserve">
+    <value>Rotation des stocks (excl moins-value du CMV)</value>
+  </data>
+  <data name="trdPayDaysExclCOS" xml:space="preserve">
+    <value>Rotation du crédit fournisseurs(excl moins-value du CMV)</value>
+  </data>
+  <data name="netOpPrftEBIT" xml:space="preserve">
+    <value>Résultat net d'exploitation(RAII)</value>
+  </data>
+  <data name="netPrftMargin" xml:space="preserve">
+    <value>Marge opérationnelle</value>
+  </data>
+  <data name="CashFromOperationsToDebt" xml:space="preserve">
+    <value>Flux de trésorerie provenant des opérations à dette</value>
+  </data>
+  <data name="CashToNetSales" xml:space="preserve">
+    <value>L'argent aux ventes nettes</value>
+  </data>
+  <data name="DebtToBookCapital" xml:space="preserve">
+    <value>Dette pour réserver du capital</value>
+  </data>
+  <data name="Log10NetSales" xml:space="preserve">
+    <value>Log 10 (ventes nettes)</value>
+  </data>
+  <data name="cashRatio" xml:space="preserve">
+    <value>Cash Ratio</value>
+  </data>
+  <data name="dbtToAssts" xml:space="preserve">
+    <value>Debt to Assets</value>
+  </data>
+  <data name="STDbtToTotDbt" xml:space="preserve">
+    <value>Short Term Debt to Total Debt</value>
+  </data>
+  <data name="STDbtToWC" xml:space="preserve">
+    <value>Short Term Debt to Working Capital</value>
+  </data>
+  <data name="netDbtToEBIT" xml:space="preserve">
+    <value>Net Debt to EBIT</value>
+  </data>
+  <data name="cashConvCyc" xml:space="preserve">
+    <value>Cash Conversion Cycle</value>
+  </data>
+  <data name="invToWC" xml:space="preserve">
+    <value>Inventory to Working Capital</value>
+  </data>
+</root>

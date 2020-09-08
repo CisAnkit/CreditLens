@@ -1,0 +1,22 @@
+[
+  {
+    "AdminCreProfileSettingId": "338b5b6c-ebbe-400c-ab43-f448a573cc88",
+    "AdminProfileSettingId": "dd4e4bf1-067f-4c05-a570-e84ba4e9030e",
+    "CreBatchRating": true,
+    "Inapplicable_": [],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-13T08:44:05.900058Z",
+    "t_": "AdminCreProfileSetting",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]

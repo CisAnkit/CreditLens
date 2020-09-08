@@ -101,6 +101,22 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-04-24T03:05:43.475546Z",
     "t_": "MapServer",
-    "ContextUserId_": "admin"
+    "ContextUserId_": "ama"
+  },
+  {
+    "Id": "c8a4c452-bb42-4698-9845-f104f4524b6c",
+    "Engine": "RLang",
+    "Name": "ArcModelLocal",
+    "ConnectionString": "http://ZECHIUM-10W1:8050/Calculate",
+    "Active": true,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-08-07T10:32:18.39684Z",
+    "UpdatedBy_": "marian",
+    "UpdatedDate_": "2020-08-07T10:32:26.901025Z",
+    "t_": "MapServer",
+    "ContextUserId_": "marian"
   }
 ]
