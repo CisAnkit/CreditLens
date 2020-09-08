@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="16">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="17">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -184,19 +184,6 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <audit userId="admin" time="20200530T063622" />
-    </model>
-    <model id="NetOperatingProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRegions" />
-      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="decimal" />
-      <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="decimal" />
-      <attribute id="Quartiles3" dataType="decimal" />
-      <audit userId="admin" time="20200530T064656" />
     </model>
     <model id="NetProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
@@ -514,6 +501,19 @@
       <attribute id="InventoryToWc" dataType="decimal" decimals="2" />
       <audit userId="admin" time="20200902T111839" />
     </model>
+    <model id="NetOperationProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="marian" time="20200908T150730" />
+    </model>
   </models>
   <viewModels>
     <viewModel id="EntityEdit" primaryModel="Entity" description="" resourceModuleId="Entity" allowDraft="true">
@@ -766,15 +766,6 @@
       </query>
       <audit userId="admin" time="20200530T063626" />
     </ref>
-    <ref id="NetOperatingProfitPercentagePeerQuartiles" modelRefId="NetOperatingProfitPercentagePeerQuartiles" type="NETOPERATINGPROFITPERCENTAGEPEERQUARTILES" resourceModuleId="Tenant">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200530T064700" />
-    </ref>
     <ref id="NetProfitPercentagePeerQuartiles" modelRefId="NetProfitPercentagePeerQuartiles" type="NETPROFITPERCENTAGEPEERQUARTILES">
       <query>
         <projection>
@@ -970,6 +961,15 @@
         </sortOrders>
       </query>
       <audit userId="admin" time="20200626T100208" />
+    </ref>
+    <ref id="NetOperationProfitPercentagePeerQuartiles" modelRefId="NetOperationProfitPercentagePeerQuartiles" type="NETOPERATIONPROFITPERCENTAGEPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="marian" time="20200908T150731" />
     </ref>
   </references>
 </metadata>

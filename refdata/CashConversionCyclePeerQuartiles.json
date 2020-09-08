@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "CASHCONVERSIONCYCLEPEERQUARTILES",
+    "KeyInt": 2,
+    "Key": 2,
+    "RegionSubRegion": "North America",
+    "Industry": "Telco",
+    "Year": 2019,
+    "Ratio": 10.0,
+    "Quartiles1": 500.0,
+    "Quartiles2": 501.0,
+    "Quartiles3": 502.0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-08T14:41:04.065217Z",
+    "t_": "CashConversionCyclePeerQuartiles",
+    "ContextUserId_": "marian"
+  },
+  {
+    "Type": "CASHCONVERSIONCYCLEPEERQUARTILES",
+    "KeyInt": 1,
+    "Key": 1,
+    "RegionSubRegion": "North America",
+    "Industry": "Telco",
+    "Year": 2019,
+    "Ratio": 9.9,
+    "Quartiles1": 100.0,
+    "Quartiles2": 101.0,
+    "Quartiles3": 102.0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-08T14:41:04.08102Z",
+    "t_": "CashConversionCyclePeerQuartiles",
+    "ContextUserId_": "marian"
+  }
+]

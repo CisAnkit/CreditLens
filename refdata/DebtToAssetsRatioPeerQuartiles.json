@@ -1,0 +1,21 @@
+[
+  {
+    "Type": "DEBTTOASSETSRATIOPEERQUARTILES",
+    "KeyInt": 1,
+    "Key": 1,
+    "RegionSubRegion": "North America",
+    "Industry": "Corporate",
+    "Year": 2019,
+    "Ratio": 123.0,
+    "Quartiles1": 34.0,
+    "Quartiles2": 35.0,
+    "Quartiles3": 36.0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-08T14:59:20.984655Z",
+    "t_": "DebtToAssetsRatioPeerQuartiles",
+    "ContextUserId_": "marian"
+  }
+]

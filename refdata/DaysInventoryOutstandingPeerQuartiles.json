@@ -1,0 +1,21 @@
+[
+  {
+    "Type": "DAYSINVENTORYOUTSTANDINGPEERQUARTILES",
+    "KeyInt": 1,
+    "Key": 1,
+    "RegionSubRegion": "North America",
+    "Industry": "Telco",
+    "Year": 2017,
+    "Ratio": 100.0,
+    "Quartiles1": 123.0,
+    "Quartiles2": 124.0,
+    "Quartiles3": 125.0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-08T14:58:07.735809Z",
+    "t_": "DaysInventoryOutstandingPeerQuartiles",
+    "ContextUserId_": "marian"
+  }
+]
