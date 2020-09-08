@@ -1,0 +1,21 @@
+[
+  {
+    "Type": "NETOPERATINGPROFITPERCENTAGEPEERQUARTILES",
+    "KeyInt": 1,
+    "Key": 1,
+    "RegionSubRegion": "North America",
+    "Industry": "Telco",
+    "Year": 2017,
+    "Ratio": 123.0,
+    "Quartiles1": 1.0,
+    "Quartiles2": 2.0,
+    "Quartiles3": 3.0,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-08T16:14:21.051967Z",
+    "t_": "NetOperatingProfitPercentagePeerQuartiles",
+    "ContextUserId_": "marian"
+  }
+]

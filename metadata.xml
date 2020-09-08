@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="17">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="19">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -501,7 +501,7 @@
       <attribute id="InventoryToWc" dataType="decimal" decimals="2" />
       <audit userId="admin" time="20200902T111839" />
     </model>
-    <model id="NetOperationProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+    <model id="NetOperatingProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
@@ -512,7 +512,7 @@
       <attribute id="Quartiles1" dataType="decimal" />
       <attribute id="Quartiles2" dataType="decimal" />
       <attribute id="Quartiles3" dataType="decimal" />
-      <audit userId="marian" time="20200908T150730" />
+      <audit userId="marian" time="20200908T161203" />
     </model>
   </models>
   <viewModels>
@@ -962,14 +962,14 @@
       </query>
       <audit userId="admin" time="20200626T100208" />
     </ref>
-    <ref id="NetOperationProfitPercentagePeerQuartiles" modelRefId="NetOperationProfitPercentagePeerQuartiles" type="NETOPERATIONPROFITPERCENTAGEPEERQUARTILES">
+    <ref id="NetOperatingProfitPercentagePeerQuartiles" modelRefId="NetOperatingProfitPercentagePeerQuartiles" type="NETOPERATINGPROFITPERCENTAGEPEERQUARTILES">
       <query>
         <projection>
           <key modelFieldId="Key" />
           <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
         </projection>
       </query>
-      <audit userId="marian" time="20200908T150731" />
+      <audit userId="marian" time="20200908T161204" />
     </ref>
   </references>
 </metadata>
