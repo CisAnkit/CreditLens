@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="19">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="21">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -197,19 +197,6 @@
       <attribute id="Quartiles2" dataType="decimal" />
       <attribute id="Quatiles3" dataType="decimal" />
       <audit userId="admin" time="20200530T065651" />
-    </model>
-    <model id="InterestCoverPeerQurtiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="decimal" />
-      <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="decimal" />
-      <attribute id="Quartiles3" dataType="decimal" />
-      <audit userId="admin" time="20200530T070428" />
     </model>
     <model id="ReturnOnAssetsPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
@@ -514,6 +501,19 @@
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="marian" time="20200908T161203" />
     </model>
+    <model id="InterestCoverPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="marian" time="20200909T083533" />
+    </model>
   </models>
   <viewModels>
     <viewModel id="EntityEdit" primaryModel="Entity" description="" resourceModuleId="Entity" allowDraft="true">
@@ -775,15 +775,6 @@
       </query>
       <audit userId="admin" time="20200530T065654" />
     </ref>
-    <ref id="InterestCoverPeerQurtiles" modelRefId="InterestCoverPeerQurtiles" type="INTERESTCOVERPEERQURTILES">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200530T070431" />
-    </ref>
     <ref id="ReturnOnAssetsPercentage" modelRefId="ReturnOnAssetsPercentage" type="RETURNONASSETSPERCENTAGE">
       <query>
         <projection>
@@ -970,6 +961,15 @@
         </projection>
       </query>
       <audit userId="marian" time="20200908T161204" />
+    </ref>
+    <ref id="InterestCoverPeerQuartiles" modelRefId="InterestCoverPeerQuartiles" type="INTERESTCOVERPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="marian" time="20200909T083534" />
     </ref>
   </references>
 </metadata>
