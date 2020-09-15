@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="26">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="27">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -196,9 +196,31 @@
       <attribute id="AceriftTc6" dataType="string" refId="IftFyeMonth" />
       <audit userId="admin" time="20200901T104238" />
     </model>
+    <model id="ArcFinancialRatios" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20200910T145603" />
+    </model>
+    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200910T151802" />
+    </model>
+    <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
+      <audit userId="admin" time="20171012T181949" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
       <attribute id="ArcPeerIndustry" dataType="long" refId="ArcPeerIndustry" />
-      <attribute id="ArcRegions" dataType="string" refId="ArcRegions" attributeExpression="Regenerate domain to show code editor" />
       <attribute id="ArcRiskCaps" dataType="string" refId="ArcRiskCaps" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
       <attribute id="CashConversionCycle" dataType="integer" />
@@ -238,30 +260,8 @@
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <audit userId="admin" time="20200910T145433" />
-    </model>
-    <model id="ArcFinancialRatios" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200910T145603" />
-    </model>
-    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
-      <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="decimal" />
-      <attribute id="Quartiles3" dataType="decimal" />
-      <audit userId="admin" time="20200910T151802" />
-    </model>
-    <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
-      <audit userId="admin" time="20171012T181949" />
+      <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
+      <audit userId="admin" time="20200915T133120" />
     </model>
   </models>
   <viewModels>
@@ -358,7 +358,7 @@
         <attribute id="Splitter" controlType="splitter" order="6" />
         <attribute id="SoftFactorsScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="7" />
       </group>
-      <audit userId="admin" time="20200626T103112" />
+      <audit userId="admin" time="20200915T133205" />
     </viewModel>
   </viewModels>
   <references>
