@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="25">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="26">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -172,19 +172,6 @@
       <attribute id="Value" dataType="string" />
       <audit userId="admin" time="20200529T065102" />
     </model>
-    <model id="ReturnOnAssetsPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="decimal" />
-      <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="decimal" />
-      <attribute id="Quartiles3" dataType="decimal" />
-      <audit userId="admin" time="20200530T071337" />
-    </model>
     <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
@@ -272,6 +259,9 @@
       <attribute id="Quartiles2" dataType="decimal" />
       <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200910T151802" />
+    </model>
+    <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
+      <audit userId="admin" time="20171012T181949" />
     </model>
   </models>
   <viewModels>
@@ -516,15 +506,6 @@
       </query>
       <audit userId="admin" time="20200529T065104" />
     </ref>
-    <ref id="ReturnOnAssetsPercentage" modelRefId="ReturnOnAssetsPercentage" type="RETURNONASSETSPERCENTAGE">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200530T071340" />
-    </ref>
     <ref id="ArcRegions" modelRefId="ArcRegions" type="ARCREGIONS" resourceModuleId="Tenant">
       <query>
         <projection>
@@ -567,6 +548,9 @@
         </projection>
       </query>
       <audit userId="admin" time="20200910T151802" />
+    </ref>
+    <ref id="OlapDimension" modelRefId="OlapDimension" mappingType="true" mappingArtifactType="Reference" type="OLAPDIMENSION" shared="false" resourceModuleId="Core" multiModule="true">
+      <audit userId="admin" time="20200915T093652" />
     </ref>
   </references>
 </metadata>

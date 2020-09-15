@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "OLAPDIMENSION",
+    "ArtifactInt": 20122252,
+    "Artifact": "Country",
+    "Description": "Country Dimension",
+    "Module": "Tenant",
+    "Inapplicable_": [],
+    "IsDeleted_": true,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-09-15T09:36:52.650836Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-09-15T09:42:19.827379Z",
+    "t_": "OlapDimension",
+    "ContextUserId_": "admin"
+  }
+]
