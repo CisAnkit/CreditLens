@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="27">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="28">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -180,15 +180,6 @@
       <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
       <audit userId="admin" time="20200626T100018" />
     </model>
-    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="PeerIndustry" dataType="string" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <audit userId="admin" time="20200626T100205" />
-    </model>
     <model id="Acerift" dataProvider="postgres" resourceModuleId="Tenant" extends="Financial" referenceModule="FinancialAnalysis">
       <attribute id="IftTc11" dataType="string" refId="IftIndustrySector" deleted="true" />
       <attribute id="IftTc6" dataType="string" refId="IftFyeMonth" deleted="true" />
@@ -219,8 +210,15 @@
     <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
       <audit userId="admin" time="20171012T181949" />
     </model>
+    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20200915T142911" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
-      <attribute id="ArcPeerIndustry" dataType="long" refId="ArcPeerIndustry" />
+      <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
       <attribute id="ArcRiskCaps" dataType="string" refId="ArcRiskCaps" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
       <attribute id="CashConversionCycle" dataType="integer" />
@@ -260,8 +258,8 @@
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
-      <audit userId="admin" time="20200915T133120" />
+      <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
+      <audit userId="admin" time="20200915T143040" />
     </model>
   </models>
   <viewModels>
@@ -358,7 +356,7 @@
         <attribute id="Splitter" controlType="splitter" order="6" />
         <attribute id="SoftFactorsScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="7" />
       </group>
-      <audit userId="admin" time="20200915T133205" />
+      <audit userId="admin" time="20200915T143710" />
     </viewModel>
   </viewModels>
   <references>
@@ -518,19 +516,6 @@
       </query>
       <audit userId="admin" time="20200626T100020" />
     </ref>
-    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY" resourceModuleId="Tenant">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="PeerIndustry" />
-        </projection>
-        <sortOrders>
-          <sortOrder modelFieldId="IndustryChannel" direction="asc" />
-          <sortOrder modelFieldId="RegionSubRegion" direction="asc" />
-        </sortOrders>
-      </query>
-      <audit userId="admin" time="20200626T100208" />
-    </ref>
     <ref id="ArcFinancialRatios" modelRefId="ArcFinancialRatios" type="ARCFINANCIALRATIOS">
       <query>
         <projection>
@@ -551,6 +536,15 @@
     </ref>
     <ref id="OlapDimension" modelRefId="OlapDimension" mappingType="true" mappingArtifactType="Reference" type="OLAPDIMENSION" shared="false" resourceModuleId="Core" multiModule="true">
       <audit userId="admin" time="20200915T093652" />
+    </ref>
+    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200915T142911" />
     </ref>
   </references>
 </metadata>
