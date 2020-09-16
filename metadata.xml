@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="29">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="30">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -325,25 +325,25 @@
         <attribute id="SalesGrowth" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SalesGrowth" controlType="text" format="percent" decimals="2" order="4" />
         <attribute id="NetOperatingProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetOperatingProfitPercentage" controlType="text" format="percent" decimals="2" order="5" />
         <attribute id="NetProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetProfitPercentage" controlType="text" format="percent" decimals="2" order="6" />
-        <attribute id="InterestCover" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InterestCover" controlType="text" decimals="2" order="7" />
+        <attribute id="InterestCover" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InterestCover" controlType="text" format="number" decimals="2" order="7" />
         <attribute id="ReturnOnAssetsPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ReturnOnAssetsPercentage" controlType="text" format="percent" decimals="2" order="8" />
         <attribute id="Liquidity" controlType="header" order="9" />
-        <attribute id="CashRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashRatio" controlType="text" decimals="2" order="10" />
-        <attribute id="QuickRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="QuickRatio" controlType="text" decimals="2" order="11" />
-        <attribute id="CurrentRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CurrentRatio" controlType="text" decimals="2" order="12" />
+        <attribute id="CashRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashRatio" controlType="text" format="number" decimals="2" order="10" />
+        <attribute id="QuickRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="QuickRatio" controlType="text" format="number" decimals="2" order="11" />
+        <attribute id="CurrentRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CurrentRatio" controlType="text" format="number" decimals="2" order="12" />
         <attribute id="Efficiency" controlType="header" order="13" />
         <attribute id="CashConversionCycle" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashConversionCycle" controlType="text" order="14" />
         <attribute id="DaysSalesOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysSalesOutstanding" controlType="text" order="15" />
         <attribute id="DaysInventoryOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysInventoryOutstanding" controlType="text" order="16" />
         <attribute id="DaysPayableOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysPayableOutstanding" controlType="text" order="17" />
-        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" decimals="2" order="18" />
+        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" format="number" decimals="2" order="18" />
         <attribute id="LeverageAndDebtCoverage" controlType="header" order="19" />
-        <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" decimals="2" order="20" />
-        <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" decimals="2" order="21" />
-        <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" decimals="2" order="22" />
-        <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" order="23" />
-        <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" order="24" />
-        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" decimals="2" order="25" />
+        <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" format="number" decimals="2" order="20" />
+        <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" format="number" decimals="2" order="21" />
+        <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" format="number" decimals="2" order="22" />
+        <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" format="number" decimals="2" order="23" />
+        <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" format="number" decimals="2" order="24" />
+        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" format="number" decimals="2" order="25" />
         <attribute id="Splitter" controlType="splitter" order="26" />
         <attribute id="PeerComparisonScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="27" />
       </group>
@@ -356,7 +356,7 @@
         <attribute id="Splitter" controlType="splitter" order="6" />
         <attribute id="SoftFactorsScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="7" />
       </group>
-      <audit userId="admin" time="20200915T143710" />
+      <audit userId="admin" time="20200916T154919" />
     </viewModel>
   </viewModels>
   <references>
