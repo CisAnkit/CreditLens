@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="34">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="36">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -79,21 +79,6 @@
       <attribute id="Score" dataType="integer" />
       <audit userId="admin" time="20200516T115235" />
     </model>
-    <model id="PpiScoringMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="PpiPctUpperInclusiveBoundaryInt" dataType="integer" />
-      <attribute id="PpiPctUpperInclusiveBoundary" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Distributor" dataType="integer" />
-      <attribute id="Retailer" dataType="integer" />
-      <attribute id="Ecommerce" dataType="integer" />
-      <attribute id="Reseller" dataType="integer" />
-      <attribute id="Corporate" dataType="integer" />
-      <attribute id="SystemIntegrator" dataType="integer" />
-      <attribute id="Services" dataType="integer" />
-      <attribute id="Telco" dataType="integer" />
-      <attribute id="Dealer" dataType="integer" />
-      <audit userId="admin" time="20200516T124338" />
-    </model>
     <model id="MacroeconomicRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="MerCapUpperValueInt" dataType="integer" />
@@ -121,15 +106,6 @@
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="decimal" />
       <audit userId="admin" time="20200518T140519" />
-    </model>
-    <model id="ArcRiskCaps" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Country" dataType="string" refId="Country" />
-      <attribute id="MerCap" dataType="decimal" />
-      <attribute id="GprCap" dataType="decimal" />
-      <audit userId="admin" time="20200520T115139" />
     </model>
     <model id="PortfolioRatiosScoring" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
@@ -217,10 +193,12 @@
       <attribute id="Value" dataType="string" />
       <audit userId="admin" time="20200918T101139" />
     </model>
+    <model id="MapPdModelScale" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
+      <audit userId="admin" time="20170728T185832" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
       <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
       <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="ArcRiskCaps" dataType="string" refId="ArcRiskCaps" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
       <attribute id="CashConversionCycle" dataType="integer" />
       <attribute id="CashRatio" dataType="decimal" decimals="2" />
@@ -237,6 +215,7 @@
       <attribute id="GeopoliticalRiskCap" dataType="decimal" decimals="2" />
       <attribute id="GeopoliticalRiskCapAdjPct" dataType="integer" refId="GeopoliticalRiskCapAdjustmentPercentage" />
       <attribute id="HardFactorsScore" dataType="decimal" format="number" decimals="2" />
+      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
       <attribute id="InterestCover" dataType="decimal" decimals="2" />
       <attribute id="InventoryToWc" dataType="decimal" decimals="2" />
       <attribute id="MacroeconomicRiskCap" dataType="decimal" decimals="2" />
@@ -258,8 +237,7 @@
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
-      <audit userId="admin" time="20200918T101525" />
+      <audit userId="admin" time="20200918T151540" />
     </model>
   </models>
   <viewModels>
@@ -415,15 +393,6 @@
       </query>
       <audit userId="admin" time="20200516T115238" />
     </ref>
-    <ref id="PpiScoringMap" modelRefId="PpiScoringMap" type="PPISCORINGMAP" resourceModuleId="Tenant">
-      <query>
-        <projection>
-          <key modelFieldId="PpiPctUpperInclusiveBoundary" />
-          <display modelFieldIds="PpiPctUpperInclusiveBoundary,Distributor,Retailer,Ecommerce,Reseller,Corporate,SystemIntegrator,Services,Telco,Dealer" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200516T124341" />
-    </ref>
     <ref id="MacroeconomicRiskCapAdjustmentPercentage" modelRefId="MacroeconomicRiskCapAdjustmentPercentage" type="MACROECONOMICRISKCAPADJUSTMENTPERCENTAGE">
       <query>
         <projection>
@@ -459,15 +428,6 @@
         </projection>
       </query>
       <audit userId="admin" time="20200518T140522" />
-    </ref>
-    <ref id="ArcRiskCaps" modelRefId="ArcRiskCaps" type="ARCRISKCAPS">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Country,MerCap,GprCap" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200520T115142" />
     </ref>
     <ref id="PortfolioRatiosScoring" modelRefId="PortfolioRatiosScoring" type="PORTFOLIORATIOSSCORING">
       <query>
@@ -537,6 +497,9 @@
         </projection>
       </query>
       <audit userId="admin" time="20200918T101140" />
+    </ref>
+    <ref id="MapPdModelScale" modelRefId="MapPdModelScale" type="MAPPDMODELSCALE" shared="false" resourceModuleId="RiskGrading">
+      <audit userId="admin" time="20200918T142959" />
     </ref>
   </references>
 </metadata>
