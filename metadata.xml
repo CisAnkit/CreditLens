@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="32">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="33">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -42,13 +42,6 @@
     </model>
     <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2017-11-24T19:07:51.630172Z" />
-    </model>
-    <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200511T112020" />
     </model>
     <model id="MapModel" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Map" />
     <model id="StrategicSalesImportance" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
@@ -217,6 +210,13 @@
       <attribute id="Quartiles3" dataType="long" />
       <audit userId="admin" time="20200916T125634" />
     </model>
+    <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20200918T101139" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
       <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
       <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
@@ -236,7 +236,7 @@
       <attribute id="Financials" dataType="string" refId="SoftFactorFinancials" />
       <attribute id="GeopoliticalRiskCap" dataType="decimal" decimals="2" />
       <attribute id="GeopoliticalRiskCapAdjPct" dataType="integer" refId="GeopoliticalRiskCapAdjustmentPercentage" />
-      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="HardFactorsScore" dataType="decimal" format="number" decimals="2" />
       <attribute id="InterestCover" dataType="decimal" decimals="2" />
       <attribute id="InventoryToWc" dataType="decimal" decimals="2" />
       <attribute id="MacroeconomicRiskCap" dataType="decimal" decimals="2" />
@@ -244,7 +244,9 @@
       <attribute id="NetDebtToEbit" dataType="decimal" decimals="2" />
       <attribute id="NetOperatingProfitPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="NetProfitPercentage" dataType="decimal" format="percent" decimals="2" />
+      <attribute id="PeerComparisonScore" dataType="decimal" format="number" decimals="2" attributeExpression="Regenerate domain to show code editor" />
       <attribute id="PpiPercentage" dataType="decimal" format="percent" decimals="2" />
+      <attribute id="PpiScore" dataType="decimal" format="number" decimals="2" />
       <attribute id="QuickRatio" dataType="decimal" decimals="2" />
       <attribute id="ReturnOnAssetsPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="RiskCalcEdf" dataType="decimal" format="percent" decimals="2" />
@@ -252,14 +254,12 @@
       <attribute id="SelectedStatementsYears" dataType="string" maxLength="50" />
       <attribute id="ShortTermDebtToTotalDebt" dataType="decimal" decimals="2" />
       <attribute id="ShortTermDebtToWorkingCapital" dataType="decimal" decimals="2" />
+      <attribute id="SoftFactorsScore" dataType="decimal" format="number" decimals="2" />
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <attribute id="SoftFactorsScore" dataType="decimal" format="number" decimals="2" />
-      <attribute id="PpiScore" dataType="decimal" format="number" decimals="2" />
-      <attribute id="PeerComparisonScore" dataType="decimal" format="number" decimals="2" attributeExpression="Regenerate domain to show code editor" />
-      <attribute id="HardFactorsScore" dataType="decimal" format="number" decimals="2" />
-      <audit userId="admin" time="20200917T143852" />
+      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
+      <audit userId="admin" time="20200918T101525" />
     </model>
   </models>
   <viewModels>
@@ -289,6 +289,21 @@
       <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="6" />
       <audit userId="admin" time="20200511T110856" />
     </viewModel>
+    <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
+      <group id="Default" order="1">
+        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
+        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
+        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
+        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="4" />
+        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
+        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="6" />
+        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="7" />
+        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" order="8" />
+        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" decimals="0" order="9" />
+        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
+      </group>
+      <audit userId="admin" time="20200917T144033" />
+    </viewModel>
     <viewModel id="ArcRiskGradingInputViewModel" primaryModel="ArcRiskGradingDomainModel" description="ARC Risk Grading Input View Model" resourceModuleId="Tenant">
       <group id="Default" order="1">
         <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
@@ -297,9 +312,7 @@
         <attribute id="RiskCalcEdf" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="RiskCalcEdf" controlType="text" format="percent" decimals="2" order="4" />
         <attribute id="IndustryChannel" modelId="ArcRiskGradingDomainModel" modelFieldId="IndustryChannel" controlType="singleselect" order="5" />
         <attribute id="CountryOfRisk" readonly="true" modelId="Entity" modelFieldId="CountryOfRisk" controlType="singleselect" order="6" />
-        <attribute id="MacroeconomicRiskCap" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="MacroeconomicRiskCap" controlType="text" decimals="2" order="7" />
-        <attribute id="GeopoliticalRiskCap" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="GeopoliticalRiskCap" controlType="text" decimals="2" order="8" />
-        <attribute id="Splitter" controlType="splitter" order="9" />
+        <attribute id="Splitter" controlType="splitter" order="7" />
       </group>
       <group id="PeerComparison" order="2">
         <attribute id="ArcPeerIndustry" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ArcPeerIndustry" controlType="singleselect" order="1" />
@@ -337,34 +350,10 @@
         <attribute id="CorporateStructure" modelId="ArcRiskGradingDomainModel" modelFieldId="CorporateStructure" controlType="singleselect" order="5" />
         <attribute id="Splitter" controlType="splitter" order="6" />
       </group>
-      <audit userId="admin" time="20200917T141717" />
-    </viewModel>
-    <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
-      <group id="Default" order="1">
-        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
-        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
-        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
-        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="4" />
-        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
-        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="6" />
-        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="7" />
-        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" order="8" />
-        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" decimals="0" order="9" />
-        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
-      </group>
-      <audit userId="admin" time="20200917T144033" />
+      <audit userId="admin" time="20200918T102153" />
     </viewModel>
   </viewModels>
   <references>
-    <ref id="ArcIndustryChannel" modelRefId="ArcIndustryChannel" type="ARCINDUSTRYCHANNEL">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200511T112024" />
-    </ref>
     <ref id="MapModel" modelRefId="MapModel" type="MAPMODEL" shared="false" resourceModuleId="Map">
       <audit userId="admin" time="20200512T154543" />
     </ref>
@@ -541,6 +530,15 @@
         </projection>
       </query>
       <audit userId="admin" time="20200916T125634" />
+    </ref>
+    <ref id="ArcIndustryChannel" modelRefId="ArcIndustryChannel" type="ARCINDUSTRYCHANNEL">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200918T101140" />
     </ref>
   </references>
 </metadata>
