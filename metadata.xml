@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="36">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="37">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -318,7 +318,7 @@
         <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" format="number" decimals="2" order="23" />
         <attribute id="Splitter" controlType="splitter" order="24" />
       </group>
-      <group id="SoftFactors" order="3">
+      <group id="SoftFactors" colSpanOverride="1" order="3">
         <attribute id="StrategicSalesImportance" modelId="ArcRiskGradingDomainModel" modelFieldId="StrategicSalesImportance" controlType="singleselect" order="1" />
         <attribute id="YearsInBusinessWithAcer" modelId="ArcRiskGradingDomainModel" modelFieldId="YearsInBusinessWithAcer" controlType="singleselect" order="2" />
         <attribute id="DaysBeyondDueDate" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysBeyondDueDate" controlType="singleselect" order="3" />
@@ -326,7 +326,7 @@
         <attribute id="CorporateStructure" modelId="ArcRiskGradingDomainModel" modelFieldId="CorporateStructure" controlType="singleselect" order="5" />
         <attribute id="Splitter" controlType="splitter" order="6" />
       </group>
-      <audit userId="admin" time="20200918T111619" />
+      <audit userId="admin" time="20200921T113557" />
     </viewModel>
   </viewModels>
   <references>
