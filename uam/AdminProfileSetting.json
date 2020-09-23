@@ -16,10 +16,16 @@
     "UserManagement": true,
     "DataFileUpload": true,
     "ViewSensitiveData": true,
-    "Inapplicable_": [],
+    "RestrictedRecordAccess": null,
+    "ExclusiveRecordAccess": null,
+    "Inapplicable_": [
+      "RestrictedRecordAccess",
+      "ExclusiveRecordAccess"
+    ],
     "Associations_": [
       "AdminFaProfileSetting",
-      "AdminRgProfileSetting"
+      "AdminRgProfileSetting",
+      "AdminCreProfileSetting"
     ],
     "WFId_": "00000000-0000-0000-0000-000000000000",
     "TaskId_": "00000000-0000-0000-0000-000000000000",

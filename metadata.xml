@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="16">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="15">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -445,33 +445,8 @@
       <attribute id="Quartile3" dataType="double" />
       <audit userId="admin" time="20200622T071136" />
     </model>
-    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Country" dataType="string" refId="Country" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <audit userId="admin" time="20200626T100018" />
-    </model>
-    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="PeerIndustry" dataType="string" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <audit userId="admin" time="20200626T100205" />
-    </model>
-    <model id="Acerift" dataProvider="postgres" resourceModuleId="Tenant" extends="Financial" referenceModule="FinancialAnalysis">
-      <attribute id="IftTc11" dataType="string" refId="IftIndustrySector" deleted="true" />
-      <attribute id="IftTc6" dataType="string" refId="IftFyeMonth" deleted="true" />
-      <attribute id="AceriftTc11" dataType="string" refId="IftIndustrySector" />
-      <attribute id="AceriftTc6" dataType="string" refId="IftFyeMonth" />
-      <audit userId="admin" time="20200901T104238" />
-    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
       <attribute id="ArcPeerIndustry" dataType="long" refId="ArcPeerIndustry" />
-      <attribute id="ArcPeerQuartiles" dataType="long" refId="ArcPeerQuartiles" />
       <attribute id="ArcRegions" dataType="string" refId="ArcRegions" attributeExpression="Regenerate domain to show code editor" />
       <attribute id="ArcRiskCaps" dataType="string" refId="ArcRiskCaps" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
@@ -492,6 +467,7 @@
       <attribute id="HardFactorsScore" dataType="integer" />
       <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
       <attribute id="InterestCover" dataType="decimal" decimals="2" />
+      <attribute id="InventoryToWc" dataType="integer" />
       <attribute id="MacroeconomicRiskCap" dataType="decimal" decimals="2" />
       <attribute id="MacroeconomicRiskCapAdjPct" dataType="integer" refId="MacroeconomicRiskCapAdjustmentPercentage" />
       <attribute id="NetDebtToEbit" dataType="decimal" decimals="2" />
@@ -506,13 +482,32 @@
       <attribute id="RiskCalcEdf" dataType="decimal" format="percent" decimals="2" />
       <attribute id="SalesGrowth" dataType="decimal" format="percent" decimals="2" />
       <attribute id="ShortTermDebtToTotalDebt" dataType="decimal" decimals="2" />
-      <attribute id="ShortTermDebtToWorkingCapital" dataType="decimal" decimals="2" />
       <attribute id="SoftFactorsScore" dataType="integer" />
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <attribute id="InventoryToWc" dataType="decimal" decimals="2" />
-      <audit userId="admin" time="20200902T111839" />
+      <attribute id="ArcPeerQuartiles" dataType="long" refId="ArcPeerQuartiles" />
+      <audit userId="admin" time="20200622T072315" />
+    </model>
+    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Country" dataType="string" refId="Country" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <audit userId="admin" time="20200626T100018" />
+    </model>
+    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="PeerIndustry" dataType="string" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <audit userId="admin" time="20200626T100205" />
+    </model>
+    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true">
+      <audit userId="admin" time="20161124T064148" />
     </model>
   </models>
   <viewModels>
@@ -589,7 +584,7 @@
         <attribute id="DaysSalesOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysSalesOutstanding" controlType="text" order="15" />
         <attribute id="DaysInventoryOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysInventoryOutstanding" controlType="text" order="16" />
         <attribute id="DaysPayableOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysPayableOutstanding" controlType="text" order="17" />
-        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" decimals="2" order="18" />
+        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" order="18" />
         <attribute id="LeverageAndDebtCoverage" controlType="header" order="19" />
         <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" decimals="2" order="20" />
         <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" decimals="2" order="21" />
@@ -970,6 +965,9 @@
         </sortOrders>
       </query>
       <audit userId="admin" time="20200626T100208" />
+    </ref>
+    <ref id="DataFileImportMap" modelRefId="DataFileImportMap" type="DATAFILEIMPORTMAP" resourceModuleId="DataMovement">
+      <audit userId="admin" time="20200903T085811" />
     </ref>
   </references>
 </metadata>

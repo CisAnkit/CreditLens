@@ -16,6 +16,7 @@
     "ViewEntityGroup": true,
     "ViewRelationship": true,
     "ManageEntitySearch": true,
+    "ManageBatchEdit": true,
     "Inapplicable_": [],
     "WFId_": "00000000-0000-0000-0000-000000000000",
     "TaskId_": "00000000-0000-0000-0000-000000000000",
