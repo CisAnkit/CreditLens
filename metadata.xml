@@ -1,248 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="39">
-    <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
+  <module id="Tenant" tenantId="Tenant" major="1" minor="0" patch="19">
+    <loadAfter moduleRefId="Core" major="4" minor="2" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
-    <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
-    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="9" patch="0" />
-    <loadAfter moduleRefId="Bvd" major="2" minor="4" patch="0" />
-    <loadAfter moduleRefId="DataMovement" major="4" minor="3" patch="0" />
-    <loadAfter moduleRefId="Map" major="2" minor="9" patch="0" />
-    <loadAfter moduleRefId="RiskGrading" major="3" minor="0" patch="0" />
+    <loadAfter moduleRefId="Entity" major="2" minor="11" patch="0" />
+    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="8" patch="0" />
+    <loadAfter moduleRefId="Bvd" major="2" minor="3" patch="0" />
+    <loadAfter moduleRefId="DataMovement" major="4" minor="2" patch="0" />
+    <loadAfter moduleRefId="Map" major="2" minor="8" patch="0" />
+    <loadAfter moduleRefId="RiskGrading" major="2" minor="9" patch="0" />
     <loadAfter moduleRefId="MapPdModels" major="2" minor="3" patch="0" />
-    <loadAfter moduleRefId="DealStructuring" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="Covenant" major="2" minor="6" patch="0" />
-    <loadAfter moduleRefId="CreditPresentation" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="Workflow" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="4" patch="0" />
-    <loadAfter moduleRefId="BiStarSchema" major="1" minor="14" patch="0" />
-    <loadAfter moduleRefId="MapLgdModels" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="Marq" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="DealStructuring" major="4" minor="4" patch="0" />
+    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="4" patch="0" />
+    <loadAfter moduleRefId="Covenant" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="CreditPresentation" major="2" minor="4" patch="0" />
+    <loadAfter moduleRefId="Workflow" major="2" minor="4" patch="0" />
+    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="3" patch="0" />
+    <loadAfter moduleRefId="BiStarSchema" major="1" minor="13" patch="0" />
+    <loadAfter moduleRefId="MapLgdModels" major="4" minor="4" patch="0" />
+    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="4" patch="0" />
+    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="4" patch="0" />
+    <loadAfter moduleRefId="Marq" major="2" minor="4" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="13" patch="0" />
     <loadAfter moduleRefId="Salesforce" major="1" minor="6" patch="0" />
-    <loadAfter moduleRefId="RiskReturn" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="Raroc" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="BusinessInsights" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="14" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="14" patch="0" />
-    <loadAfter moduleRefId="Benchmark" major="1" minor="6" patch="0" />
-    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="RiskReturn" major="4" minor="4" patch="0" />
+    <loadAfter moduleRefId="Raroc" major="4" minor="4" patch="0" />
+    <loadAfter moduleRefId="BusinessInsights" major="2" minor="4" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="13" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="13" patch="0" />
+    <loadAfter moduleRefId="Benchmark" major="1" minor="5" patch="0" />
+    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="4" patch="0" />
     <loadAfter moduleRefId="MoodysFinal" major="1" minor="0" patch="0" />
-    <probePath path="Config\metadata\Tenant\ra" />
   </module>
   <models>
-    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
-      <audit time="2016-09-14T19:07:51.630172Z" />
+    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true" />
+    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true" />
+    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true" />
+    <model id="Hsbcme" dataProvider="postgres" resourceModuleId="Tenant" extends="Financial" referenceModule="FinancialAnalysis">
+      <attribute id="HsbcmeTc7" dataType="string" maxLength="50" />
+      <audit userId="admin" time="20200820T151509" />
     </model>
-    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
-      <audit time="2016-09-14T19:07:52.9692616Z" />
-    </model>
-    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
-      <audit time="2017-11-24T19:07:51.630172Z" />
-    </model>
-    <model id="MapModel" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Map" />
-    <model id="StrategicSalesImportance" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="ValueInt" dataType="integer" />
-      <attribute id="Score" dataType="integer" />
-      <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <audit userId="admin" time="20200516T113126" />
-    </model>
-    <model id="YearsInBusinessWithAcer" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="ValueInt" dataType="integer" />
-      <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Score" dataType="integer" />
-      <audit userId="admin" time="20200516T113741" />
-    </model>
-    <model id="DaysBeyondDueDate" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="ValueInt" dataType="integer" />
-      <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Score" dataType="integer" />
-      <audit userId="admin" time="20200516T114118" />
-    </model>
-    <model id="SoftFactorFinancials" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="ValueInt" dataType="integer" />
-      <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Score" dataType="integer" />
-      <audit userId="admin" time="20200516T114846" />
-    </model>
-    <model id="CorporateStructure" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="ValueInt" dataType="integer" />
-      <attribute id="Value" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Score" dataType="integer" />
-      <audit userId="admin" time="20200516T115235" />
-    </model>
-    <model id="MacroeconomicRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="MerCapUpperValueInt" dataType="integer" />
-      <attribute id="AdjustmentPercentage" dataType="decimal" />
-      <attribute id="MerCapUpperValue" dataType="integer" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <audit userId="admin" time="20200516T135323" />
-    </model>
-    <model id="GeopoliticalRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="GprCapUpperValueInt" dataType="integer" />
-      <attribute id="GprCapUpperValue" dataType="integer" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="AdjustmentPercentage" dataType="decimal" />
-      <audit userId="admin" time="20200516T140819" />
-    </model>
-    <model id="MacroeconomicRiskCapWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="decimal" />
-      <audit userId="admin" time="20200518T140120" />
-    </model>
-    <model id="GeopoliticalRiskCapWeight" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="decimal" />
-      <audit userId="admin" time="20200518T140519" />
-    </model>
-    <model id="PortfolioRatiosScoring" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="EntityNameInt" dataType="integer" />
-      <attribute id="EntityName" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="InterestCover" dataType="decimal" />
-      <attribute id="NetOperatingMarginPct" dataType="decimal" />
-      <attribute id="CurrentRatio" dataType="decimal" />
-      <attribute id="QuickRatio" dataType="decimal" />
-      <attribute id="CashRatio" dataType="decimal" />
-      <attribute id="DebtOrTangibleNetWorth" dataType="decimal" />
-      <attribute id="BorrowedFundsOrEffectiveTangibleNetWorth" dataType="decimal" />
-      <attribute id="DebtOrAssets" dataType="decimal" />
-      <attribute id="ShortTermDebtOrTotalDebt" dataType="decimal" />
-      <attribute id="ShortTermDebtOrWorkingCapital" dataType="decimal" />
-      <attribute id="DebtOrEbit" dataType="decimal" />
-      <attribute id="NetProfitMarginPct" dataType="decimal" />
-      <attribute id="ReturnOnAssetsPct" dataType="decimal" />
-      <attribute id="NetTradeReceivableDays" dataType="decimal" />
-      <attribute id="InventoryDays" dataType="decimal" />
-      <attribute id="TradePayableDays" dataType="decimal" />
-      <attribute id="Ccc" dataType="decimal" />
-      <attribute id="InventoryOrWc" dataType="decimal" />
-      <attribute id="SalesGrowthPct" dataType="decimal" />
-      <attribute id="DebtOrEquity" dataType="decimal" />
-      <attribute id="PeerScore" dataType="decimal" />
-      <audit userId="admin" time="20200528T085342" />
-    </model>
-    <model id="ArcRiskGradingRegion" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+    <model id="DataMigrationMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true" />
+    <model id="DataMovementConfig" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
+    <model id="FinanceVehicle" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200529T065102" />
+      <attribute id="Sort" dataType="long" />
+      <audit userId="GeorgeS" time="20200917T194159" />
     </model>
-    <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Country" dataType="string" refId="Country" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <audit userId="admin" time="20200626T100018" />
-    </model>
-    <model id="Acerift" dataProvider="postgres" resourceModuleId="Tenant" extends="Financial" referenceModule="FinancialAnalysis">
-      <attribute id="IftTc11" dataType="string" refId="IftIndustrySector" deleted="true" />
-      <attribute id="IftTc6" dataType="string" refId="IftFyeMonth" deleted="true" />
-      <attribute id="AceriftTc11" dataType="string" refId="IftIndustrySector" />
-      <attribute id="AceriftTc6" dataType="string" refId="IftFyeMonth" />
-      <audit userId="admin" time="20200901T104238" />
-    </model>
-    <model id="ArcFinancialRatios" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+    <model id="HoldingCompany" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200910T145603" />
+      <attribute id="Sort" dataType="long" />
+      <audit userId="GeorgeS" time="20200917T194359" />
     </model>
-    <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
-      <audit userId="admin" time="20171012T181949" />
-    </model>
-    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+    <model id="Consolidation" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200915T142911" />
+      <attribute id="Sort" dataType="long" />
+      <audit userId="GeorgeS" time="20200917T194505" />
     </model>
-    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="Industry" dataType="string" refId="ArcPeerIndustry" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
-      <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="long" />
-      <attribute id="Quartiles3" dataType="long" />
-      <audit userId="admin" time="20200916T125634" />
-    </model>
-    <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+    <model id="Conglomerate" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200918T101139" />
+      <attribute id="Sort" dataType="long" />
+      <audit userId="GeorgeS" time="20200917T194611" />
     </model>
-    <model id="MapPdModelScale" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20170728T185832" />
+    <model id="EntityType" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Sort" dataType="long" />
+      <audit userId="GeorgeS" time="20200917T194858" />
     </model>
-    <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
-      <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
-      <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
-      <attribute id="CashConversionCycle" dataType="integer" />
-      <attribute id="CashRatio" dataType="decimal" decimals="2" />
-      <attribute id="CorporateStructure" dataType="string" refId="CorporateStructure" />
-      <attribute id="CurrentRatio" dataType="decimal" decimals="2" />
-      <attribute id="DaysBeyondDueDate" dataType="string" refId="DaysBeyondDueDate" />
-      <attribute id="DaysInventoryOutstanding" dataType="integer" />
-      <attribute id="DaysPayableOutstanding" dataType="integer" />
-      <attribute id="DaysSalesOutstanding" dataType="integer" />
-      <attribute id="DebtToAssetsRatio" dataType="decimal" decimals="2" />
-      <attribute id="DebtToEquityRatio" dataType="decimal" decimals="2" />
-      <attribute id="DebtToTnw" dataType="decimal" decimals="2" />
-      <attribute id="Financials" dataType="string" refId="SoftFactorFinancials" />
-      <attribute id="GeopoliticalRiskCap" dataType="decimal" decimals="2" />
-      <attribute id="GeopoliticalRiskCapAdjPct" dataType="integer" refId="GeopoliticalRiskCapAdjustmentPercentage" />
-      <attribute id="HardFactorsScore" dataType="decimal" format="number" decimals="2" />
-      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
-      <attribute id="InterestCover" dataType="decimal" decimals="2" />
-      <attribute id="InventoryToWc" dataType="decimal" decimals="2" />
-      <attribute id="MacroeconomicRiskCap" dataType="decimal" decimals="2" />
-      <attribute id="MacroeconomicRiskCapAdjPct" dataType="integer" refId="MacroeconomicRiskCapAdjustmentPercentage" />
-      <attribute id="NetDebtToEbit" dataType="decimal" decimals="2" />
-      <attribute id="NetOperatingProfitPercentage" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="NetProfitPercentage" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="PeerComparisonScore" dataType="decimal" format="number" decimals="2" attributeExpression="Regenerate domain to show code editor" />
-      <attribute id="PpiPercentage" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="PpiScore" dataType="decimal" format="number" decimals="2" />
-      <attribute id="QuickRatio" dataType="decimal" decimals="2" />
-      <attribute id="ReturnOnAssetsPercentage" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="RiskCalcEdf" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="SalesGrowth" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="SelectedStatementsYears" dataType="string" maxLength="50" />
-      <attribute id="ShortTermDebtToTotalDebt" dataType="decimal" decimals="2" />
-      <attribute id="ShortTermDebtToWorkingCapital" dataType="decimal" decimals="2" />
-      <attribute id="SoftFactorsScore" dataType="decimal" format="number" decimals="2" />
-      <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
-      <attribute id="Token" dataType="guid" />
-      <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <audit userId="admin" time="20200918T151540" />
+    <model id="EntityTypeMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Entity" standardConfig="true" />
+    <model id="Entity" source="entity" versionEnable="true" dataProvider="postgres" resourceModuleId="Entity" root="true" createUniqueRule="ValidateUniquenessChecking" updateUniqueRule="ValidateUniquenessChecking" includeInDataGridCache="true">
+      <attribute id="Gid" dataType="string" maxLength="20" />
+      <attribute id="OriginalRaInstance" dataType="string" maxLength="50" />
+      <attribute id="FinanceVehicle" dataType="string" refId="FinanceVehicle" />
+      <attribute id="HoldingCompany" dataType="string" refId="HoldingCompany" />
+      <attribute id="Consolidation" dataType="string" refId="Consolidation" />
+      <attribute id="Conglomerate" dataType="string" refId="Conglomerate" />
+      <audit userId="GeorgeS" time="20200917T195411" />
+    </model>
+    <model id="StatementStatus" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="FinancialAnalysis">
+      <audit userId="admin" time="20161228T083735" />
+    </model>
+    <model id="UserRole" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
+      <audit userId="admin" time="2016-09-22T07:39:52.0141859Z" />
+    </model>
+    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true">
+      <audit userId="admin" time="20161124T064148" />
+    </model>
+    <model id="BusinessPortfolio" source="custom_lookup" hierarchy="true" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
+      <audit userId="admin" time="20170220T044829" />
     </model>
   </models>
   <viewModels>
+    <viewModel id="EntitySearch" primaryModel="Entity" maxSearchResultCount="200" isSearch="true" resourceModuleId="Entity">
+      <group id="SearchCriteria" order="1">
+        <attribute id="CountryOfInc" hidden="true" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="4" />
+        <attribute id="ExternalDataSources" hidden="true" modelId="Entity" modelFieldId="ExternalDataSources" controlType="multiselect" order="7" />
+      </group>
+      <group id="SearchResults" order="2">
+        <attribute id="ExternalDataSources" hidden="true" modelId="Entity" modelFieldId="ExternalDataSources" controlType="multiselect" order="8" />
+        <attribute id="CountryOfInc" hidden="true" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="9" />
+      </group>
+      <audit userId="GeorgeS" time="20200917T200427" />
+    </viewModel>
+    <viewModel id="FinancialInfo" primaryModel="Financial" description="" resourceModuleId="FinancialAnalysis">
+      <group id="Financials" order="1">
+        <attribute id="Gc4" modelId="Financial" modelFieldId="Gc4" controlType="singleselect" action="show" actionRule="FinancialTemplateHasTargetCurrency" order="8">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+      </group>
+      <audit userId="GeorgeS" time="20200921T105719" />
+    </viewModel>
     <viewModel id="EntityEdit" primaryModel="Entity" description="" resourceModuleId="Entity" allowDraft="true">
       <group id="BasicDetails" type="accordion" order="1">
+        <group id="CustomerDetails" order="1">
+          <attribute id="OriginalRaInstance" hidden="true" modelId="Entity" modelFieldId="OriginalRaInstance" controlType="text" order="1" />
+          <attribute id="EntityType" readonly="true" modelId="Entity" modelFieldId="EntityType" controlType="singleselect" order="2" />
+          <attribute id="LongName" modelId="Entity" modelFieldId="LongName" controlType="text" action="readonly" actionRule="IsSalesforceEntity" order="3">
+            <validator>
+              <required value="true" />
+            </validator>
+            <runRule>IsSalesforceEntity</runRule>
+          </attribute>
+          <attribute id="ShortName" modelId="Entity" modelFieldId="ShortName" controlType="text" order="4">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+          <attribute id="EntityId" readonly="true" modelId="Entity" modelFieldId="EntityId" controlType="text" order="5" />
+          <attribute id="Gid" modelId="Entity" modelFieldId="Gid" controlType="text" order="6">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+          <attribute id="SystemId" modelId="Entity" modelFieldId="SystemId" controlType="text" action="readonly" actionRule="IsSalesforceEntity" order="7" />
+          <attribute id="LegalEntity" modelId="Entity" modelFieldId="LegalEntity" controlType="text" order="8" />
+          <attribute id="Conglomerate" modelId="Entity" modelFieldId="Conglomerate" controlType="singleselect" order="9" />
+          <attribute id="Consolidation" modelId="Entity" modelFieldId="Consolidation" controlType="singleselect" order="10">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+          <attribute id="FinanceVehicle" modelId="Entity" modelFieldId="FinanceVehicle" controlType="singleselect" order="11" />
+          <attribute id="HoldingCompany" modelId="Entity" modelFieldId="HoldingCompany" controlType="singleselect" order="12" />
+          <attribute id="TaxId" hidden="true" modelId="Entity" modelFieldId="TaxId" controlType="text" order="13" />
+          <attribute id="CustomerSince" modelId="Entity" modelFieldId="CustomerSince" controlType="datepicker" order="14">
+            <validator>
+              <rule ruleName="ValidateCustomerSince" />
+            </validator>
+            <runRule>ValidateCustomerSince</runRule>
+          </attribute>
+          <attribute id="CountryOfInc" hidden="true" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="15" />
+          <attribute id="ProvinceStateOfIncorporation" hidden="true" modelId="Entity" modelFieldId="ProvinceStateOfIncorporation" controlType="singleselect" order="16">
+            <dependsOnAttributes>CountryOfInc</dependsOnAttributes>
+          </attribute>
+          <attribute id="EstablishmentDate" hidden="true" modelId="Entity" modelFieldId="EstablishmentDate" controlType="datepicker" order="17">
+            <validator>
+              <rule ruleName="ValidateDateOfIncorporation" />
+            </validator>
+            <runRule>ValidateDateOfIncorporation</runRule>
+          </attribute>
+          <attribute id="RegistrationNumber" modelId="Entity" modelFieldId="RegistrationNumber" controlType="text" order="18" />
+          <attribute id="OnList" modelId="Entity" modelFieldId="OnList" controlType="singleselect" order="19" />
+          <attribute id="ConnectedParty" modelId="Entity" modelFieldId="ConnectedParty" controlType="checkbox" order="20" />
+          <attribute id="Descriptions" modelId="Entity" modelFieldId="Descriptions" controlType="mtext" order="21" />
+          <attribute id="Gc23" hidden="true" modelId="Entity" modelFieldId="Gc23" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="22" />
+          <attribute id="Gc22" hidden="true" modelId="Entity" modelFieldId="Gc22" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="23" />
+          <attribute id="LockedDate" hidden="true" modelId="Entity" modelFieldId="LockedDate" controlType="datepicker" order="24" />
+          <attribute id="ExternalDataSources" hidden="true" modelId="Entity" modelFieldId="ExternalDataSources" controlType="multiselect" order="25" />
+          <attribute id="LockedBy" hidden="true" modelId="Entity" modelFieldId="LockedBy" controlType="singleselect" order="26" />
+          <attribute id="IsLocked" hidden="true" modelId="Entity" modelFieldId="IsLocked" controlType="checkbox" order="27" />
+        </group>
+        <group id="Organization" order="2">
+          <attribute id="CreditPortfolio" hidden="true" modelId="Entity" modelFieldId="CreditPortfolio" controlType="singleselect" defaultValue="AmerTeam" order="3">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+        </group>
         <group id="Officer" order="3">
           <viewModelRef id="EntityOfficers" order="5" type="inlineGrid" cellEdit="true" />
         </group>
@@ -251,6 +200,7 @@
         </group>
       </group>
       <group id="Business" type="accordion" order="2">
+        <group id="BusinessLegalInformation" order="1" deleted="true" />
         <group id="IndustryInformation" order="2">
           <viewModelRef id="IndustrySelection" order="3" type="inlineGrid" cellEdit="true" action="enable" actionRule="EnabledIndustryGridWhenClassificationIsSelected" />
         </group>
@@ -265,242 +215,221 @@
       </group>
       <group id="BvdBankFocus" action="show" actionRule="IsBvdEntity" order="5" />
       <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="6" />
-      <audit userId="admin" time="20200511T110856" />
+      <audit userId="GeorgeS" time="20200924T145934" />
     </viewModel>
-    <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
-      <group id="Default" order="1">
-        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
-        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
-        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
-        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="4" />
-        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
-        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="6" />
-        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="7" />
-        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" order="8" />
-        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" decimals="0" order="9" />
-        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
+    <viewModel id="EntityEditOthers" primaryModel="Entity" resourceModuleId="Entity" allowDraft="true">
+      <group id="BasicDetails" type="accordion" order="1">
+        <group id="CustomerDetails" order="1">
+          <attribute id="OriginalRaInstance" hidden="true" modelId="Entity" modelFieldId="OriginalRaInstance" controlType="text" order="1" />
+          <attribute id="EntityType" readonly="true" modelId="Entity" modelFieldId="EntityType" controlType="singleselect" order="2" />
+          <attribute id="LongName" modelId="Entity" modelFieldId="LongName" controlType="text" order="3">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+          <attribute id="ShortName" modelId="Entity" modelFieldId="ShortName" controlType="text" order="4">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+          <attribute id="EntityId" readonly="true" modelId="Entity" modelFieldId="EntityId" controlType="text" order="5" />
+          <attribute id="Gid" modelId="Entity" modelFieldId="Gid" controlType="text" order="6">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+          <attribute id="SystemId" modelId="Entity" modelFieldId="SystemId" controlType="text" order="7" />
+          <attribute id="LegalEntity" modelId="Entity" modelFieldId="LegalEntity" controlType="text" order="8" />
+          <attribute id="Conglomerate" modelId="Entity" modelFieldId="Conglomerate" controlType="singleselect" order="9" />
+          <attribute id="Consolidation" modelId="Entity" modelFieldId="Consolidation" controlType="singleselect" order="10">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+          <attribute id="FinanceVehicle" modelId="Entity" modelFieldId="FinanceVehicle" controlType="singleselect" order="11" />
+          <attribute id="HoldingCompany" modelId="Entity" modelFieldId="HoldingCompany" controlType="singleselect" order="12" />
+          <attribute id="TaxId" hidden="true" modelId="Entity" modelFieldId="TaxId" controlType="text" order="13" />
+          <attribute id="CustomerSince" modelId="Entity" modelFieldId="CustomerSince" controlType="datepicker" order="14">
+            <validator>
+              <rule ruleName="ValidateCustomerSince" />
+            </validator>
+            <runRule>ValidateCustomerSince</runRule>
+          </attribute>
+          <attribute id="CountryOfInc" hidden="true" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="15" />
+          <attribute id="ProvinceStateOfIncorporation" hidden="true" modelId="Entity" modelFieldId="ProvinceStateOfIncorporation" controlType="singleselect" order="16">
+            <dependsOnAttributes>CountryOfInc</dependsOnAttributes>
+          </attribute>
+          <attribute id="EstablishmentDate" hidden="true" modelId="Entity" modelFieldId="EstablishmentDate" controlType="datepicker" order="17">
+            <validator>
+              <rule ruleName="ValidateDateOfIncorporation" />
+            </validator>
+            <runRule>ValidateDateOfIncorporation</runRule>
+          </attribute>
+          <attribute id="RegistrationNumber" modelId="Entity" modelFieldId="RegistrationNumber" controlType="text" order="18" />
+          <attribute id="OnList" modelId="Entity" modelFieldId="OnList" controlType="singleselect" order="19" />
+          <attribute id="ConnectedParty" modelId="Entity" modelFieldId="ConnectedParty" controlType="checkbox" order="20" />
+          <attribute id="Descriptions" modelId="Entity" modelFieldId="Descriptions" controlType="mtext" order="21" />
+          <attribute id="Gc23" hidden="true" modelId="Entity" modelFieldId="Gc23" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="22" />
+          <attribute id="Gc22" hidden="true" modelId="Entity" modelFieldId="Gc22" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="23" />
+          <attribute id="LockedDate" hidden="true" modelId="Entity" modelFieldId="LockedDate" controlType="datepicker" order="24" />
+          <attribute id="LockedBy" hidden="true" modelId="Entity" modelFieldId="LockedBy" controlType="singleselect" order="25" />
+          <attribute id="IsLocked" hidden="true" modelId="Entity" modelFieldId="IsLocked" controlType="checkbox" order="26" />
+        </group>
+        <group id="Organization" order="2">
+          <attribute id="CreditPortfolio" hidden="true" modelId="Entity" modelFieldId="CreditPortfolio" controlType="singleselect" defaultValue="AmerTeam" order="3">
+            <validator>
+              <required value="true" />
+            </validator>
+          </attribute>
+        </group>
+        <group id="EntityGroupsHeader" order="6">
+          <viewModelRef id="EntityGroupGrid" order="2" hidden="true" />
+        </group>
       </group>
-      <audit userId="admin" time="20200917T144033" />
+      <group id="Business" type="accordion" order="2">
+        <group id="BusinessLegalInformation" order="1" deleted="true" />
+      </group>
+      <group id="Documents" order="4" />
+      <group id="BvdBankFocus" action="show" actionRule="IsBvdEntity" order="5" />
+      <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="6" />
+      <audit userId="GeorgeS" time="20200924T150008" />
     </viewModel>
-    <viewModel id="ArcRiskGradingInputViewModel" primaryModel="ArcRiskGradingDomainModel" description="ARC Risk Grading Input View Model" resourceModuleId="Tenant">
+    <viewModel id="EntityCreateOthers" primaryModel="Entity" resourceModuleId="Entity">
       <group id="Default" order="1">
-        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
-        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
-        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
-        <attribute id="RiskCalcEdf" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="RiskCalcEdf" controlType="text" format="percent" decimals="2" order="4" />
-        <attribute id="IndustryChannel" modelId="ArcRiskGradingDomainModel" modelFieldId="IndustryChannel" controlType="singleselect" order="5" />
-        <attribute id="CountryOfRisk" readonly="true" modelId="Entity" modelFieldId="CountryOfRisk" controlType="singleselect" order="6" />
-        <attribute id="Splitter" controlType="splitter" order="7" />
+        <attribute id="Gid" modelId="Entity" modelFieldId="Gid" controlType="text" order="4">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="SystemId" modelId="Entity" modelFieldId="SystemId" controlType="text" order="5" />
+        <attribute id="BusinessPortfolio" modelId="Entity" modelFieldId="BusinessPortfolio" controlType="hierarchylookup" order="6">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="CreditPortfolio" hidden="true" modelId="Entity" modelFieldId="CreditPortfolio" controlType="singleselect" defaultValue="AmerTeam" order="7">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="EntityType" readonly="true" modelId="Entity" modelFieldId="EntityType" controlType="singleselect" order="8" />
+        <attribute id="CountryOfInc" hidden="true" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="9" />
+        <attribute id="ProvinceStateOfIncorporation" hidden="true" modelId="Entity" modelFieldId="ProvinceStateOfIncorporation" controlType="singleselect" order="10">
+          <dependsOnAttributes>CountryOfInc</dependsOnAttributes>
+        </attribute>
       </group>
-      <group id="PeerComparison" order="2">
-        <attribute id="Performance" controlType="header" order="1" />
-        <attribute id="SalesGrowth" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SalesGrowth" controlType="text" format="percent" decimals="2" order="2" />
-        <attribute id="NetOperatingProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetOperatingProfitPercentage" controlType="text" format="percent" decimals="2" order="3" />
-        <attribute id="NetProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetProfitPercentage" controlType="text" format="percent" decimals="2" order="4" />
-        <attribute id="InterestCover" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InterestCover" controlType="text" format="number" decimals="2" order="5" />
-        <attribute id="ReturnOnAssetsPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ReturnOnAssetsPercentage" controlType="text" format="percent" decimals="2" order="6" />
-        <attribute id="Liquidity" controlType="header" order="7" />
-        <attribute id="CashRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashRatio" controlType="text" format="number" decimals="2" order="8" />
-        <attribute id="QuickRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="QuickRatio" controlType="text" format="number" decimals="2" order="9" />
-        <attribute id="CurrentRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CurrentRatio" controlType="text" format="number" decimals="2" order="10" />
-        <attribute id="Efficiency" controlType="header" order="11" />
-        <attribute id="CashConversionCycle" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashConversionCycle" controlType="text" order="12" />
-        <attribute id="DaysSalesOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysSalesOutstanding" controlType="text" order="13" />
-        <attribute id="DaysInventoryOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysInventoryOutstanding" controlType="text" order="14" />
-        <attribute id="DaysPayableOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysPayableOutstanding" controlType="text" order="15" />
-        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" format="number" decimals="2" order="16" />
-        <attribute id="LeverageAndDebtCoverage" controlType="header" order="17" />
-        <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" format="number" decimals="2" order="18" />
-        <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" format="number" decimals="2" order="19" />
-        <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" format="number" decimals="2" order="20" />
-        <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" format="number" decimals="2" order="21" />
-        <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" format="number" decimals="2" order="22" />
-        <attribute id="ShortTermDebtToWorkingCapital" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToWorkingCapital" controlType="text" decimals="2" order="23" />
-        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" format="number" decimals="2" order="24" />
-        <attribute id="Splitter" controlType="splitter" order="25" />
+      <audit userId="GeorgeS" time="20200924T150030" />
+    </viewModel>
+    <viewModel id="EntityCreate" primaryModel="Entity" resourceModuleId="Entity">
+      <group id="Default" order="1">
+        <attribute id="Gid" modelId="Entity" modelFieldId="Gid" controlType="text" order="4">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="SystemId" modelId="Entity" modelFieldId="SystemId" controlType="text" order="5" />
+        <attribute id="BusinessPortfolio" modelId="Entity" modelFieldId="BusinessPortfolio" controlType="hierarchylookup" order="6">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="CreditPortfolio" hidden="true" modelId="Entity" modelFieldId="CreditPortfolio" controlType="singleselect" defaultValue="AmerTeam" order="7">
+          <validator>
+            <required value="true" />
+          </validator>
+        </attribute>
+        <attribute id="EntityType" readonly="true" modelId="Entity" modelFieldId="EntityType" controlType="singleselect" order="8" />
+        <attribute id="CountryOfInc" hidden="true" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="9" />
+        <attribute id="ProvinceStateOfIncorporation" hidden="true" modelId="Entity" modelFieldId="ProvinceStateOfIncorporation" controlType="singleselect" order="10">
+          <dependsOnAttributes>CountryOfInc</dependsOnAttributes>
+        </attribute>
       </group>
-      <group id="SoftFactors" colSpanOverride="1" order="3">
-        <attribute id="StrategicSalesImportance" modelId="ArcRiskGradingDomainModel" modelFieldId="StrategicSalesImportance" controlType="singleselect" order="1" />
-        <attribute id="YearsInBusinessWithAcer" modelId="ArcRiskGradingDomainModel" modelFieldId="YearsInBusinessWithAcer" controlType="singleselect" order="2" />
-        <attribute id="DaysBeyondDueDate" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysBeyondDueDate" controlType="singleselect" order="3" />
-        <attribute id="Financials" modelId="ArcRiskGradingDomainModel" modelFieldId="Financials" controlType="singleselect" order="4" />
-        <attribute id="CorporateStructure" modelId="ArcRiskGradingDomainModel" modelFieldId="CorporateStructure" controlType="singleselect" order="5" />
-        <attribute id="Splitter" controlType="splitter" order="6" />
+      <audit userId="GeorgeS" time="20200924T150054" />
+    </viewModel>
+    <viewModel id="UserAuthorization" primaryModel="UserAuthorization" resourceModuleId="Core">
+      <group id="Default" order="1">
+        <attribute id="CreditPortfolio" hidden="true" modelId="UserAuthorization" modelFieldId="CreditPortfolio" controlType="singleselect" defaultValue="AmerTeam" order="4" />
       </group>
-      <audit userId="admin" time="20200928T150345" />
+      <audit userId="GeorgeS" time="20200924T151621" />
     </viewModel>
   </viewModels>
   <references>
-    <ref id="MapModel" modelRefId="MapModel" type="MAPMODEL" shared="false" resourceModuleId="Map">
-      <audit userId="admin" time="20200512T154543" />
+    <ref id="DataMigrationMap" modelRefId="DataMigrationMap" type="DATAMIGRATIONMAP" localeSupport="false" resourceModuleId="DataMovement">
+      <audit userId="khungria" time="20200916T183411" />
     </ref>
-    <ref id="StrategicSalesImportance" modelRefId="StrategicSalesImportance" type="STRATEGICSALESIMPORTANCE" resourceModuleId="Tenant">
+    <ref id="DataMovementConfig" modelRefId="DataMovementConfig" type="DATAMOVEMENTCONFIG" resourceModuleId="DataMovement">
+      <audit userId="khungria" time="20200916T183640" />
+    </ref>
+    <ref id="FinanceVehicle" modelRefId="FinanceVehicle" type="FINANCEVEHICLE">
       <query>
         <projection>
-          <key modelFieldId="Value" />
+          <key modelFieldId="Key" />
           <display modelFieldIds="Value" />
         </projection>
         <sortOrders>
-          <sortOrder modelFieldId="Score" direction="desc" />
+          <sortOrder modelFieldId="Sort" direction="asc" />
         </sortOrders>
       </query>
-      <audit userId="admin" time="20200516T113129" />
+      <audit userId="GeorgeS" time="20200917T194200" />
     </ref>
-    <ref id="YearsInBusinessWithAcer" modelRefId="YearsInBusinessWithAcer" type="YEARSINBUSINESSWITHACER">
+    <ref id="HoldingCompany" modelRefId="HoldingCompany" type="HOLDINGCOMPANY">
       <query>
         <projection>
-          <key modelFieldId="Value" />
+          <key modelFieldId="Key" />
           <display modelFieldIds="Value" />
         </projection>
         <sortOrders>
-          <sortOrder modelFieldId="Score" direction="desc" />
+          <sortOrder modelFieldId="Sort" direction="asc" />
         </sortOrders>
       </query>
-      <audit userId="admin" time="20200516T113745" />
+      <audit userId="GeorgeS" time="20200917T194359" />
     </ref>
-    <ref id="DaysBeyondDueDate" modelRefId="DaysBeyondDueDate" type="DAYSBEYONDDUEDATE">
+    <ref id="Consolidation" modelRefId="Consolidation" type="CONSOLIDATION">
       <query>
         <projection>
-          <key modelFieldId="Value" />
+          <key modelFieldId="Key" />
           <display modelFieldIds="Value" />
         </projection>
         <sortOrders>
-          <sortOrder modelFieldId="Score" direction="desc" />
+          <sortOrder modelFieldId="Sort" direction="asc" />
         </sortOrders>
       </query>
-      <audit userId="admin" time="20200516T114121" />
+      <audit userId="GeorgeS" time="20200917T194506" />
     </ref>
-    <ref id="SoftFactorFinancials" modelRefId="SoftFactorFinancials" type="SOFTFACTORFINANCIALS">
+    <ref id="Conglomerate" modelRefId="Conglomerate" type="CONGLOMERATE">
       <query>
         <projection>
-          <key modelFieldId="Value" />
+          <key modelFieldId="Key" />
           <display modelFieldIds="Value" />
         </projection>
         <sortOrders>
-          <sortOrder modelFieldId="Score" direction="desc" />
+          <sortOrder modelFieldId="Sort" direction="asc" />
         </sortOrders>
       </query>
-      <audit userId="admin" time="20200516T114849" />
+      <audit userId="GeorgeS" time="20200917T194611" />
     </ref>
-    <ref id="CorporateStructure" modelRefId="CorporateStructure" type="CORPORATESTRUCTURE">
+    <ref id="EntityType" modelRefId="EntityType" type="ENTITYTYPE" resourceModuleId="Entity">
       <query>
-        <projection>
-          <key modelFieldId="Value" />
-          <display modelFieldIds="Value" />
-        </projection>
         <sortOrders>
-          <sortOrder modelFieldId="Score" direction="desc" />
+          <sortOrder modelFieldId="Sort" direction="asc" />
         </sortOrders>
       </query>
-      <audit userId="admin" time="20200516T115238" />
+      <audit userId="GeorgeS" time="20200917T194859" />
     </ref>
-    <ref id="MacroeconomicRiskCapAdjustmentPercentage" modelRefId="MacroeconomicRiskCapAdjustmentPercentage" type="MACROECONOMICRISKCAPADJUSTMENTPERCENTAGE">
-      <query>
-        <projection>
-          <key modelFieldId="MerCapUpperValue" />
-          <display modelFieldIds="AdjustmentPercentage" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200516T135326" />
+    <ref id="EntityTypeMapping" modelRefId="EntityTypeMapping" mappingType="true" mappingArtifactType="ViewModel" type="ENTITYTYPEMAPPING" shared="false" resourceModuleId="Entity">
+      <audit userId="GeorgeS" time="20200917T195004" />
     </ref>
-    <ref id="GeopoliticalRiskCapAdjustmentPercentage" modelRefId="GeopoliticalRiskCapAdjustmentPercentage" type="GEOPOLITICALRISKCAPADJUSTMENTPERCENTAGE">
-      <query>
-        <projection>
-          <key modelFieldId="GprCapUpperValue" />
-          <display modelFieldIds="AdjustmentPercentage" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200516T140822" />
+    <ref id="StatementStatus" modelRefId="StatementStatus" type="STATEMENTSTATUS" shared="false" resourceModuleId="FinancialAnalysis">
+      <audit userId="admin" time="20200924T134408" />
     </ref>
-    <ref id="MacroeconomicRiskCapWeight" modelRefId="MacroeconomicRiskCapWeight" type="MACROECONOMICRISKCAPWEIGHT">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200518T140123" />
+    <ref id="UserRole" modelRefId="UserRole" type="USERROLE" resourceModuleId="Core">
+      <audit userId="GeorgeS" time="20200924T143825" />
     </ref>
-    <ref id="GeopoliticalRiskCapWeight" modelRefId="GeopoliticalRiskCapWeight" type="GEOPOLITICALRISKCAPWEIGHT">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200518T140522" />
+    <ref id="DataFileImportMap" modelRefId="DataFileImportMap" type="DATAFILEIMPORTMAP" resourceModuleId="DataMovement">
+      <audit userId="GeorgeS" time="20200924T152722" />
     </ref>
-    <ref id="PortfolioRatiosScoring" modelRefId="PortfolioRatiosScoring" type="PORTFOLIORATIOSSCORING">
-      <query>
-        <projection>
-          <key modelFieldId="EntityName" />
-          <display modelFieldIds="InterestCover,NetOperatingMarginPct,CurrentRatio,QuickRatio,CashRatio,DebtOrTangibleNetWorth,BorrowedFundsOrEffectiveTangibleNetWorth,DebtOrAssets,ShortTermDebtOrTotalDebt,ShortTermDebtOrWorkingCapital,DebtOrEbit,NetProfitMarginPct,ReturnOnAssetsPct,NetTradeReceivableDays,InventoryDays,TradePayableDays,Ccc,InventoryOrWc,SalesGrowthPct,DebtOrEquity,PeerScore" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200528T085347" />
-    </ref>
-    <ref id="ArcRiskGradingRegion" modelRefId="ArcRiskGradingRegion" type="ARCRISKGRADINGREGION">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200529T065104" />
-    </ref>
-    <ref id="ArcRegions" modelRefId="ArcRegions" type="ARCREGIONS" resourceModuleId="Tenant">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion" />
-        </projection>
-        <sortOrders>
-          <sortOrder modelFieldId="Country" direction="asc" />
-        </sortOrders>
-      </query>
-      <audit userId="admin" time="20200626T100020" />
-    </ref>
-    <ref id="ArcFinancialRatios" modelRefId="ArcFinancialRatios" type="ARCFINANCIALRATIOS">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200910T145603" />
-    </ref>
-    <ref id="OlapDimension" modelRefId="OlapDimension" mappingType="true" mappingArtifactType="Reference" type="OLAPDIMENSION" shared="false" resourceModuleId="Core" multiModule="true">
-      <audit userId="admin" time="20200915T093652" />
-    </ref>
-    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200915T142911" />
-    </ref>
-    <ref id="ArcPeerQuartiles" modelRefId="ArcPeerQuartiles" type="ARCPEERQUARTILES">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200916T125634" />
-    </ref>
-    <ref id="ArcIndustryChannel" modelRefId="ArcIndustryChannel" type="ARCINDUSTRYCHANNEL">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200918T101140" />
-    </ref>
-    <ref id="MapPdModelScale" modelRefId="MapPdModelScale" type="MAPPDMODELSCALE" shared="false" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20200918T142959" />
+    <ref id="BusinessPortfolio" modelRefId="BusinessPortfolio" hierarchical="true" type="BUSINESSPORTFOLIO" noChildIsLeaf="true" numberOfLevels="3" resourceModuleId="Core">
+      <audit userId="GeorgeS" time="20200928T101101" />
     </ref>
   </references>
 </metadata>

@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "ENTITYTYPEMAPPING",
+    "Artifact": "EntityCardOrganization",
+    "EntityType": [
+      "Public",
+      "Private",
+      "Partnership",
+      "SoleProprietorship",
+      "Gov",
+      "Joint",
+      "TN",
+      "OtherOrganization"
+    ],
+    "DataOperationType": [
+      "Card"
+    ],
+    "ArtifactInt": 3,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.356124Z",
+    "t_": "EntityTypeMapping",
+    "ContextUserId_": "marian"
+  },
+  {
+    "Type": "ENTITYTYPEMAPPING",
+    "Artifact": "EntityCreate",
+    "EntityType": [
+      "Public",
+      "Private"
+    ],
+    "DataOperationType": [
+      "Create"
+    ],
+    "ArtifactInt": 1,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.356124Z",
+    "t_": "EntityTypeMapping",
+    "ContextUserId_": "marian"
+  },
+  {
+    "Type": "ENTITYTYPEMAPPING",
+    "Artifact": "EntityCreateOthers",
+    "EntityType": [
+      "SoleProprietorship",
+      "Partnership",
+      "OtherOrganization",
+      "Gov",
+      "Joint",
+      "TN"
+    ],
+    "DataOperationType": [
+      "Create"
+    ],
+    "ArtifactInt": 99835602,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.371756Z",
+    "t_": "EntityTypeMapping",
+    "ContextUserId_": "marian"
+  },
+  {
+    "Type": "ENTITYTYPEMAPPING",
+    "Artifact": "EntityEdit",
+    "EntityType": [
+      "Public",
+      "Private"
+    ],
+    "DataOperationType": [
+      "Update"
+    ],
+    "ArtifactInt": 2,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.371756Z",
+    "t_": "EntityTypeMapping",
+    "ContextUserId_": "marian"
+  },
+  {
+    "Type": "ENTITYTYPEMAPPING",
+    "Artifact": "EntityEditOthers",
+    "EntityType": [
+      "OtherOrganization",
+      "Partnership",
+      "SoleProprietorship",
+      "Gov",
+      "Joint",
+      "TN"
+    ],
+    "DataOperationType": [
+      "Update"
+    ],
+    "ArtifactInt": 778510406,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.387371Z",
+    "t_": "EntityTypeMapping",
+    "ContextUserId_": "marian"
+  }
+]

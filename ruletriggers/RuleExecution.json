@@ -1,81 +1,18 @@
 [
   {
-    "ModelId": "ArcRiskGradingDomainModel",
-    "Trigger": "OnRead",
-    "ModuleId": "Tenant",
-    "Rules": [
-      "MapArcRiskGradingDomainModel"
-    ],
-    "Inapplicable_": [],
-    "IsDeleted_": false,
-    "StatusId_": 1,
-    "CreatedBy_": "admin",
-    "CreatedDate_": "2020-09-01T12:22:04.019054Z",
-    "t_": "RuleExecution",
-    "ContextUserId_": "admin"
-  },
-  {
-    "ModelId": "ArcRiskGradingDomainModel",
-    "Trigger": "OnCreate",
-    "ModuleId": "Tenant",
-    "Rules": [
-      "MapArcRiskGradingDomainModel"
-    ],
-    "Inapplicable_": [],
-    "IsDeleted_": false,
-    "StatusId_": 1,
-    "CreatedBy_": "admin",
-    "CreatedDate_": "2020-09-01T12:22:04.034678Z",
-    "t_": "RuleExecution",
-    "ContextUserId_": "admin"
-  },
-  {
-    "ModelId": "ArcRiskGradingDomainModel",
+    "ModelId": "HistoricalStatement",
     "Trigger": "OnUpdate",
     "ModuleId": "Tenant",
     "Rules": [
-      "MapArcRiskGradingDomainModel"
+      "LockingStatements",
+      "SendAlertForContributingStatementChanged"
     ],
     "Inapplicable_": [],
     "IsDeleted_": false,
     "StatusId_": 1,
-    "CreatedBy_": "admin",
-    "CreatedDate_": "2020-09-01T12:22:04.050303Z",
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.765328Z",
     "t_": "RuleExecution",
-    "ContextUserId_": "admin"
-  },
-  {
-    "ModelId": "ArcRiskGradingDomainModel",
-    "Trigger": "OnWillCreate",
-    "ModuleId": "Tenant",
-    "Rules": [
-      "MapArcRiskGradingDomainModel"
-    ],
-    "Inapplicable_": [],
-    "IsDeleted_": false,
-    "StatusId_": 1,
-    "CreatedBy_": "admin",
-    "CreatedDate_": "2020-09-01T12:22:04.050303Z",
-    "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-09-01T14:53:45.689006Z",
-    "t_": "RuleExecution",
-    "ContextUserId_": "admin"
-  },
-  {
-    "ModelId": "ArcRiskGradingDomainModel",
-    "Trigger": "OnWillUpdate",
-    "ModuleId": "Tenant",
-    "Rules": [
-      "MapArcRiskGradingDomainModel"
-    ],
-    "Inapplicable_": [],
-    "IsDeleted_": false,
-    "StatusId_": 1,
-    "CreatedBy_": "admin",
-    "CreatedDate_": "2020-09-01T12:22:04.065929Z",
-    "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-09-01T14:53:53.928892Z",
-    "t_": "RuleExecution",
-    "ContextUserId_": "admin"
+    "ContextUserId_": "marian"
   }
 ]

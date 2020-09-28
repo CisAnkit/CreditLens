@@ -1,0 +1,30 @@
+[
+  {
+    "Type": "FINANCEVEHICLE",
+    "KeyInt": 372029328,
+    "Key": "2",
+    "Value": "No",
+    "Sort": 2,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.404742Z",
+    "t_": "FinanceVehicle",
+    "ContextUserId_": "marian"
+  },
+  {
+    "Type": "FINANCEVEHICLE",
+    "KeyInt": 372029325,
+    "Key": "1",
+    "Value": "Yes",
+    "Sort": 1,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.404742Z",
+    "t_": "FinanceVehicle",
+    "ContextUserId_": "marian"
+  }
+]

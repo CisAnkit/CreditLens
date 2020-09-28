@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "STATEMENTSTATUS",
+    "KeyInt": 1586264360,
+    "Key": "Locked",
+    "Value": "Locked",
+    "Approved": null,
+    "Hidden": null,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.451596Z",
+    "t_": "StatementStatus",
+    "ContextUserId_": "marian"
+  }
+]

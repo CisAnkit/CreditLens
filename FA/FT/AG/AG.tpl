@@ -2,7 +2,7 @@
 <MODEL>
   <SAVED_IN_CULTURE>en-US</SAVED_IN_CULTURE>
   <MODEL_FILE_VERSION>4.1</MODEL_FILE_VERSION>
-  <MODEL_VERSION MAJOR="6" MINOR="5" BUILD="9" PATCH="0" />
+  <MODEL_VERSION MAJOR="6" MINOR="5" BUILD="13" PATCH="0" />
   <ALL_LANGUAGES />
   <GLOBAL_DATA_KEY>00000000-0000-0000-0000-000000000000</GLOBAL_DATA_KEY>
   <MODEL_INFO>
@@ -21,50 +21,53 @@
     <STMTTYPE_YEARTODATE_ID>FY-TO-DATE</STMTTYPE_YEARTODATE_ID>
     <LANGUAGES>
       <LANG ID="1" />
+      <LANG ID="16" />
     </LANGUAGES>
     <NAMES>
+      <NAME ID="16">AG</NAME>
       <NAME ID="1">AG</NAME>
     </NAMES>
     <DESCRIPTIONS>
+      <DESCRIPTION ID="16">Landbouw</DESCRIPTION>
       <DESCRIPTION ID="1">Agriculture</DESCRIPTION>
     </DESCRIPTIONS>
   </MODEL_INFO>
   <CURRENCIES />
   <MODEL_ADDINS>
-    <MODEL_ADDIN ID="28" NAME="Batch Testing" MAPPED="True" ENABLED="False" TYPE="3" />
     <MODEL_ADDIN ID="1" NAME="RiskCalc" MAPPED="True" ENABLED="True" TYPE="4" />
     <MODEL_ADDIN ID="2" NAME="Reporting Table" MAPPED="True" ENABLED="True" TYPE="1" />
     <MODEL_ADDIN ID="3" NAME="Batch Reporting Table" MAPPED="True" ENABLED="True" TYPE="3" />
     <MODEL_ADDIN ID="4" NAME="Public EDF" MAPPED="True" ENABLED="True" TYPE="4" />
-    <MODEL_ADDIN ID="5" NAME="Batch PFP Export" MAPPED="True" ENABLED="False" TYPE="3" />
-    <MODEL_ADDIN ID="6" NAME="HOSP117 New" MAPPED="True" ENABLED="False" TYPE="5" />
-    <MODEL_ADDIN ID="7" NAME="PFAAddIn" MAPPED="True" ENABLED="False" TYPE="1" />
-    <MODEL_ADDIN ID="8" NAME="PFAAddIn Loans" MAPPED="True" ENABLED="False" TYPE="2" />
-    <MODEL_ADDIN ID="9" NAME="PFAAddIn Schedules" MAPPED="True" ENABLED="False" TYPE="2" />
+    <MODEL_ADDIN ID="5" NAME="Batch PFP Export" MAPPED="False" ENABLED="False" TYPE="3" />
+    <MODEL_ADDIN ID="6" NAME="HOSP117 New" MAPPED="False" ENABLED="False" TYPE="5" />
+    <MODEL_ADDIN ID="7" NAME="PFAAddIn" MAPPED="False" ENABLED="False" TYPE="1" />
+    <MODEL_ADDIN ID="8" NAME="PFAAddIn Loans" MAPPED="False" ENABLED="False" TYPE="2" />
+    <MODEL_ADDIN ID="9" NAME="PFAAddIn Schedules" MAPPED="False" ENABLED="False" TYPE="2" />
     <MODEL_ADDIN ID="11" NAME="Batch ArchiveRetrieval" MAPPED="True" ENABLED="True" TYPE="3" />
-    <MODEL_ADDIN ID="12" NAME="Batch RMA Submission" MAPPED="True" ENABLED="False" TYPE="3" />
+    <MODEL_ADDIN ID="12" NAME="Batch RMA Submission" MAPPED="False" ENABLED="False" TYPE="3" />
     <MODEL_ADDIN ID="13" NAME="BatchRatingsUpdate" MAPPED="True" ENABLED="True" TYPE="3" />
-    <MODEL_ADDIN ID="14" NAME="HOSP117 Startup" MAPPED="True" ENABLED="False" TYPE="1" />
+    <MODEL_ADDIN ID="14" NAME="HOSP117 Startup" MAPPED="False" ENABLED="False" TYPE="1" />
     <MODEL_ADDIN ID="20" NAME="Batch Archive" MAPPED="True" ENABLED="True" TYPE="3" />
     <MODEL_ADDIN ID="21" NAME="Entity Copy" MAPPED="True" ENABLED="True" TYPE="3" />
     <MODEL_ADDIN ID="22" NAME="Archive Conversion" MAPPED="True" ENABLED="True" TYPE="3" />
-    <MODEL_ADDIN ID="23" NAME="ETL Mapping" MAPPED="True" ENABLED="False" TYPE="1" />
+    <MODEL_ADDIN ID="23" NAME="ETL Mapping" MAPPED="False" ENABLED="False" TYPE="1" />
     <MODEL_ADDIN ID="24" NAME="Batch ETL Mapping" MAPPED="True" ENABLED="True" TYPE="3" />
-    <MODEL_ADDIN ID="25" NAME="LGD Archive AddIn" MAPPED="True" ENABLED="False" TYPE="1" />
+    <MODEL_ADDIN ID="25" NAME="LGD Archive AddIn" MAPPED="False" ENABLED="False" TYPE="1" />
     <MODEL_ADDIN ID="26" NAME="AG Startup" MAPPED="True" ENABLED="True" TYPE="1" />
     <MODEL_ADDIN ID="27" NAME="AG New" MAPPED="True" ENABLED="True" TYPE="5" />
+    <MODEL_ADDIN ID="28" NAME="Batch Testing" MAPPED="False" ENABLED="False" TYPE="3" />
   </MODEL_ADDINS>
   <MACRO_GROUPINGS />
   <UNKNOWN_MODEL_PROPERTIES>
     <UNKNOWN_MODEL_PROPERTY ID="FirmTypeConst"><![CDATA[21]]></UNKNOWN_MODEL_PROPERTY>
     <UNKNOWN_MODEL_PROPERTY ID="StmtStatusApproved"><![CDATA[Reviewed]]></UNKNOWN_MODEL_PROPERTY>
-    <UNKNOWN_MODEL_PROPERTY ID="CustomerClasses"><![CDATA[1]]></UNKNOWN_MODEL_PROPERTY>
     <UNKNOWN_MODEL_PROPERTY ID="CurrencyConstID"><![CDATA[7]]></UNKNOWN_MODEL_PROPERTY>
     <UNKNOWN_MODEL_PROPERTY ID="ConsolidationConstID"><![CDATA[6 ]]></UNKNOWN_MODEL_PROPERTY>
+    <UNKNOWN_MODEL_PROPERTY ID="CustomerClasses"><![CDATA[1]]></UNKNOWN_MODEL_PROPERTY>
     <UNKNOWN_MODEL_PROPERTY ID="CustomerStateConst"><![CDATA[44]]></UNKNOWN_MODEL_PROPERTY>
+    <UNKNOWN_MODEL_PROPERTY ID="StatusStmtConst"><![CDATA[5]]></UNKNOWN_MODEL_PROPERTY>
     <UNKNOWN_MODEL_PROPERTY ID="RestatedConstID"><![CDATA[8]]></UNKNOWN_MODEL_PROPERTY>
     <UNKNOWN_MODEL_PROPERTY ID="SaveByStatus"><![CDATA[Completed,Reviewed]]></UNKNOWN_MODEL_PROPERTY>
-    <UNKNOWN_MODEL_PROPERTY ID="StatusStmtConst"><![CDATA[5]]></UNKNOWN_MODEL_PROPERTY>
     <UNKNOWN_MODEL_PROPERTY ID="IsAg"><![CDATA[1]]></UNKNOWN_MODEL_PROPERTY>
   </UNKNOWN_MODEL_PROPERTIES>
   <MODEL_CONFIG><![CDATA[]]></MODEL_CONFIG>
@@ -78,7 +81,7 @@
     </STMT_CONSTANT>
     <STMT_CONSTANT ID="2" HIDDEN="False" READONLY="False" LENGTH="15" REQUIRED="False" DISPLAY="True">
       <STMT_CONST_LABEL ID="1">Accountant</STMT_CONST_LABEL>
-      <STMT_CONST_ATTRIBUTE ID="1" />
+      <STMT_CONST_ATTRIBUTE ID="1"></STMT_CONST_ATTRIBUTE>
       <STMT_CONSTANT_MACRO_DESC ID="1">Accountant</STMT_CONSTANT_MACRO_DESC>
     </STMT_CONSTANT>
     <STMT_CONSTANT ID="3" HIDDEN="False" READONLY="False" LENGTH="30" REQUIRED="False" DISPLAY="True">
@@ -88,7 +91,7 @@
     </STMT_CONSTANT>
     <STMT_CONSTANT ID="4" HIDDEN="False" READONLY="False" LENGTH="15" REQUIRED="False" DISPLAY="False">
       <STMT_CONST_LABEL ID="1">Analyst</STMT_CONST_LABEL>
-      <STMT_CONST_ATTRIBUTE ID="1" />
+      <STMT_CONST_ATTRIBUTE ID="1"></STMT_CONST_ATTRIBUTE>
       <STMT_CONSTANT_MACRO_DESC ID="1">Analyst</STMT_CONSTANT_MACRO_DESC>
     </STMT_CONSTANT>
     <STMT_CONSTANT ID="5" HIDDEN="False" READONLY="False" LENGTH="30" REQUIRED="False" DISPLAY="True">
@@ -103,7 +106,7 @@
     </STMT_CONSTANT>
     <STMT_CONSTANT ID="7" HIDDEN="False" READONLY="False" LENGTH="30" REQUIRED="False" DISPLAY="True">
       <STMT_CONST_LABEL ID="1">Currency</STMT_CONST_LABEL>
-      <STMT_CONST_ATTRIBUTE ID="1" />
+      <STMT_CONST_ATTRIBUTE ID="1"></STMT_CONST_ATTRIBUTE>
       <STMT_CONSTANT_MACRO_DESC ID="1">Currency</STMT_CONSTANT_MACRO_DESC>
     </STMT_CONSTANT>
     <STMT_CONSTANT ID="8" HIDDEN="False" READONLY="False" LENGTH="30" REQUIRED="False" DISPLAY="True">
@@ -117,6 +120,10 @@
   </STMT_CONSTANTS>
   <DIVISIONS>
     <DIVISION ID="A" MAPPED="True">
+      <DIVISION_LABEL ID="18">Agriculture, Forestry and Fisheries</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Agriculture, Forestry and Fisheries</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Agriculture, Forestry and Fisheries</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Agriculture, Forestry and Fisheries</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">農業、林業和漁業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การเกษตรการป่าไม้และการประมง</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Agricultura, silvicultura y pesca</DIVISION_LABEL>
@@ -133,6 +140,10 @@
       <DIVISION_LABEL ID="1">Agriculture, Forestry and Fisheries</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="B" MAPPED="True">
+      <DIVISION_LABEL ID="18">Mineral Industries</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Mineral Industries</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Mineral Industries</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Mineral Industries</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">礦業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">อุตสาหกรรมแร่</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Minería</DIVISION_LABEL>
@@ -149,6 +160,10 @@
       <DIVISION_LABEL ID="1">Mineral Industries</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="C" MAPPED="True">
+      <DIVISION_LABEL ID="18">Construction</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Construction</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Construction</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Construction</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">建築業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การก่อสร้าง</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Construcción</DIVISION_LABEL>
@@ -165,6 +180,10 @@
       <DIVISION_LABEL ID="1">Construction</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="D" MAPPED="True">
+      <DIVISION_LABEL ID="18">Manufacturing</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Manufacturing</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Manufacturing</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Manufacturing</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">製造業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การผลิต</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Manufacturación</DIVISION_LABEL>
@@ -181,6 +200,10 @@
       <DIVISION_LABEL ID="1">Manufacturing</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="E" MAPPED="True">
+      <DIVISION_LABEL ID="18">Transportation, Communication and Utilities</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Transportation, Communication and Utilities</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Transportation, Communication and Utilities</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Transportation, Communication and Utilities</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">運輸業、通訊業和公用事業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การคมนาคมและสาธารณูปโภค</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Transporte, comunicación y utilidades</DIVISION_LABEL>
@@ -197,6 +220,10 @@
       <DIVISION_LABEL ID="1">Transportation, Communication and Utilities</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="F" MAPPED="True">
+      <DIVISION_LABEL ID="18">Wholesale Trade</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Wholesale Trade</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Wholesale Trade</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Wholesale Trade</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">批發業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การค้าส่ง</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Comercio mayorista</DIVISION_LABEL>
@@ -213,6 +240,10 @@
       <DIVISION_LABEL ID="1">Wholesale Trade</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="G" MAPPED="True">
+      <DIVISION_LABEL ID="18">Retail Trade</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Retail Trade</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Retail Trade</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Retail Trade</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">零售業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การค้าปลีก</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Comercio minorista</DIVISION_LABEL>
@@ -229,6 +260,10 @@
       <DIVISION_LABEL ID="1">Retail Trade</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="H" MAPPED="True">
+      <DIVISION_LABEL ID="18">Finance, Insurance and Real Estate</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Finance, Insurance and Real Estate</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Finance, Insurance and Real Estate</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Finance, Insurance and Real Estate</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">金融業、保險業和房地產業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การเงินประกันภัยและอสังหาริมทรัพย์</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Finanzas, seguros e inmobiliarias</DIVISION_LABEL>
@@ -245,6 +280,10 @@
       <DIVISION_LABEL ID="1">Finance, Insurance and Real Estate</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="I" MAPPED="True">
+      <DIVISION_LABEL ID="18">Services</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Services</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Services</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Services</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">服務業</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">บริการ</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Servicios</DIVISION_LABEL>
@@ -261,6 +300,10 @@
       <DIVISION_LABEL ID="1">Services</DIVISION_LABEL>
     </DIVISION>
     <DIVISION ID="Z" MAPPED="True">
+      <DIVISION_LABEL ID="18">Public Administration</DIVISION_LABEL>
+      <DIVISION_LABEL ID="17">Public Administration</DIVISION_LABEL>
+      <DIVISION_LABEL ID="16">Public Administration</DIVISION_LABEL>
+      <DIVISION_LABEL ID="15">Public Administration</DIVISION_LABEL>
       <DIVISION_LABEL ID="14">公共系統管理</DIVISION_LABEL>
       <DIVISION_LABEL ID="13">การบริหารรัฐกิจ</DIVISION_LABEL>
       <DIVISION_LABEL ID="12">Administración pública</DIVISION_LABEL>
@@ -356,8 +399,6 @@
   <RMA_MAPPINGS />
   <RA_MAPPINGS />
   <RMA_CONDITIONS />
-  <CASETYPES />
-  <NON_PARENTED_CASETYPE_CONDITIONS />
   <SYSTEM_RA_MAPPINGS />
   <ORG_MACROS />
 </MODEL>

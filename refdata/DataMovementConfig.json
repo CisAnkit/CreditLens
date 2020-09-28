@@ -1,0 +1,15 @@
+[
+  {
+    "Type": "DATAMOVEMENTCONFIG",
+    "KeyInt": 1,
+    "Key": "Mode",
+    "Value": "new",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "marian",
+    "CreatedDate_": "2020-09-25T13:22:12.324871Z",
+    "t_": "DataMovementConfig",
+    "ContextUserId_": "marian"
+  }
+]
