@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="38">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="39">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -315,8 +315,9 @@
         <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" format="number" decimals="2" order="20" />
         <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" format="number" decimals="2" order="21" />
         <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" format="number" decimals="2" order="22" />
-        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" format="number" decimals="2" order="23" />
-        <attribute id="Splitter" controlType="splitter" order="24" />
+        <attribute id="ShortTermDebtToWorkingCapital" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToWorkingCapital" controlType="text" decimals="2" order="23" />
+        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" format="number" decimals="2" order="24" />
+        <attribute id="Splitter" controlType="splitter" order="25" />
       </group>
       <group id="SoftFactors" colSpanOverride="1" order="3">
         <attribute id="StrategicSalesImportance" modelId="ArcRiskGradingDomainModel" modelFieldId="StrategicSalesImportance" controlType="singleselect" order="1" />
@@ -326,7 +327,7 @@
         <attribute id="CorporateStructure" modelId="ArcRiskGradingDomainModel" modelFieldId="CorporateStructure" controlType="singleselect" order="5" />
         <attribute id="Splitter" controlType="splitter" order="6" />
       </group>
-      <audit userId="admin" time="20200921T113557" />
+      <audit userId="admin" time="20200928T150345" />
     </viewModel>
   </viewModels>
   <references>
