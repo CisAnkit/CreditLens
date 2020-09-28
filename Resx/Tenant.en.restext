@@ -194,6 +194,7 @@ Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewMod
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.RiskCalcEdf=RiskCalc EDF
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.SalesGrowth=Sales growth
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.ShortTermDebtToTotalDebt=Short term debt / Total debt
+Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.ShortTermDebtToWorkingCapital=Short term debt / Working capital
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.SoftFactorsScore=Soft Factors Score
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.StrategicSalesImportance=Strategic sales importance
 Tenant.attr.model.ArcRiskGradingDomainModel.viewModel.ArcRiskGradingInputViewModel.YearsInBusinessWithAcer=Years in business with Acer
