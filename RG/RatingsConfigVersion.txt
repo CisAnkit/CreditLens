@@ -1,1 +1,1 @@
-[{"ConfigVersion":0,"Active":true,"LatestVersion":false},{"ConfigVersion":1,"Active":true,"LatestVersion":true}]
+[{"ConfigVersion":0,"Active":true,"LatestVersion":true}]

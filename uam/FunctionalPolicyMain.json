@@ -2,22 +2,17 @@
   {
     "PolicyCategoryId": "b5436f9c-0213-444b-8ae0-51f93e7dfce1",
     "Inapplicable_": [],
-    "Associations_": [
-      "FunctionalPolicy"
-    ],
     "WFId_": "00000000-0000-0000-0000-000000000000",
     "TaskId_": "00000000-0000-0000-0000-000000000000",
-    "VersionId_": 12,
-    "BaseVersionId_": 11,
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
     "IsLatestVersion_": true,
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-04-07T14:09:07.920718Z",
-    "UpdatedBy_": "marian",
-    "UpdatedDate_": "2020-09-25T13:22:14.39586Z",
+    "CreatedDate_": "2020-04-24T03:05:27.234813Z",
     "t_": "FunctionalPolicyMain",
-    "ContextUserId_": "marian",
+    "ContextUserId_": "admin",
     "IsValid_": true,
     "IsVisible_": true,
     "SnapshotId_": 0
