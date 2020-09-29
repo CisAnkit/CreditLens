@@ -182,8 +182,8 @@
       <attribute id="Year" dataType="long" />
       <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
       <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="long" />
-      <attribute id="Quartiles3" dataType="long" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
       <audit userId="admin" time="20200916T125634" />
     </model>
     <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
