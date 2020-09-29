@@ -1,0 +1,21 @@
+[
+  {
+    "Type": "DATADIRECTTABLEMAP",
+    "SourceNameInt": null,
+    "Key": "mktfxinput",
+    "SourceName": "mktfxinput",
+    "TargetName": "mktfxinput",
+    "SourceType": "File",
+    "Active": true,
+    "Order": 1,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "SolOwner",
+    "CreatedDate_": "2020-06-18T10:31:39.852178Z",
+    "UpdatedBy_": "macposu",
+    "UpdatedDate_": "2020-09-23T11:08:02.583365Z",
+    "t_": "DataDirectTableMap",
+    "ContextUserId_": "macposu"
+  }
+]

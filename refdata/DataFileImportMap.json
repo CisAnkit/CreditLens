@@ -8,11 +8,13 @@
     "ModuleId": "ReferenceData",
     "Order": 1,
     "Inapplicable_": [],
-    "IsDeleted_": false,
+    "IsDeleted_": true,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.40114Z",
+    "CreatedDate_": "2020-08-14T13:40:56.224031Z",
+    "UpdatedBy_": "macposu",
+    "UpdatedDate_": "2020-09-23T10:53:26.15332Z",
     "t_": "DataFileImportMap",
-    "ContextUserId_": "admin"
+    "ContextUserId_": "macposu"
   }
 ]

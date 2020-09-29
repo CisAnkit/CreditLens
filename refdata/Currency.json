@@ -1,20 +1,6 @@
 [
   {
     "Type": "CURRENCY",
-    "Key": "XOF",
-    "Value": "C.F.A. Francs B.C.E.A.O",
-    "Country": null,
-    "KeyInt": 77678893,
-    "Inapplicable_": [],
-    "IsDeleted_": false,
-    "StatusId_": 1,
-    "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.290785Z",
-    "t_": "Currency",
-    "ContextUserId_": "admin"
-  },
-  {
-    "Type": "CURRENCY",
     "Key": "XPD",
     "Value": "Palladium",
     "Country": null,
@@ -23,7 +9,21 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.298601Z",
+    "CreatedDate_": "2020-08-14T13:40:56.100985Z",
+    "t_": "Currency",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "CURRENCY",
+    "Key": "XOF",
+    "Value": "C.F.A. Francs B.C.E.A.O",
+    "Country": null,
+    "KeyInt": 77678893,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:56.092202Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -37,7 +37,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.305442Z",
+    "CreatedDate_": "2020-08-14T13:40:56.11075Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -53,7 +53,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.314255Z",
+    "CreatedDate_": "2020-08-14T13:40:56.119538Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -69,7 +69,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.322049Z",
+    "CreatedDate_": "2020-08-14T13:40:56.129323Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -85,7 +85,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.328874Z",
+    "CreatedDate_": "2020-08-14T13:40:56.138092Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -101,7 +101,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.335709Z",
+    "CreatedDate_": "2020-08-14T13:40:56.146878Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -117,7 +117,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.343541Z",
+    "CreatedDate_": "2020-08-14T13:40:56.155672Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -133,7 +133,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.350359Z",
+    "CreatedDate_": "2020-08-14T13:40:56.164459Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -149,7 +149,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.357193Z",
+    "CreatedDate_": "2020-08-14T13:40:56.173248Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -165,7 +165,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.365008Z",
+    "CreatedDate_": "2020-08-14T13:40:56.182037Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -181,7 +181,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.37184Z",
+    "CreatedDate_": "2020-08-14T13:40:56.190823Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -195,7 +195,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.37868Z",
+    "CreatedDate_": "2020-08-14T13:40:56.199628Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   },
@@ -209,7 +209,7 @@
     "IsDeleted_": false,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-07-24T03:30:24.386492Z",
+    "CreatedDate_": "2020-08-14T13:40:56.207426Z",
     "t_": "Currency",
     "ContextUserId_": "admin"
   }

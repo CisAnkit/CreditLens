@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="6">
-    <loadAfter moduleRefId="Core" major="3" minor="10" patch="0" />
-    <loadAfter moduleRefId="RiskOrigins" major="1" minor="11" patch="0" />
-    <loadAfter moduleRefId="Entity" major="2" minor="6" patch="0" />
-    <loadAfter moduleRefId="BiStarSchema" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="BusinessInsights" major="2" minor="1" patch="0" />
-    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="Map" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="RiskGrading" major="2" minor="6" patch="0" />
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="7">
+    <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
+    <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
+    <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
+    <loadAfter moduleRefId="BiStarSchema" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="BusinessInsights" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="9" patch="0" />
+    <loadAfter moduleRefId="Map" major="2" minor="9" patch="0" />
+    <loadAfter moduleRefId="RiskGrading" major="3" minor="0" patch="0" />
     <loadAfter moduleRefId="MapPdModels" major="2" minor="3" patch="0" />
-    <loadAfter moduleRefId="DealStructuring" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="Covenant" major="2" minor="1" patch="1" />
-    <loadAfter moduleRefId="CreditPresentation" major="2" minor="0" patch="0" />
-    <loadAfter moduleRefId="MapLgdModels" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="Workflow" major="2" minor="0" patch="0" />
-    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="0" patch="0" />
-    <loadAfter moduleRefId="Salesforce" major="1" minor="4" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="Marq" major="2" minor="1" patch="0" />
-    <loadAfter moduleRefId="Bvd" major="2" minor="0" patch="0" />
+    <loadAfter moduleRefId="DealStructuring" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="Covenant" major="2" minor="6" patch="0" />
+    <loadAfter moduleRefId="CreditPresentation" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="MapLgdModels" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="Workflow" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="4" patch="0" />
+    <loadAfter moduleRefId="Salesforce" major="1" minor="6" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="Marq" major="2" minor="5" patch="0" />
+    <loadAfter moduleRefId="Bvd" major="2" minor="4" patch="0" />
     <loadAfter moduleRefId="MoodysFinal" major="1" minor="0" patch="0" />
-    <loadAfter moduleRefId="DataMovement" major="3" minor="10" patch="0" />
-    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="10" patch="0" />
-    <loadAfter moduleRefId="RiskReturn" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="Raroc" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="0" patch="0" />
-    <loadAfter moduleRefId="Benchmark" major="1" minor="1" patch="0" />
+    <loadAfter moduleRefId="DataMovement" major="4" minor="3" patch="0" />
+    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="14" patch="0" />
+    <loadAfter moduleRefId="RiskReturn" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="Raroc" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="Benchmark" major="1" minor="6" patch="0" />
   </module>
   <models>
-    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="Rules" source="custom_rules" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2016-09-14T19:07:51.630172Z" />
     </model>
-    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="RuleExecution" source="custom_rule_execution" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2016-09-14T19:07:52.9692616Z" />
     </model>
-    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2017-11-24T19:07:51.630172Z" />
     </model>
-    <model id="Currency" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskOrigins" notesEnabled="false" standardConfig="true" />
-    <model id="DataMigrationMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" notesEnabled="false" standardConfig="true" />
-    <model id="DataMovementConfig" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" notesEnabled="false" />
+    <model id="Currency" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskOrigins" standardConfig="true" />
+    <model id="DataMigrationMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true" />
+    <model id="DataMovementConfig" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" />
     <model id="RiskCalcOutputModel" source="riskcalcoutputmodel" dataProvider="postgres" resourceModuleId="RiskGrading">
       <attribute id="Custom" dataType="string" maxLength="50" />
       <audit userId="admin" time="20190708T083608" />
     </model>
-    <model id="AcerInternalRatingMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="AcerInternalRatingMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="RcRatingInt" dataType="integer" />
       <attribute id="RcRating" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="AcerRating" dataType="string" />
       <audit userId="admin" time="20190711T063104" />
     </model>
-    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" notesEnabled="false" standardConfig="true">
+    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true">
       <audit userId="admin" time="20161124T064148" />
     </model>
-    <model id="UserRole" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="UserRole" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
       <audit userId="admin" time="2016-09-22T07:39:52.0141859Z" />
     </model>
-    <model id="BusinessPortfolio" source="custom_lookup" hierarchy="true" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" notesEnabled="false">
+    <model id="BusinessPortfolio" source="custom_lookup" hierarchy="true" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
       <audit userId="admin" time="20170220T044829" />
     </model>
     <model id="Entity" source="entity" versionEnable="true" dataProvider="postgres" resourceModuleId="Entity" root="true" createUniqueRule="ValidateUniquenessChecking" updateUniqueRule="ValidateUniquenessChecking" includeInDataGridCache="true">
       <attribute id="AccountNumber" dataType="string" maxLength="50" />
       <audit userId="GeorgeS" time="20200713T120233" />
     </model>
-    <model id="CreditPortfolio" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" notesEnabled="false" standardConfig="true">
+    <model id="CreditPortfolio" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
       <audit userId="admin" time="20161205T171440" />
     </model>
-    <model id="AnzSic" source="custom_lookup" hierarchy="true" dataProvider="postgres" modelCategory="ref" notesEnabled="false">
+    <model id="AnzSic" source="custom_lookup" hierarchy="true" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="HierarchyKeyInt" dataType="integer" />
       <attribute id="Key" dataType="string" />
@@ -84,10 +84,11 @@
       <attribute id="Active" dataType="boolean" defaultValue="false" />
       <audit userId="GeorgeS" time="20200729T130648" />
     </model>
-    <model id="RiskCalcIndClassificationMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="FinancialAnalysis" notesEnabled="false" standardConfig="true">
+    <model id="RiskCalcIndClassificationMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="FinancialAnalysis" standardConfig="true">
       <audit userId="admin" time="20191107T234308" />
     </model>
-    <model id="IndustryClassificationMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Entity" notesEnabled="false" standardConfig="true" />
+    <model id="IndustryClassificationMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Entity" standardConfig="true" />
+    <model id="DataDirectTableMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
   </models>
   <viewModels>
     <viewModel id="RiskCalcOutputVm" primaryModel="RiskCalcOutputModel" description="" resourceModuleId="RiskGrading">
@@ -271,6 +272,9 @@
     </ref>
     <ref id="IndustryClassificationMapping" modelRefId="IndustryClassificationMapping" mappingType="true" mappingArtifactType="Reference" type="INDUSTRYCLASSIFICATIONMAPPING" shared="false" resourceModuleId="Entity">
       <audit userId="GeorgeS" time="20200729T153321" />
+    </ref>
+    <ref id="DataDirectTableMap" modelRefId="DataDirectTableMap" type="DATADIRECTTABLEMAP" localeSupport="false" resourceModuleId="DataMovement">
+      <audit userId="MGovender" time="20200916T085827" />
     </ref>
   </references>
 </metadata>
