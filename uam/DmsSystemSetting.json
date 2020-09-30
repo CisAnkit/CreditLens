@@ -1,0 +1,26 @@
+[
+  {
+    "DmsSystemSettingId": "c7e26bf9-a3a1-4e7f-aa47-f9bd89cde635",
+    "SourceArchDbConnectionString": null,
+    "SourceDatabaseProvider": "Sql",
+    "SourceLiveDbConnectionString": "server=air-rwsqlm0001.maregroot.com;database=ACERStaging-90920;user id=RiskAnalyst;password=a;pooling=true;connection lifetime=0",
+    "SystemSettingId": "14700269-cb8b-462e-ae1d-16816ffa19f7",
+    "EnableEmailNotification": null,
+    "EmailRecipients": null,
+    "Inapplicable_": [],
+    "WFId_": "00000000-0000-0000-0000-000000000000",
+    "TaskId_": "00000000-0000-0000-0000-000000000000",
+    "VersionId_": 1,
+    "BaseVersionId_": 0,
+    "IsLatestVersion_": true,
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-28T11:25:11.8178Z",
+    "t_": "DmsSystemSetting",
+    "ContextUserId_": "admin",
+    "IsValid_": true,
+    "IsVisible_": true,
+    "SnapshotId_": 0
+  }
+]
