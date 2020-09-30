@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="44">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="45">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -238,6 +238,10 @@
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
       <audit userId="admin" time="20200918T151540" />
+    </model>
+    <model id="DataDirectTableMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
+    <model id="MapPdOverrideSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
+      <audit userId="admin" time="20170728T234246" />
     </model>
   </models>
   <viewModels>
@@ -501,6 +505,12 @@
     </ref>
     <ref id="MapPdModelScale" modelRefId="MapPdModelScale" type="MAPPDMODELSCALE" shared="false" resourceModuleId="RiskGrading">
       <audit userId="admin" time="20200918T142959" />
+    </ref>
+    <ref id="DataDirectTableMap" modelRefId="DataDirectTableMap" type="DATADIRECTTABLEMAP" localeSupport="false" resourceModuleId="DataMovement">
+      <audit userId="marian" time="20200930T091655" />
+    </ref>
+    <ref id="MapPdOverrideSetting" modelRefId="MapPdOverrideSetting" type="MAPPDOVERRIDESETTING" shared="false" resourceModuleId="RiskGrading">
+      <audit userId="admin" time="20200930T135149" />
     </ref>
   </references>
 </metadata>
