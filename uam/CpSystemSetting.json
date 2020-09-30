@@ -13,6 +13,8 @@
     "StatusId_": 1,
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-04-24T03:05:27.234813Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-08-27T16:41:58.4794Z",
     "t_": "CpSystemSetting",
     "ContextUserId_": "admin",
     "IsValid_": true,

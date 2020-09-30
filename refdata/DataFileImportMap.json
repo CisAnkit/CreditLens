@@ -1,0 +1,18 @@
+[
+  {
+    "Type": "DATAFILEIMPORTMAP",
+    "ModelInt": 1018637912,
+    "Model": "ArcPeerQuartiles",
+    "ViewModel": null,
+    "Active": true,
+    "ModuleId": "ReferenceData",
+    "Order": 1,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-09-03T08:58:11.425074Z",
+    "t_": "DataFileImportMap",
+    "ContextUserId_": "admin"
+  }
+]
