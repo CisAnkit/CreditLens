@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "ENTITYRISKCATEGORY",
+    "KeyInt": 3,
+    "Key": 3,
+    "Value": "A05",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-10-20T14:27:40.780617Z",
+    "t_": "EntityRiskCategory",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ENTITYRISKCATEGORY",
+    "KeyInt": 2,
+    "Key": 2,
+    "Value": "A04",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-10-20T14:27:40.796238Z",
+    "t_": "EntityRiskCategory",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ENTITYRISKCATEGORY",
+    "KeyInt": 1,
+    "Key": 1,
+    "Value": "A00 - A03",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-10-20T14:27:40.811866Z",
+    "t_": "EntityRiskCategory",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ENTITYRISKCATEGORY",
+    "KeyInt": 4,
+    "Key": 4,
+    "Value": "A99",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-10-20T14:27:48.383256Z",
+    "t_": "EntityRiskCategory",
+    "ContextUserId_": "admin"
+  }
+]
