@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="46">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="47">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -256,21 +256,6 @@
     </model>
   </models>
   <viewModels>
-    <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
-      <group id="Default" order="1">
-        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
-        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
-        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
-        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="4" />
-        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
-        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="6" />
-        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="7" />
-        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" order="8" />
-        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" decimals="0" order="9" />
-        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
-      </group>
-      <audit userId="admin" time="20200917T144033" />
-    </viewModel>
     <viewModel id="ArcRiskGradingInputViewModel" primaryModel="ArcRiskGradingDomainModel" description="ARC Risk Grading Input View Model" resourceModuleId="Tenant">
       <group id="Default" order="1">
         <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
@@ -376,6 +361,21 @@
       <group id="BvdBankFocus" action="show" actionRule="IsBvdEntity" order="5" />
       <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="6" />
       <audit userId="admin" time="20201020T142919" />
+    </viewModel>
+    <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
+      <group id="Default" order="1">
+        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
+        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
+        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
+        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" format="number" decimals="2" order="4" />
+        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
+        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" format="number" decimals="2" order="6" />
+        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" format="number" decimals="2" order="7" />
+        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" format="number" decimals="2" order="8" />
+        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" format="number" decimals="2" order="9" />
+        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
+      </group>
+      <audit userId="admin" time="20201022T130140" />
     </viewModel>
   </viewModels>
   <references>
