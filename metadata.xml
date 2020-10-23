@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="47">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="48">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -166,26 +166,6 @@
     <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
       <audit userId="admin" time="20171012T181949" />
     </model>
-    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200915T142911" />
-    </model>
-    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="Industry" dataType="string" refId="ArcPeerIndustry" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
-      <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="decimal" />
-      <attribute id="Quartiles3" dataType="decimal" />
-      <audit userId="admin" time="20200916T125634" />
-    </model>
     <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
@@ -196,8 +176,33 @@
     <model id="MapPdModelScale" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
       <audit userId="admin" time="20170728T185832" />
     </model>
+    <model id="DataDirectTableMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
+    <model id="MapPdOverrideSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
+      <audit userId="admin" time="20170728T234246" />
+    </model>
+    <model id="Entity" source="entity" versionEnable="true" dataProvider="postgres" resourceModuleId="Entity" root="true" createUniqueRule="ValidateUniquenessChecking" updateUniqueRule="ValidateUniquenessChecking" includeInDataGridCache="true">
+      <attribute id="RiskCategory" dataType="long" refId="EntityRiskCategory" />
+      <audit userId="admin" time="20201020T142846" />
+    </model>
+    <model id="EntityRiskCategory" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20201020T144729" />
+    </model>
+    <model id="DataMovementConfig" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
+    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true">
+      <audit userId="admin" time="20161124T064148" />
+    </model>
+    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20201022T160304" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
-      <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
       <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
       <attribute id="CashConversionCycle" dataType="integer" />
@@ -237,22 +242,24 @@
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <audit userId="admin" time="20200918T151540" />
+      <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
+      <audit userId="admin" time="20201022T160558" />
     </model>
-    <model id="DataDirectTableMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
-    <model id="MapPdOverrideSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20170728T234246" />
+    <model id="DataExtractTableSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
+      <audit userId="admin" time="20201022T161756" />
     </model>
-    <model id="Entity" source="entity" versionEnable="true" dataProvider="postgres" resourceModuleId="Entity" root="true" createUniqueRule="ValidateUniquenessChecking" updateUniqueRule="ValidateUniquenessChecking" includeInDataGridCache="true">
-      <attribute id="RiskCategory" dataType="long" refId="EntityRiskCategory" />
-      <audit userId="admin" time="20201020T142846" />
-    </model>
-    <model id="EntityRiskCategory" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20201020T144729" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcPeerIndustry" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
+      <attribute id="Quartile1" dataType="decimal" />
+      <attribute id="Quartile2" dataType="decimal" />
+      <attribute id="Quartile3" dataType="decimal" />
+      <audit userId="admin" time="20201022T163613" />
     </model>
   </models>
   <viewModels>
@@ -520,24 +527,6 @@
     <ref id="OlapDimension" modelRefId="OlapDimension" mappingType="true" mappingArtifactType="Reference" type="OLAPDIMENSION" shared="false" resourceModuleId="Core" multiModule="true">
       <audit userId="admin" time="20200915T093652" />
     </ref>
-    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200915T142911" />
-    </ref>
-    <ref id="ArcPeerQuartiles" modelRefId="ArcPeerQuartiles" type="ARCPEERQUARTILES">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200916T125634" />
-    </ref>
     <ref id="ArcIndustryChannel" modelRefId="ArcIndustryChannel" type="ARCINDUSTRYCHANNEL">
       <query>
         <projection>
@@ -567,6 +556,33 @@
         </sortOrders>
       </query>
       <audit userId="admin" time="20201020T144730" />
+    </ref>
+    <ref id="DataMovementConfig" modelRefId="DataMovementConfig" type="DATAMOVEMENTCONFIG" resourceModuleId="DataMovement">
+      <audit userId="admin" time="20201022T153539" />
+    </ref>
+    <ref id="DataFileImportMap" modelRefId="DataFileImportMap" type="DATAFILEIMPORTMAP" resourceModuleId="DataMovement">
+      <audit userId="admin" time="20201022T153604" />
+    </ref>
+    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20201022T160305" />
+    </ref>
+    <ref id="ArcPeerQuartiles" modelRefId="ArcPeerQuartiles" type="ARCPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartile1,Quartile2,Quartile3" />
+        </projection>
+        <sortOrders>
+          <sortOrder modelFieldId="Key" direction="asc" />
+        </sortOrders>
+      </query>
+      <audit userId="admin" time="20201022T163614" />
     </ref>
   </references>
 </metadata>
