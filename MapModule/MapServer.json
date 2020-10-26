@@ -10,7 +10,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-13T08:44:05.900058Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.727053Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.762776Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -26,7 +26,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-17T16:04:46.541577Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.74268Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.77847Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -42,7 +42,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-17T16:04:46.541577Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.758372Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.794027Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -58,7 +58,23 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-17T16:04:46.557205Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.773933Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.825348Z",
+    "t_": "MapServer",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Id": "e8e45dbb-51d5-4b85-b944-af6f9470f4af",
+    "Engine": "CAP",
+    "Name": "ArcModelRemote",
+    "ConnectionString": "https://api.cap.moodysanalytics.com/model/v2/models/ArcModel_Dev_Api/runs",
+    "Active": false,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-10-20T13:47:59.384891Z",
+    "UpdatedBy_": "admin",
+    "UpdatedDate_": "2020-10-26T13:43:06.46385Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -74,7 +90,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-17T16:04:46.557205Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.773933Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.840899Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -90,7 +106,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-17T16:04:46.572834Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.789556Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.872154Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -106,7 +122,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-17T16:04:46.572834Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.805196Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.887843Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -122,7 +138,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-08-17T16:04:46.572834Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.820815Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.903468Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   },
@@ -138,21 +154,7 @@
     "CreatedBy_": "admin",
     "CreatedDate_": "2020-09-01T12:25:15.403879Z",
     "UpdatedBy_": "admin",
-    "UpdatedDate_": "2020-10-20T13:39:27.820815Z",
-    "t_": "MapServer",
-    "ContextUserId_": "admin"
-  },
-  {
-    "Id": "e8e45dbb-51d5-4b85-b944-af6f9470f4af",
-    "Engine": "CAP",
-    "Name": "ArcModelRemote",
-    "ConnectionString": "https://api.cap.moodysanalytics.com/model/v2/models/ArcModel_Dev_Api/runs",
-    "Active": true,
-    "Inapplicable_": [],
-    "IsDeleted_": false,
-    "StatusId_": 1,
-    "CreatedBy_": "admin",
-    "CreatedDate_": "2020-10-20T13:47:59.384891Z",
+    "UpdatedDate_": "2020-10-26T11:21:23.919025Z",
     "t_": "MapServer",
     "ContextUserId_": "admin"
   }
