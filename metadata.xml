@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="48">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="49">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -259,7 +259,7 @@
       <attribute id="Quartile1" dataType="decimal" />
       <attribute id="Quartile2" dataType="decimal" />
       <attribute id="Quartile3" dataType="decimal" />
-      <audit userId="admin" time="20201022T163613" />
+      <audit userId="admin" time="20201026T133809" />
     </model>
   </models>
   <viewModels>
@@ -578,11 +578,8 @@
           <key modelFieldId="Key" />
           <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartile1,Quartile2,Quartile3" />
         </projection>
-        <sortOrders>
-          <sortOrder modelFieldId="Key" direction="asc" />
-        </sortOrders>
       </query>
-      <audit userId="admin" time="20201022T163614" />
+      <audit userId="admin" time="20201026T133809" />
     </ref>
   </references>
 </metadata>
