@@ -3,6 +3,7 @@
 <p class="MsoNormal"><span style="font-family:Arial; font-size:10.0000pt; mso-fareast-font-family:'Times New Roman'; mso-spacerun:'yes'">Peer Comparison score</span></p>
 <p style="text-align:justify"><span style="font-size:10.5pt"><span style="font-family:&quot;Times New Roman&quot;"><strong><span style="font-size:10.0000pt"><span style="background-color:#ffffff"><span style="font-family:SimSun"><span style="color:#333333"><strong>Arc Peer Quartiles</strong></span></span></span></span></strong></span></span></p>
 <p><span style="font-size:12pt"><span style="font-family:Arial"><span style="font-size:12.0000pt"><span style="font-family:Arial">&lsquo;Peer Industry&rsquo; mapping </span></span></span></span></p>
+Entity.attr.model.Entity.viewModel.EntityEdit.RiskCategory=Risk Category
 Entity.group.viewModel.EntityEdit.Ppi=ARC Risk Grading
 Tenant.association.model.ArcPpiDomainModel.Entity.description=ARC PPI -Entity Association
 Tenant.association.model.Entity.ArcPpiDomainModel.description=ARC PPI -Entity Association

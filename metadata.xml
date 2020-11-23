@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="45">
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="52">
     <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
     <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
@@ -166,26 +166,6 @@
     <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
       <audit userId="admin" time="20171012T181949" />
     </model>
-    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200915T142911" />
-    </model>
-    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="Industry" dataType="string" refId="ArcPeerIndustry" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
-      <attribute id="Quartiles1" dataType="decimal" />
-      <attribute id="Quartiles2" dataType="decimal" />
-      <attribute id="Quartiles3" dataType="decimal" />
-      <audit userId="admin" time="20200916T125634" />
-    </model>
     <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
@@ -196,8 +176,33 @@
     <model id="MapPdModelScale" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
       <audit userId="admin" time="20170728T185832" />
     </model>
+    <model id="DataDirectTableMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
+    <model id="MapPdOverrideSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
+      <audit userId="admin" time="20170728T234246" />
+    </model>
+    <model id="Entity" source="entity" versionEnable="true" dataProvider="postgres" resourceModuleId="Entity" root="true" createUniqueRule="ValidateUniquenessChecking" updateUniqueRule="ValidateUniquenessChecking" includeInDataGridCache="true">
+      <attribute id="RiskCategory" dataType="long" refId="EntityRiskCategory" />
+      <audit userId="admin" time="20201020T142846" />
+    </model>
+    <model id="EntityRiskCategory" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20201020T144729" />
+    </model>
+    <model id="DataMovementConfig" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
+    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true">
+      <audit userId="admin" time="20161124T064148" />
+    </model>
+    <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20201022T160304" />
+    </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
-      <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
       <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
       <attribute id="CashConversionCycle" dataType="integer" />
@@ -237,55 +242,27 @@
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <audit userId="admin" time="20200918T151540" />
+      <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
+      <audit userId="admin" time="20201022T160558" />
     </model>
-    <model id="DataDirectTableMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
-    <model id="MapPdOverrideSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20170728T234246" />
+    <model id="DataExtractTableSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
+      <audit userId="admin" time="20201022T161756" />
+    </model>
+    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcPeerIndustry" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
+      <attribute id="Quartile1" dataType="decimal" />
+      <attribute id="Quartile2" dataType="decimal" />
+      <attribute id="Quartile3" dataType="decimal" />
+      <audit userId="admin" time="20201026T133809" />
     </model>
   </models>
   <viewModels>
-    <viewModel id="EntityEdit" primaryModel="Entity" description="" resourceModuleId="Entity" allowDraft="true">
-      <group id="BasicDetails" type="accordion" order="1">
-        <group id="Officer" order="3">
-          <viewModelRef id="EntityOfficers" order="5" type="inlineGrid" cellEdit="true" />
-        </group>
-        <group id="EntityGroupsHeader" order="6">
-          <viewModelRef id="EntityGroupGrid" order="2" hidden="true" />
-        </group>
-      </group>
-      <group id="Business" type="accordion" order="2">
-        <group id="IndustryInformation" order="2">
-          <viewModelRef id="IndustrySelection" order="3" type="inlineGrid" cellEdit="true" action="enable" actionRule="EnabledIndustryGridWhenClassificationIsSelected" />
-        </group>
-        <group id="ConnectedParties" order="3">
-          <viewModelRef id="DirectorAndCompanyOfficer" order="1" type="inlineGrid" cellEdit="true" />
-          <viewModelRef id="EntityHierarchy" order="2" />
-          <viewModelRef id="EntityReOrgHistory" order="3" />
-        </group>
-      </group>
-      <group id="Documents" order="4">
-        <viewModelRef id="EntityDocumentLinkVm" order="1" type="documents" />
-      </group>
-      <group id="BvdBankFocus" action="show" actionRule="IsBvdEntity" order="5" />
-      <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="6" />
-      <audit userId="admin" time="20200511T110856" />
-    </viewModel>
-    <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
-      <group id="Default" order="1">
-        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
-        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
-        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
-        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="4" />
-        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
-        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="6" />
-        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="7" />
-        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" order="8" />
-        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" decimals="0" order="9" />
-        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
-      </group>
-      <audit userId="admin" time="20200917T144033" />
-    </viewModel>
     <viewModel id="ArcRiskGradingInputViewModel" primaryModel="ArcRiskGradingDomainModel" description="ARC Risk Grading Input View Model" resourceModuleId="Tenant">
       <group id="Default" order="1">
         <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
@@ -332,6 +309,80 @@
         <attribute id="Splitter" controlType="splitter" order="6" />
       </group>
       <audit userId="admin" time="20200928T160125" />
+    </viewModel>
+    <viewModel id="EntityEdit" primaryModel="Entity" description="" resourceModuleId="Entity" allowDraft="true">
+      <group id="BasicDetails" type="accordion" order="1">
+        <group id="CustomerDetails" order="1">
+          <attribute id="RiskCategory" modelId="Entity" modelFieldId="RiskCategory" controlType="singleselect" order="4" />
+          <attribute id="EntityId" readonly="true" modelId="Entity" modelFieldId="EntityId" controlType="text" order="5" />
+          <attribute id="SystemId" modelId="Entity" modelFieldId="SystemId" controlType="text" action="readonly" actionRule="IsSalesforceEntity" order="6" />
+          <attribute id="LegalEntity" modelId="Entity" modelFieldId="LegalEntity" controlType="text" order="7" />
+          <attribute id="TaxId" modelId="Entity" modelFieldId="TaxId" controlType="text" order="8" />
+          <attribute id="CustomerSince" modelId="Entity" modelFieldId="CustomerSince" controlType="datepicker" order="9">
+            <validator>
+              <rule ruleName="ValidateCustomerSince" />
+            </validator>
+            <runRule>ValidateCustomerSince</runRule>
+          </attribute>
+          <attribute id="CountryOfInc" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="10" />
+          <attribute id="ProvinceStateOfIncorporation" modelId="Entity" modelFieldId="ProvinceStateOfIncorporation" controlType="singleselect" order="11">
+            <dependsOnAttributes>CountryOfInc</dependsOnAttributes>
+          </attribute>
+          <attribute id="EstablishmentDate" modelId="Entity" modelFieldId="EstablishmentDate" controlType="datepicker" order="12">
+            <validator>
+              <rule ruleName="ValidateDateOfIncorporation" />
+            </validator>
+            <runRule>ValidateDateOfIncorporation</runRule>
+          </attribute>
+          <attribute id="RegistrationNumber" modelId="Entity" modelFieldId="RegistrationNumber" controlType="text" order="13" />
+          <attribute id="OnList" modelId="Entity" modelFieldId="OnList" controlType="singleselect" order="14" />
+          <attribute id="ConnectedParty" modelId="Entity" modelFieldId="ConnectedParty" controlType="checkbox" order="15" />
+          <attribute id="Descriptions" modelId="Entity" modelFieldId="Descriptions" controlType="mtext" order="16" />
+          <attribute id="Gc23" hidden="true" modelId="Entity" modelFieldId="Gc23" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="17" />
+          <attribute id="Gc22" hidden="true" modelId="Entity" modelFieldId="Gc22" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="18" />
+          <attribute id="LockedDate" hidden="true" modelId="Entity" modelFieldId="LockedDate" controlType="datepicker" order="19" />
+          <attribute id="ExternalDataSources" hidden="true" modelId="Entity" modelFieldId="ExternalDataSources" controlType="multiselect" order="20" />
+          <attribute id="LockedBy" hidden="true" modelId="Entity" modelFieldId="LockedBy" controlType="singleselect" order="21" />
+          <attribute id="IsLocked" hidden="true" modelId="Entity" modelFieldId="IsLocked" controlType="checkbox" order="22" />
+        </group>
+        <group id="Officer" order="3">
+          <viewModelRef id="EntityOfficers" order="5" type="inlineGrid" cellEdit="true" />
+        </group>
+        <group id="EntityGroupsHeader" order="6">
+          <viewModelRef id="EntityGroupGrid" order="2" hidden="true" />
+        </group>
+      </group>
+      <group id="Business" type="accordion" order="2">
+        <group id="IndustryInformation" order="2">
+          <viewModelRef id="IndustrySelection" order="3" type="inlineGrid" cellEdit="true" action="enable" actionRule="EnabledIndustryGridWhenClassificationIsSelected" />
+        </group>
+        <group id="ConnectedParties" order="3">
+          <viewModelRef id="DirectorAndCompanyOfficer" order="1" type="inlineGrid" cellEdit="true" />
+          <viewModelRef id="EntityHierarchy" order="2" />
+          <viewModelRef id="EntityReOrgHistory" order="3" />
+        </group>
+      </group>
+      <group id="Documents" order="4">
+        <viewModelRef id="EntityDocumentLinkVm" order="1" type="documents" />
+      </group>
+      <group id="BvdBankFocus" action="show" actionRule="IsBvdEntity" order="5" />
+      <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="6" />
+      <audit userId="admin" time="20201020T142919" />
+    </viewModel>
+    <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
+      <group id="Default" order="1">
+        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
+        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
+        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
+        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" format="number" decimals="2" order="4" />
+        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
+        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" format="number" decimals="2" order="6" />
+        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" format="number" decimals="2" order="7" />
+        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" format="number" decimals="2" order="8" />
+        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" format="number" decimals="2" order="9" />
+        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
+      </group>
+      <audit userId="admin" time="20201022T130140" />
     </viewModel>
   </viewModels>
   <references>
@@ -476,24 +527,6 @@
     <ref id="OlapDimension" modelRefId="OlapDimension" mappingType="true" mappingArtifactType="Reference" type="OLAPDIMENSION" shared="false" resourceModuleId="Core" multiModule="true">
       <audit userId="admin" time="20200915T093652" />
     </ref>
-    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200915T142911" />
-    </ref>
-    <ref id="ArcPeerQuartiles" modelRefId="ArcPeerQuartiles" type="ARCPEERQUARTILES">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200916T125634" />
-    </ref>
     <ref id="ArcIndustryChannel" modelRefId="ArcIndustryChannel" type="ARCINDUSTRYCHANNEL">
       <query>
         <projection>
@@ -511,6 +544,42 @@
     </ref>
     <ref id="MapPdOverrideSetting" modelRefId="MapPdOverrideSetting" type="MAPPDOVERRIDESETTING" shared="false" resourceModuleId="RiskGrading">
       <audit userId="admin" time="20200930T135149" />
+    </ref>
+    <ref id="EntityRiskCategory" modelRefId="EntityRiskCategory" type="ENTITYRISKCATEGORY" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" />
+        </projection>
+        <sortOrders>
+          <sortOrder modelFieldId="Key" direction="asc" />
+        </sortOrders>
+      </query>
+      <audit userId="admin" time="20201020T144730" />
+    </ref>
+    <ref id="DataMovementConfig" modelRefId="DataMovementConfig" type="DATAMOVEMENTCONFIG" resourceModuleId="DataMovement">
+      <audit userId="admin" time="20201022T153539" />
+    </ref>
+    <ref id="DataFileImportMap" modelRefId="DataFileImportMap" type="DATAFILEIMPORTMAP" resourceModuleId="DataMovement">
+      <audit userId="admin" time="20201022T153604" />
+    </ref>
+    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20201022T160305" />
+    </ref>
+    <ref id="ArcPeerQuartiles" modelRefId="ArcPeerQuartiles" type="ARCPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartile1,Quartile2,Quartile3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20201026T133809" />
     </ref>
   </references>
 </metadata>
