@@ -1,18 +1,20 @@
 [
   {
     "Type": "DATAFILEIMPORTMAP",
-    "ModelInt": 1018637912,
-    "Model": "ArcPeerQuartiles",
+    "ModelInt": 2007783400,
+    "Model": "BusinessPortfolio",
     "ViewModel": null,
     "Active": true,
     "ModuleId": "ReferenceData",
     "Order": 1,
     "Inapplicable_": [],
-    "IsDeleted_": false,
+    "IsDeleted_": true,
     "StatusId_": 1,
     "CreatedBy_": "admin",
-    "CreatedDate_": "2020-10-22T15:36:05.487159Z",
+    "CreatedDate_": "2020-08-14T13:40:56.224031Z",
+    "UpdatedBy_": "macposu",
+    "UpdatedDate_": "2020-09-23T10:53:26.15332Z",
     "t_": "DataFileImportMap",
-    "ContextUserId_": "admin"
+    "ContextUserId_": "macposu"
   }
 ]

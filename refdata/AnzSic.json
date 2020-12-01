@@ -1,0 +1,140 @@
+[
+  {
+    "Type": "ANZSIC",
+    "HierarchyKeyInt": 459369352,
+    "Key": "4222",
+    "Value": "Computer and Computer Peripheral Retailing",
+    "HierarchyKey": "2020|4222",
+    "LevelId": "Division",
+    "Parent": "2020",
+    "Ancestors": [
+      "2020"
+    ],
+    "Active": false,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.662503Z",
+    "t_": "AnzSic",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ANZSIC",
+    "HierarchyKeyInt": 778646712,
+    "Key": "5809",
+    "Value": "Other Telecommunications Services",
+    "HierarchyKey": "2020|5809",
+    "LevelId": "Division",
+    "Parent": "2020",
+    "Ancestors": [
+      "2020"
+    ],
+    "Active": false,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.671292Z",
+    "t_": "AnzSic",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ANZSIC",
+    "HierarchyKeyInt": 741694058,
+    "Key": "6961",
+    "Value": "Corporate Head Office Management Services",
+    "HierarchyKey": "2020|6961",
+    "LevelId": "Division",
+    "Parent": "2020",
+    "Ancestors": [
+      "2020"
+    ],
+    "Active": false,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.679098Z",
+    "t_": "AnzSic",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ANZSIC",
+    "HierarchyKeyInt": 1484459605,
+    "Key": "2421",
+    "Value": "Computer and Electronic Office Equipment Manufacturing",
+    "HierarchyKey": "2020|2421",
+    "LevelId": "Division",
+    "Parent": "2020",
+    "Ancestors": [
+      "2020"
+    ],
+    "Active": false,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.68789Z",
+    "t_": "AnzSic",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ANZSIC",
+    "HierarchyKeyInt": 687992042,
+    "Key": "3492",
+    "Value": "Computer and Computer Peripheral Wholesaling",
+    "HierarchyKey": "2020|3492",
+    "LevelId": "Division",
+    "Parent": "2020",
+    "Ancestors": [
+      "2020"
+    ],
+    "Active": false,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.6957Z",
+    "t_": "AnzSic",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ANZSIC",
+    "HierarchyKeyInt": 1060971971,
+    "Key": "7000",
+    "Value": "Computer System Design and Related Services",
+    "HierarchyKey": "2020|7000",
+    "LevelId": "Division",
+    "Parent": "2020",
+    "Ancestors": [
+      "2020"
+    ],
+    "Active": false,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.704489Z",
+    "t_": "AnzSic",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ANZSIC",
+    "HierarchyKeyInt": 1104292158,
+    "Key": "2020",
+    "Value": "2020",
+    "HierarchyKey": "2020",
+    "LevelId": "DataSet",
+    "Parent": null,
+    "Ancestors": null,
+    "Active": true,
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.71328Z",
+    "t_": "AnzSic",
+    "ContextUserId_": "admin"
+  }
+]

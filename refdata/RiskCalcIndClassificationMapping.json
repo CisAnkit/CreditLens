@@ -1,0 +1,17 @@
+[
+  {
+    "Type": "RISKCALCINDCLASSIFICATIONMAPPING",
+    "IdInt": 399160478,
+    "Id": "ANZSIC",
+    "IndClassification": "ANZSIC",
+    "ActiveDataSet": "2020",
+    "RiskCalcIndClassification": "ANZ SIC",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:56.532636Z",
+    "t_": "RiskCalcIndClassificationMapping",
+    "ContextUserId_": "admin"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "Type": "ACERINTERNALRATINGMAPPING",
+    "RcRatingInt": 696030538,
+    "RcRating": "Ba1",
+    "AcerRating": "6",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.597073Z",
+    "t_": "AcerInternalRatingMapping",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ACERINTERNALRATINGMAPPING",
+    "RcRatingInt": 1719968921,
+    "RcRating": "Baa3",
+    "AcerRating": "7",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.60976Z",
+    "t_": "AcerInternalRatingMapping",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ACERINTERNALRATINGMAPPING",
+    "RcRatingInt": 696030379,
+    "RcRating": "Aa3",
+    "AcerRating": "8",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.618555Z",
+    "t_": "AcerInternalRatingMapping",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ACERINTERNALRATINGMAPPING",
+    "RcRatingInt": 696030378,
+    "RcRating": "Aa2",
+    "AcerRating": "9",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.627343Z",
+    "t_": "AcerInternalRatingMapping",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ACERINTERNALRATINGMAPPING",
+    "RcRatingInt": 968253892,
+    "RcRating": "As2",
+    "AcerRating": "9",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.636147Z",
+    "t_": "AcerInternalRatingMapping",
+    "ContextUserId_": "admin"
+  },
+  {
+    "Type": "ACERINTERNALRATINGMAPPING",
+    "RcRatingInt": 696030297,
+    "RcRating": "Aaa",
+    "AcerRating": "10",
+    "Inapplicable_": [],
+    "IsDeleted_": false,
+    "StatusId_": 1,
+    "CreatedBy_": "admin",
+    "CreatedDate_": "2020-08-14T13:40:53.645897Z",
+    "t_": "AcerInternalRatingMapping",
+    "ContextUserId_": "admin"
+  }
+]
