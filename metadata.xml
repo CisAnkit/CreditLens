@@ -1,35 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <metadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="54">
-    <loadAfter moduleRefId="Core" major="4" minor="3" patch="0" />
+  <module id="Tenant" description="Default Tenant" tenantId="Tenant" major="1" minor="0" patch="22">
+    <loadAfter moduleRefId="Core" major="4" minor="6" patch="0" />
     <loadAfter moduleRefId="RiskOrigins" major="2" minor="2" patch="0" />
-    <loadAfter moduleRefId="Entity" major="2" minor="12" patch="0" />
-    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="9" patch="0" />
-    <loadAfter moduleRefId="Bvd" major="2" minor="4" patch="0" />
-    <loadAfter moduleRefId="DataMovement" major="4" minor="3" patch="0" />
-    <loadAfter moduleRefId="Map" major="2" minor="9" patch="0" />
-    <loadAfter moduleRefId="RiskGrading" major="3" minor="0" patch="0" />
+    <loadAfter moduleRefId="Entity" major="2" minor="15" patch="0" />
+    <loadAfter moduleRefId="FinancialAnalysis" major="2" minor="12" patch="0" />
+    <loadAfter moduleRefId="Bvd" major="2" minor="6" patch="0" />
+    <loadAfter moduleRefId="DataMovement" major="4" minor="6" patch="0" />
+    <loadAfter moduleRefId="Map" major="2" minor="12" patch="0" />
+    <loadAfter moduleRefId="RiskGrading" major="3" minor="3" patch="0" />
     <loadAfter moduleRefId="MapPdModels" major="2" minor="3" patch="0" />
-    <loadAfter moduleRefId="DealStructuring" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="Covenant" major="2" minor="6" patch="0" />
-    <loadAfter moduleRefId="CreditPresentation" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="Workflow" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="4" patch="0" />
-    <loadAfter moduleRefId="BiStarSchema" major="1" minor="14" patch="0" />
-    <loadAfter moduleRefId="MapLgdModels" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="Marq" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="14" patch="0" />
-    <loadAfter moduleRefId="Salesforce" major="1" minor="6" patch="0" />
-    <loadAfter moduleRefId="RiskReturn" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="Raroc" major="4" minor="5" patch="0" />
-    <loadAfter moduleRefId="BusinessInsights" major="2" minor="5" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="14" patch="0" />
-    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="14" patch="0" />
-    <loadAfter moduleRefId="Benchmark" major="1" minor="6" patch="0" />
-    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="5" patch="0" />
+    <loadAfter moduleRefId="DealStructuring" major="4" minor="8" patch="0" />
+    <loadAfter moduleRefId="DealStructuringAdvanced" major="4" minor="8" patch="0" />
+    <loadAfter moduleRefId="Covenant" major="2" minor="9" patch="0" />
+    <loadAfter moduleRefId="CreditPresentation" major="2" minor="8" patch="0" />
+    <loadAfter moduleRefId="Workflow" major="2" minor="8" patch="0" />
+    <loadAfter moduleRefId="SpreadingAutomation" major="3" minor="6" patch="0" />
+    <loadAfter moduleRefId="BiStarSchema" major="1" minor="17" patch="0" />
+    <loadAfter moduleRefId="MapLgdModels" major="4" minor="8" patch="0" />
+    <loadAfter moduleRefId="MapLgdModelsAdvanced" major="4" minor="8" patch="0" />
+    <loadAfter moduleRefId="FirbAnalysis" major="4" minor="8" patch="0" />
+    <loadAfter moduleRefId="Marq" major="2" minor="6" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstate" major="1" minor="17" patch="0" />
+    <loadAfter moduleRefId="Salesforce" major="1" minor="7" patch="0" />
+    <loadAfter moduleRefId="RiskReturn" major="4" minor="8" patch="0" />
+    <loadAfter moduleRefId="Raroc" major="4" minor="8" patch="0" />
+    <loadAfter moduleRefId="BusinessInsights" major="2" minor="8" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstateLgdModels" major="1" minor="17" patch="0" />
+    <loadAfter moduleRefId="CommercialRealEstatePdRatings" major="1" minor="17" patch="0" />
+    <loadAfter moduleRefId="Benchmark" major="1" minor="8" patch="0" />
+    <loadAfter moduleRefId="RiskCalcLgd" major="4" minor="8" patch="0" />
     <loadAfter moduleRefId="MoodysFinal" major="1" minor="0" patch="0" />
     <probePath path="Config\metadata\Tenant\ra" />
   </module>
@@ -42,6 +42,13 @@
     </model>
     <model id="Report" source="custom_report" versionEnable="true" dataProvider="postgres" modelCategory="system" resourceModuleId="Core" standardConfig="true">
       <audit time="2017-11-24T19:07:51.630172Z" />
+    </model>
+    <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Value" dataType="string" />
+      <audit userId="admin" time="20200511T112020" />
     </model>
     <model id="MapModel" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Map" />
     <model id="StrategicSalesImportance" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
@@ -79,6 +86,21 @@
       <attribute id="Score" dataType="integer" />
       <audit userId="admin" time="20200516T115235" />
     </model>
+    <model id="PpiScoringMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="PpiPctUpperInclusiveBoundaryInt" dataType="integer" />
+      <attribute id="PpiPctUpperInclusiveBoundary" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Distributor" dataType="integer" />
+      <attribute id="Retailer" dataType="integer" />
+      <attribute id="Ecommerce" dataType="integer" />
+      <attribute id="Reseller" dataType="integer" />
+      <attribute id="Corporate" dataType="integer" />
+      <attribute id="SystemIntegrator" dataType="integer" />
+      <attribute id="Services" dataType="integer" />
+      <attribute id="Telco" dataType="integer" />
+      <attribute id="Dealer" dataType="integer" />
+      <audit userId="admin" time="20200516T124338" />
+    </model>
     <model id="MacroeconomicRiskCapAdjustmentPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="MerCapUpperValueInt" dataType="integer" />
@@ -106,6 +128,15 @@
       <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
       <attribute id="Value" dataType="decimal" />
       <audit userId="admin" time="20200518T140519" />
+    </model>
+    <model id="ArcRiskCaps" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="Country" dataType="string" refId="Country" />
+      <attribute id="MerCap" dataType="decimal" />
+      <attribute id="GprCap" dataType="decimal" />
+      <audit userId="admin" time="20200520T115139" />
     </model>
     <model id="PortfolioRatiosScoring" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
@@ -141,6 +172,279 @@
       <attribute id="Value" dataType="string" />
       <audit userId="admin" time="20200529T065102" />
     </model>
+    <model id="SalesGrowthPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <audit userId="admin" time="20200530T063622" />
+    </model>
+    <model id="NetOperatingProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRegions" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T064656" />
+    </model>
+    <model id="NetProfitPercentagePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quatiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T065651" />
+    </model>
+    <model id="InterestCoverPeerQurtiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T070428" />
+    </model>
+    <model id="ReturnOnAssetsPercentage" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T071337" />
+    </model>
+    <model id="CashRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T073218" />
+    </model>
+    <model id="QuickRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T073911" />
+    </model>
+    <model id="CurrentRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T074529" />
+    </model>
+    <model id="CashConversionCyclePeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T080716" />
+    </model>
+    <model id="DaysSalesOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T081730" />
+    </model>
+    <model id="DaysInventoryOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T082350" />
+    </model>
+    <model id="DaysPayableOutstandingPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T083218" />
+    </model>
+    <model id="InventoryWcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T083919" />
+    </model>
+    <model id="DebtToEquityRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T084647" />
+    </model>
+    <model id="DebtToTnwPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T085607" />
+    </model>
+    <model id="BorrowedFundsToEffectiveTnwPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T090055" />
+    </model>
+    <model id="DebtToAssetsRatioPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T091226" />
+    </model>
+    <model id="ShortTermDebtToTotalDebtPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T091848" />
+    </model>
+    <model id="ShortTermDebtWcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T092521" />
+    </model>
+    <model id="NetDebtToEbitPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubReion" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="Industry" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="decimal" />
+      <attribute id="Quartiles1" dataType="decimal" />
+      <attribute id="Quartiles2" dataType="decimal" />
+      <attribute id="Quartiles3" dataType="decimal" />
+      <audit userId="admin" time="20200530T094054" />
+    </model>
+    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
+      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
+      <attribute id="KeyInt" dataType="integer" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="RegionSubRegion" dataType="string" />
+      <attribute id="Industry" dataType="string" />
+      <attribute id="Year" dataType="long" />
+      <attribute id="Ratio" dataType="double" />
+      <attribute id="Quartile1" dataType="double" />
+      <attribute id="Quartile2" dataType="double" />
+      <attribute id="Quartile3" dataType="double" />
+      <audit userId="admin" time="20200622T071136" />
+    </model>
     <model id="ArcRegions" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
@@ -149,61 +453,23 @@
       <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
       <audit userId="admin" time="20200626T100018" />
     </model>
-    <model id="Acerift" dataProvider="postgres" resourceModuleId="Tenant" extends="Financial" referenceModule="FinancialAnalysis">
-      <attribute id="IftTc11" dataType="string" refId="IftIndustrySector" deleted="true" />
-      <attribute id="IftTc6" dataType="string" refId="IftFyeMonth" deleted="true" />
-      <attribute id="AceriftTc11" dataType="string" refId="IftIndustrySector" />
-      <attribute id="AceriftTc6" dataType="string" refId="IftFyeMonth" />
-      <audit userId="admin" time="20200901T104238" />
-    </model>
-    <model id="ArcFinancialRatios" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200910T145603" />
-    </model>
-    <model id="OlapDimension" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
-      <audit userId="admin" time="20171012T181949" />
-    </model>
-    <model id="ArcIndustryChannel" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20200918T101139" />
-    </model>
-    <model id="MapPdModelScale" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20170728T185832" />
-    </model>
-    <model id="DataDirectTableMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
-    <model id="MapPdOverrideSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20170728T234246" />
-    </model>
-    <model id="Entity" source="entity" versionEnable="true" dataProvider="postgres" resourceModuleId="Entity" root="true" createUniqueRule="ValidateUniquenessChecking" updateUniqueRule="ValidateUniquenessChecking" includeInDataGridCache="true">
-      <attribute id="RiskCategory" dataType="long" refId="EntityRiskCategory" />
-      <audit userId="admin" time="20201020T142846" />
-    </model>
-    <model id="EntityRiskCategory" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20201020T144729" />
-    </model>
-    <model id="DataMovementConfig" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" />
-    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true">
-      <audit userId="admin" time="20161124T064148" />
-    </model>
     <model id="ArcPeerIndustry" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
       <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
       <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="string" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="Value" dataType="string" />
-      <audit userId="admin" time="20201022T160304" />
+      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
+      <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
+      <attribute id="PeerIndustry" dataType="string" />
+      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
+      <audit userId="admin" time="20200626T100205" />
+    </model>
+    <model id="DataFileImportMap" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="DataMovement" standardConfig="true">
+      <audit userId="admin" time="20161124T064148" />
     </model>
     <model id="ArcRiskGradingDomainModel" versionEnable="true" dataProvider="postgres" resourceModuleId="Tenant" extends="MapPdInstance" referenceModule="MapPdModels">
-      <attribute id="ArcRegions" dataType="string" refId="ArcRiskGradingRegion" />
+      <attribute id="ArcPeerIndustry" dataType="long" refId="ArcPeerIndustry" />
+      <attribute id="ArcPeerQuartiles" dataType="long" refId="ArcPeerQuartiles" />
+      <attribute id="ArcRegions" dataType="string" refId="ArcRegions" attributeExpression="Regenerate domain to show code editor" />
+      <attribute id="ArcRiskCaps" dataType="string" refId="ArcRiskCaps" />
       <attribute id="BorrowedFundsToEffectiveTnw" dataType="decimal" decimals="2" />
       <attribute id="CashConversionCycle" dataType="integer" />
       <attribute id="CashRatio" dataType="decimal" decimals="2" />
@@ -219,132 +485,56 @@
       <attribute id="Financials" dataType="string" refId="SoftFactorFinancials" />
       <attribute id="GeopoliticalRiskCap" dataType="decimal" decimals="2" />
       <attribute id="GeopoliticalRiskCapAdjPct" dataType="integer" refId="GeopoliticalRiskCapAdjustmentPercentage" />
-      <attribute id="HardFactorsScore" dataType="decimal" format="number" decimals="2" />
+      <attribute id="HardFactorsScore" dataType="integer" />
       <attribute id="IndustryChannel" dataType="string" refId="ArcIndustryChannel" />
       <attribute id="InterestCover" dataType="decimal" decimals="2" />
-      <attribute id="InventoryToWc" dataType="decimal" decimals="2" />
+      <attribute id="InventoryToWc" dataType="integer" />
       <attribute id="MacroeconomicRiskCap" dataType="decimal" decimals="2" />
       <attribute id="MacroeconomicRiskCapAdjPct" dataType="integer" refId="MacroeconomicRiskCapAdjustmentPercentage" />
       <attribute id="NetDebtToEbit" dataType="decimal" decimals="2" />
       <attribute id="NetOperatingProfitPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="NetProfitPercentage" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="PeerComparisonScore" dataType="decimal" format="number" decimals="2" attributeExpression="Regenerate domain to show code editor" />
+      <attribute id="PeerComparisonScore" dataType="integer" />
       <attribute id="PpiPercentage" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="PpiScore" dataType="decimal" format="number" decimals="2" />
+      <attribute id="PpiScore" dataType="integer" />
+      <attribute id="PpiScoringMap" dataType="string" refId="PpiScoringMap" />
       <attribute id="QuickRatio" dataType="decimal" decimals="2" />
       <attribute id="ReturnOnAssetsPercentage" dataType="decimal" format="percent" decimals="2" />
       <attribute id="RiskCalcEdf" dataType="decimal" format="percent" decimals="2" />
       <attribute id="SalesGrowth" dataType="decimal" format="percent" decimals="2" />
-      <attribute id="SelectedStatementsYears" dataType="string" maxLength="50" />
       <attribute id="ShortTermDebtToTotalDebt" dataType="decimal" decimals="2" />
-      <attribute id="ShortTermDebtToWorkingCapital" dataType="decimal" decimals="2" />
-      <attribute id="SoftFactorsScore" dataType="decimal" format="number" decimals="2" />
+      <attribute id="SoftFactorsScore" dataType="integer" />
       <attribute id="StrategicSalesImportance" dataType="string" refId="StrategicSalesImportance" />
       <attribute id="Token" dataType="guid" />
       <attribute id="YearsInBusinessWithAcer" dataType="string" refId="YearsInBusinessWithAcer" />
-      <attribute id="ArcPeerIndustry" dataType="string" refId="ArcPeerIndustry" />
-      <audit userId="admin" time="20201022T160558" />
+      <attribute id="ShortTermDebtToWorkingCapital" dataType="decimal" decimals="2" />
+      <audit userId="admin" time="20200918T123136" />
     </model>
-    <model id="DataExtractTableSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
-      <audit userId="admin" time="20201022T161756" />
+    <model id="ProposalTypeMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
+      <audit userId="admin" time="20171106T160756" />
     </model>
-    <model id="ArcPeerQuartiles" source="custom_lookup" dataProvider="postgres" modelCategory="ref">
-      <attribute id="Type" dataType="string" primaryField="true" keyGenerationStrategy="assigned" />
-      <attribute id="KeyInt" dataType="integer" />
-      <attribute id="Key" dataType="long" primaryField="true" primaryFieldOrder="2" keyGenerationStrategy="assigned" />
-      <attribute id="RegionSubRegion" dataType="string" refId="ArcRiskGradingRegion" />
-      <attribute id="Industry" dataType="string" refId="ArcPeerIndustry" />
-      <attribute id="Year" dataType="long" />
-      <attribute id="Ratio" dataType="string" refId="ArcFinancialRatios" />
-      <attribute id="Quartile1" dataType="decimal" />
-      <attribute id="Quartile2" dataType="decimal" />
-      <attribute id="Quartile3" dataType="decimal" />
-      <audit userId="admin" time="20201026T133809" />
+    <model id="UserRole" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
+      <audit userId="admin" time="2016-09-22T07:39:52.0141859Z" />
+    </model>
+    <model id="ProposalTaskRecallSetting" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
+      <audit userId="admin" time="20190604T225709" />
+    </model>
+    <model id="ProposalBusinessStatus" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Entity" standardConfig="true">
+      <audit userId="admin" time="20170920T141810" />
+    </model>
+    <model id="TaskTypeMapping" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core">
+      <audit userId="admin" time="20181004T173033" />
+    </model>
+    <model id="TaskBusinessStatus" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Entity">
+      <audit userId="admin" time="20170928T214601" />
+    </model>
+    <model id="WorkflowEvents" source="custom_lookup" dataProvider="postgres" modelCategory="ref" resourceModuleId="Core" standardConfig="true">
+      <audit userId="admin" time="20180112T182847" />
     </model>
   </models>
   <viewModels>
-    <viewModel id="ArcRiskGradingInputViewModel" primaryModel="ArcRiskGradingDomainModel" description="ARC Risk Grading Input View Model" resourceModuleId="Tenant">
-      <group id="Default" order="1">
-        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
-        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
-        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
-        <attribute id="RiskCalcEdf" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="RiskCalcEdf" controlType="text" format="percent" decimals="2" order="4" />
-        <attribute id="IndustryChannel" modelId="ArcRiskGradingDomainModel" modelFieldId="IndustryChannel" controlType="singleselect" order="5" />
-        <attribute id="CountryOfRisk" readonly="true" modelId="Entity" modelFieldId="CountryOfRisk" controlType="singleselect" order="6" />
-        <attribute id="Splitter" controlType="splitter" order="7" />
-      </group>
-      <group id="PeerComparison" order="2">
-        <attribute id="Performance" controlType="header" order="1" />
-        <attribute id="SalesGrowth" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SalesGrowth" controlType="text" format="percent" decimals="2" order="2" />
-        <attribute id="NetOperatingProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetOperatingProfitPercentage" controlType="text" format="percent" decimals="2" order="3" />
-        <attribute id="NetProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetProfitPercentage" controlType="text" format="percent" decimals="2" order="4" />
-        <attribute id="InterestCover" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InterestCover" controlType="text" format="number" decimals="2" order="5" />
-        <attribute id="ReturnOnAssetsPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ReturnOnAssetsPercentage" controlType="text" format="percent" decimals="2" order="6" />
-        <attribute id="Liquidity" controlType="header" order="7" />
-        <attribute id="CashRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashRatio" controlType="text" format="number" decimals="2" order="8" />
-        <attribute id="QuickRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="QuickRatio" controlType="text" format="number" decimals="2" order="9" />
-        <attribute id="CurrentRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CurrentRatio" controlType="text" format="number" decimals="2" order="10" />
-        <attribute id="Efficiency" controlType="header" order="11" />
-        <attribute id="CashConversionCycle" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashConversionCycle" controlType="text" order="12" />
-        <attribute id="DaysSalesOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysSalesOutstanding" controlType="text" order="13" />
-        <attribute id="DaysInventoryOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysInventoryOutstanding" controlType="text" order="14" />
-        <attribute id="DaysPayableOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysPayableOutstanding" controlType="text" order="15" />
-        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" format="number" decimals="2" order="16" />
-        <attribute id="LeverageAndDebtCoverage" controlType="header" order="17" />
-        <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" format="number" decimals="2" order="18" />
-        <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" format="number" decimals="2" order="19" />
-        <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" format="number" decimals="2" order="20" />
-        <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" format="number" decimals="2" order="21" />
-        <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" format="number" decimals="2" order="22" />
-        <attribute id="ShortTermDebtToWorkingCapital" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToWorkingCapital" controlType="text" format="number" decimals="2" order="23" />
-        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" format="number" decimals="2" order="24" />
-        <attribute id="Splitter" controlType="splitter" order="25" />
-      </group>
-      <group id="SoftFactors" colSpanOverride="1" order="3">
-        <attribute id="StrategicSalesImportance" modelId="ArcRiskGradingDomainModel" modelFieldId="StrategicSalesImportance" controlType="singleselect" order="1" />
-        <attribute id="YearsInBusinessWithAcer" modelId="ArcRiskGradingDomainModel" modelFieldId="YearsInBusinessWithAcer" controlType="singleselect" order="2" />
-        <attribute id="DaysBeyondDueDate" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysBeyondDueDate" controlType="singleselect" order="3" />
-        <attribute id="Financials" modelId="ArcRiskGradingDomainModel" modelFieldId="Financials" controlType="singleselect" order="4" />
-        <attribute id="CorporateStructure" modelId="ArcRiskGradingDomainModel" modelFieldId="CorporateStructure" controlType="singleselect" order="5" />
-        <attribute id="Splitter" controlType="splitter" order="6" />
-      </group>
-      <audit userId="admin" time="20200928T160125" />
-    </viewModel>
     <viewModel id="EntityEdit" primaryModel="Entity" description="" resourceModuleId="Entity" allowDraft="true">
       <group id="BasicDetails" type="accordion" order="1">
-        <group id="CustomerDetails" order="1">
-          <attribute id="RiskCategory" modelId="Entity" modelFieldId="RiskCategory" controlType="singleselect" order="4" />
-          <attribute id="EntityId" readonly="true" modelId="Entity" modelFieldId="EntityId" controlType="text" order="5" />
-          <attribute id="SystemId" modelId="Entity" modelFieldId="SystemId" controlType="text" action="readonly" actionRule="IsSalesforceEntity" order="6" />
-          <attribute id="LegalEntity" modelId="Entity" modelFieldId="LegalEntity" controlType="text" order="7" />
-          <attribute id="TaxId" modelId="Entity" modelFieldId="TaxId" controlType="text" order="8" />
-          <attribute id="CustomerSince" modelId="Entity" modelFieldId="CustomerSince" controlType="datepicker" order="9">
-            <validator>
-              <rule ruleName="ValidateCustomerSince" />
-            </validator>
-            <runRule>ValidateCustomerSince</runRule>
-          </attribute>
-          <attribute id="CountryOfInc" modelId="Entity" modelFieldId="CountryOfInc" controlType="singleselect" order="10" />
-          <attribute id="ProvinceStateOfIncorporation" modelId="Entity" modelFieldId="ProvinceStateOfIncorporation" controlType="singleselect" order="11">
-            <dependsOnAttributes>CountryOfInc</dependsOnAttributes>
-          </attribute>
-          <attribute id="EstablishmentDate" modelId="Entity" modelFieldId="EstablishmentDate" controlType="datepicker" order="12">
-            <validator>
-              <rule ruleName="ValidateDateOfIncorporation" />
-            </validator>
-            <runRule>ValidateDateOfIncorporation</runRule>
-          </attribute>
-          <attribute id="RegistrationNumber" modelId="Entity" modelFieldId="RegistrationNumber" controlType="text" order="13" />
-          <attribute id="OnList" modelId="Entity" modelFieldId="OnList" controlType="singleselect" order="14" />
-          <attribute id="ConnectedParty" modelId="Entity" modelFieldId="ConnectedParty" controlType="checkbox" order="15" />
-          <attribute id="Descriptions" modelId="Entity" modelFieldId="Descriptions" controlType="mtext" order="16" />
-          <attribute id="Gc23" hidden="true" modelId="Entity" modelFieldId="Gc23" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="17" />
-          <attribute id="Gc22" hidden="true" modelId="Entity" modelFieldId="Gc22" controlType="text" action="show" actionRule="ShowMonYearBusinessStarted" order="18" />
-          <attribute id="LockedDate" hidden="true" modelId="Entity" modelFieldId="LockedDate" controlType="datepicker" order="19" />
-          <attribute id="ExternalDataSources" hidden="true" modelId="Entity" modelFieldId="ExternalDataSources" controlType="multiselect" order="20" />
-          <attribute id="LockedBy" hidden="true" modelId="Entity" modelFieldId="LockedBy" controlType="singleselect" order="21" />
-          <attribute id="IsLocked" hidden="true" modelId="Entity" modelFieldId="IsLocked" controlType="checkbox" order="22" />
-        </group>
         <group id="Officer" order="3">
           <viewModelRef id="EntityOfficers" order="5" type="inlineGrid" cellEdit="true" />
         </group>
@@ -367,25 +557,111 @@
       </group>
       <group id="BvdBankFocus" action="show" actionRule="IsBvdEntity" order="5" />
       <group id="BvdOsiris" action="show" actionRule="IsBvdOsirisEntity" order="6" />
-      <audit userId="admin" time="20201020T142919" />
+      <audit userId="admin" time="20200511T110856" />
     </viewModel>
     <viewModel id="ArcRiskGradingOutputViewModel" primaryModel="ArcRiskGradingDomainModel" description="Arc Risk Grading Output View Model" resourceModuleId="Tenant">
       <group id="Default" order="1">
         <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
         <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
         <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
-        <attribute id="PpiScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" format="number" decimals="2" order="4" />
-        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="5" />
-        <attribute id="SoftFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" format="number" decimals="2" order="6" />
-        <attribute id="PeerComparisonScore" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" format="number" decimals="2" order="7" />
-        <attribute id="HardFactorsScore" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" format="number" decimals="2" order="8" />
-        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" format="number" decimals="2" order="9" />
-        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="10" />
+        <attribute id="PpiScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="4" />
+        <attribute id="PeerComparisonScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="5" />
+        <attribute id="HardFactorsScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="HardFactorsScore" controlType="text" order="6" />
+        <attribute id="SoftFactorsScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="7" />
+        <attribute id="Score" readonly="true" modelId="MapPdInstance" modelFieldId="Score" controlType="text" decimals="0" order="8" />
+        <attribute id="Grade" readonly="true" modelId="MapPdInstance" modelFieldId="Grade" controlType="singleselect" order="9" />
+        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="10" />
       </group>
-      <audit userId="admin" time="20201022T130140" />
+      <audit userId="admin" time="20200518T062559" />
+    </viewModel>
+    <viewModel id="ArcRiskGradingInputViewModel" primaryModel="ArcRiskGradingDomainModel" description="ARC Risk Grading Input View Model" resourceModuleId="Tenant">
+      <group id="Default" order="1">
+        <attribute id="Id" hidden="true" readonly="true" modelId="MapInstance" modelFieldId="Id" controlType="text" order="1" />
+        <attribute id="Errors" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Errors" controlType="multiselect" order="2" />
+        <attribute id="Alerts" hidden="true" readonly="true" modelId="MapPdInstance" modelFieldId="Alerts" controlType="multiselect" order="3" />
+        <attribute id="RiskCalcEdf" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="RiskCalcEdf" controlType="text" format="percent" decimals="2" order="4" />
+        <attribute id="IndustryChannel" modelId="ArcRiskGradingDomainModel" modelFieldId="IndustryChannel" controlType="singleselect" order="5" />
+        <attribute id="CountryOfRisk" readonly="true" modelId="Entity" modelFieldId="CountryOfRisk" controlType="singleselect" order="6" />
+        <attribute id="MacroeconomicRiskCap" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="MacroeconomicRiskCap" controlType="text" decimals="2" order="7" />
+        <attribute id="GeopoliticalRiskCap" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="GeopoliticalRiskCap" controlType="text" decimals="2" order="8" />
+        <attribute id="Splitter" controlType="splitter" order="9" />
+        <attribute id="PpiPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiPercentage" controlType="text" format="percent" decimals="2" order="10" />
+        <attribute id="PpiScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PpiScore" controlType="text" order="11" />
+      </group>
+      <group id="PeerComparison" order="2">
+        <attribute id="ArcPeerIndustry" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ArcPeerIndustry" controlType="singleselect" order="1" />
+        <attribute id="ArcRegions" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ArcRegions" controlType="singleselect" order="2" />
+        <attribute id="Performance" controlType="header" order="3" />
+        <attribute id="SalesGrowth" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SalesGrowth" controlType="text" format="percent" decimals="2" order="4" />
+        <attribute id="NetOperatingProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetOperatingProfitPercentage" controlType="text" format="percent" decimals="2" order="5" />
+        <attribute id="NetProfitPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetProfitPercentage" controlType="text" format="percent" decimals="2" order="6" />
+        <attribute id="InterestCover" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InterestCover" controlType="text" decimals="2" order="7" />
+        <attribute id="ReturnOnAssetsPercentage" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ReturnOnAssetsPercentage" controlType="text" format="percent" decimals="2" order="8" />
+        <attribute id="Liquidity" controlType="header" order="9" />
+        <attribute id="CashRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashRatio" controlType="text" decimals="2" order="10" />
+        <attribute id="QuickRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="QuickRatio" controlType="text" decimals="2" order="11" />
+        <attribute id="CurrentRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CurrentRatio" controlType="text" decimals="2" order="12" />
+        <attribute id="Efficiency" controlType="header" order="13" />
+        <attribute id="CashConversionCycle" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="CashConversionCycle" controlType="text" order="14" />
+        <attribute id="DaysSalesOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysSalesOutstanding" controlType="text" order="15" />
+        <attribute id="DaysInventoryOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysInventoryOutstanding" controlType="text" order="16" />
+        <attribute id="DaysPayableOutstanding" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysPayableOutstanding" controlType="text" order="17" />
+        <attribute id="InventoryToWc" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="InventoryToWc" controlType="text" order="18" />
+        <attribute id="LeverageAndDebtCoverage" controlType="header" order="19" />
+        <attribute id="DebtToEquityRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToEquityRatio" controlType="text" decimals="2" order="20" />
+        <attribute id="DebtToTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToTnw" controlType="text" decimals="2" order="21" />
+        <attribute id="BorrowedFundsToEffectiveTnw" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="BorrowedFundsToEffectiveTnw" controlType="text" decimals="2" order="22" />
+        <attribute id="DebtToAssetsRatio" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="DebtToAssetsRatio" controlType="text" order="23" />
+        <attribute id="ShortTermDebtToTotalDebt" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="ShortTermDebtToTotalDebt" controlType="text" order="24" />
+        <attribute id="NetDebtToEbit" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="NetDebtToEbit" controlType="text" decimals="2" order="25" />
+        <attribute id="Splitter" controlType="splitter" order="26" />
+        <attribute id="PeerComparisonScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="PeerComparisonScore" controlType="text" order="27" />
+      </group>
+      <group id="SoftFactors" order="3">
+        <attribute id="StrategicSalesImportance" modelId="ArcRiskGradingDomainModel" modelFieldId="StrategicSalesImportance" controlType="singleselect" order="1" />
+        <attribute id="YearsInBusinessWithAcer" modelId="ArcRiskGradingDomainModel" modelFieldId="YearsInBusinessWithAcer" controlType="singleselect" order="2" />
+        <attribute id="DaysBeyondDueDate" modelId="ArcRiskGradingDomainModel" modelFieldId="DaysBeyondDueDate" controlType="singleselect" order="3" />
+        <attribute id="Financials" modelId="ArcRiskGradingDomainModel" modelFieldId="Financials" controlType="singleselect" order="4" />
+        <attribute id="CorporateStructure" modelId="ArcRiskGradingDomainModel" modelFieldId="CorporateStructure" controlType="singleselect" order="5" />
+        <attribute id="Splitter" controlType="splitter" order="6" />
+        <attribute id="SoftFactorsScore" readonly="true" modelId="ArcRiskGradingDomainModel" modelFieldId="SoftFactorsScore" controlType="text" order="7" />
+      </group>
+      <audit userId="admin" time="20200626T103112" />
     </viewModel>
   </viewModels>
+  <tasks>
+    <task taskName="FinancialsInput" landingPage="EntitySearch">
+      <menu id="EntitySearch" order="1" />
+      <menu id="EntityManagement" order="2" />
+      <menu id="FinancialAnalysis" order="3" />
+      <audit userId="admin" time="20201111T122115" />
+    </task>
+    <task taskName="RiskGradingInitiationQltyChck">
+      <menu id="FinancialAnalysis" order="1" />
+      <menu id="RiskGrading" order="2" />
+      <menu id="EntityManagement" order="3" />
+      <menu id="ProposalCenter" order="4" />
+      <audit userId="admin" time="20201117T063625" />
+    </task>
+    <task taskName="ApprovalAndPdfCreation" landingPage="RiskGradingLanding">
+      <menu id="RiskGrading" order="1" />
+      <menu id="ProposalCenter" order="2" />
+      <menu id="EntityManagement" order="3" />
+      <menu id="Report" order="4" />
+      <menu id="Documents" order="5" />
+      <audit userId="admin" time="20201119T102818" />
+    </task>
+  </tasks>
   <references>
+    <ref id="ArcIndustryChannel" modelRefId="ArcIndustryChannel" type="ARCINDUSTRYCHANNEL">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Value" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200511T112024" />
+    </ref>
     <ref id="MapModel" modelRefId="MapModel" type="MAPMODEL" shared="false" resourceModuleId="Map">
       <audit userId="admin" time="20200512T154543" />
     </ref>
@@ -449,6 +725,15 @@
       </query>
       <audit userId="admin" time="20200516T115238" />
     </ref>
+    <ref id="PpiScoringMap" modelRefId="PpiScoringMap" type="PPISCORINGMAP" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="PpiPctUpperInclusiveBoundary" />
+          <display modelFieldIds="PpiPctUpperInclusiveBoundary,Distributor,Retailer,Ecommerce,Reseller,Corporate,SystemIntegrator,Services,Telco,Dealer" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200516T124341" />
+    </ref>
     <ref id="MacroeconomicRiskCapAdjustmentPercentage" modelRefId="MacroeconomicRiskCapAdjustmentPercentage" type="MACROECONOMICRISKCAPADJUSTMENTPERCENTAGE">
       <query>
         <projection>
@@ -485,6 +770,15 @@
       </query>
       <audit userId="admin" time="20200518T140522" />
     </ref>
+    <ref id="ArcRiskCaps" modelRefId="ArcRiskCaps" type="ARCRISKCAPS">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="Country,MerCap,GprCap" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200520T115142" />
+    </ref>
     <ref id="PortfolioRatiosScoring" modelRefId="PortfolioRatiosScoring" type="PORTFOLIORATIOSSCORING">
       <query>
         <projection>
@@ -503,6 +797,195 @@
       </query>
       <audit userId="admin" time="20200529T065104" />
     </ref>
+    <ref id="SalesGrowthPeerQuartiles" modelRefId="SalesGrowthPeerQuartiles" type="SALESGROWTHPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T063626" />
+    </ref>
+    <ref id="NetOperatingProfitPercentagePeerQuartiles" modelRefId="NetOperatingProfitPercentagePeerQuartiles" type="NETOPERATINGPROFITPERCENTAGEPEERQUARTILES" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T064700" />
+    </ref>
+    <ref id="NetProfitPercentagePeerQuartiles" modelRefId="NetProfitPercentagePeerQuartiles" type="NETPROFITPERCENTAGEPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quatiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T065654" />
+    </ref>
+    <ref id="InterestCoverPeerQurtiles" modelRefId="InterestCoverPeerQurtiles" type="INTERESTCOVERPEERQURTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T070431" />
+    </ref>
+    <ref id="ReturnOnAssetsPercentage" modelRefId="ReturnOnAssetsPercentage" type="RETURNONASSETSPERCENTAGE">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T071340" />
+    </ref>
+    <ref id="CashRatioPeerQuartiles" modelRefId="CashRatioPeerQuartiles" type="CASHRATIOPEERQUARTILES" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T073221" />
+    </ref>
+    <ref id="QuickRatioPeerQuartiles" modelRefId="QuickRatioPeerQuartiles" type="QUICKRATIOPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T073914" />
+    </ref>
+    <ref id="CurrentRatioPeerQuartiles" modelRefId="CurrentRatioPeerQuartiles" type="CURRENTRATIOPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T074533" />
+    </ref>
+    <ref id="CashConversionCyclePeerQuartiles" modelRefId="CashConversionCyclePeerQuartiles" type="CASHCONVERSIONCYCLEPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T080719" />
+    </ref>
+    <ref id="DaysSalesOutstandingPeerQuartiles" modelRefId="DaysSalesOutstandingPeerQuartiles" type="DAYSSALESOUTSTANDINGPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T081734" />
+    </ref>
+    <ref id="DaysInventoryOutstandingPeerQuartiles" modelRefId="DaysInventoryOutstandingPeerQuartiles" type="DAYSINVENTORYOUTSTANDINGPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T082354" />
+    </ref>
+    <ref id="DaysPayableOutstandingPeerQuartiles" modelRefId="DaysPayableOutstandingPeerQuartiles" type="DAYSPAYABLEOUTSTANDINGPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T083222" />
+    </ref>
+    <ref id="InventoryWcPeerQuartiles" modelRefId="InventoryWcPeerQuartiles" type="INVENTORYWCPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T083922" />
+    </ref>
+    <ref id="DebtToEquityRatioPeerQuartiles" modelRefId="DebtToEquityRatioPeerQuartiles" type="DEBTTOEQUITYRATIOPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T084651" />
+    </ref>
+    <ref id="DebtToTnwPeerQuartiles" modelRefId="DebtToTnwPeerQuartiles" type="DEBTTOTNWPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T085610" />
+    </ref>
+    <ref id="BorrowedFundsToEffectiveTnwPeerQuartiles" modelRefId="BorrowedFundsToEffectiveTnwPeerQuartiles" type="BORROWEDFUNDSTOEFFECTIVETNWPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T090059" />
+    </ref>
+    <ref id="DebtToAssetsRatioPeerQuartiles" modelRefId="DebtToAssetsRatioPeerQuartiles" type="DEBTTOASSETSRATIOPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T091230" />
+    </ref>
+    <ref id="ShortTermDebtToTotalDebtPeerQuartiles" modelRefId="ShortTermDebtToTotalDebtPeerQuartiles" type="SHORTTERMDEBTTOTOTALDEBTPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T091851" />
+    </ref>
+    <ref id="ShortTermDebtWcPeerQuartiles" modelRefId="ShortTermDebtWcPeerQuartiles" type="SHORTTERMDEBTWCPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T092525" />
+    </ref>
+    <ref id="NetDebtToEbitPeerQuartiles" modelRefId="NetDebtToEbitPeerQuartiles" type="NETDEBTTOEBITPEERQUARTILES">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubReion,Industry,Year,Ratio,Quartiles1,Quartiles2,Quartiles3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200530T094057" />
+    </ref>
+    <ref id="ArcPeerQuartiles" modelRefId="ArcPeerQuartiles" type="ARCPEERQUARTILES" resourceModuleId="Tenant">
+      <query>
+        <projection>
+          <key modelFieldId="Key" />
+          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartile1,Quartile2,Quartile3" />
+        </projection>
+      </query>
+      <audit userId="admin" time="20200622T071140" />
+    </ref>
     <ref id="ArcRegions" modelRefId="ArcRegions" type="ARCREGIONS" resourceModuleId="Tenant">
       <query>
         <projection>
@@ -515,71 +998,51 @@
       </query>
       <audit userId="admin" time="20200626T100020" />
     </ref>
-    <ref id="ArcFinancialRatios" modelRefId="ArcFinancialRatios" type="ARCFINANCIALRATIOS">
+    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY" resourceModuleId="Tenant">
       <query>
         <projection>
           <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200910T145603" />
-    </ref>
-    <ref id="OlapDimension" modelRefId="OlapDimension" mappingType="true" mappingArtifactType="Reference" type="OLAPDIMENSION" shared="false" resourceModuleId="Core" multiModule="true">
-      <audit userId="admin" time="20200915T093652" />
-    </ref>
-    <ref id="ArcIndustryChannel" modelRefId="ArcIndustryChannel" type="ARCINDUSTRYCHANNEL">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20200918T101140" />
-    </ref>
-    <ref id="MapPdModelScale" modelRefId="MapPdModelScale" type="MAPPDMODELSCALE" shared="false" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20200918T142959" />
-    </ref>
-    <ref id="DataDirectTableMap" modelRefId="DataDirectTableMap" type="DATADIRECTTABLEMAP" localeSupport="false" resourceModuleId="DataMovement">
-      <audit userId="marian" time="20200930T091655" />
-    </ref>
-    <ref id="MapPdOverrideSetting" modelRefId="MapPdOverrideSetting" type="MAPPDOVERRIDESETTING" shared="false" resourceModuleId="RiskGrading">
-      <audit userId="admin" time="20200930T135149" />
-    </ref>
-    <ref id="EntityRiskCategory" modelRefId="EntityRiskCategory" type="ENTITYRISKCATEGORY" resourceModuleId="Tenant">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
+          <display modelFieldIds="PeerIndustry" />
         </projection>
         <sortOrders>
-          <sortOrder modelFieldId="Key" direction="asc" />
+          <sortOrder modelFieldId="IndustryChannel" direction="asc" />
+          <sortOrder modelFieldId="RegionSubRegion" direction="asc" />
         </sortOrders>
       </query>
-      <audit userId="admin" time="20201020T144730" />
-    </ref>
-    <ref id="DataMovementConfig" modelRefId="DataMovementConfig" type="DATAMOVEMENTCONFIG" resourceModuleId="DataMovement">
-      <audit userId="admin" time="20201022T153539" />
+      <audit userId="admin" time="20200626T100208" />
     </ref>
     <ref id="DataFileImportMap" modelRefId="DataFileImportMap" type="DATAFILEIMPORTMAP" resourceModuleId="DataMovement">
-      <audit userId="admin" time="20201022T153604" />
+      <audit userId="admin" time="20200903T085811" />
     </ref>
-    <ref id="ArcPeerIndustry" modelRefId="ArcPeerIndustry" type="ARCPEERINDUSTRY">
+    <ref id="RatingModel" modelRefId="RatingModel" resourceModuleId="RiskGrading">
       <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="Value" />
-        </projection>
+        <filters>
+          <filter id="Renderer" modelFieldId="Renderer" defaultValue="" />
+          <filter id="SummaryRenderer" modelFieldId="SummaryRenderer" defaultValue="" />
+        </filters>
       </query>
-      <audit userId="admin" time="20201022T160305" />
+      <audit userId="admin" time="20200929T135554" />
     </ref>
-    <ref id="ArcPeerQuartiles" modelRefId="ArcPeerQuartiles" type="ARCPEERQUARTILES">
-      <query>
-        <projection>
-          <key modelFieldId="Key" />
-          <display modelFieldIds="RegionSubRegion,Industry,Year,Ratio,Quartile1,Quartile2,Quartile3" />
-        </projection>
-      </query>
-      <audit userId="admin" time="20201026T133809" />
+    <ref id="ProposalTypeMapping" modelRefId="ProposalTypeMapping" type="PROPOSALTYPEMAPPING" shared="false" resourceModuleId="Core" multiModule="true">
+      <audit userId="admin" time="20201003T122417" />
+    </ref>
+    <ref id="UserRole" modelRefId="UserRole" type="USERROLE" resourceModuleId="Core">
+      <audit userId="admin" time="20201003T155807" />
+    </ref>
+    <ref id="ProposalTaskRecallSetting" modelRefId="ProposalTaskRecallSetting" type="PROPOSALTASKRECALLSETTING" localeSupport="false" shared="false" resourceModuleId="Core" multiModule="true">
+      <audit userId="admin" time="20201003T163110" />
+    </ref>
+    <ref id="ProposalBusinessStatus" modelRefId="ProposalBusinessStatus" type="PROPOSALBUSINESSSTATUS" shared="false" resourceModuleId="Entity">
+      <audit userId="admin" time="20201005T104711" />
+    </ref>
+    <ref id="TaskTypeMapping" modelRefId="TaskTypeMapping" mappingType="true" mappingArtifactType="Task" type="TASKTYPEMAPPING" resourceModuleId="Core" multiModule="true">
+      <audit userId="admin" time="20201111T122403" />
+    </ref>
+    <ref id="TaskBusinessStatus" modelRefId="TaskBusinessStatus" type="TASKBUSINESSSTATUS" shared="false" resourceModuleId="Entity">
+      <audit userId="admin" time="20201117T114423" />
+    </ref>
+    <ref id="WorkflowEvents" modelRefId="WorkflowEvents" type="WORKFLOWEVENTS" localeSupport="false" shared="false" resourceModuleId="Core">
+      <audit userId="admin" time="20201119T113243" />
     </ref>
   </references>
 </metadata>
